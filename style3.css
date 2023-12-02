@@ -1,0 +1,1007 @@
+/*stuff to display if screen gets too small*/
+@media only screen and (max-width: 1500px){
+	body {
+		height: 100vh;
+		background-image: linear-gradient(90deg, transparent, 95%,lightblue)
+	}
+}
+
+@media only screen and (max-height: 850px){
+	body {
+		height: 100vh;
+		background-image: linear-gradient(transparent, 95%,lightblue)
+	}
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100vw; /* Set the total width of the boxes */
+    height: 100vh; /* Set the fixed height for the boxes */
+    justify-content: space-between; /* Create space between boxes */
+}
+
+.box {
+    border-radius: 15px; /* Round out the edges */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    box-sizing: border-box;
+    font-family: arial, verdana, tahoma;
+    font-size: 18px;
+    align-items: center;
+    padding-top: 5px; /* Add top padding */
+    position: relative;
+    text-align: center;
+}
+
+.box1,
+.box3,
+.box4,
+.box5,
+.box6 {
+    margin-right: 0.8%;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    width: calc(15vw); 
+    margin-left: 0.8%;
+}
+
+.box2 {
+    width: calc(18vw);
+    margin-right: 0.2%;
+}
+
+.box6 {
+    width: calc(18vw);
+}
+
+.box3 {
+    width: calc(12vw); 
+}
+
+.box4 {
+    width: calc(15vw); 
+}
+
+.box5 {
+    width: calc(12vw);
+}
+
+.explanation{ /*explanation box on the right side*/
+    margin-right: 0.5%;
+    width: calc(15vw - 5px);
+    background-color: rgb(49, 169, 137);
+    color: white;
+    display: flex;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1%;
+}
+
+.selection {
+    width: calc(100%); 
+    height: calc(100% * 0.2);
+    background-color: #0072B2;
+    align-items: center;
+    color: white;
+}
+
+/*--------------------------------------*/
+.chronic_stressors {
+    width: calc(100%); 
+    height: calc(100% * 0.5);
+    background-color: #dbd7d7;
+    color: rgba(0, 0, 0, 0.668);
+}
+
+.distance_from_earth{
+    width: calc(40%); 
+    height: calc(8%); 
+    position: absolute;
+    top: calc(37%);
+    left: 3%;
+    background-color: #929090;
+}
+
+.mission_duration{
+    width: calc(40%); 
+    height: calc(8%); 
+    position: absolute;
+    top: calc(48%);
+    left: 3%;
+    background-color: #929090;
+}
+
+.communication_delay{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(27%);
+    right: 3%;
+    background-color: #929090;
+}
+
+.isolated{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(35%);
+    right: 3%;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.confined{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(43%);
+    right: 3%;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.extreme {
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(51%);
+    right: 3%;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.resource_constrained{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(59%);
+    right: 3%;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+/*--------------------------------------*/
+.acute_stressors {
+    width: calc(100%);
+    height: calc(100% * 0.3);
+    background-color: #dbd7d7;
+    color: rgba(0, 0, 0, 0.668);
+}
+
+.mission_demands{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(78%);
+    left: 3%;
+    background-color: #929090;
+}
+
+.mission_events{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(86%);
+    right: 3%;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+/*-----------------------------------------*/
+.personality_trait {
+    width: calc(100%);
+    height: calc(100% * 0.37);
+    top: calc(80% * 0.2 + 40px);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.extraversion{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(7%);
+    left: 2.5%;
+    background-color: #56B4E9;
+}
+
+.agreeableness{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(13.5%);
+    left: 2.5%;
+    background-color: #56B4E9;
+}
+
+.neuroticism{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(20%);
+    left: 2.5%;
+    background-color: #56B4E9;
+}
+
+.resilience{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(26.5%);
+    left: 2.5%;
+    background-color: #56B4E9;
+}
+
+.openness{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(7%);
+    right: 2.5%;
+    background-color: #56B4E9;
+}
+
+.conscientiousness{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(13.5%);
+    right: 2.5%;
+    background-color: #56B4E9;
+}
+
+.emotional_bandwidth{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(20%);
+    right: 2.5%;
+    background-color: #56B4E9;
+}
+
+.genetics{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(26.5%);
+    right: 2.5%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+.crew_composition {
+    width: calc(100%);
+    height: calc(100% * 0.3);
+    top: 0;
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.crew_size{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(10%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.social_support{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(18%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.monotony{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(6.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.social_density{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(14%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.group_living{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(21.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+.resources {
+    width: calc(100%);
+    height: calc(100% * 0.45);
+    top: calc(80% * 0.4 + 80px);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.psychotherapy{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(39%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.training_and_preperation{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(47%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.ground_support{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(55%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.medical_capabilities{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(63%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.clothing{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(36%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.family_and_friends{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(43.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.supplies{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(51%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.food{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(58.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.exercise_equipment{
+    width: calc(47%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(66%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+/*-----------------------------------------*/
+.designed_features {
+    width: calc(100%);
+    height: calc(100% * 0.35);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.habitat{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(40.5%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.circulation_paths{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(47%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.layout{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(53.5%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.privacy{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(60%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.physical_ergonomics{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(40.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.fixtures{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(47%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.reprogrammability{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(53.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.material_monotony{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(60%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+.environmental_stressors {
+    width: calc(100%);
+    height: calc(100% * 0.35);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.light_dark_cycles{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(73%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.altered_gravity{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(79.5%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.lighting{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(86%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.radiation{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(92.5%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.contaminants{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(73%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.volume{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(79.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.temperature_humidity{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(86%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.nutrition{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(92.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+.operational_stressors {
+    width: calc(100%);
+    height: calc(100% * 0.26);
+    top: calc(80% * 1 + 200px);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.physical_workload{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(82%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.cognitive_workload{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(89%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.media_attention{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(79.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.conflicts{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(86%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.injuries{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(92.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+.team_processes {
+    width: calc(100%); /* 80% of box 3 width with padding */
+    height: calc(100% * 0.45);
+    background-color: #ffcbfb;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.transition_processes{
+    width: calc(90%); 
+    height: calc(12%);
+    position: absolute;
+    top: calc(6.5%);
+    background-color: #CC79A7;
+}
+
+.action_processes{
+    width: calc(90%); 
+    height: calc(12%);
+    position: absolute;
+    top: calc(19%);
+    background-color: #CC79A7;
+}
+
+.cohesion_processes{
+    width: calc(90%); 
+    height: calc(12%);
+    padding: 20px; 
+    position: absolute;
+    top: calc(31.5%);
+    background-color: #CC79A7;
+}
+/*-----------------------------------------*/
+.individual_processes {
+    width: calc(100%); /* 80% of box 3 width with padding */
+    height: calc(100% * 0.55);
+    background-color: #ffcbfb;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.stress_regulation{
+    width: calc(90%); 
+    height: calc(11%);
+    position: absolute;
+    top: calc(53%);
+    background-color: #CC79A7;
+}
+
+.placemaking{
+    width: calc(90%); 
+    height: calc(11%);
+    position: absolute;
+    top: calc(64.5%);
+    background-color: #CC79A7;
+}
+
+.sleep{
+    width: calc(90%); 
+    height: calc(11%);
+    position: absolute;
+    top: calc(76%);
+    background-color: #CC79A7;
+}
+
+.physical_health{
+    width: calc(90%); 
+    height: calc(11%);
+    position: absolute;
+    top: calc(87.5%);
+    background-color: #CC79A7;
+}
+/*-----------------------------------------*/
+.performance {
+    width: calc(100%); /* 80% of box 4 width with padding */
+    height: calc(100% * 0.45);
+    background-color: #ffd54d;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.sleep_quality{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(6.5%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.anxiety{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(16%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.agency{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(25.5%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.stress{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(35%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.crew_performance{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(11%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+.attachment{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(20.5%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+.trust{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(30%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+/*-----------------------------------------*/
+.mood_and_effect {
+    width: calc(100%); /* 80% of box 4 width with padding */
+    height: calc(100% * 0.55);
+    background-color: #ffd54d;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.curiosity{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(56%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.kinship{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(65.5%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.boredom{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(75%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.tranquility{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(84.5%);
+    left:2.5%;
+    background-color: #E69F00;
+}
+
+.discontentment{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(52%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+.nostalgia_homesickness{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(61.5%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+.fear{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(71%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+.awe{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(80.5%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+
+.depression{
+    width: calc(47%); 
+    height: calc(9%);
+    position: absolute;
+    top: calc(90%);
+    right:2.5%;
+    background-color: #E69F00;
+}
+/*-----------------------------------------*/
+.loss_of_mission {
+    width: calc(100%);
+    height: calc(100% * 0.33);
+    background-color: #b4b4b4;
+    align-items: center;
+    color: white;
+}
+
+.loss_of_crew_life {
+    width: calc(100%);
+    height: calc(100% * 0.33);
+    background-color: #b4b4b4;
+    align-items: center;
+    color: white;
+}
+
+.quality_of_life {
+    width: calc(100%);
+    height: calc(100% * 0.33);
+    background-color: #b4b4b4;
+    align-items: center;
+    color: white;
+}
+
+.selection,
+.chronic_stressors,
+.acute_stressors,
+.crew_composition,
+.personality_trait,
+.resources,
+.environmental_stressors,
+.designed_features,
+.operational_stressors,
+.team_processes,
+.individual_processes,
+.performance,
+.mood_and_effect,
+.loss_of_mission,
+.loss_of_crew_life,
+.quality_of_life,
+.loss_of_mission,
+.loss_of_crew_life,
+.quality_of_life 
+{
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7%;
+}
+
+.distance_from_earth,
+.mission_duration,
+.communication_delay,
+.isolated,
+.confined,
+.extreme,
+.resource_constrained,
+.mission_demands,
+.mission_events,
+.crew_size,
+.social_support,
+.social_density,
+.monotony,
+.group_living,
+.extraversion,
+.agreeableness,
+.neuroticism,
+.resilience,
+.openness,
+.conscientiousness,
+.emotional_bandwidth,
+.genetics,
+.psychotherapy,
+.training_and_preperation,
+.ground_support,
+.medical_capabilities,
+.clothing,
+.family_and_friends,
+.supplies,
+.food,
+.exercise_equipment,
+.physical_ergonomics,
+.circulation_paths,
+.privacy,
+.habitat,
+.material_monotony,
+.layout,
+.reprogrammability,
+.fixtures,
+.light_dark_cycles,
+.altered_gravity,
+.lighting,
+.radiation,
+.contaminants,
+.volume,
+.temperature_humidity,
+.nutrition,
+.physical_workload,
+.cognitive_workload,
+.media_attention,
+.conflicts,
+.injuries,
+.transition_processes,
+.action_processes,
+.cohesion_processes,
+.stress_regulation,
+.placemaking,
+.sleep,
+.physical_health,
+.sleep_quality,
+.anxiety,
+.agency,
+.stress,
+.crew_performance,
+.attachment,
+.trust,
+.curiosity,
+.kinship,
+.boredom,
+.tranquility,
+.discontentment,
+.nostalgia_homesickness,
+.fear,
+.awe,
+.depression {
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}

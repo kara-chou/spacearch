@@ -1,0 +1,95 @@
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100vw; 
+    height: 100vh; 
+    justify-content: space-between; /* Create space between boxes */
+}
+
+.box {
+    height: 100%;
+    border-radius: 15px; /* Round out the edges */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: slideIn 0s ease-in forwards;
+    font-family: arial, verdana, tahoma;
+	font-size: 18px;
+    margin-right: 15px;
+}
+
+.box1 {
+    width: calc(20vw); /*20%*/
+    background-color: #0072B2; /* Just for illustration */
+    margin-left: 15px;
+}
+
+.box2 {
+    width: calc(35vw); /*30%*/
+    background-color: #56B4E9; /* Just for illustration */
+}
+
+.box3 {
+    width: calc(15vw); /*15%*/
+    background-color: #CC79A7; /* Just for illustration */
+}
+
+.box4 {
+    width: calc(20vw); /*20%*/
+    background-color: #E69F00; /* Just for illustration */
+}
+
+.box5 {
+    width: calc(15vw); /*15%*/
+    background-color: #999999; /* Just for illustration */
+}
+.content {
+    text-align: center;
+    color: white;
+}
+
+/* Add style for box title and explanation */
+.box-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-explanation {
+    margin-top: 10px;
+}
+
+/*stuff to display if screen gets too small*/
+@media only screen and (max-width: 1500px){
+	body {
+		height: 100vh;
+		background-image: linear-gradient(90deg, transparent, 95%,lightblue)
+	}
+}
+
+@media only screen and (max-height: 850px){
+	body {
+		height: 100vh;
+		background-image: linear-gradient(transparent, 95%,lightblue)
+	}
+}
