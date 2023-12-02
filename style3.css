@@ -90,7 +90,7 @@ body, html {
 .explanation{ /*explanation box on the right side*/
     margin-right: 0.5%;
     width: calc(15vw - 5px);
-    background-color: rgb(49, 169, 137);
+    background-color: #0072B2;
     color: white;
     display: flex;
     border-radius: 15px;
