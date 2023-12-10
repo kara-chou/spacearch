@@ -1,7 +1,6 @@
 /*Container where all boxes are stored in*/
 body, html {
     margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -23,7 +22,6 @@ rounded borders, text size and font*/
     font-family: arial, verdana, tahoma;
     font-size: 14px;
     align-items: center;
-    padding-top: 5px; /* Add top padding */
     position: relative;
     text-align: center;
 }
@@ -33,7 +31,7 @@ rounded borders, text size and font*/
 .box4,
 .box5,
 .box6 {
-    margin-right: 0.8%;
+    margin-right: 0.8%; /*Adding space between the columns*/
 }
 
 .box1,
@@ -41,12 +39,13 @@ rounded borders, text size and font*/
 .box3,
 .box4,
 .box5,
-.box6 {
+.box6 { /*Make sure everything is centered*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*Control width of each column*/
 .box1 {
     width: calc(15vw); 
     margin-left: 0.8%;
@@ -62,7 +61,7 @@ rounded borders, text size and font*/
 }
 
 .box3 {
-    width: calc(12vw); 
+    width: calc(10vw);
 }
 
 .box4 {
@@ -86,7 +85,8 @@ rounded borders, text size and font*/
     padding: 1%;
 }
 
-/*features common to smaller boxes, e.g. centered text*/
+/*features common to smaller boxes, 
+e.g. centered text, font color and size*/
 .distance_from_earth,
 .mission_duration,
 .communication_delay,
@@ -171,8 +171,52 @@ rounded borders, text size and font*/
     align-items: center;
     text-align: center;
     padding: 1%;
+    cursor: default; /*do not change cursor shape when hovering over text*/
 }
 
+/*Features common to second layer boxes
+e.g. rounded borders, centered elements*/
+.selection,
+.chronic_stressors,
+.acute_stressors,
+.crew_composition,
+.personality_trait,
+.resources,
+.environmental_stressors,
+.designed_features,
+.operational_stressors,
+.team_processes,
+.individual_processes,
+.performance,
+.mood_and_effect,
+.loss_of_mission,
+.loss_of_crew_life,
+.quality_of_life,
+.loss_of_mission,
+.loss_of_crew_life,
+.quality_of_life 
+{
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7%;
+}
+
+/*Get rid of the margin at the bottom of the lowest boxes*/
+.acute_stressors,
+.environmental_stressors,
+.operational_stressors,
+.individual_processes,
+.mood_and_effect,
+.quality_of_life
+{
+    margin-bottom: 0px;
+}
+
+/*Features unique to individual smaller boxes*/
 .selection {
     width: calc(100%); 
     height: calc(100% * 0.2);
@@ -182,6 +226,7 @@ rounded borders, text size and font*/
 }
 
 /*--------------------------------------*/
+/*Boxes laying inside chronic stressors*/
 .chronic_stressors {
     width: calc(100%); 
     height: calc(100% * 0.5);
@@ -257,6 +302,7 @@ rounded borders, text size and font*/
 }
 
 /*--------------------------------------*/
+/*Boxes laying inside acute stressors*/
 .acute_stressors {
     width: calc(100%);
     height: calc(100% * 0.3);
@@ -283,6 +329,7 @@ rounded borders, text size and font*/
     background-color: rgba(0, 0, 0, 0.735);
 }
 /*-----------------------------------------*/
+/*Boxes laying inside personality trait*/
 .personality_trait {
     width: calc(100%);
     height: calc(100% * 0.37);
@@ -362,6 +409,7 @@ rounded borders, text size and font*/
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside crew composition*/
 .crew_composition {
     width: calc(100%);
     height: calc(100% * 0.3);
@@ -414,6 +462,7 @@ rounded borders, text size and font*/
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside resources*/
 .resources {
     width: calc(100%);
     height: calc(100% * 0.45);
@@ -504,6 +553,7 @@ rounded borders, text size and font*/
 }
 
 /*-----------------------------------------*/
+/*Boxes laying inside designed features*/
 .designed_features {
     width: calc(100%);
     height: calc(100% * 0.35);
@@ -583,6 +633,7 @@ rounded borders, text size and font*/
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside environmental stressors*/
 .environmental_stressors {
     width: calc(100%);
     height: calc(100% * 0.35);
@@ -662,10 +713,10 @@ rounded borders, text size and font*/
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside operational stressors*/
 .operational_stressors {
     width: calc(100%);
     height: calc(100% * 0.26);
-    top: calc(80% * 1 + 200px);
     background-color: #94ecff;
     color: rgba(42, 41, 41, 0.668);
 }
@@ -692,7 +743,7 @@ rounded borders, text size and font*/
     width: calc(43%); 
     height: calc(5%);
     position: absolute;
-    top: calc(79.5%);
+    top: calc(80%);
     right:20%;
     background-color: #56B4E9;
 }
@@ -715,9 +766,10 @@ rounded borders, text size and font*/
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside team processes*/
 .team_processes {
-    width: calc(100%); /* 80% of box 3 width with padding */
-    height: calc(100% * 0.45);
+    width: calc(100%); 
+    height: calc(45%);
     background-color: #ffcbfb;
     color: rgba(42, 41, 41, 0.668);
 }
@@ -741,14 +793,14 @@ rounded borders, text size and font*/
 .cohesion_processes{
     width: calc(80%); 
     height: calc(10%);
-    padding: 20px; 
     position: absolute;
     top: calc(31.5%);
     background-color: #CC79A7;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside individual processes*/
 .individual_processes {
-    width: calc(100%); /* 80% of box 3 width with padding */
+    width: calc(100%); 
     height: calc(100% * 0.55);
     background-color: #ffcbfb;
     color: rgba(42, 41, 41, 0.668);
@@ -786,8 +838,9 @@ rounded borders, text size and font*/
     background-color: #CC79A7;
 }
 /*-----------------------------------------*/
+/*Boxes laying inside performance*/
 .performance {
-    width: calc(100%); /* 80% of box 4 width with padding */
+    width: calc(100%); 
     height: calc(100% * 0.45);
     background-color: #ffd54d;
     color: rgba(42, 41, 41, 0.668);
@@ -857,8 +910,9 @@ rounded borders, text size and font*/
 }
 
 /*-----------------------------------------*/
+/*Boxes laying inside mood and effect*/
 .mood_and_effect {
-    width: calc(100%); /* 80% of box 4 width with padding */
+    width: calc(100%);
     height: calc(100% * 0.55);
     background-color: #ffd54d;
     color: rgba(42, 41, 41, 0.668);
@@ -945,6 +999,7 @@ rounded borders, text size and font*/
     background-color: #E69F00;
 }
 /*-----------------------------------------*/
+/*Right-most factor column*/
 .loss_of_mission {
     width: calc(100%);
     height: calc(100% * 0.33);
@@ -967,33 +1022,4 @@ rounded borders, text size and font*/
     background-color: #b4b4b4;
     align-items: center;
     color: white;
-}
-
-.selection,
-.chronic_stressors,
-.acute_stressors,
-.crew_composition,
-.personality_trait,
-.resources,
-.environmental_stressors,
-.designed_features,
-.operational_stressors,
-.team_processes,
-.individual_processes,
-.performance,
-.mood_and_effect,
-.loss_of_mission,
-.loss_of_crew_life,
-.quality_of_life,
-.loss_of_mission,
-.loss_of_crew_life,
-.quality_of_life 
-{
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 7%;
 }
