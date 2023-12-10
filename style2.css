@@ -35,6 +35,7 @@ box6: crew composition, resources, operational stressors
 box3: team processes, individual processes
 box4: performance, mood and effect
 box5: loss of mission, loss of crew life, quality of life
+Note box2 and box6 appear to fall under same stripe, but is implemented in 2 stripes
 */
 .box1,
 .box3,
@@ -49,12 +50,13 @@ box5: loss of mission, loss of crew life, quality of life
 .box3,
 .box4,
 .box5,
-.box6 {
+.box6 { /*all contents are centered*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*Rounded border, color, etc. unique to each grouping of boxes*/
 .box1 {
     width: calc(20vw); 
     background-color: #5ba6ea;
@@ -95,9 +97,10 @@ box5: loss of mission, loss of crew life, quality of life
 }
 
 /*Control unique content for each smaller box*/
+/*Selection, Chronic stressors, Acute stressors are laid out top to bottom in box1*/
 .selection {
     width: calc(93%);
-    height: calc(100% * 0.2);
+    height: calc(20%);
     padding: 20px;
     top: 0;
     background-color: #0072B2;
@@ -105,123 +108,120 @@ box5: loss of mission, loss of crew life, quality of life
 
 .chronic_stressors {
     width: calc(93%);
-    height: calc(100% * 0.5);
+    height: calc(50%);
     padding: 20px;
-    top: calc(850px * 0.1 + 20px);
     background-color: #999999;
 }
 
 .acute_stressors {
     width: calc(93%);
-    height: calc(100% * 0.3);
+    height: calc(30%);
     padding: 20px;
-    top: calc(850px * 0.6 + 40px);
     background-color: #999999;
 }
 
-.crew_composition {
-    width: calc(96%);
-    margin-right: 2.5%;
-    height: calc(100% * 0.3);
-    padding: 20px;
-    top: 0;
-    background-color: #56B4E9;
-}
-
+/*Personality trait, Environmental stressors, Designed features
+lay top to bottom in box2*/
 .personality_trait {
     width: calc(96%);
+    height: calc(37%);
     margin-left: 2.5%;
-    height: calc(100% * 0.37);
     padding: 20px;
-    top: calc(80% * 0.2 + 40px);
-    background-color: #56B4E9;
-}
-
-.resources {
-    width: calc(96%);
-    margin-right: 2.5%;
-    height: calc(100% * 0.45);
-    padding: 20px;
-    top: calc(80% * 0.4 + 80px);
     background-color: #56B4E9;
 }
 
 .environmental_stressors {
     width: calc(96%);
+    height: calc(35%);
     margin-left: 2.5%;
-    height: calc(100% * 0.35);
     padding: 20px;
-    top: calc(80% * 0.6 + 120px);
     background-color: #56B4E9;
 }
 
 .designed_features {
     width: calc(96%);
+    height: calc(35%);
     margin-left: 2.5%;
-    height: calc(100% * 0.35);
     padding: 20px;
-    top: calc(80% * 0.8 + 160px);
+    background-color: #56B4E9;
+}
+
+/*Crew composition, Resources, Operational stressors
+lay top to bottom in box6*/
+.crew_composition {
+    width: calc(96%);
+    height: calc(30%);
+    margin-right: 2.5%;
+    padding: 20px;
+    background-color: #56B4E9;
+}
+
+.resources {
+    width: calc(96%);
+    height: calc(45%);
+    margin-right: 2.5%;
+    padding: 20px;
     background-color: #56B4E9;
 }
 
 .operational_stressors {
     width: calc(96%);
+    height: calc(26%);
     margin-right: 2.5%;
-    height: calc(100% * 0.26);
     padding: 20px;
-    top: calc(80% * 1 + 200px);
     background-color: #56B4E9;
 }
 
+/*Team processes, individual processes lay top to bottom in box3*/
 .team_processes {
     width: calc(93%);
-    height: calc(100% * 0.45);
+    height: calc(45%);
     padding: 20px;
-    top: calc(80% * 0.3 + 60px); /* top offset below box 3 */
     background-color: #CC79A7;
 }
 
 .individual_processes {
     width: calc(93%);
-    height: calc(100% * 0.55);
+    height: calc(55%);
     padding: 20px;
-    top: calc(80% * 0.3 + 20px + 70% * 0.6 + 20px); /* top offset below team-processes */
     background-color: #CC79A7;
 }
 
+/*Performance, Mood and effect lay top to bottom in box4*/
 .performance {
     width: calc(93%);
-    height: calc(100% * 0.45);
+    height: calc(45%);
     padding: 20px;
-    top: calc(80% * 0.6 + 120px); /* top offset below box 4 */
     background-color: #E69F00;
 }
 
 .mood_and_effect {
     width: calc(93%);
-    height: calc(100% * 0.55);
+    height: calc(55%);
     padding: 20px;
     background-color: #E69F00;
 }
 
+/*Loss of Mission, Loss of crew life, Quality of life lay top to bottom in box5*/
 .loss_of_mission {
     width: calc(93%);
-    height: calc(100% * 0.33);
+    height: calc(33%);
     background-color: #999999;
 }
 
 .loss_of_crew_life {
     width: calc(93%);
-    height: calc(100% * 0.33);
+    height: calc(33%);
     background-color: #999999;
 }
 
 .quality_of_life {
     width: calc(93%);
-    height: calc(100% * 0.33);
+    height: calc(33%);
     background-color: #999999;
 }
 
+/*Features common to all the small boxes*/
 .selection,
 .chronic_stressors,
 .acute_stressors,
@@ -249,9 +249,10 @@ box5: loss of mission, loss of crew life, quality of life
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: default; /*do not change cursor shape when hovering over text*/
 }
 
-/* Add style for box title and explanation */
+/* Add style for box title and explanation upon hovering*/
 .box-title {
     font-size: 20px;
     font-weight: bold;
