@@ -128,7 +128,7 @@ body, html {
 .radiation,
 .contaminants,
 .volume,
-.temperature_humidity,
+.temperature_and_humidity,
 .nutrition,
 .physical_workload,
 .cognitive_workload,
@@ -290,8 +290,8 @@ body, html {
     width: calc(30%); 
     height: calc(6%);
     position: absolute;
-    top: calc(5%);
-    left: 18%;
+    top: calc(5.5%);
+    left: 25%;
     background-color: #56B4E9;
 }
 
@@ -308,8 +308,8 @@ body, html {
     width: calc(33%); 
     height: calc(6%);
     position: absolute;
-    top: calc(19%);
-    left: 12%;
+    top: calc(20%);
+    right: 8%;
     background-color: #56B4E9;
 }
 
@@ -335,8 +335,8 @@ body, html {
     width: calc(47%); 
     height: calc(6%);
     position: absolute;
-    top: calc(13%);
-    right: 3%;
+    top: calc(19%);
+    left:10%;
     background-color: #56B4E9;
 }
 
@@ -344,8 +344,8 @@ body, html {
     width: calc(30%); 
     height: calc(6%);
     position: absolute;
-    top: calc(20%);
-    right: 15%;
+    top: calc(12.5%);
+    right: 22%;
     background-color: #56B4E9;
 }
 
@@ -366,44 +366,44 @@ body, html {
 }
 
 .crew_size{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(30%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(10%);
-    left:2.5%;
+    top: calc(8%);
+    left:8%;
     background-color: #56B4E9;
 }
 
 .social_support{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(35%); 
+    height: calc(6%);
     position: absolute;
     top: calc(18%);
-    left:2.5%;
+    left:4%;
     background-color: #56B4E9;
 }
 
 .monotony{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(33%); 
+    height: calc(6%);
     position: absolute;
     top: calc(6.5%);
-    right:2.5%;
+    right:5%;
     background-color: #56B4E9;
 }
 
 .social_density{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(40%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(14%);
-    right:2.5%;
+    top: calc(13.5%);
+    right:18%;
     background-color: #56B4E9;
 }
 
 .group_living{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(35%); 
+    height: calc(6%);
     position: absolute;
     top: calc(21.5%);
     right:2.5%;
@@ -419,80 +419,80 @@ body, html {
 }
 
 .psychotherapy{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(40%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(39%);
-    left:2.5%;
+    top: calc(36%);
+    left:10%;
     background-color: #56B4E9;
 }
 
 .training_and_preperation{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(40%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(47%);
-    left:2.5%;
+    top: calc(45.5%);
+    left: 38%;
     background-color: #56B4E9;
 }
 
 .ground_support{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(40%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(55%);
+    top: calc(52.5%);
     left:2.5%;
     background-color: #56B4E9;
 }
 
 .medical_capabilities{
     width: calc(47%); 
-    height: calc(7%);
+    height: calc(6%);
     position: absolute;
-    top: calc(63%);
-    left:2.5%;
+    top: calc(59.5%);
+    left:20%;
     background-color: #56B4E9;
 }
 
 .clothing{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(30%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(36%);
-    right:2.5%;
+    top: calc(43%);
+    left:4%;
     background-color: #56B4E9;
 }
 
 .family_and_friends{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(43%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(43.5%);
+    top: calc(38.5%);
     right:2.5%;
     background-color: #56B4E9;
 }
 
 .supplies{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(30%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(51%);
-    right:2.5%;
+    top: calc(52.5%);
+    right:5%;
     background-color: #56B4E9;
 }
 
 .food{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(30%); 
+    height: calc(6%);
     position: absolute;
-    top: calc(58.5%);
-    right:2.5%;
+    top: calc(66.5%);
+    left:10%;
     background-color: #56B4E9;
 }
 
 .exercise_equipment{
-    width: calc(47%); 
-    height: calc(7%);
+    width: calc(45%); 
+    height: calc(6%);
     position: absolute;
     top: calc(66%);
     right:2.5%;
@@ -509,52 +509,52 @@ body, html {
 
 .habitat{
     width: calc(27%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(47%);
-    right: 37%;
+    top: calc(50.5%);
+    right: 35%;
     background-color: #56B4E9;
 }
 
 .circulation_paths{
     width: calc(43%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(40%);
-    left: 25%;
+    top: calc(39.5%);
+    left: 35%;
     background-color: #56B4E9;
 }
 
 .layout{
     width: calc(30%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(53%);
-    left:2.5%;
+    top: calc(54%);
+    left:5%;
     background-color: #56B4E9;
 }
 
 .privacy{
     width: calc(30%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(46.5%);
-    left: 5%;
+    top: calc(61.5%);
+    right: 5%;
     background-color: #56B4E9;
 }
 
 .physical_ergonomics{
     width: calc(47%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(60%);
-    left: 6%;
+    top: calc(61.5%);
+    left: 4%;
     background-color: #56B4E9;
 }
 
 .fixtures{
     width: calc(33%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
     top: calc(46%);
     right:2.5%;
@@ -563,19 +563,19 @@ body, html {
 
 .reprogrammability{
     width: calc(46%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(53.5%);
+    top: calc(56%);
     right: 10%;
     background-color: #56B4E9;
 }
 
 .material_monotony{
     width: calc(43%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(60%);
-    right:2.5%;
+    top: calc(45%);
+    left:8%;
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
@@ -587,74 +587,74 @@ body, html {
 }
 
 .light_dark_cycles{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(43%); 
+    height: calc(5%);
     position: absolute;
     top: calc(73%);
-    left:2.5%;
+    left:15%;
     background-color: #56B4E9;
 }
 
 .altered_gravity{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(40%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(79.5%);
+    top: calc(86%);
     left:2.5%;
     background-color: #56B4E9;
 }
 
 .lighting{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(33%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(86%);
+    top: calc(79%);
     left:2.5%;
     background-color: #56B4E9;
 }
 
 .radiation{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(30%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(92.5%);
-    left:2.5%;
+    top: calc(80%);
+    right:30%;
     background-color: #56B4E9;
 }
 
 .contaminants{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(40%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(73%);
-    right:2.5%;
+    top: calc(92%);
+    left:8%;
     background-color: #56B4E9;
 }
 
 .volume{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(30%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(79.5%);
+    top: calc(74%);
     right:2.5%;
     background-color: #56B4E9;
 }
 
-.temperature_humidity{
+.temperature_and_humidity{
     width: calc(47%); 
-    height: calc(6%);
+    height: calc(5%);
     position: absolute;
-    top: calc(86%);
+    top: calc(93%);
     right:2.5%;
     background-color: #56B4E9;
 }
 
 .nutrition{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(30%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(92.5%);
-    right:2.5%;
+    top: calc(86%);
+    right:8%;
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
@@ -667,35 +667,35 @@ body, html {
 }
 
 .physical_workload{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(43%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(82%);
-    left:2.5%;
+    top: calc(86%);
+    left:5%;
     background-color: #56B4E9;
 }
 
 .cognitive_workload{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(43%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(89%);
-    left:2.5%;
-    background-color: #56B4E9;
-}
-
-.media_attention{
-    width: calc(47%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(79.5%);
+    top: calc(93%);
     right:2.5%;
     background-color: #56B4E9;
 }
 
+.media_attention{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(79.5%);
+    right:20%;
+    background-color: #56B4E9;
+}
+
 .conflicts{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(35%); 
+    height: calc(5%);
     position: absolute;
     top: calc(86%);
     right:2.5%;
@@ -703,11 +703,11 @@ body, html {
 }
 
 .injuries{
-    width: calc(47%); 
-    height: calc(6%);
+    width: calc(35%); 
+    height: calc(5%);
     position: absolute;
-    top: calc(92.5%);
-    right:2.5%;
+    top: calc(92%);
+    left:15%;
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
@@ -719,24 +719,24 @@ body, html {
 }
 
 .transition_processes{
-    width: calc(90%); 
-    height: calc(12%);
+    width: calc(80%); 
+    height: calc(10%);
     position: absolute;
     top: calc(6.5%);
     background-color: #CC79A7;
 }
 
 .action_processes{
-    width: calc(90%); 
-    height: calc(12%);
+    width: calc(80%); 
+    height: calc(10%);
     position: absolute;
     top: calc(19%);
     background-color: #CC79A7;
 }
 
 .cohesion_processes{
-    width: calc(90%); 
-    height: calc(12%);
+    width: calc(80%); 
+    height: calc(10%);
     padding: 20px; 
     position: absolute;
     top: calc(31.5%);
@@ -751,32 +751,32 @@ body, html {
 }
 
 .stress_regulation{
-    width: calc(90%); 
-    height: calc(11%);
+    width: calc(80%); 
+    height: calc(10%);
     position: absolute;
     top: calc(53%);
     background-color: #CC79A7;
 }
 
 .placemaking{
-    width: calc(90%); 
-    height: calc(11%);
+    width: calc(80%); 
+    height: calc(10%);
     position: absolute;
     top: calc(64.5%);
     background-color: #CC79A7;
 }
 
 .sleep{
-    width: calc(90%); 
-    height: calc(11%);
+    width: calc(80%); 
+    height: calc(10%);
     position: absolute;
     top: calc(76%);
     background-color: #CC79A7;
 }
 
 .physical_health{
-    width: calc(90%); 
-    height: calc(11%);
+    width: calc(80%); 
+    height: calc(10%);
     position: absolute;
     top: calc(87.5%);
     background-color: #CC79A7;
@@ -790,65 +790,65 @@ body, html {
 }
 
 .sleep_quality{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(6.5%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .anxiety{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(16%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .agency{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(25.5%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .stress{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(35%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .crew_performance{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(11%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
 .attachment{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(20.5%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
 .trust{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(30%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
@@ -861,83 +861,83 @@ body, html {
 }
 
 .curiosity{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(56%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .kinship{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(65.5%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .boredom{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(75%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .tranquility{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(84.5%);
-    left:2.5%;
+    left:3%;
     background-color: #E69F00;
 }
 
 .discontentment{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(52%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
 .nostalgia_homesickness{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(61.5%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
 .fear{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(71%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
 .awe{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(80.5%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 
 .depression{
-    width: calc(47%); 
-    height: calc(9%);
+    width: calc(45%); 
+    height: calc(8%);
     position: absolute;
     top: calc(90%);
-    right:2.5%;
+    right:3%;
     background-color: #E69F00;
 }
 /*-----------------------------------------*/
