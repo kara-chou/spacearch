@@ -1,3 +1,4 @@
+/*zooming in and out to switch between layers*/
 window.addEventListener("wheel",
     (e)=> {
         e.preventDefault();
@@ -13,13 +14,13 @@ window.addEventListener("wheel",
     );
 
 /*HOVERING, displays text within the box*/
-// Get all box elements
+//Get all box elements
 var boxes = document.querySelectorAll('.box');
 
-// Get the box container element
+//Get the box container element
 var boxContainer = document.querySelector('.container');
 
-// Define content for each box
+//Define content for each box, CHANGE EXPLANATION TEXTS HERE
 var boxContents = {
     box1: {
         title: "Mission Parameters",
@@ -43,18 +44,18 @@ var boxContents = {
     }
 };
 
-// Add event listeners to each box
+//Add event listeners to each box
 boxes.forEach(function (box) {
     box.addEventListener('mouseover', function () {
         var boxId = box.classList[1]; // Assumes the class of the box follows the pattern 'boxX'
         var content = boxContents[boxId];
 
-        // Update content inside the box with padding and more space
+        //Update content inside the box with explanation text and bolded title
         box.querySelector('.content').innerHTML = `<div class="box-title">${content.title}</div><div class="box-explanation">${content.explanation}</div>`;
     });
 
     box.addEventListener('mouseout', function () {
-        // Reset content inside the box
+        //Reset content inside the box into original
         var boxId = box.classList[1];
         var originalContent = boxContents[boxId].title;
         box.querySelector('.content').innerHTML = originalContent;
