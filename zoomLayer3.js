@@ -206,7 +206,7 @@ var boxContents = {
         title: "Volume",
         explanation: "Explanations."
     },
-    temperature_humidity:{
+    temperature_and_humidity:{
         title: "Temperature/Humidity",
         explanation: "Explanations."
     },
