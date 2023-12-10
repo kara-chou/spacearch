@@ -13,8 +13,8 @@ window.addEventListener("wheel",
     {passive:false}
     );
 
-/*HOVERING, displays text within the box*/
-//Get all box elements
+/*Displays text within the box upon hovering.
+Get all box elements*/
 var boxes = document.querySelectorAll('.box');
 
 //Get the box container element
