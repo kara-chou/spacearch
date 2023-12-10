@@ -1,4 +1,4 @@
-// Handle wheel event for layer navigation
+//zoom events for layer navigation
 window.addEventListener("wheel", (e) => {
     console.log("wheel");
     e.preventDefault();
@@ -14,7 +14,8 @@ window.addEventListener("wheel", (e) => {
     }
 }, { passive: false });
 
-
+/*HOVERING, displays text within the box
+Define content for each box, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
     selection: {
         title: "Selection",
@@ -83,18 +84,18 @@ var boxContents = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get all inner box elements
+    //Get all inner box elements
     var innerBoxes = document.querySelectorAll('.box div');
 
-    // Function to format text to the desired format
+    //Format text to the desired format
     function formatToLayerName(text) {
         return text.trim().toLowerCase().replace(/\s+/g, '_');
     }
 
-    // Add event listeners to each inner box
+    //Event listeners to each inner box
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
-            // Store the original content in a data attribute
+            //Store the original content
             if (!innerBox.dataset.originalContent) {
                 innerBox.dataset.originalContent = innerBox.innerHTML;
             }
@@ -102,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var boxElement = innerBox.closest('.box');
 
             if (boxElement) {
-                // Use the text content of the hovered element as the identifier
+                //Use the text content of the hovered element as the identifier
                 var layerName = formatToLayerName(innerBox.textContent);
                 var content = boxContents[layerName];
 
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         innerBox.addEventListener('mouseleave', function () {
-            // Restore the original content from the data attribute
+            //Restore the original content
             innerBox.innerHTML = innerBox.dataset.originalContent;
         });
     });
