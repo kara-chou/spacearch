@@ -10,4 +10,6 @@ The home page is associated with 3 files: index.html, style1.css, zoomLayer1.js.
 The 2nd layer is associated with 3 files: layer2.html, style2.css, zoomLayer2.js. <br>
 The 3rd layer is associated with 3 files: layer3.html, style3.css, zoomLayer3.js. <br>
 To change the shape, color, etc. of the boxes, edit the corresponding css file. Each individual box is written as a class where you can make changes unique to the box (e.g. color, text). <br>
-To change the content displayed upon hover/click, edit the corresponding javascript file. The explanation for each box is stored inside boxContents and can be edited individually.
+To change the content displayed upon hover/click, edit the corresponding javascript file. The explanation for each box is stored inside boxContents and can be edited individually. <br>
+
+The graphs file stores the layer 3 graph in adjacency lists. The generatePath file generates all elements the current element is connected to, directly and indirectly.
