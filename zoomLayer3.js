@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
             case 'selection':
-                return ['selection', 'crew_composition', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'cohesion_processes', 'privacy']
+                return ['selection', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'cohesion_processes', 'privacy', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case 'distance_from_earth':
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'ground_support', 'supplies', 'training_and_preperation', 'family_and_friends', 'psychotherapy', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'stress_regulation', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'discontentment']
             case 'communication_delay':
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'isolated':
                 return ['isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'mission_duration']
             case 'confined':
-                return ['confined', 'crew_composition', 'habitat', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'cohesion_processes', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths']
+                return ['confined', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'habitat', 'cohesion_processes', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'boredom']
             case 'extreme':
                 return ['extreme', 'media_attention', 'altered_gravity', 'light_dark_cycles', 'radiation', 'privacy', 'cognitive_workload', 'physical_health', 'physical_ergonomics', 'sleep', 'placemaking', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity']
             case 'resource_constrained':
@@ -416,8 +416,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['ground_support', 'family_and_friends', 'psychotherapy', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'communication_delay', 'isolated', 'distance_from_earth', 'mission_duration']
             case 'supplies':
                 return ['supplies', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'material_monotony', 'physical_workload', 'physical_health', 'monotony', 'nutrition', 'boredom', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'cohesion_processes', 'resource_constrained', 'distance_from_earth']
-            case 'medical_capabilites':
-                return ['medical_capabilites', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case 'medical_capabilities':
+                return ['medical_capabilities', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'food':
                 return ['food', 'nutrition', 'material_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'exercise_equipment':
