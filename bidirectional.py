@@ -1,14 +1,12 @@
-#given a directed graph, generates an adjacency list that makes it bidirectional
-tmp = {
+dirRight = {
     'distance_from_earth': ['communication_delay', 'resource_constrained'],
     'mission_duration': ['isolated'],
     'communication_delay': ['ground_support'],
     'mission_demands': ['mission_events', 'cognitive_workload', 'physical_workload'],
     'mission_events': ['conflicts', 'injuries'],
-    'selection': ['crew_composition'],
+    'selection': ['crew_size', 'monotony', 'social_density', 'social_support', 'group_living'],
     'isolated': ['monotony', 'crew_size', 'ground_support'],
-    'confined': ['crew_composition', 'habitat'],
-    'crew_composition': ['crew_size', 'monotony', 'social_density', 'social_support', 'group_living'],
+    'confined': ['crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'habitat'],
     'extreme': ['media_attention', 'altered_gravity', 'light_dark_cycles', 'radiation'],
     'resource_constrained': ['supplies', 'training_and_preperation'],
     'extraversion': ['cohesion_processes', 'social_support'],
@@ -37,7 +35,7 @@ tmp = {
     'family_and_friends': ['stress_regulation'],
     'ground_support': ['family_and_friends', 'psychotherapy'],
     'supplies': ['medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food'],
-    'medical_capabilites': ['physical_health'],
+    'medical_capabilities': ['physical_health'],
     'food': ['nutrition', 'material_monotony'],
     'exercise_equipment': ['physical_workload', 'physical_health'],
     'light_dark_cycles': ['sleep', 'physical_health'],
@@ -63,13 +61,34 @@ tmp = {
     'physical_health': ['sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress'],
 } #cur: list of nodes it leads to
 
+#given a directed graph, generates an adjacency list that makes it bidirectional
+# adj = {}
+# for key in tmp:
+#     if key in adj:
+#         adj[key].extend(tmp[key])
+#     else:
+#         adj[key] = tmp[key]
+#     for ele in tmp[key]:
+#         if ele in adj:
+#             adj[ele].append(key)
+#         else:
+#             adj[ele] = [key]
+
+# for key in adj: #get rid of the duplicates
+#     s = set()
+#     tmp = []
+#     for ele in adj[key]:
+#         if ele not in s:
+#             tmp.append(ele)
+#             s.add(ele)
+#     adj[key] = tmp
+
+# print(adj)
+
+#given directed graph to the right, make the directed graph to the left
 adj = {}
-for key in tmp:
-    if key in adj:
-        adj[key].extend(tmp[key])
-    else:
-        adj[key] = tmp[key]
-    for ele in tmp[key]:
+for key in dirRight:
+    for ele in dirRight[key]:
         if ele in adj:
             adj[ele].append(key)
         else:
