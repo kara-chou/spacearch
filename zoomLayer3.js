@@ -340,6 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return text.trim().toLowerCase().replace(/\s+/g, '_');
     }
 
+    //All boxes the current one is related to, left and right
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
             case 'selection':
@@ -493,6 +494,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     
+    var arrows = [];
+
     //Event listeners to each inner box
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
@@ -512,13 +515,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 
-                var relatedBoxes = getRelatedBoxes(smallBoxName);
-
+                var relatedBoxes = getRelatedBoxes(smallBoxName);                
                 innerBoxes.forEach(function (box) {
                         //check if the small box is in relatedBoxes
-                        var isRelated = relatedBoxes.includes(formatToSmallBoxName(box.textContent));
+                        var relatedBox = formatToSmallBoxName(box.textContent)
+                        var isRelated = relatedBoxes.includes(relatedBox);
                         if (!isRelated) { //if not in related, then we need to grey it out
                             box.classList.add('greyed-out');
+                        }else{
+                            //drawing arrows connecting components using the arrowLine function
+                            //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
+                            if (relatedBox != smallBoxName){
+                                const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                arrows.push(arrow)
+                            }
                         }
                 });
 
@@ -533,6 +543,11 @@ document.addEventListener('DOMContentLoaded', function () {
             innerBoxes.forEach(function (box) {
                 box.classList.remove('greyed-out');
             });
+
+            // Remove existing arrows
+            arrows.forEach(arrow => arrow.remove());
+            arrows = [];
+
         });
     });
 });
