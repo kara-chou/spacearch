@@ -410,6 +410,59 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['contaminants', 'physical_ergonomics', 'sleep', 'physical_health', 'temperature_and_humidity', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "temperature_and_humidity":
                 return ['temperature_and_humidity', 'sleep', 'material_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
+            case "crew_size":
+                return ['crew_size', 'social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "monotony":
+                return ['monotony', 'cohesion_processes', 'kinship']
+            case "social_density":
+                return ['social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "social_support":
+                return ['social_support', 'cohesion_processes', 'kinship']
+            case "group_living":
+                return ['group_living', 'cohesion_processes', 'kinship']
+            case "psychotherapy":
+                return ['psychotherapy', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "family_and_friends":
+                return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "clothing": 
+                return ['clothing', 'material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "training_and_preperation":
+                return ['training_and_preperation', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "ground_support":
+                return ['ground_support', 'family_and_friends', 'psychotherapy', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "supplies":
+                return ['supplies', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'cohesion_processes', 'discontentment', 'kinship']
+            case "medical_capabilities":
+                return ['medical_capabilities', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "food":
+                return ['food', 'nutrition', 'material_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
+            case "exercise_equipment":
+                return ['exercise_equipment', 'physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "media_attention":
+                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "physical_workload":
+                return ['physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "conflicts":
+                return ['conflicts', 'cohesion_processes', 'action_processes', 'kinship', 'crew_performance']
+            case "injuries":
+                return ['injuries', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "cognitive_workload":
+                return ['cognitive_workload', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality']
+            case "transition_processes":
+                return ['transition_processes', 'crew_performance']
+            case "action_processes":
+                return ['action_processes', 'crew_performance']
+            case "cohesion_processes":
+                return ['cohesion_processes', 'kinship']
+            case "stress_regulation":
+                return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "placemaking":
+                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+            case "sleep":
+                return ['sleep', 'depression', 'anxiety', 'sleep_quality']
+            case "physical_health":
+                return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            
             default:
                 return []
         }
