@@ -340,6 +340,81 @@ document.addEventListener('DOMContentLoaded', function () {
         return text.trim().toLowerCase().replace(/\s+/g, '_');
     }
 
+    function getRightBoxes(smallBoxName){
+        switch(smallBoxName){
+            case "selection":
+                return ['selection', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'cohesion_processes', 'privacy', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "communication_delay":
+                return ['communication_delay', 'ground_support', 'family_and_friends', 'psychotherapy', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "distance_from_earth":
+                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'ground_support', 'supplies', 'training_and_preperation', 'family_and_friends', 'psychotherapy', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'stress_regulation', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'discontentment', 'boredom', 'cohesion_processes', 'kinship']
+            case "mission_duration":
+                return ['mission_duration', 'isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'trust', 'agency', 'nostalgia_homesickness', 'attachment', 'sleep_quality']
+            case "isolated":
+                return ['isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'trust', 'agency', 'nostalgia_homesickness', 'attachment', 'sleep_quality']
+            case "confined":
+                return ['confined', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'habitat', 'cohesion_processes', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'boredom']
+            case "extreme":
+                return ['extreme', 'media_attention', 'altered_gravity', 'light_dark_cycles', 'radiation', 'privacy', 'cognitive_workload', 'physical_health', 'physical_ergonomics', 'sleep', 'placemaking', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'material_monotony', 'boredom']
+            case "resource_constrained":
+                return ['resource_constrained', 'supplies', 'training_and_preperation', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'cohesion_processes', 'discontentment', 'kinship']
+            case "mission_demands":
+                return ['mission_demands', 'mission_events', 'cognitive_workload', 'physical_workload', 'conflicts', 'injuries', 'stress_regulation', 'sleep', 'physical_health', 'cohesion_processes', 'action_processes', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality', 'tranquility', 'kinship', 'crew_performance']
+            case "mission_events":
+                return ['mission_events', 'conflicts', 'injuries', 'cohesion_processes', 'action_processes', 'physical_health', 'kinship', 'crew_performance', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "extraversion":
+                return ['extraversion', 'cohesion_processes', 'social_support', 'kinship']
+            case "openness":
+                return ['openness', 'action_processes', 'transition_processes', 'cohesion_processes', 'monotony', 'crew_performance', 'kinship']
+            case "agreeableness":
+                return ['agreeableness', 'cohesion_processes', 'action_processes', 'group_living', 'kinship', 'crew_performance']
+            case "genetics":
+                return ['genetics', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "conscientiousness":
+                return ['conscientiousness', 'cohesion_processes', 'group_living', 'kinship']
+            case "neuroticism":
+                return ['neuroticism', 'sleep', 'cohesion_processes', 'transition_processes', 'stress_regulation', 'group_living', 'depression', 'anxiety', 'sleep_quality', 'kinship', 'crew_performance', 'discontentment', 'stress']
+            case "resilience":
+                return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "emotional_bandwidth":
+                return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'cohesion_processes', 'kinship']
+            case "circulation_paths":
+                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'cohesion_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship']
+            case "material_monotony":
+                return ['material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "fixtures":
+                return ['fixtures', 'monotony', 'cohesion_processes', 'kinship']
+            case "habitat":
+                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'cohesion_processes', 'kinship']
+            case "layout":
+                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'cohesion_processes', 'kinship']
+            case "reprogrammability":
+                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+            case "physical_ergonomics":
+                return ['physical_ergonomics', 'physical_health', 'temperature_and_humidity', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "privacy":
+                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "light_dark_cycles":
+                return ['light_dark_cycles', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+            case "volume":
+                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "lighting":
+                return ['lighting', 'material_monotony', 'physical_health', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity', 'discontentment']
+            case "radiation":
+                return ['radiation', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "althered_gravity":
+                return ['altered_gravity', 'physical_health', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "nutrition":
+                return ['nutrition', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+            case "contaminants":
+                return ['contaminants', 'physical_ergonomics', 'sleep', 'physical_health', 'temperature_and_humidity', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "temperature_and_humidity":
+                return ['temperature_and_humidity', 'sleep', 'material_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
+            default:
+                return []
+        }
+    }
+
     //All boxes the current one is related to, left and right
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
@@ -512,10 +587,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 //Use the text content of the hovered element as the identifier
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
                 var content = boxContents[smallBoxName];
-
                 explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 
                 var relatedBoxes = getRelatedBoxes(smallBoxName);                
+                var rightBoxes = getRightBoxes(smallBoxName);
+
                 innerBoxes.forEach(function (box) {
                         //check if the small box is in relatedBoxes
                         var relatedBox = formatToSmallBoxName(box.textContent)
@@ -526,8 +602,13 @@ document.addEventListener('DOMContentLoaded', function () {
                             //drawing arrows connecting components using the arrowLine function
                             //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
                             if (relatedBox != smallBoxName){
-                                const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                arrows.push(arrow)
+                                if (rightBoxes.includes(relatedBox)){
+                                    const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                    arrows.push(arrow)
+                                }else{
+                                    const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                    arrows.push(arrow)
+                                }  
                             }
                         }
                 });
