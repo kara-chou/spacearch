@@ -462,7 +462,38 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['sleep', 'depression', 'anxiety', 'sleep_quality']
             case "physical_health":
                 return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
-            
+            case "sleep_quality":
+                return ['sleep_quality']
+            case "anxiety":
+                return ['anxiety']
+            case "agency":
+                return ['agency']
+            case "stress":
+                return ['stress']
+            case "crew_performance":
+                return ['crew_performance']
+            case "attachment":
+                return ['attachment']
+            case "trust":
+                return ['trust']
+            case "curiosity":
+                return ['curiosity']
+            case "kinship":
+                return ['kinship']
+            case "boredom":
+                return ['boredom']
+            case "tranquility":
+                return ['tranquility']
+            case "discontentment":
+                return ['discontentment']
+            case "nostalgia_homesickness":
+                return ['nostalgia_homesickness']
+            case "fear":
+                return ['fear']
+            case "awe":
+                return ['awe']
+            case "depression":
+                return ['depression']
             default:
                 return []
         }
