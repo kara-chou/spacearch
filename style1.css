@@ -1,113 +1,79 @@
-@keyframes slideIn { /*Transition between pages if needed. Not currently used*/
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
+/*zooming in and out to switch between layers*/
+window.addEventListener("wheel",
+    (e)=> {
+        e.preventDefault();
+        /*zooming in, leads to layer2 */
+        if (e.deltaX > 0){
+            window.location.href = 'layer2.html';
+        }
+        if (e.deltaY > 0){
+            window.location.href = 'layer2.html';
+        }
+    },
+    {passive:false}
+    );
+
+// Functions to show the pop-up box
+function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
+window.addEventListener("load", function () {
+    showPopup();
+});
+
+
+/*Displays text within the box upon hovering.
+Get all box elements*/
+var boxes = document.querySelectorAll('.box');
+
+//Get the box container element
+var boxContainer = document.querySelector('.container');
+
+//Define content for each box, CHANGE EXPLANATION TEXTS HERE
+var boxContents = {
+    box1: {
+        title: "Mission Parameters",
+        explanation: "Explanation for Mission Parameters."
+    },
+    box2: {
+        title: "Mediator Variables",
+        explanation: "Explanation for Mediator Variables."
+    },
+    box3: {
+        title: "Processes",
+        explanation: "Explanation for Processes."
+    },
+    box4: {
+        title: "Outcomes",
+        explanation: "Explanation for Outcomes."
+    },
+    box5: {
+        title: "Mission Success",
+        explanation: "Explanation for Mission Success."
     }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+};
 
-/* Style for the pop-up box */
-.popup {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    border: 1px solid #888;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 9999; /* Ensure it appears above other content */
-}
+//Add event listeners to each box
+boxes.forEach(function (box) {
+    box.addEventListener('mouseover', function () {
+        var boxId = box.classList[1]; // Assumes the class of the box follows the pattern 'boxX'
+        var content = boxContents[boxId];
 
-.popup-content {
-    padding: 20px;
-}
+        //Update content inside the box with explanation text and bolded title
+        box.querySelector('.content').innerHTML = `<div class="box-title">${content.title}</div><div class="box-explanation">${content.explanation}</div>`;
+    });
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #888;
-    cursor: pointer;
-}
-
-/*Container where all boxes are stored in*/
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-color: #d2eaf7;
-}
-.container {
-    display: flex;
-    width: 100vw; 
-    height: 100vh; 
-    justify-content: space-between; 
-}
-
-/*General structure for the boxes, include common features like 
-rounded borders, text size and font*/
-.box {
-    height: 100%;
-    border-radius: 15px; /* Round out the edges */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    opacity: 0;
-    animation: slideIn 0s ease-in forwards; /*Animation currently not used*/
-    font-family: arial, verdana, tahoma;
-	font-size: 18px;
-    margin-right: 15px;
-    padding: 1%;
-    cursor: default; /*Make sure cursor does not change shape when hovering over text*/
-}
-
-/*Features unique to 5 boxes, each have different color and width*/
-.box1 {
-    width: calc(20vw); /*20%*/
-    background-color: #0072B2; 
-    margin-left: 15px;
-}
-
-.box2 {
-    width: calc(35vw); /*30%*/
-    background-color: #56B4E9;
-}
-
-.box3 {
-    width: calc(15vw); /*15%*/
-    background-color: #CC79A7; 
-}
-
-.box4 {
-    width: calc(20vw); /*20%*/
-    background-color: #E69F00; 
-}
-
-.box5 {
-    width: calc(15vw); /*15%*/
-    background-color: #999999;
-}
-.content {
-    text-align: center;
-    color: white;
-}
-
-/* Add style for box title and explanation upon user interaction (e.g. hovering)
-Texts are bolded and size 20px*/
-.box-title {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.box-explanation {
-    margin-top: 10px;
-}
+    box.addEventListener('mouseout', function () {
+        //Reset content inside the box into original
+        var boxId = box.classList[1];
+        var originalContent = boxContents[boxId].title;
+        box.querySelector('.content').innerHTML = originalContent;
+    });
+});
