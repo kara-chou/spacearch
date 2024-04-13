@@ -13,6 +13,22 @@ window.addEventListener("wheel",
     {passive:false}
     );
 
+// Functions to show the pop-up box
+function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
+window.addEventListener("load", function () {
+    showPopup();
+});
+
+
 /*Displays text within the box upon hovering.
 Get all box elements*/
 var boxes = document.querySelectorAll('.box');
