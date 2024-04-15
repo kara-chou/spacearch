@@ -149,7 +149,7 @@ lay top to bottom in box2*/
 
 /*Crew composition, Resources, Operational stressors
 lay top to bottom in box6*/
-.crew_composition {
+.social_composition {
     width: calc(96%);
     height: calc(30%);
     margin-right: 2.5%;
@@ -226,7 +226,7 @@ lay top to bottom in box6*/
 .selection,
 .chronic_stressors,
 .acute_stressors,
-.crew_composition,
+.social_composition,
 .personality_trait,
 .resources,
 .environmental_stressors,
