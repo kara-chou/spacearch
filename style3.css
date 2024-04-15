@@ -1,5 +1,4 @@
-/*Container where all boxes are stored in*/
-body, html {
+body, html { /*Container where all boxes are stored in*/
     margin: 0;
     height: 100%;
     width: 100%;
