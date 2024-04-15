@@ -63,7 +63,7 @@ rounded borders, text size and font*/
     box-sizing: border-box;
     opacity: 0;
     animation: slideIn 0s ease-in forwards; /*Animation currently not used*/
-    font-family: helvetica, arial, sans-serif;
+    font-family: monospace, monospace;
 	font-size: 18px;
     margin-right: 15px;
     padding: 1%;
