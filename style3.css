@@ -180,7 +180,7 @@ e.g. rounded borders, centered elements*/
 .selection,
 .chronic_stressors,
 .acute_stressors,
-.crew_composition,
+.social_composition,
 .personality_trait,
 .resources,
 .environmental_stressors,
@@ -208,7 +208,7 @@ e.g. rounded borders, centered elements*/
 
 /*add margin to the top of the top boxes*/
 .personality_trait,
-.crew_composition,
+.social_composition,
 .team_processes,
 .performance,
 .loss_of_mission
@@ -411,7 +411,7 @@ e.g. rounded borders, centered elements*/
 }
 /*-----------------------------------------*/
 /*Boxes laying inside crew composition*/
-.crew_composition {
+.social_composition {
     width: calc(100%);
     height: calc(100% * 0.3);
     background-color: #94ecff;
