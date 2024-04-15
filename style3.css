@@ -165,7 +165,7 @@ e.g. centered text, font color and size*/
     border-radius: 10px;
     box-sizing: border-box;
     color: rgb(69, 65, 65);
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     justify-content: center; 
     align-items: center;
