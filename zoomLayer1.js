@@ -40,19 +40,19 @@ var boxContainer = document.querySelector('.container');
 var boxContents = {
     box1: {
         title: "Mission Parameters",
-        explanation: "Explanation for Mission Parameters."
+        explanation: "Aspects of the planned mission"
     },
     box2: {
         title: "Mediator Variables",
-        explanation: "Explanation for Mediator Variables."
+        explanation: "Design factors that influence processes and outcomes"
     },
     box3: {
         title: "Processes",
-        explanation: "Explanation for Processes."
+        explanation: "Time-dependent activities on team and individual levels"
     },
     box4: {
         title: "Outcomes",
-        explanation: "Explanation for Outcomes."
+        explanation: "Behavioral health and performance outcomes we care about"
     },
     box5: {
         title: "Mission Success",
