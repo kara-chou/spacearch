@@ -343,25 +343,25 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRightBoxes(smallBoxName){
         switch(smallBoxName){
             case "selection":
-                return ['selection', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'cohesion_processes', 'privacy', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "communication_delay":
-                return ['communication_delay', 'ground_support', 'family_and_friends', 'psychotherapy', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['selection']
             case "distance_from_earth":
-                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'ground_support', 'supplies', 'training_and_preperation', 'family_and_friends', 'psychotherapy', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'stress_regulation', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'discontentment', 'boredom', 'cohesion_processes', 'kinship']
+                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case "mission_duration":
-                return ['mission_duration', 'isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'trust', 'agency', 'nostalgia_homesickness', 'attachment', 'sleep_quality']
+                return ['mission_duration', 'isolated', 'boredom']
+            case "communication_delay":
+                return ['communication_delay', 'ground_support', 'monotony','transition_processes']
             case "isolated":
-                return ['isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'trust', 'agency', 'nostalgia_homesickness', 'attachment', 'sleep_quality']
+                return ['isolated', 'monotony', 'ground_support', 'physical_health']
             case "confined":
-                return ['confined', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'habitat', 'cohesion_processes', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'boredom']
+                return ['confined', 'monotony', 'privacy']
             case "extreme":
-                return ['extreme', 'media_attention', 'altered_gravity', 'light_dark_cycles', 'radiation', 'privacy', 'cognitive_workload', 'physical_health', 'physical_ergonomics', 'sleep', 'placemaking', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'material_monotony', 'boredom']
+                return ['extreme', 'genetics', 'resource_constrained', 'altered_gravity', 'radiation']
             case "resource_constrained":
-                return ['resource_constrained', 'supplies', 'training_and_preperation', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'cohesion_processes', 'discontentment', 'kinship']
+                return ['resource_constrained', 'supplies','food']
             case "mission_demands":
-                return ['mission_demands', 'mission_events', 'cognitive_workload', 'physical_workload', 'conflicts', 'injuries', 'stress_regulation', 'sleep', 'physical_health', 'cohesion_processes', 'action_processes', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality', 'tranquility', 'kinship', 'crew_performance']
+                return ['mission_demands', 'cognitive_workload', 'physical_workload']
             case "mission_events":
-                return ['mission_events', 'conflicts', 'injuries', 'cohesion_processes', 'action_processes', 'physical_health', 'kinship', 'crew_performance', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['mission_events', 'stress', 'physical_workload']
             case "extraversion":
                 return ['extraversion', 'cohesion_processes', 'social_support', 'kinship']
             case "openness":
@@ -503,25 +503,25 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
             case 'selection':
-                return ['selection', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'cohesion_processes', 'privacy', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['selection']
             case 'distance_from_earth':
-                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'ground_support', 'supplies', 'training_and_preperation', 'family_and_friends', 'psychotherapy', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'stress_regulation', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'discontentment']
-            case 'communication_delay':
-                return ['communication_delay', 'ground_support', 'family_and_friends', 'psychotherapy', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'distance_from_earth']
+                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case 'mission_duration':
-                return ['mission_duration', 'isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress']
-            case 'isolated':
-                return ['isolated', 'monotony', 'crew_size', 'ground_support', 'cohesion_processes', 'social_density', 'family_and_friends', 'psychotherapy', 'kinship', 'privacy', 'stress_regulation', 'placemaking', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'mission_duration']
-            case 'confined':
-                return ['confined', 'crew_size', 'monotony', 'social_density', 'social_support', 'group_living', 'habitat', 'cohesion_processes', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'kinship', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'boredom']
-            case 'extreme':
-                return ['extreme', 'media_attention', 'altered_gravity', 'light_dark_cycles', 'radiation', 'privacy', 'cognitive_workload', 'physical_health', 'physical_ergonomics', 'sleep', 'placemaking', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity']
-            case 'resource_constrained':
-                return ['resource_constrained', 'supplies', 'training_and_preperation', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'distance_from_earth']
-            case 'mission_demands':
-                return ['mission_demands', 'mission_events', 'cognitive_workload', 'physical_workload', 'conflicts', 'injuries', 'stress_regulation', 'sleep', 'physical_health', 'cohesion_processes', 'action_processes', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality', 'tranquility']
+                return ['mission_duration', 'isolated', 'boredom']
+            case 'communication_delay':
+                return ['communication_delay', 'ground_support', 'monotony','transition_processes', 'distance_from_earth']
+            case "isolated":
+                return ['isolated', 'monotony', 'ground_support', 'physical_health', 'distance_from_earth', 'mission_duration','extreme']
+            case "confined":
+                return ['confined', 'monotony', 'privacy']
+            case "extreme":
+                return ['extreme', 'genetics', 'resource_constrained', 'altered_gravity', 'radiation']
+            case "resource_constrained":
+                return ['resource_constrained', 'supplies', 'food', 'distance_from_earth', 'extreme']
+            case "mission_demands":
+                return ['mission_demands', 'cognitive_workload', 'physical_workload']
             case 'mission_events':
-                return ['mission_events', 'conflicts', 'injuries', 'cohesion_processes', 'action_processes', 'physical_health', 'kinship', 'crew_performance', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'mission_demands']
+                return ['mission_events', 'stress', 'physical_workload']
             case 'extraversion':
                 return ['extraversion', 'cohesion_processes', 'social_support', 'kinship']
             case 'openness':
