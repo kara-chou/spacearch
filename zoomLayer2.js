@@ -19,47 +19,47 @@ Define content for each box, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
     selection: {
         title: "Selection",
-        explanation: "Explanation for Selection."
+        explanation: "How we choose for the mission"
     },
     chronic_stressors: {
         title: "Chronic Stressors",
-        explanation: "Explanation for Chronic Stressors."
+        explanation: "Stressors that are ever-present"
     },
     acute_stressors: {
         title: "Acute Stressors",
-        explanation: "Explanation for Acute Stressors."
+        explanation: "Stressors that are limited in duration"
     },
     crew_composition: {
-        title: "Crew Composition",
-        explanation: "Explanation for Crew Composition."
+        title: "Social Composition",
+        explanation: "Social variables for living and working with others"
     },
     personality_trait: {
-        title: "Personality Trait",
-        explanation: "Explanation for Personality Trait."
+        title: "Individual Traits",
+        explanation: "Individual traits accounting for variation, including genetics and personality. Personality traits are based on Costa and McCrea’s five-factor model of personality. Although no consensus for personality models exists, Costa and McCrea’s model is heavily based on empirical research and widely used and adapted as a measurement scale (NEO-PI-R, IPIP-NEO, IPIP-NEO-120 [used by NASA])."
     },
     resources: {
         title: "Resources",
-        explanation: "Explanation for Resources."
+        explanation: "What we have at our disposal"
     },
     environmental_stressors: {
         title: "Environmental Stressors",
-        explanation: "Explanation for Environmental Stressors."
+        explanation: "Aspects of the environment that may be challenging"
     },
     designed_features: {
         title: "Designed Features",
-        explanation: "Explanation for Designed Features."
+        explanation: "What we design for in the habitat"
     },
     operational_stressors: {
         title: "Operational Stressors",
-        explanation: "Explanation for Operational Stressors."
+        explanation: "Challenges due to how we operate the mission"
     },
     team_processes: {
         title: "Team Processes",
-        explanation: "Explanation for Team Processes."
+        explanation: "People working together to achieve a goal beyond the capabilities of each individual alone. Proposed by Marks et al. (2001), a team moving toward a task has process “phases” when one set of actions dominates at any given time."
     },
     individual_processes: {
         title: "Individual Processes",
-        explanation: "Explanation for Individual Processes."
+        explanation: "Actions or activities primarily on the individual level"
     },
     performance: {
         title: "Performance",
