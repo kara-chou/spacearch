@@ -35,7 +35,7 @@ var boxContents = {
     },
     personality_trait: {
         title: "Individual Traits",
-        explanation: "Individual traits accounting for variation, including genetics and personality. Personality traits are based on Costa and McCrea’s five-factor model of personality. Although no consensus for personality models exists, Costa and McCrea’s model is heavily based on empirical research and widely used and adapted as a measurement scale (NEO-PI-R, IPIP-NEO, IPIP-NEO-120 [used by NASA])."
+        explanation: "Individual traits accounting for variation, including genetics and personality. Personality traits are based on Costa and McCrea’s five-factor model of personality, based on empirical research and widely used and adapted as a measurement scale (NEO-PI-R, IPIP-NEO, IPIP-NEO-120 [used by NASA])."
     },
     resources: {
         title: "Resources",
@@ -55,7 +55,7 @@ var boxContents = {
     },
     team_processes: {
         title: "Team Processes",
-        explanation: "People working together to achieve a goal beyond the capabilities of each individual alone. Proposed by Marks et al. (2001), a team moving toward a task has process “phases” when one set of actions dominates at any given time."
+        explanation: "People working together to achieve a goal beyond the capabilities of each individual alone"
     },
     individual_processes: {
         title: "Individual Processes",
