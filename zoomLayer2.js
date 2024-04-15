@@ -29,7 +29,7 @@ var boxContents = {
         title: "Acute Stressors",
         explanation: "Stressors that are limited in duration"
     },
-    crew_composition: {
+    social_composition: {
         title: "Social Composition",
         explanation: "Social variables for living and working with others"
     },
