@@ -23,8 +23,8 @@ rounded borders, text size and font*/
     align-items: flex-start;
     justify-content: flex-start; 
     box-sizing: border-box;
-    font-family: arial, verdana, tahoma;
-    font-size: 18px;
+    font-family: monospace, monospace;
+    font-size: 14px;
     align-items: center;
     position: relative;
 }
@@ -255,7 +255,7 @@ lay top to bottom in box6*/
 
 /* Add style for box title and explanation upon hovering*/
 .box-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
