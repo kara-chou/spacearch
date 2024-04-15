@@ -19,7 +19,7 @@ rounded borders, text size and font*/
     display: flex;
     flex-direction: column; /* Arrange content in a column */
     box-sizing: border-box;
-    font-family: arial, verdana, tahoma;
+    font-family: monospace, monospace;
     font-size: 14px;
     align-items: center;
     position: relative;
