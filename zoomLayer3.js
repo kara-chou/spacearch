@@ -9,8 +9,7 @@ window.addEventListener("wheel", (e) => {
     }
 }, { passive: false });
 
-/*HOVERING, displays text within the box
-Define content for each box, CHANGE EXPLANATION TEXTS HERE*/
+/*Define content for each box upon hovering, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
     selection: {
         title: "Selection",
