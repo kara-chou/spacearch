@@ -296,7 +296,7 @@ e.g. rounded borders, centered elements*/
     height: calc(7%);
     position: absolute;
     top: calc(59%);
-    right: 5%;
+    right: 50%;
     color: rgb(201, 198, 198);
     background-color: rgba(0, 0, 0, 0.735);
 }
