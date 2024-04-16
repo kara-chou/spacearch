@@ -338,16 +338,16 @@ e.g. rounded borders, centered elements*/
 }
 
 .extraversion{
-    width: calc(30%); 
+    width: calc(35%); 
     height: calc(6%);
     position: absolute;
     top: calc(5.5%);
-    left: 25%;
+    left: 20%;
     background-color: #56B4E9;
 }
 
 .agreeableness{
-    width: calc(35%); 
+    width: calc(36%); 
     height: calc(6%);
     position: absolute;
     top: calc(12%);
@@ -383,11 +383,11 @@ e.g. rounded borders, centered elements*/
 }
 
 .conscientiousness{
-    width: calc(47%); 
+    width: calc(48%); 
     height: calc(6%);
     position: absolute;
     top: calc(19%);
-    left:10%;
+    left:9%;
     background-color: #56B4E9;
 }
 
