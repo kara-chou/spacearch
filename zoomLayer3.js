@@ -367,13 +367,13 @@ document.addEventListener('DOMContentLoaded', function () {
             case "agreeableness":
                 return ['agreeableness', 'interpersonal_processes', 'group_living']
             case "genetics":
-                return ['genetics', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['genetics', 'physical_health', 'extraversion', 'agreeableness', 'neuroticism']
             case "conscientiousness":
-                return ['conscientiousness', 'interpersonal_processes', 'group_living', 'kinship']
+                return ['conscientiousness', 'crew_performance', 'physical_health', 'action_processes']
             case "neuroticism":
-                return ['neuroticism', 'anxiety', 'depression', 'interpersonal_processes', 'stress','nostalgia']
+                return ['neuroticism', 'anxiety', 'depression', 'interpersonal_processes', 'stress','nostalgia','group_living']
             case "resilience":
-                return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['resilience', 'stress_regulation']
             case "emotional_bandwidth":
                 return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'interpersonal_processes', 'kinship']
             case "circulation_paths":
@@ -520,16 +520,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['mission_demands', 'cognitive_workload', 'physical_workload']
             case 'mission_events':
                 return ['mission_events', 'stress', 'physical_workload']
-            case 'extraversion':
-                return ['extraversion', 'interpersonal_processes', 'social_support', 'kinship']
-            case 'openness':
-                return ['openness', 'action_processes', 'transition_processes', 'interpersonal_processes', 'social_monotony', 'crew_performance', 'kinship']
-            case 'agreeableness':
-                return ['agreeableness', 'interpersonal_processes', 'action_processes', 'group_living', 'kinship', 'crew_performance']
-            case 'conscientiousness':
-                return ['conscientiousness', 'interpersonal_processes', 'group_living', 'kinship']
-            case 'neuroticism':
-                return ['neuroticism', 'sleep', 'interpersonal_processes', 'transition_processes', 'stress_regulation', 'group_living', 'depression', 'anxiety', 'sleep_quality', 'kinship', 'crew_performance', 'discontentment', 'stress']
+            case "extraversion":
+                return ['extraversion', 'interpersonal_processes', 'social_support', 'nostalgia','group_living','genetics']
+            case "openness":
+                return ['openness', 'curiosity']
+            case "agreeableness":
+                return ['agreeableness', 'interpersonal_processes', 'group_living','genetics']
+            case "genetics":
+                return ['genetics', 'physical_health', 'extraversion', 'agreeableness', 'neuroticism','extreme']
+            case "conscientiousness":
+                return ['conscientiousness', 'crew_performance', 'physical_health', 'action_processes']
+            case "neuroticism":
+                return ['neuroticism', 'anxiety', 'depression', 'interpersonal_processes', 'stress','nostalgia','group_living','genetics']
+            case "resilience":
+                return ['resilience', 'stress_regulation']
             case 'emotional_bandwidth':
                 return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'interpersonal_processes', 'kinship']
             case 'genetics':
