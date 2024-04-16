@@ -401,7 +401,7 @@ e.g. rounded borders, centered elements*/
 }
 
 .emotional_bandwidth{
-    width: calc(47%); 
+    width: calc(40%); 
     height: calc(6%);
     position: absolute;
     top: calc(27%);
