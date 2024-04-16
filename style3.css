@@ -158,7 +158,7 @@ e.g. centered text, font color and size*/
 .boredom,
 .tranquility,
 .discontentment,
-.nostalgia_homesickness,
+.nostalgia,
 .fear,
 .awe,
 .depression {
@@ -963,7 +963,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.nostalgia_homesickness{
+.nostalgia{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
