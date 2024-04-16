@@ -13,7 +13,7 @@ window.addEventListener("wheel", (e) => {
 var boxContents = {
     selection: {
         title: "Selection",
-        explanation: "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts <span style="color: gray">[NASA 2024]</span>. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]. <br> Selection criteria include educational/professional qualifications and candidates must be able to pass the astronaut physical, medical, and psychological exams. More restrictively, astronaut candidates from most programs must exhibit mental and personal capabilities which are selected for and evaluated by a panel of experts [Steimle and Norberg 2013]."
+        explanation: "explanation"
 },
     loss_of_mission: {
         title: "Loss of Mission",
