@@ -310,7 +310,7 @@ var boxContents = {
         title: "Discontentment",
         explanation: "Explanations."
     },
-    nostalgia_homesickness:{
+    nostalgia:{
         title: "Nostalgia Homesickness",
         explanation: "Explanations."
     },
@@ -363,39 +363,39 @@ document.addEventListener('DOMContentLoaded', function () {
             case "extraversion":
                 return ['extraversion', 'interpersonal_processes', 'social_support', 'nostalgia','group_living']
             case "openness":
-                return ['openness', 'action_processes', 'transition_processes', 'interpersonal_processes', 'social_monotony', 'crew_performance', 'kinship']
+                return ['openness', 'curiosity']
             case "agreeableness":
-                return ['agreeableness', 'interpersonal_processes', 'action_processes', 'group_living', 'kinship', 'crew_performance']
+                return ['agreeableness', 'interpersonal_processes', 'group_living']
             case "genetics":
                 return ['genetics', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "conscientiousness":
                 return ['conscientiousness', 'interpersonal_processes', 'group_living', 'kinship']
             case "neuroticism":
-                return ['neuroticism', 'sleep', 'interpersonal_processes', 'transition_processes', 'stress_regulation', 'group_living', 'depression', 'anxiety', 'sleep_quality', 'kinship', 'crew_performance', 'discontentment', 'stress']
+                return ['neuroticism', 'anxiety', 'depression', 'interpersonal_processes', 'stress','nostalgia']
             case "resilience":
                 return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "emotional_bandwidth":
                 return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'interpersonal_processes', 'kinship']
             case "circulation_paths":
-                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship']
+                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'kinship']
             case "material_monotony":
                 return ['material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "fixtures":
                 return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
             case "habitat":
-                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
             case "layout":
-                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'interpersonal_processes', 'kinship']
+                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship']
             case "reprogrammability":
-                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment']
             case "physical_ergonomics":
                 return ['physical_ergonomics', 'physical_health', 'temperature_and_humidity', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "privacy":
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "light_dark_cycles":
                 return ['light_dark_cycles', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
             case "volume":
-                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "lighting":
                 return ['lighting', 'material_monotony', 'physical_health', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'temperature_and_humidity', 'discontentment']
             case "radiation":
@@ -409,11 +409,11 @@ document.addEventListener('DOMContentLoaded', function () {
             case "temperature_and_humidity":
                 return ['temperature_and_humidity', 'sleep', 'material_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
             case "crew_size":
-                return ['crew_size', 'social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['crew_size', 'social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "social_monotony":
                 return ['social_monotony', 'interpersonal_processes', 'kinship']
             case "social_density":
-                return ['social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "social_support":
                 return ['social_support', 'interpersonal_processes', 'kinship']
             case "group_living":
@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "media_attention":
-                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "physical_workload":
                 return ['physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "conflicts":
@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "stress_regulation":
                 return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "placemaking":
-                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment']
             case "sleep":
                 return ['sleep', 'depression', 'anxiety', 'sleep_quality']
             case "physical_health":
@@ -484,8 +484,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['tranquility']
             case "discontentment":
                 return ['discontentment']
-            case "nostalgia_homesickness":
-                return ['nostalgia_homesickness']
+            case "nostalgia":
+                return ['nostalgia']
             case "fear":
                 return ['fear']
             case "awe":
@@ -537,29 +537,29 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'resilience':
                 return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case 'crew_size':
-                return ['crew_size', 'social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'isolated', 'social_composition', 'mission_duration', 'selection', 'confined']
+                return ['crew_size', 'social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'isolated', 'social_composition', 'mission_duration', 'selection', 'confined']
             case 'social_support':
                 return ['social_support', 'interpersonal_processes', 'kinship', 'social_composition', 'extraversion', 'emotional_bandwidth', 'selection', 'confined']
             case 'social_density':
-                return ['social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'social_composition', 'crew_size', 'selection', 'confined', 'isolated', 'mission_duration']
+                return ['social_density', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'social_composition', 'crew_size', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'group_living':
                 return ['group_living', 'interpersonal_processes', 'kinship', 'social_composition', 'agreeableness', 'neuroticism', 'conscientiousness', 'circulation_paths', 'selection', 'confined', 'layout', 'habitat']
             case 'social_monotony':
                 return ['social_monotony', 'interpersonal_processes', 'kinship', 'isolated', 'social_composition', 'openness', 'fixtures', 'mission_duration', 'selection', 'confined', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'habitat':
-                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship', 'confined']
+                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'temperature_and_humidity', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship', 'confined']
             case 'circulation_paths':
-                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship', 'layout', 'habitat', 'confined']
+                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'kinship', 'layout', 'habitat', 'confined']
             case 'layout':
-                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'interpersonal_processes', 'kinship', 'habitat', 'confined']
+                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship', 'habitat', 'confined']
             case 'privacy':
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'social_density', 'habitat', 'volume', 'media_attention', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
+                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'social_density', 'habitat', 'volume', 'media_attention', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
             case 'physical_ergonomics':
                 return ['physical_ergonomics', 'physical_health', 'temperature_and_humidity', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'material_monotony', 'habitat', 'altered_gravity', 'contaminants', 'lighting', 'confined', 'extreme']
             case 'fixtures':
                 return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'reprogrammability':
-                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'circulation_paths', 'layout', 'habitat']
+                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'circulation_paths', 'layout', 'habitat']
             case 'material_monotony':
                 return ['material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'supplies', 'physical_ergonomics', 'resource_constrained']
             case 'psychotherapy':
@@ -591,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'contaminants':
                 return ['contaminants', 'physical_ergonomics', 'sleep', 'physical_health', 'temperature_and_humidity', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case 'volume':
-                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'habitat', 'confined']
+                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'habitat', 'confined']
             case 'temperature_and_humidity':
                 return ['temperature_and_humidity', 'sleep', 'material_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress', 'physical_ergonomics', 'habitat', 'altered_gravity', 'contaminants', 'lighting', 'confined', 'extreme']
             case 'nutrition':
@@ -599,7 +599,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'physical_workload':
                 return ['physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'mission_demands', 'exercise_equipment', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'media_attention':
-                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'extreme']
+                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'extreme']
             case 'conflicts':
                 return ['conflicts', 'interpersonal_processes', 'action_processes', 'kinship', 'crew_performance', 'mission_events', 'mission_demands']
             case 'injuries':
@@ -615,7 +615,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'stress_regulation':
                 return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychotherapy', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'social_density', 'habitat', 'volume', 'media_attention', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
             case 'placemaking':
-                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'privacy', 'reprogrammability', 'social_density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
+                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'privacy', 'reprogrammability', 'social_density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
             case 'sleep':
                 return ['sleep', 'depression', 'anxiety', 'sleep_quality', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'social_density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'genetics', 'training_and_preperation', 'medical_capabilites', 'altered_gravity', 'radiation', 'injuries', 'social_composition', 'crew_size', 'confined', 'supplies']
             case 'physical_health':
@@ -638,8 +638,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['discontentment', 'stress_regulation', 'placemaking', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychotherapy', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'privacy', 'reprogrammability', 'social_density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'media_attention']
             case 'kinship':
                 return ['kinship', 'interpersonal_processes', 'extraversion', 'openness', 'agreeableness', 'neuroticism', 'conscientiousness', 'social_support', 'social_monotony', 'group_living', 'conflicts', 'social_composition', 'extraversion', 'emotional_bandwidth', 'isolated', 'social_composition', 'openness', 'fixtures', 'social_composition', 'agreeableness', 'neuroticism', 'conscientiousness', 'circulation_paths', 'mission_events', 'selection', 'confined', 'mission_duration']
-            case 'nostalgia_homesickness':
-                return ['nostalgia_homesickness', 'placemaking', 'privacy', 'reprogrammability', 'social_density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
+            case 'nostalgia':
+                return ['nostalgia', 'placemaking', 'privacy', 'reprogrammability', 'social_density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'boredom':
                 return ['boredom', 'material_monotony', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'supplies', 'supplies', 'physical_ergonomics', 'resource_constrained']
             case 'tranquility':
