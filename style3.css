@@ -99,7 +99,7 @@ e.g. centered text, font color and size*/
 .crew_size,
 .social_support,
 .social_density,
-.monotony,
+.social_monotony,
 .group_living,
 .extraversion,
 .agreeableness,
@@ -141,7 +141,7 @@ e.g. centered text, font color and size*/
 .injuries,
 .transition_processes,
 .action_processes,
-.cohesion_processes,
+.interpersonal_processes,
 .stress_regulation,
 .placemaking,
 .sleep,
@@ -347,11 +347,11 @@ e.g. rounded borders, centered elements*/
 }
 
 .agreeableness{
-    width: calc(36%); 
+    width: calc(37%); 
     height: calc(6%);
     position: absolute;
     top: calc(12%);
-    left: 4%;
+    left: 5%;
     background-color: #56B4E9;
 }
 
@@ -435,7 +435,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.monotony{
+.social_monotony{
     width: calc(33%); 
     height: calc(6%);
     position: absolute;
@@ -616,7 +616,7 @@ e.g. rounded borders, centered elements*/
 }
 
 .reprogrammability{
-    width: calc(46%); 
+    width: calc(48%); 
     height: calc(5%);
     position: absolute;
     top: calc(56%);
@@ -790,7 +790,7 @@ e.g. rounded borders, centered elements*/
     background-color: #CC79A7;
 }
 
-.cohesion_processes{
+.interpersonal_processes{
     width: calc(80%); 
     height: calc(10%);
     position: absolute;
