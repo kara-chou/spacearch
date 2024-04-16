@@ -342,7 +342,7 @@ e.g. rounded borders, centered elements*/
     height: calc(6%);
     position: absolute;
     top: calc(5.5%);
-    left: 20%;
+    left: 10%;
     background-color: #56B4E9;
 }
 
