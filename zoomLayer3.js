@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "action_processes":
                 return ['action_processes', 'crew_performance']
             case "interpersonal_processes":
-                return ['interpersonal_processes', 'kinship']
+                return ['interpersonal_processes', 'crew_performance', 'kinship']
             case "stress_regulation":
                 return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "placemaking":
@@ -606,9 +606,9 @@ document.addEventListener('DOMContentLoaded', function () {
             case "transition_processes":
                 return ['transition_processes', 'crew_performance']
             case "action_processes":
-                return ['action_processes', 'crew_performance']
+                return ['action_processes', 'crew_performance', 'conscientiousness']
             case "interpersonal_processes":
-                return ['interpersonal_processes', 'kinship']
+                return ['interpersonal_processes', 'crew_performance', 'kinship','extraversion','agreeableness','neuroticism']
             case "stress_regulation":
                 return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "placemaking":
