@@ -120,8 +120,8 @@ e.g. centered text, font color and size*/
 .physical_ergonomics,
 .circulation_paths,
 .privacy,
-.habitat,
-.material_monotony,
+.lighting,
+.environmental_monotony,
 .layout,
 .reprogrammability,
 .fixtures,
@@ -129,8 +129,8 @@ e.g. centered text, font color and size*/
 .altered_gravity,
 .atmosphere,
 .radiation,
-.contaminants,
-.volume,
+.environmental_control,
+.hab_volume,
 .acoustics,
 .nutrition,
 .physical_workload,
@@ -551,7 +551,7 @@ e.g. rounded borders, centered elements*/
     color: rgba(42, 41, 41, 0.668);
 }
 
-.habitat{
+.lighting{
     width: calc(27%); 
     height: calc(5%);
     position: absolute;
@@ -614,7 +614,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.material_monotony{
+.environmental_monotony{
     width: calc(43%); 
     height: calc(5%);
     position: absolute;
@@ -667,7 +667,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.contaminants{
+.environmental_control{
     width: calc(40%); 
     height: calc(5%);
     position: absolute;
@@ -676,7 +676,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.volume{
+.hab_volume{
     width: calc(30%); 
     height: calc(5%);
     position: absolute;
