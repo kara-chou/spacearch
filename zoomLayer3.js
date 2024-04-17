@@ -159,11 +159,11 @@ var boxContents = {
         title: "Privacy",
         explanation: "Explanations."
     },
-    habitat:{
-        title: "Habitat",
+    lighting:{
+        title: "lighting",
         explanation: "Explanations."
     },
-    material_monotony:{
+    environmental_monotony:{
         title: "Material Monotony",
         explanation: "Explanations."
     },
@@ -171,8 +171,8 @@ var boxContents = {
         title: "Layout",
         explanation: "Explanations."
     },
-    reprogrammability:{
-        title: "Reprogrammability",
+    reconfigurability:{
+        title: "reconfigurability",
         explanation: "Explanations."
     },
     fixtures:{
@@ -195,12 +195,12 @@ var boxContents = {
         title: "Radiation",
         explanation: "Explanations."
     },
-    contaminants:{
-        title: "Contaminants",
+    environmental_control:{
+        title: "environmental_control",
         explanation: "Explanations."
     },
-    volume:{
-        title: "Volume",
+    hab_volume:{
+        title: "hab_volume",
         explanation: "Explanations."
     },
     acoustics:{
@@ -394,43 +394,43 @@ document.addEventListener('DOMContentLoaded', function () {
             case "family_and_friends":
                 return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "supplies":
-                return ['supplies', 'medical_resources', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
+                return ['supplies', 'medical_resources', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
             case "food":
-                return ['food', 'nutrition', 'material_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
+                return ['food', 'nutrition', 'environmental_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "light_dark_cycles":
                 return ['light_dark_cycles', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
             case "altered_gravity":
-                return ['altered_gravity', 'physical_health', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['altered_gravity', 'physical_health', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "atmosphere":
-                return ['atmosphere', 'material_monotony', 'physical_health', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'discontentment']
+                return ['atmosphere', 'environmental_monotony', 'physical_health', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'discontentment']
             case "radiation":
                 return ['radiation', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "nutrition":
                 return ['nutrition', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+            case "hab_volume":
+                return ['hab_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "environmental_control":
+                return ['environmental_control', 'physical_ergonomics', 'sleep', 'physical_health', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "circulation_paths":
-                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'kinship']
-            case "material_monotony":
-                return ['material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "fixtures":
-                return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
-            case "habitat":
-                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'acoustics', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['circulation_paths', 'reconfigurability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'kinship']
             case "layout":
-                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship']
-            case "reprogrammability":
-                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment']
-            case "physical_ergonomics":
-                return ['physical_ergonomics', 'physical_health', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship']
+            case "lighting":
+                return ['lighting', 'privacy', 'hab_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
             case "privacy":
                 return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "volume":
-                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "contaminants":
-                return ['contaminants', 'physical_ergonomics', 'sleep', 'physical_health', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "physical_ergonomics":
+                return ['physical_ergonomics', 'physical_health', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "fixtures":
+                return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
+            case "reconfigurability":
+                return ['reconfigurability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment']
+            case "environmental_monotony":
+                return ['environmental_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "acoustics":
-                return ['acoustics', 'sleep', 'material_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
+                return ['acoustics', 'sleep', 'environmental_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
             case "media_attention":
                 return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "physical_workload":
@@ -522,7 +522,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "social_monotony":
                 return ['social_monotony', 'boredom','communication_delay','confined','isolated']
             case "density":
-                return ['density', 'privacy', 'stress_regulation','crew_size','volume']
+                return ['density', 'privacy', 'stress_regulation','crew_size','hab_volume']
             case "group_living":
                 return ['group_living', 'interpersonal_processes', 'kinship']
             case "extraversion":
@@ -556,41 +556,41 @@ document.addEventListener('DOMContentLoaded', function () {
             case "family_and_friends":
                 return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "supplies":
-                return ['supplies', 'medical_resources', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
+                return ['supplies', 'medical_resources', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
             case "food":
-                return ['food', 'nutrition', 'material_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
+                return ['food', 'nutrition', 'environmental_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
-            case 'habitat':
-                return ['habitat', 'privacy', 'volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'acoustics', 'reprogrammability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'material_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship', 'confined']
+            case 'lighting':
+                return ['lighting', 'privacy', 'hab_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'physical_health', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship', 'confined']
             case 'circulation_paths':
-                return ['circulation_paths', 'reprogrammability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'kinship', 'layout', 'habitat', 'confined']
+                return ['circulation_paths', 'reconfigurability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'kinship', 'layout', 'lighting', 'confined']
             case 'layout':
-                return ['layout', 'reprogrammability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship', 'habitat', 'confined']
+                return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship', 'lighting', 'confined']
             case 'privacy':
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'density', 'habitat', 'volume', 'media_attention', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
+                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'density', 'lighting', 'hab_volume', 'media_attention', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
             case 'physical_ergonomics':
-                return ['physical_ergonomics', 'physical_health', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'material_monotony', 'habitat', 'altered_gravity', 'contaminants', 'atmosphere', 'confined', 'extreme']
+                return ['physical_ergonomics', 'physical_health', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'lighting', 'altered_gravity', 'environmental_control', 'atmosphere', 'confined', 'extreme']
             case 'fixtures':
                 return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship', 'supplies', 'resource_constrained', 'distance_from_earth']
-            case 'reprogrammability':
-                return ['reprogrammability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'circulation_paths', 'layout', 'habitat']
-            case 'material_monotony':
-                return ['material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'food', 'atmosphere', 'acoustics', 'supplies', 'physical_ergonomics', 'resource_constrained']
+            case 'reconfigurability':
+                return ['reconfigurability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'circulation_paths', 'layout', 'lighting']
+            case 'environmental_monotony':
+                return ['environmental_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'food', 'atmosphere', 'acoustics', 'supplies', 'physical_ergonomics', 'resource_constrained']
             case 'light_dark_cycles':
                 return ['light_dark_cycles', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'extreme']
             case 'altered_gravity':
-                return ['altered_gravity', 'physical_health', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment', 'extreme']
+                return ['altered_gravity', 'physical_health', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment', 'extreme']
             case 'atmosphere':
-                return ['atmosphere', 'material_monotony', 'physical_health', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'discontentment']
+                return ['atmosphere', 'environmental_monotony', 'physical_health', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'discontentment']
             case 'radiation':
                 return ['radiation', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'extreme']
-            case 'contaminants':
-                return ['contaminants', 'physical_ergonomics', 'sleep', 'physical_health', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'material_monotony', 'boredom', 'stress_regulation', 'discontentment']
-            case 'volume':
-                return ['volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'habitat', 'confined']
+            case 'environmental_control':
+                return ['environmental_control', 'physical_ergonomics', 'sleep', 'physical_health', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case 'hab_volume':
+                return ['hab_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'lighting', 'confined']
             case 'acoustics':
-                return ['acoustics', 'sleep', 'material_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress', 'physical_ergonomics', 'habitat', 'altered_gravity', 'contaminants', 'atmosphere', 'confined', 'extreme']
+                return ['acoustics', 'sleep', 'environmental_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress', 'physical_ergonomics', 'lighting', 'altered_gravity', 'environmental_control', 'atmosphere', 'confined', 'extreme']
             case 'nutrition':
                 return ['nutrition', 'sleep', 'physical_health', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'food', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'physical_workload':
@@ -610,39 +610,39 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'interpersonal_processes':
                 return ['interpersonal_processes', 'kinship', 'extraversion', 'openness', 'agreeableness', 'neuroticism', 'conscientiousness', 'social_support', 'social_monotony', 'group_living', 'conflicts', 'social_composition', 'emotional_bandwidth', 'isolated', 'fixtures', 'circulation_paths', 'mission_events', 'selection', 'confined', 'mission_duration']
             case 'stress_regulation':
-                return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
+                return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'environmental_monotony', 'cognitive_workload', 'density', 'lighting', 'hab_volume', 'media_attention', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
             case 'placemaking':
-                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
+                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'privacy', 'reconfigurability', 'density', 'lighting', 'hab_volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
             case 'sleep':
-                return ['sleep', 'depression', 'anxiety', 'sleep_quality', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'genetics', 'training_and_preperation', 'medical_resources', 'altered_gravity', 'radiation', 'injuries', 'social_composition', 'crew_size', 'confined', 'supplies']
+                return ['sleep', 'depression', 'anxiety', 'sleep_quality', 'neuroticism', 'privacy', 'light_dark_cycles', 'environmental_control', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'density', 'lighting', 'hab_volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'genetics', 'training_and_preperation', 'medical_resources', 'altered_gravity', 'radiation', 'injuries', 'social_composition', 'crew_size', 'confined', 'supplies']
             case 'physical_health':
-                return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'habitat', 'contaminants', 'resource_constrained', 'supplies', 'extreme', 'food', 'mission_demands', 'mission_events', 'confined']
+                return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'lighting', 'environmental_control', 'resource_constrained', 'supplies', 'extreme', 'food', 'mission_demands', 'mission_events', 'confined']
             case 'sleep_quality':
-                return ['sleep_quality', 'sleep', 'physical_health', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'mission_demands', 'media_attention']
+                return ['sleep_quality', 'sleep', 'physical_health', 'neuroticism', 'privacy', 'light_dark_cycles', 'environmental_control', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'lighting', 'hab_volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'mission_demands', 'media_attention']
             case 'crew_performance':
                 return ['crew_performance', 'transition_processes', 'action_processes', 'openness', 'neuroticism', 'openness', 'agreeableness', 'conflicts', 'mission_events', 'mission_demands']
             case 'anxiety':
-                return ['anxiety', 'stress_regulation', 'sleep', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention']
+                return ['anxiety', 'stress_regulation', 'sleep', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'environmental_monotony', 'cognitive_workload', 'neuroticism', 'privacy', 'light_dark_cycles', 'environmental_control', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'lighting', 'hab_volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention']
             case 'attachment':
-                return ['attachment', 'placemaking', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
+                return ['attachment', 'placemaking', 'privacy', 'reconfigurability', 'density', 'lighting', 'hab_volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'trust':
-                return ['trust', 'placemaking', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
+                return ['trust', 'placemaking', 'privacy', 'reconfigurability', 'density', 'lighting', 'hab_volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'agency':
-                return ['agency', 'placemaking', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
+                return ['agency', 'placemaking', 'privacy', 'reconfigurability', 'density', 'lighting', 'hab_volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'stress':
-                return ['stress', 'stress_regulation', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention', 'habitat', 'altered_gravity', 'contaminants', 'atmosphere', 'resource_constrained', 'supplies', 'extreme', 'extreme', 'extreme', 'food', 'mission_demands', 'mission_events', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
+                return ['stress', 'stress_regulation', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'environmental_monotony', 'cognitive_workload', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'lighting', 'hab_volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention', 'lighting', 'altered_gravity', 'environmental_control', 'atmosphere', 'resource_constrained', 'supplies', 'extreme', 'extreme', 'extreme', 'food', 'mission_demands', 'mission_events', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
             case 'discontentment':
-                return ['discontentment', 'stress_regulation', 'placemaking', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention']
+                return ['discontentment', 'stress_regulation', 'placemaking', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'environmental_monotony', 'cognitive_workload', 'privacy', 'reconfigurability', 'density', 'lighting', 'hab_volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention']
             case 'kinship':
                 return ['kinship', 'interpersonal_processes', 'extraversion', 'openness', 'agreeableness', 'neuroticism', 'conscientiousness', 'social_support', 'social_monotony', 'group_living', 'conflicts', 'social_composition', 'extraversion', 'emotional_bandwidth', 'isolated', 'social_composition', 'openness', 'fixtures', 'social_composition', 'agreeableness', 'neuroticism', 'conscientiousness', 'circulation_paths', 'mission_events', 'selection', 'confined', 'mission_duration']
             case 'nostalgia':
-                return ['nostalgia', 'placemaking', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
+                return ['nostalgia', 'placemaking', 'privacy', 'reconfigurability', 'density', 'lighting', 'hab_volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'boredom':
-                return ['boredom', 'material_monotony', 'food', 'atmosphere', 'acoustics', 'supplies', 'supplies', 'physical_ergonomics', 'resource_constrained']
+                return ['boredom', 'environmental_monotony', 'food', 'atmosphere', 'acoustics', 'supplies', 'supplies', 'physical_ergonomics', 'resource_constrained']
             case 'tranquility':
-                return ['tranquility', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'habitat', 'altered_gravity', 'contaminants', 'atmosphere', 'resource_constrained', 'supplies', 'extreme', 'extreme', 'extreme', 'food', 'mission_demands', 'mission_events', 'confined']
+                return ['tranquility', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'lighting', 'altered_gravity', 'environmental_control', 'atmosphere', 'resource_constrained', 'supplies', 'extreme', 'extreme', 'extreme', 'food', 'mission_demands', 'mission_events', 'confined']
             case 'depression':
-                return ['depression', 'stress_regulation', 'sleep', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention']
+                return ['depression', 'stress_regulation', 'sleep', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'environmental_monotony', 'cognitive_workload', 'neuroticism', 'privacy', 'light_dark_cycles', 'environmental_control', 'atmosphere', 'acoustics', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'atmosphere', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'lighting', 'hab_volume', 'media_attention', 'ground_support', 'ground_support', 'food', 'atmosphere', 'acoustics', 'mission_demands', 'media_attention']
             default:
                 return [];
         }
