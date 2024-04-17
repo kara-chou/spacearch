@@ -127,11 +127,11 @@ e.g. centered text, font color and size*/
 .fixtures,
 .light_dark_cycles,
 .altered_gravity,
-.lighting,
+.atmosphere,
 .radiation,
 .contaminants,
 .volume,
-.temperature_and_humidity,
+.acoustics,
 .nutrition,
 .physical_workload,
 .cognitive_workload,
@@ -649,7 +649,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.lighting{
+.atmosphere{
     width: calc(33%); 
     height: calc(5%);
     position: absolute;
@@ -685,7 +685,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.temperature_and_humidity{
+.acoustics{
     width: calc(47%); 
     height: calc(5%);
     position: absolute;
