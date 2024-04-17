@@ -98,7 +98,7 @@ e.g. centered text, font color and size*/
 .mission_events,
 .crew_size,
 .social_support,
-.social_density,
+.density,
 .social_monotony,
 .group_living,
 .extraversion,
@@ -444,7 +444,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.social_density{
+.density{
     width: calc(40%); 
     height: calc(6%);
     position: absolute;
