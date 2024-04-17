@@ -145,7 +145,7 @@ e.g. centered text, font color and size*/
 .placemaking,
 .sleep,
 .physical_health,
-.sleep_quality,
+.cognitive_function,
 .anxiety,
 .agency,
 .stress,
@@ -836,7 +836,7 @@ e.g. rounded borders, centered elements*/
     color: rgba(42, 41, 41, 0.668);
 }
 
-.sleep_quality{
+.cognitive_function{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
