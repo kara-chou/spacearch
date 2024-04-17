@@ -827,15 +827,6 @@ e.g. rounded borders, centered elements*/
     top: calc(87.5%);
     background-color: #CC79A7;
 }
-/*-----------------------------------------*/
-/*Boxes laying inside performance*/
-.performance {
-    width: calc(100%); 
-    height: calc(100% * 0.45);
-    background-color: #ffd54d;
-    color: rgba(42, 41, 41, 0.668);
-}
-
 .cognitive_function{
     width: calc(45%); 
     height: calc(8%);
@@ -843,6 +834,14 @@ e.g. rounded borders, centered elements*/
     top: calc(6.5%);
     left:3%;
     background-color: #E69F00;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside performance*/
+.performance {
+    width: calc(100%); 
+    height: calc(100% * 0.45);
+    background-color: #ffd54d;
+    color: rgba(42, 41, 41, 0.668);
 }
 
 .anxiety{
