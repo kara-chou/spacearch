@@ -164,7 +164,7 @@ var boxContents = {
         explanation: "Explanations."
     },
     environmental_monotony:{
-        title: "Material Monotony",
+        title: "Environmental Monotony",
         explanation: "Explanations."
     },
     layout:{
