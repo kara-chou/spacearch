@@ -109,7 +109,7 @@ e.g. centered text, font color and size*/
 .conscientiousness,
 .emotional_bandwidth,
 .genetics,
-.psychotherapy,
+.psychological_resources,
 .training_and_preperation,
 .ground_support,
 .medical_capabilities,
@@ -471,7 +471,7 @@ e.g. rounded borders, centered elements*/
     color: rgba(42, 41, 41, 0.668);
 }
 
-.psychotherapy{
+.psychological_resources{
     width: calc(40%); 
     height: calc(6%);
     position: absolute;
