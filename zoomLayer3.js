@@ -127,8 +127,8 @@ var boxContents = {
         title: "Ground Support",
         explanation: "Explanations."
     },
-    medical_capabilities:{
-        title: "Medical Capabilites",
+    medical_resources:{
+        title: "Medical Resources",
         explanation: "Explanations."
     },
     clothing:{
@@ -389,18 +389,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'interpersonal_processes', 'kinship']
             case "psychological_resources":
                 return ['psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "family_and_friends":
-                return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "clothing": 
-                return ['clothing', 'material_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "training_and_preperation":
                 return ['training_and_preperation', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "ground_support":
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+            case "medical_resources":
+                return ['medical_resources', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "family_and_friends":
+                return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "supplies":
-                return ['supplies', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
-            case "medical_capabilities":
-                return ['medical_capabilities', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['supplies', 'medical_resources', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'physical_health', 'material_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
             case "food":
                 return ['food', 'nutrition', 'material_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
             case "exercise_equipment":
@@ -578,9 +576,9 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'ground_support':
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress', 'communication_delay', 'isolated', 'distance_from_earth', 'mission_duration']
             case 'supplies':
-                return ['supplies', 'medical_capabilities', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'material_monotony', 'physical_workload', 'physical_health', 'social_monotony', 'nutrition', 'boredom', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'interpersonal_processes', 'resource_constrained', 'distance_from_earth']
-            case 'medical_capabilities':
-                return ['medical_capabilities', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'supplies', 'resource_constrained', 'distance_from_earth']
+                return ['supplies', 'medical_resources', 'clothing', 'exercise_equipment', 'fixtures', 'food', 'material_monotony', 'physical_workload', 'physical_health', 'social_monotony', 'nutrition', 'boredom', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'interpersonal_processes', 'resource_constrained', 'distance_from_earth']
+            case 'medical_resources':
+                return ['medical_resources', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'food':
                 return ['food', 'nutrition', 'material_monotony', 'sleep', 'physical_health', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment', 'supplies', 'resource_constrained', 'distance_from_earth']
             case 'exercise_equipment':
@@ -622,15 +620,15 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'placemaking':
                 return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'selection', 'isolated', 'mission_duration']
             case 'sleep':
-                return ['sleep', 'depression', 'anxiety', 'sleep_quality', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'genetics', 'training_and_preperation', 'medical_capabilites', 'altered_gravity', 'radiation', 'injuries', 'social_composition', 'crew_size', 'confined', 'supplies']
+                return ['sleep', 'depression', 'anxiety', 'sleep_quality', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'genetics', 'training_and_preperation', 'medical_resources', 'altered_gravity', 'radiation', 'injuries', 'social_composition', 'crew_size', 'confined', 'supplies']
             case 'physical_health':
-                return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'habitat', 'contaminants', 'resource_constrained', 'supplies', 'extreme', 'food', 'mission_demands', 'mission_events', 'confined']
+                return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'habitat', 'contaminants', 'resource_constrained', 'supplies', 'extreme', 'food', 'mission_demands', 'mission_events', 'confined']
             case 'sleep_quality':
-                return ['sleep_quality', 'sleep', 'physical_health', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'mission_demands', 'media_attention']
+                return ['sleep_quality', 'sleep', 'physical_health', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'extreme', 'physical_ergonomics', 'food', 'mission_demands', 'exercise_equipment', 'mission_demands', 'media_attention']
             case 'crew_performance':
                 return ['crew_performance', 'transition_processes', 'action_processes', 'openness', 'neuroticism', 'openness', 'agreeableness', 'conflicts', 'mission_events', 'mission_demands']
             case 'anxiety':
-                return ['anxiety', 'stress_regulation', 'sleep', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'media_attention']
+                return ['anxiety', 'stress_regulation', 'sleep', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'neuroticism', 'privacy', 'light_dark_cycles', 'contaminants', 'lighting', 'temperature_and_humidity', 'nutrition', 'physical_workload', 'cognitive_workload', 'physical_health', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'media_attention']
             case 'attachment':
                 return ['attachment', 'placemaking', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'trust':
@@ -638,7 +636,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'agency':
                 return ['agency', 'placemaking', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'circulation_paths', 'layout', 'social_composition', 'crew_size', 'confined', 'extreme', 'layout', 'selection', 'confined', 'isolated', 'mission_duration']
             case 'stress':
-                return ['stress', 'stress_regulation', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_capabilites', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'media_attention', 'habitat', 'altered_gravity', 'contaminants', 'lighting', 'resource_constrained', 'supplies', 'extreme', 'extreme', 'extreme', 'food', 'mission_demands', 'mission_events', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
+                return ['stress', 'stress_regulation', 'physical_health', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'genetics', 'physical_ergonomics', 'training_and_preperation', 'medical_resources', 'exercise_equipment', 'light_dark_cycles', 'altered_gravity', 'lighting', 'radiation', 'nutrition', 'physical_workload', 'injuries', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'media_attention', 'habitat', 'altered_gravity', 'contaminants', 'lighting', 'resource_constrained', 'supplies', 'extreme', 'extreme', 'extreme', 'food', 'mission_demands', 'mission_events', 'social_composition', 'crew_size', 'confined', 'extreme', 'communication_delay', 'isolated']
             case 'discontentment':
                 return ['discontentment', 'stress_regulation', 'placemaking', 'neuroticism', 'resilience', 'emotional_bandwidth', 'privacy', 'psychological_resources', 'family_and_friends', 'material_monotony', 'cognitive_workload', 'privacy', 'reprogrammability', 'density', 'habitat', 'volume', 'media_attention', 'ground_support', 'ground_support', 'clothing', 'food', 'lighting', 'temperature_and_humidity', 'mission_demands', 'media_attention']
             case 'kinship':
