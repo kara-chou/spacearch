@@ -33,7 +33,7 @@ var boxContents = {
         title: "Social Composition",
         explanation: "Social variables for living and working with others"
     },
-    personality_trait: {
+    individual_trait: {
         title: "Individual Traits",
         explanation: "Individual traits accounting for variation, including genetics and personality. Personality traits are based on Costa and McCrea’s five-factor model of personality, based on empirical research and widely used and adapted as a measurement scale (NEO-PI-R, IPIP-NEO, IPIP-NEO-120 [used by NASA])."
     },
