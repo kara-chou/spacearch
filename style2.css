@@ -123,7 +123,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 
 /*Personality trait, Environmental stressors, Designed features
 lay top to bottom in box2*/
-.personality_trait {
+.individual_trait {
     width: calc(96%);
     height: calc(37%);
     margin-left: 2.5%;
@@ -227,7 +227,7 @@ lay top to bottom in box6*/
 .chronic_stressors,
 .acute_stressors,
 .social_composition,
-.personality_trait,
+.individual_trait,
 .resources,
 .environmental_stressors,
 .designed_features,
