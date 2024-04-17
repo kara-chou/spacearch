@@ -400,17 +400,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "light_dark_cycles":
-                return ['light_dark_cycles', 'sleep', 'cognitive_function', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+                return ['light_dark_cycles', 'sleep']
             case "altered_gravity":
-                return ['altered_gravity', 'cognitive_function', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['altered_gravity', 'physical_health']
             case "radiation":
-                return ['radiation', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['radiation', 'physical_health']
             case "atmosphere":
-                return ['atmosphere', 'environmental_monotony', 'cognitive_function', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'discontentment']
+                return ['atmosphere', 'sleep', 'crew_performance']
             case "acoustics":
-                return ['acoustics', 'sleep', 'environmental_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
+                return ['acoustics', 'sleep', 'crew_performance']
             case "nutrition":
-                return ['nutrition', 'sleep', 'cognitive_function', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+                return ['nutrition', 'physical_health']
             case "hab_volume":
                 return ['hab_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "environmental_control":
@@ -562,17 +562,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "light_dark_cycles":
-                return ['light_dark_cycles', 'sleep', 'cognitive_function', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+                return ['light_dark_cycles', 'sleep','extreme']
             case "altered_gravity":
-                return ['altered_gravity', 'cognitive_function', 'physical_ergonomics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['altered_gravity', 'physical_health','extreme']
             case "radiation":
-                return ['radiation', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['radiation', 'physical_health','extreme']
             case "atmosphere":
-                return ['atmosphere', 'environmental_monotony', 'cognitive_function', 'sleep', 'physical_ergonomics', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'acoustics', 'discontentment']
+                return ['atmosphere', 'sleep', 'crew_performance','environmental_control']
             case "acoustics":
-                return ['acoustics', 'sleep', 'environmental_monotony', 'depression', 'anxiety', 'sleep_quality', 'boredom', 'stress_regulation', 'discontentment', 'stress']
+                return ['acoustics', 'sleep', 'crew_performance']
             case "nutrition":
-                return ['nutrition', 'sleep', 'cognitive_function', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress']
+                return ['nutrition', 'physical_health','food']
             case "hab_volume":
                 return ['hab_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "environmental_control":
