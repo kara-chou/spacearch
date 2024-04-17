@@ -123,7 +123,7 @@ e.g. centered text, font color and size*/
 .lighting,
 .environmental_monotony,
 .layout,
-.reprogrammability,
+.reconfigurability,
 .fixtures,
 .light_dark_cycles,
 .altered_gravity,
@@ -605,7 +605,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.reprogrammability{
+.reconfigurability{
     width: calc(48%); 
     height: calc(5%);
     position: absolute;
