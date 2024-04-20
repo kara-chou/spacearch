@@ -1019,5 +1019,5 @@ e.g. rounded borders, centered elements*/
 }
 
 .clicked{ /*Specify what happens to the element when clicked*/
-    font-weight: bold;
+    font-weight: 300;
 }
