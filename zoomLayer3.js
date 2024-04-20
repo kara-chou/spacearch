@@ -188,7 +188,7 @@ var boxContents = {
         explanation: "Explanations."
     },
     atmosphere:{
-        title: "atmosphere",
+        title: "Atmosphere",
         explanation: "Explanations."
     },
     radiation:{
@@ -196,11 +196,11 @@ var boxContents = {
         explanation: "Explanations."
     },
     environmental_control:{
-        title: "environmental_control",
+        title: "Environmental Control",
         explanation: "Explanations."
     },
-    hab_volume:{
-        title: "hab_volume",
+    habitable_volume:{
+        title: "Habitable Volume",
         explanation: "Explanations."
     },
     acoustics:{
@@ -332,7 +332,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Format text to the desired format
     function formatToSmallBoxName(text) {
-        return text.trim().toLowerCase().replace(/\s+/g, '_');
+        tmp = text.trim().toLowerCase().replace(/\s+/g, '_');
+        return tmp.replace(/\//g, "_");
     }
 
     function getRightBoxes(smallBoxName){
@@ -411,8 +412,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['acoustics', 'sleep', 'crew_performance']
             case "nutrition":
                 return ['nutrition', 'physical_health']
-            case "hab_volume":
-                return ['hab_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "habitable_volume":
+                return ['habitable_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "environmental_control":
                 return ['environmental_control', 'physical_ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "circulation_paths":
@@ -420,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "layout":
                 return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship']
             case "lighting":
-                return ['lighting', 'privacy', 'hab_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['lighting', 'privacy', 'habitable_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
             case "privacy":
                 return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "physical_ergonomics":
@@ -522,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "social_monotony":
                 return ['social_monotony', 'boredom','communication_delay','confined','isolated']
             case "density":
-                return ['density', 'privacy', 'stress_regulation','crew_size','hab_volume']
+                return ['density', 'privacy', 'stress_regulation','crew_size','habitable_volume']
             case "group_living":
                 return ['group_living', 'interpersonal_processes', 'kinship']
             case "extraversion":
@@ -573,8 +574,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['acoustics', 'sleep', 'crew_performance']
             case "nutrition":
                 return ['nutrition', 'physical_health','food']
-            case "hab_volume":
-                return ['hab_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+            case "habitable_volume":
+                return ['habitable_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "environmental_control":
                 return ['environmental_control', 'physical_ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "circulation_paths":
@@ -582,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "layout":
                 return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'interpersonal_processes', 'kinship']
             case "lighting":
-                return ['lighting', 'privacy', 'hab_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['lighting', 'privacy', 'habitable_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
             case "privacy":
                 return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "physical_ergonomics":
