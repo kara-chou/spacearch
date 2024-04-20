@@ -1017,3 +1017,7 @@ e.g. rounded borders, centered elements*/
     background-color: grey; 
     color: rgba(0,0,0,0.2);
 }
+
+.clicked{ /*Specify what happens to the element when clicked*/
+    font-weight: bold;
+}
