@@ -71,7 +71,7 @@ var boxContents = {
         title: "Social Support",
         explanation: "Explanations."
     },
-    density:{
+    social_density:{
         title: "Social Density",
         explanation: "Explanations."
     },
@@ -359,13 +359,13 @@ document.addEventListener('DOMContentLoaded', function () {
             case "mission_events":
                 return ['mission_events', 'stress', 'physical_workload']
             case "crew_size":
-                return ['crew_size', 'density']
+                return ['crew_size', 'social_density']
              case "social_support":
                 return ['social_support', 'stress_regulation', 'cognitive_function', 'kinship']
             case "social_monotony":
                 return ['social_monotony', 'boredom']
-            case "density":
-                return ['density', 'privacy', 'stress_regulation']
+            case "social_density":
+                return ['social_density', 'privacy', 'stress_regulation']
             case "group_living":
                 return ['group_living', 'interpersonal_processes', 'kinship']
             case "extraversion":
@@ -517,13 +517,13 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'mission_events':
                 return ['mission_events', 'stress', 'physical_workload']
             case "crew_size":
-                return ['crew_size', 'density']
+                return ['crew_size', 'social_density']
             case "social_support":
                 return ['social_support', 'stress_regulation', 'cognitive_function', 'kinship','interpersonal_process','extraversion']
             case "social_monotony":
                 return ['social_monotony', 'boredom','communication_delay','confined','isolated']
-            case "density":
-                return ['density', 'privacy', 'stress_regulation','crew_size','habitable_volume']
+            case "social_density":
+                return ['social_density', 'privacy', 'stress_regulation','crew_size','habitable_volume']
             case "group_living":
                 return ['group_living', 'interpersonal_processes', 'kinship']
             case "extraversion":
