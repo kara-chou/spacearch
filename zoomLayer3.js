@@ -9,12 +9,12 @@ window.addEventListener("wheel", (e) => {
     }
 }, { passive: false });
 
-/*Define content for each box upon hovering, CHANGE EXPLANATION TEXTS HERE*/
+/*Define content for each box upon clicking, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
     selection: {
         title: "Selection",
         explanation: "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts [NASA 2024]. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]."
-},
+    },
     loss_of_mission: {
         title: "Loss of Mission",
         explanation: "Explanation for Loss of Mission."
@@ -325,7 +325,323 @@ var boxContents = {
     },
 };
 
+/*Define content for each box upon clicking, CHANGE EXPLANATION TEXTS HERE*/
+var relatedBoxContents = {
+    selection: {
+        title: "Selection (related to ...)",
+        explanation: "Explanation for Selection"
+    },
+    loss_of_mission: {
+        title: "Loss of Mission (related to ...)",
+        explanation: "Explanation for Loss of Mission."
+    },
+    loss_of_crew_life: {
+        title: "Loss of Crew Life (related to ...)",
+        explanation: "Explanation for Loss of Crew Life."
+    },
+    quality_of_life: {
+        title: "Quality of Life (related to ...)",
+        explanation: "Explanation for Quality of Life."
+    },
+    distance_from_earth:{
+        title: "Distance From Earth (related to ...)",
+        explanation: "Explanation for Distance from Earth."
+    },
+    mission_duration:{
+        title: "Mission Duration (related to ...)",
+        explanation: "Explanations."
+    },
+    communication_delay:{
+        title: "Communication Delay (related to ...)",
+        explanation: "Explanations."
+    },
+    isolated:{
+        title: "Isolated (related to ...)",
+        explanation: "Explanations."
+    },
+    confined:{
+        title: "Confined (related to ...)",
+        explanation: "Explanations."
+    },
+    extreme:{
+        title: "Extreme (related to ...)",
+        explanation: "Explanations."
+    },
+    resource_constrained:{
+        title: "Resource Constrained (related to ...)",
+        explanation: "Explanations."
+    },
+    mission_demands:{
+        title: "Mission Demands (related to ...)",
+        explanation: "Explanations."
+    },
+    mission_events:{
+        title: "Mission Events (related to ...)",
+        explanation: "Explanations."
+    },
+    crew_size:{
+        title: "Crew Size (related to ...)",
+        explanation: "Explanations."
+    },
+    social_support:{
+        title: "Social Support (related to ...)",
+        explanation: "Explanations."
+    },
+    social_density:{
+        title: "Social Density (related to ...)",
+        explanation: "Explanations."
+    },
+    social_monotony:{
+        title: "Social Monotony (related to ...)",
+        explanation: "Explanations."
+    },
+    group_living:{
+        title: "Group living (related to ...)",
+        explanation: "Explanations."
+    },
+    extraversion:{
+        title: "Extraversion (related to ...)",
+        explanation: "Explanations."
+    },
+    agreeableness:{
+        title: "Agreeableness (related to ...)",
+        explanation: "Explanations."
+    },
+    neuroticism:{
+        title: "Neuroticism (related to ...)",
+        explanation: "Explanations."
+    },
+    resilience:{
+        title: "Resilience (related to ...)",
+        explanation: "Explanations."
+    },
+    openness:{
+        title: "Openness (related to ...)",
+        explanation: "Explanations."
+    },
+    conscientiousness:{
+        title: "Conscientiousness (related to ...)",
+        explanation: "Explanations."
+    },
+    emotional_bandwidth:{
+        title: "Emotional Bandwidth (related to ...)",
+        explanation: "Explanations."
+    },
+    genetics:{
+        title: "Genetics (related to ...)",
+        explanation: "Explanations."
+    },
+    psychological_resources:{
+        title: "psychological_resources (related to ...)",
+        explanation: "Explanations."
+    },
+    training_and_preperation:{
+        title: "Training and Preperation (related to ...)",
+        explanation: "Explanations."
+    },
+    ground_support:{
+        title: "Ground Support (related to ...)",
+        explanation: "Explanations."
+    },
+    medical_resources:{
+        title: "Medical Resources (related to ...)",
+        explanation: "Explanations."
+    },
+    family_and_friends:{
+        title: "Family and Friends (related to ...)",
+        explanation: "Explanations."
+    },
+    supplies:{
+        title: "Supplies (related to ...)",
+        explanation: "Explanations."
+    },
+    food:{
+        title: "Food (related to ...)",
+        explanation: "Explanations."
+    },
+    exercise_equipment:{
+        title: "Exercise Equipment (related to ...)",
+        explanation: "Explanations."
+    },
+    physical_ergonomics:{
+        title: "Physical Ergonomics (related to ...)",
+        explanation: "Explanations."
+    },
+    circulation_paths:{
+        title: "Circulation Paths (related to ...)",
+        explanation: "Explanations."
+    },
+    privacy:{
+        title: "Privacy (related to ...)",
+        explanation: "Explanations."
+    },
+    lighting:{
+        title: "lighting (related to ...)",
+        explanation: "Explanations."
+    },
+    environmental_monotony:{
+        title: "Environmental Monotony (related to ...)",
+        explanation: "Explanations."
+    },
+    layout:{
+        title: "Layout (related to ...)",
+        explanation: "Explanations."
+    },
+    reconfigurability:{
+        title: "reconfigurability (related to ...)",
+        explanation: "Explanations."
+    },
+    fixtures:{
+        title: "Fixtures (related to ...)",
+        explanation: "Explanations."
+    },
+    light_dark_cycles:{
+        title: "Light/Dark Cycles (related to ...)",
+        explanation: "Explanations."
+    },
+    altered_gravity:{
+        title: "Altered Gravity (related to ...)",
+        explanation: "Explanations."
+    },
+    atmosphere:{
+        title: "Atmosphere (related to ...)",
+        explanation: "Explanations."
+    },
+    radiation:{
+        title: "Radiation (related to ...)",
+        explanation: "Explanations."
+    },
+    environmental_control:{
+        title: "Environmental Control (related to ...)",
+        explanation: "Explanations."
+    },
+    habitable_volume:{
+        title: "Habitable Volume (related to ...)",
+        explanation: "Explanations."
+    },
+    acoustics:{
+        title: "Temperature/Humidity (related to ...)",
+        explanation: "Explanations."
+    },
+    nutrition:{
+        title: "Nutrition (related to ...)",
+        explanation: "Explanations."
+    },
+    physical_workload:{
+        title: "Physical Workload (related to ...)",
+        explanation: "Explanations."
+    },
+    cognitive_workload:{
+        title: "Cognitive Workload (related to ...)",
+        explanation: "Explanations."
+    },
+    media_attention:{
+        title: "Media Attention (related to ...)",
+        explanation: "Explanations."
+    },
+    conflicts:{
+        title: "Conflicts (related to ...)",
+        explanation: "Explanations."
+    },
+    injuries:{
+        title: "Injuries (related to ...)",
+        explanation: "Explanations."
+    },
+    transition_processes:{
+        title: "Transition Processes (related to ...)",
+        explanation: "Explanations."
+    },
+    action_processes:{
+        title: "Action Processes (related to ...)",
+        explanation: "Explanations."
+    },
+    interpersonal_processes:{
+        title: "interpersonal Processes (related to ...)",
+        explanation: "Explanations."
+    },
+    stress_regulation:{
+        title: "Stress Regulation (related to ...)",
+        explanation: "Explanations."
+    },
+    placemaking:{
+        title: "Placemaking (related to ...)",
+        explanation: "Explanations."
+    },
+    sleep:{
+        title: "Sleep (related to ...)",
+        explanation: "Explanations."
+    },
+    cognitive_function:{
+        title: "Physical Health (related to ...)",
+        explanation: "Explanations."
+    },
+    sleep_quality:{
+        title: "Sleep Quality (related to ...)",
+        explanation: "Explanations."
+    },
+    anxiety:{
+        title: "Anxiety (related to ...)",
+        explanation: "Explanations."
+    },
+    agency:{
+        title: "Agency (related to ...)",
+        explanation: "Explanations."
+    },
+    stress:{
+        title: "Stress (related to ...)",
+        explanation: "Explanations."
+    },
+    crew_performance:{
+        title: "Crew Performance (related to ...)",
+        explanation: "Explanations."
+    },
+    attachment:{
+        title: "Attachment (related to ...)",
+        explanation: "Explanations."
+    },
+    trust:{
+        title: "Trust (related to ...)",
+        explanation: "Explanations."
+    },
+    curiosity:{
+        title: "Curiosity (related to ...)",
+        explanation: "Explanations."
+    },
+    kinship:{
+        title: "Kinship (related to ...)",
+        explanation: "Explanations."
+    },
+    boredom:{
+        title: "Boredom (related to ...)",
+        explanation: "Explanations."
+    },
+    tranquility:{
+        title: "Tranquility (related to ...)",
+        explanation: "Explanations."
+    },
+    discontentment:{
+        title: "Discontentment (related to ...)",
+        explanation: "Explanations."
+    },
+    nostalgia:{
+        title: "Nostalgia Homesickness (related to ...)",
+        explanation: "Explanations."
+    },
+    fear:{
+        title: "Fear (related to ...)",
+        explanation: "Explanations."
+    },
+    awe:{
+        title: "Awe (related to ...)",
+        explanation: "Explanations."
+    },
+    depression:{
+        title: "Depression (related to ...)",
+        explanation: "Explanations."
+    },
+};
 
+clickedBox = null;
 document.addEventListener('DOMContentLoaded', function () {
     //Get all inner box elements
     var innerBoxes = document.querySelectorAll('.box div');
@@ -655,66 +971,80 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     
-    var arrows = [];
+    var clickedarrows = [];
 
-    //Event listeners to each inner box
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
-            var explanationBox = document.querySelector('.explanation');
-            
-            //Store the original content
-            if (!explanationBox.dataset.originalContent) {
-                explanationBox.dataset.originalContent = explanationBox.innerHTML;
-            }
-
-            var boxElement = innerBox.closest('.box');
-
-            if (boxElement) {
-                //Use the text content of the hovered element as the identifier
+            if (clickedBox) {
+                var relatedBoxes = getRelatedBoxes(clickedBox);
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
-                var content = boxContents[smallBoxName];
-                explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
-                
-                var relatedBoxes = getRelatedBoxes(smallBoxName);                
-                var rightBoxes = getRightBoxes(smallBoxName);
-
-                innerBoxes.forEach(function (box) {
-                        //check if the small box is in relatedBoxes
-                        var relatedBox = formatToSmallBoxName(box.textContent)
-                        var isRelated = relatedBoxes.includes(relatedBox);
-                        if (!isRelated) { //if not in related, then we need to grey it out
-                            box.classList.add('greyed-out');
-                        }else{
-                            //drawing arrows connecting components using the arrowLine function
-                            //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
-                            if (relatedBox != smallBoxName){
-                                if (rightBoxes.includes(relatedBox)){
-                                    const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                    arrows.push(arrow)
-                                }else{
-                                    const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
-                                    arrows.push(arrow)
-                                }  
+                if (relatedBoxes.includes(smallBoxName)) {
+                    var explanationBox = document.querySelector('.explanation');
+                    var content = relatedBoxContents[smallBoxName];
+                    explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
+                }
+            }
+        });
+        innerBox.addEventListener('click', function () {            
+            if (!innerBox.classList.contains('clicked')){
+                innerBox.classList.add('clicked');
+                var explanationBox = document.querySelector('.explanation');
+                //Store the original content
+                if (!explanationBox.dataset.originalContent) {
+                    explanationBox.dataset.originalContent = explanationBox.innerHTML;
+                }
+    
+                var boxElement = innerBox.closest('.box');
+    
+                if (boxElement) {
+                    //Use the text content of the hovered element as the identifier
+                    var smallBoxName = formatToSmallBoxName(innerBox.textContent);
+                    var content = boxContents[smallBoxName];
+                    clickedBox = formatToSmallBoxName(content.title);
+                    explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
+                    
+                    var relatedBoxes = getRelatedBoxes(smallBoxName);                
+                    var rightBoxes = getRightBoxes(smallBoxName);
+    
+                    innerBoxes.forEach(function (box) {
+                            //check if the small box is in relatedBoxes
+                            var relatedBox = formatToSmallBoxName(box.textContent);
+                            var isRelated = relatedBoxes.includes(relatedBox);
+                            if (!isRelated) { //if not in related, then we need to grey it out
+                                box.classList.add('greyed-out');
+                            }else{
+                                //drawing arrows connecting components using the arrowLine function
+                                //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
+                                if (relatedBox != smallBoxName){
+                                    if (rightBoxes.includes(relatedBox)){
+                                        const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                        clickedarrows.push(arrow)
+                                    }else{
+                                        const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                        clickedarrows.push(arrow)
+                                    }  
+                                }
                             }
-                        }
+                    });
+    
+                }
+            }else{
+                innerBox.classList.remove('clicked');
+                clickedBox = null;
+                var explanationBox = document.querySelector('.explanation');
+                explanationBox.innerHTML = explanationBox.dataset.originalContent;
+    
+                innerBoxes.forEach(function (box) {
+                    box.classList.remove('greyed-out');
                 });
-
+    
+                // Remove existing arrows
+                clickedarrows.forEach(arrow => arrow.remove());
+                clickedarrows = [];
             }
         });
 
-        innerBox.addEventListener('mouseleave', function () {
-            //Restore the original content
-            var explanationBox = document.querySelector('.explanation');
-            explanationBox.innerHTML = explanationBox.dataset.originalContent;
-
-            innerBoxes.forEach(function (box) {
-                box.classList.remove('greyed-out');
-            });
-
-            // Remove existing arrows
-            arrows.forEach(arrow => arrow.remove());
-            arrows = [];
-
-        });
+        
     });
+
 });
