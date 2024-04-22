@@ -92,7 +92,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 }
 
 .box5 {
-    width: calc(15vw);
+    width: 0;
     background-color: #b4b4b4; 
     border-radius: 15px; 
 }
@@ -204,7 +204,7 @@ lay top to bottom in box6*/
 }
 
 /*Loss of Mission, Loss of crew life, Quality of life lay top to bottom in box5*/
-.loss_of_mission {
+/* .loss_of_mission {
     width: calc(93%);
     height: calc(33%);
     background-color: #999999;
@@ -220,7 +220,7 @@ lay top to bottom in box6*/
     width: calc(93%);
     height: calc(33%);
     background-color: #999999;
-}
+} */
 
 /*Features common to all the small boxes*/
 .selection,
