@@ -93,7 +93,7 @@ rounded borders, text size and font*/
 }
 
 .box5 {
-    width: calc(15vw); /*15%*/
+    width: 0; /*15%*/
     background-color: #999999;
 }
 .content {
