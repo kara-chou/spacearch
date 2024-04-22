@@ -75,7 +75,7 @@ rounded borders, text size and font*/
 /*explanation box on the right side*/
 .explanation{ 
     margin-right: 0.5%;
-    width: calc(24%);
+    width: calc(25%);
     border-color: rgb(49, 169, 137);
     border-width: 10px;
     background-color: rgb(209, 235, 228);
