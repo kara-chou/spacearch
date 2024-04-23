@@ -65,7 +65,7 @@ rounded borders, text size and font*/
     animation: slideIn 0s ease-in forwards; /*Animation currently not used*/
     font-family: monospace, monospace;
 	font-size: 18px;
-    margin-right: 8px;
+    margin-right: 15px;
     padding: 1%;
     cursor: default; /*Make sure cursor does not change shape when hovering over text*/
 }
@@ -83,12 +83,12 @@ rounded borders, text size and font*/
 }
 
 .box3 {
-    width: calc(15vw); /*15%*/
+    width: calc(20vw); /*15%*/
     background-color: #CC79A7; 
 }
 
 .box4 {
-    width: calc(20vw); /*20%*/
+    width: calc(25vw); /*20%*/
     background-color: #E69F00; 
 }
 
