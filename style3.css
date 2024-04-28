@@ -1018,6 +1018,11 @@ e.g. rounded borders, centered elements*/
     color: rgba(0,0,0,0.2);
 }
 
+.greyed-out-hover{ /*Specify what happens to the rest of elements upon hovering*/
+    background-color: grey; 
+    color: rgba(0,0,0,0.2);
+}
+
 .clicked{ /*Specify what happens to the element when clicked*/
     font-weight: 300;
 }
