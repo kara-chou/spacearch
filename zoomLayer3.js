@@ -12,9 +12,13 @@ window.addEventListener("wheel", (e) => {
 /*Define content for each box upon clicking, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
     selection: {
-        title: "Selection",
+        title: "Selection", 
         explanation: 
             "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts [NASA 2024]. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]."
+    },
+    individual_traits:{
+        title: "individual traits",
+        explanation: "Explanation for individual traits"
     },
     loss_of_mission: {
         title: "Loss of Mission",
@@ -331,6 +335,10 @@ var relatedBoxContents = {
     selection: {
         title: "Selection (related to ...)",
         explanation: "Explanation for Selection"
+    },
+    individual_traits:{
+        title: "individual traits (related to ...)",
+        explanation: "Explanation for individual traits"
     },
     loss_of_mission: {
         title: "Loss of Mission (related to ...)",
@@ -657,6 +665,8 @@ document.addEventListener('DOMContentLoaded', function () {
         switch(smallBoxName){
             case "selection":
                 return ['selection']
+            case 'individual_traits':
+                return ['selection']
             case "distance_from_earth":
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case "mission_duration":
@@ -814,6 +824,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
             case 'selection':
+                return ['selection']
+            case 'individual_traits':
                 return ['selection']
             case 'distance_from_earth':
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
@@ -973,10 +985,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     var clickedarrows = [];
+    var hoveredarrows = [];
 
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
-            if (clickedBox) {
+            if (clickedBox) { //hovering over a box related to the clicked box
                 var relatedBoxes = getRelatedBoxes(clickedBox);
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
                 if (relatedBoxes.includes(smallBoxName)) {
@@ -984,9 +997,43 @@ document.addEventListener('DOMContentLoaded', function () {
                     var content = relatedBoxContents[smallBoxName];
                     explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 }
+            }else{ //when nothing is clicked, hover works on any box
+                var smallBoxName = formatToSmallBoxName(innerBox.textContent);
+                var explanationBox = document.querySelector('.explanation');
+                var content = boxContents[smallBoxName];
+                explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
+                var relatedBoxes = getRelatedBoxes(smallBoxName);                
+                var rightBoxes = getRightBoxes(smallBoxName);
+                innerBoxes.forEach(function (box) {
+                        var relatedBox = formatToSmallBoxName(box.textContent);
+                        var isRelated = relatedBoxes.includes(relatedBox);
+                    
+                        if (!isRelated) { //if not in related, then we need to grey it out
+                            box.classList.add('greyed-out-hover');
+                        }else{
+                            if (relatedBox != smallBoxName){
+                                if (rightBoxes.includes(relatedBox)){
+                                    const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                    hoveredarrows.push(arrow);
+                                }else{
+                                    const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                    hoveredarrows.push(arrow);
+                                }  
+                            }
+                        }
+                });
             }
         });
-        innerBox.addEventListener('click', function () {            
+        //remove arrows when boxes are unhovered (no clicking happened)
+        innerBox.addEventListener('mouseleave', function(){ 
+            innerBoxes.forEach(function (box) {
+                box.classList.remove('greyed-out-hover');
+            });
+            hoveredarrows.forEach(arrow => arrow.remove()); // Remove existing arrows
+            hoveredarrows = [];
+        });
+        //when a box is clicked, we draw arrows to all boxes it is connected to and grey out everything else
+        innerBox.addEventListener('click', function () {       
             if (!innerBox.classList.contains('clicked')){
                 innerBox.classList.add('clicked');
                 var explanationBox = document.querySelector('.explanation');
@@ -1029,7 +1076,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
     
                 }
-            }else{
+            }else{ //when the box is unclicked, we restore everything
                 innerBox.classList.remove('clicked');
                 clickedBox = null;
                 var explanationBox = document.querySelector('.explanation');
@@ -1039,8 +1086,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     box.classList.remove('greyed-out');
                 });
     
-                // Remove existing arrows
-                clickedarrows.forEach(arrow => arrow.remove());
+                clickedarrows.forEach(arrow => arrow.remove()); //remove existing arrows
                 clickedarrows = [];
             }
         });
