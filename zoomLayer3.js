@@ -16,9 +16,9 @@ var boxContents = {
         explanation: 
             "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts [NASA 2024]. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]."
     },
-    individual_traits:{
-        title: "individual traits",
-        explanation: "Explanation for individual traits"
+    individual_traits_invisible:{
+        title: "Individual Traits",
+        explanation: "Individual traits accounting for variation, including genetics and personality. Personality traits are based on Costa and McCrea’s five-factor model of personality. Although no consensus for personality models exists, Costa and McCrea’s model is heavily based on empirical research and widely used and adapted as a measurement scale (NEO-PI-R, IPIP-NEO, IPIP-NEO-120 [used by NASA]). "
     },
     loss_of_mission: {
         title: "Loss of Mission",
@@ -330,15 +330,11 @@ var boxContents = {
     },
 };
 
-/*Define content for each box upon clicking, CHANGE EXPLANATION TEXTS HERE*/
+/*Define content for each box upon clicking/hovering, CHANGE EXPLANATION TEXTS HERE*/
 var relatedBoxContents = {
     selection: {
         title: "Selection (related to ...)",
         explanation: "Explanation for Selection"
-    },
-    individual_traits:{
-        title: "individual traits (related to ...)",
-        explanation: "Explanation for individual traits"
     },
     loss_of_mission: {
         title: "Loss of Mission (related to ...)",
@@ -670,15 +666,17 @@ document.addEventListener('DOMContentLoaded', function () {
     //Format text to the desired format
     function formatToSmallBoxName(text) {
         tmp = text.trim().toLowerCase().replace(/\s+/g, '_');
-        return tmp.replace(/\//g, "_");
+        tmp2 = tmp.replace(/\//g, "_");
+        if (tmp2 === 'individual_traits') return 'individual_traits_invisible'
+        return tmp2;
     }
 
     function getRightBoxes(smallBoxName){
         switch(smallBoxName){
             case "selection":
-                return ['selection']
-            case 'individual_traits':
-                return ['selection']
+                return ['selection', 'individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth']
+            case 'individual_traits_invisible':
+                return ['individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];    
             case "distance_from_earth":
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case "mission_duration":
@@ -836,9 +834,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
             case 'selection':
-                return ['selection']
-            case 'individual_traits':
-                return ['selection']
+                return ['selection', 'individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth']
+            case 'individual_traits_invisible':
+                return ['individual_traits_invisible', 'selection', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];
             case 'distance_from_earth':
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case 'mission_duration':
@@ -1025,13 +1023,16 @@ document.addEventListener('DOMContentLoaded', function () {
                             box.classList.add('greyed-out-hover');
                         }else{
                             if (relatedBox != smallBoxName){
-                                if (rightBoxes.includes(relatedBox)){
-                                    const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                    hoveredarrows.push(arrow);
-                                }else{
-                                    const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
-                                    hoveredarrows.push(arrow);
-                                }  
+                                if(!(smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible') && !(smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection')){
+                                    if (rightBoxes.includes(relatedBox)){
+                                        const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                        hoveredarrows.push(arrow);
+                                    }else{
+                                        const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                        hoveredarrows.push(arrow);
+                                    } 
+                                }
+                                 
                             }
                         }
                 });
@@ -1077,13 +1078,15 @@ document.addEventListener('DOMContentLoaded', function () {
                                 //drawing arrows connecting components using the arrowLine function
                                 //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
                                 if (relatedBox != smallBoxName){
-                                    if (rightBoxes.includes(relatedBox)){
-                                        const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                        clickedarrows.push(arrow)
-                                    }else{
-                                        const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
-                                        clickedarrows.push(arrow)
-                                    }  
+                                    if (!(smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible') && !(smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection')){
+                                        if (rightBoxes.includes(relatedBox)){
+                                            const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                            clickedarrows.push(arrow)
+                                        }else{
+                                            const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                            clickedarrows.push(arrow)
+                                        }  
+                                    }
                                 }
                             }
                     });
