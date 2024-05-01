@@ -352,13 +352,25 @@ var relatedBoxContents = {
         title: "Quality of Life (related to ...)",
         explanation: "Explanation for Quality of Life."
     },
-    distance_from_earth:{
-        title: "Distance From Earth (related to ...)",
-        explanation: "Explanation for Distance from Earth."
+    distance_from_earth_communication_delay:{
+        title: "How distance from Earth results in communication delay",
+        explanation: "During a lunar mission, a communication delay of 5-14 second is expected [Parisi 2023]. During a Mars surface mission, depending on the relative positions of the Earth and Mars, a roundtrip communication delay is approximately 6.5 to 44 minutes [Schuster 2007]."
     },
-    mission_duration:{
-        title: "Mission Duration (related to ...)",
-        explanation: "Explanations."
+    distance_from_earth_isolated:{
+        title: "How distance from Earth results in isolation",
+        explanation: "As the distance from Earth increases, Earth will disappear into the background of space, termed the ‘Earth-out-of-view phenomenon’. Along with the awareness of the impossibility of rapid return and confinement as the only option during the whole mission, these psychological factors will increase the sense of isolation [Musso 2018]."
+    },
+    distance_from_earth_resource_constrained:{
+        title: "How distance from Earth results in constrained resources",
+        explanation: "When moving from home (migration, relocation, immigration), refugees and immigrants face challenges such as language difficulties, rejection of qualifications, limitation of personal resources, and barriers to social support [Stewart 2008][Faret 2021]. The current space mission paradigm is to bring all resources (consumable and non-consumable) from Earth. Increased distance, such as the one from Mars to Earth, creates logistical and cost difficulties [Sullivan and McKay 1991]. Solutions such as regenerative systems and in-situ resource utilization have been proposed [Pickett 2020][Starr 2020]."
+    },
+    mission_duration_isolated:{
+        title: "How mission duration results in isolation",
+        explanation: "Not only does increased mission duration limit the amount of contact with usual sources of support, prolonged isolation can decrease the perceived quality and satisfaction of support, even when readily available [Palinkas 2004]."
+    },
+    mission_duration_boredom:{
+        title: "How mission duration results in boredom",
+        explanation: "During a study of a crew of 6 in isolation for 520 days, crew sedentariness increased over the mission as captured by actigraphy (motion data) [Basner 2013]."
     },
     communication_delay:{
         title: "Communication Delay (related to ...)",
@@ -994,7 +1006,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
                 if (relatedBoxes.includes(smallBoxName)) {
                     var explanationBox = document.querySelector('.explanation');
-                    var content = relatedBoxContents[smallBoxName];
+                    var clickedAndCurName = clickedBox + "_" + smallBoxName;
+                    var content = relatedBoxContents[clickedAndCurName];
                     explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 }
             }else{ //when nothing is clicked, hover works on any box
