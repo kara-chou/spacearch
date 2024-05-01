@@ -180,6 +180,7 @@ e.g. rounded borders, centered elements*/
 .acute_stressors,
 .social_composition,
 .individual_traits,
+.individual_traits_invisible,
 .resources,
 .environmental_stressors,
 .designed_features,
@@ -333,6 +334,17 @@ e.g. rounded borders, centered elements*/
     width: calc(100%);
     height: calc(100% * 0.37);
     background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.individual_traits_invisible{ /*Overall mask for the bigger individual traits*/
+    position: absolute;
+    left: 0%;
+    height: 34%;
+    width: 100%;
+    top: 0.5%;
+    background-color: #94ecff;
+    opacity: 100%;
     color: rgba(42, 41, 41, 0.668);
 }
 
@@ -1013,7 +1025,7 @@ e.g. rounded borders, centered elements*/
     color: white;
 }
 
-.greyed-out{ /*Specify what happens to the rest of elements upon hovering*/
+.greyed-out{ /*Specify what happens to the rest of elements upon clicking*/
     background-color: grey; 
     color: rgba(0,0,0,0.2);
 }
