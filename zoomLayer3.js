@@ -14,7 +14,7 @@ var boxContents = {
     selection: {
         title: "Selection", 
         explanation: 
-            "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts [NASA 2024]. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]."
+            "<span style='color:brown'>Astronaut</span> selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, <br><br> and countries in Europe have selected their own astronauts [NASA 2024]. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]."
     },
     individual_traits_invisible:{
         title: "Individual Traits",
