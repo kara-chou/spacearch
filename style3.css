@@ -182,6 +182,7 @@ e.g. rounded borders, centered elements*/
 .individual_traits,
 .individual_traits_invisible,
 .social_composition_invisible,
+.team_processes_invisible,
 .resources,
 .environmental_stressors,
 .designed_features,
@@ -785,6 +786,17 @@ e.g. rounded borders, centered elements*/
     width: calc(100%); 
     height: calc(45%);
     background-color: #ffcbfb;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.team_processes_invisible{ /*Overall mask for the bigger social composition box*/
+    position: absolute;
+    left: 0%;
+    height: 44.3%;
+    width: 100%;
+    top: 0.5%;
+    background-color: #ffcbfb;
+    opacity: 100%;
     color: rgba(42, 41, 41, 0.668);
 }
 
