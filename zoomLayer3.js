@@ -24,6 +24,10 @@ var boxContents = {
         title: "Social Composition",
         explanation: "Social variables for living and working with others"
     },
+    team_processes_invisible:{
+        title: "Team Processes",
+        explanation: "People working together to achieve a goal beyond the capabilities of each individual alone. Proposed by Marks et al. (2001), a team moving toward a task has process “phases” when one set of actions dominates at any given time."
+    },
     loss_of_mission: {
         title: "Loss of Mission",
         explanation: "Explanation for Loss of Mission."
@@ -460,9 +464,17 @@ var relatedBoxContents = {
         title: "psychological_resources (related to ...)",
         explanation: "Explanations."
     },
-    training_and_preperation:{
-        title: "Training and Preperation (related to ...)",
-        explanation: "Explanations."
+    training_and_preperation_physical_health:{
+        title: "Training and Preperation and Physical Health",
+        explanation: "Training comprise fitness regimes and preparation of skills to maintain physical and physiological health in space [Steimle and Norberg 2013]."
+    },
+    training_and_preperation_team_processes_invisible:{
+        title: "Training and Preperation and team processes",
+        explanation: "Team-based training was not found to have an explicit effect on performance, but rather on transition (e.g., shared mental models), action (e.g., coordination), and interpersonal (e.g., trust) processes [Landon and Paoletti 2020]."
+    },
+    training_and_preperation_group_living:{
+        title: "Training and Preperation and group living",
+        explanation: "During astronaut training, teams will spend part of their two-year training period learning and practicing expeditionary skills during operational field events, unlike other military groups who do not specifically practice team skills in non-work environments [Landon and Paoletti 2020]."
     },
     ground_support:{
         title: "Ground Support (related to ...)",
@@ -677,6 +689,7 @@ document.addEventListener('DOMContentLoaded', function () {
         tmp2 = tmp.replace(/\//g, "_");
         if (tmp2 === 'individual_traits') return 'individual_traits_invisible'
         if (tmp2 === 'social_composition') return 'social_composition_invisible'
+        if (tmp2 === 'team_processes') return 'team_processes_invisible'
         return tmp2;
     }
 
@@ -688,6 +701,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];    
             case 'social_composition_invisible':
                 return ['social_composition_invisible', 'crew_size', 'social_support', 'social_monotony', 'social_density', 'group_living']
+            case 'team_processes_invisible':
+                return ['team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case "distance_from_earth":
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case "mission_duration":
@@ -735,7 +750,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "psychological_resources":
                 return ['psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "training_and_preperation":
-                return ['training_and_preperation', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['training_and_preperation', 'physical_health', 'group_living', 'team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case "ground_support":
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "medical_resources":
@@ -850,6 +865,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['individual_traits_invisible', 'selection', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];
             case 'social_composition_invisible':
                 return ['social_composition_invisible', 'selection', 'crew_size', 'social_support', 'social_monotony', 'social_density', 'group_living']
+            case 'team_processes_invisible':
+                return ['team_processes_invisible', 'training_and_preperation', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case 'distance_from_earth':
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case 'mission_duration':
@@ -901,7 +918,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "psychological_resources":
                 return ['psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "training_and_preperation":
-                return ['training_and_preperation', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['training_and_preperation', 'physical_health', 'group_living', 'team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case "ground_support":
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "medical_resources":
@@ -1036,12 +1053,16 @@ document.addEventListener('DOMContentLoaded', function () {
                             box.classList.add('greyed-out-hover');
                         }else{
                             if (relatedBox != smallBoxName){
-                                if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
-                                    //only arrow drawn when hovering over individual traits is from selection
+                                if (smallBoxName === 'team_processes_invisible' && relatedBox != 'training_and_preperation'){
+                                    //do nothing, only arrow drawn when hovering over team processes is from training and preperation
+                                }else if (smallBoxName === 'training_and_preperation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living'){
+                                    //do nothing, only arrow drawn when hovering over training and preperation is to team processes, physical health, and group living
+                                }else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
+                                    //do nothing, only arrow drawn when hovering over individual traits is from selection
                                 }else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection'){
-                                    //only arrow drawn when hovering over social composition is from selection
+                                    //do nothing, only arrow drawn when hovering over social composition is from selection
                                 }else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible'){
-                                    //only arrow drawn when hovering over selection is to individual traits and social composition
+                                    //do nothing, only arrow drawn when hovering over selection is to individual traits and social composition
                                 }else{
                                     if (rightBoxes.includes(relatedBox)){
                                         const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
@@ -1096,12 +1117,16 @@ document.addEventListener('DOMContentLoaded', function () {
                                 //drawing arrows connecting components using the arrowLine function
                                 //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
                                 if (relatedBox != smallBoxName){
-                                    if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
-                                        //only arrow drawn when clicking individual traits is from selection
+                                    if (smallBoxName === 'team_processes_invisible' && relatedBox != 'training_and_preperation'){
+                                        //do nothing, only arrow drawn when clicking team processes is from training and preperation
+                                    }else if (smallBoxName === 'training_and_preperation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living'){
+                                        //do nothing, only arrow drawn when clicking training and preperation is to team processes, physical health, and group living
+                                    }else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
+                                        //do nothing, only arrow drawn when clicking individual traits is from selection
                                     }else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection'){
-                                        //only arrow drawn when clicking social composition is from selection
+                                        //do nothing, only arrow drawn when clicking social composition is from selection
                                     }else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible'){
-                                        //only arrow drawn when clicking selection is to individual traits and social composition
+                                        //do nothing, only arrow drawn when clicking selection is to individual traits and social composition
                                     }else{
                                         if (rightBoxes.includes(relatedBox)){
                                             const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
