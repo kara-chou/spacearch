@@ -20,6 +20,10 @@ var boxContents = {
         title: "Individual Traits",
         explanation: "Individual traits accounting for variation, including genetics and personality. Personality traits are based on Costa and McCrea’s five-factor model of personality. Although no consensus for personality models exists, Costa and McCrea’s model is heavily based on empirical research and widely used and adapted as a measurement scale (NEO-PI-R, IPIP-NEO, IPIP-NEO-120 [used by NASA]). "
     },
+    social_composition_invisible:{
+        title: "Social Composition",
+        explanation: "Social variables for living and working with others"
+    },
     loss_of_mission: {
         title: "Loss of Mission",
         explanation: "Explanation for Loss of Mission."
@@ -332,9 +336,13 @@ var boxContents = {
 
 /*Define content for each box upon clicking/hovering, CHANGE EXPLANATION TEXTS HERE*/
 var relatedBoxContents = {
-    selection: {
-        title: "Selection (related to ...)",
-        explanation: "Explanation for Selection"
+    selection_individual_traits_invisible: {
+        title: "Selection and Individual Traits",
+        explanation: "Historically, NASA has grouped select-in criteria as “the right stuff” (“virtuous, no-nonsense, able and professional astronauts”), or traits that may be more desirable to select for in astronaut candidates [Vakoch 2013][Steimle and Norberg 2013]. In a study of ESA astronaut applicants (n=902), higher levels of neuroticism (specifically anxiety, anger hostility, and depression) were found for candidates who were not selected [Mittelstädt 2016]. However, “the right stuff” is a compilation of ideals that humans cannot attain; more focus has been put on behavioral health research for long-duration missions [Vakoch 2013]."
+    },
+    selection_social_composition_invisible: {
+        title: "Selection and Social Composition",
+        explanation: "Crew compatibility is a major consideration as astronauts perform their missions with a team. Indirect assessments of compatibility (such as personality inventories) are effective when used in the selection process to create specific team configurations (e.g., homogenous). However, applicants can “game” the system via social desirability (tendency to provide responses that are socially desired) [Ganster 1983][Bell 2015]. While in-depth interviews and direct/operational methods of assessment may help mitigate these issues, they can be expensive and time-intensive. Furthermore, crews may change in mission [Bell 2015."
     },
     loss_of_mission: {
         title: "Loss of Mission (related to ...)",
@@ -668,15 +676,18 @@ document.addEventListener('DOMContentLoaded', function () {
         tmp = text.trim().toLowerCase().replace(/\s+/g, '_');
         tmp2 = tmp.replace(/\//g, "_");
         if (tmp2 === 'individual_traits') return 'individual_traits_invisible'
+        if (tmp2 === 'social_composition') return 'social_composition_invisible'
         return tmp2;
     }
 
     function getRightBoxes(smallBoxName){
         switch(smallBoxName){
             case "selection":
-                return ['selection', 'individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth']
+                return ['selection', 'individual_traits_invisible', 'social_composition_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth', 'crew_size', 'social_support', 'social_monotony', 'social_density', 'group_living']
             case 'individual_traits_invisible':
                 return ['individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];    
+            case 'social_composition_invisible':
+                return ['social_composition_invisible', 'crew_size', 'social_support', 'social_monotony', 'social_density', 'group_living']
             case "distance_from_earth":
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case "mission_duration":
@@ -834,9 +845,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
             case 'selection':
-                return ['selection', 'individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth']
+                return ['selection', 'individual_traits_invisible', 'social_composition_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth', 'crew_size', 'social_support', 'social_monotony', 'social_density', 'group_living']
             case 'individual_traits_invisible':
                 return ['individual_traits_invisible', 'selection', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];
+            case 'social_composition_invisible':
+                return ['social_composition_invisible', 'selection', 'crew_size', 'social_support', 'social_monotony', 'social_density', 'group_living']
             case 'distance_from_earth':
                 return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated']
             case 'mission_duration':
@@ -1023,7 +1036,13 @@ document.addEventListener('DOMContentLoaded', function () {
                             box.classList.add('greyed-out-hover');
                         }else{
                             if (relatedBox != smallBoxName){
-                                if(!(smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible') && !(smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection')){
+                                if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
+                                    //only arrow drawn when hovering over individual traits is from selection
+                                }else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection'){
+                                    //only arrow drawn when hovering over social composition is from selection
+                                }else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible'){
+                                    //only arrow drawn when hovering over selection is to individual traits and social composition
+                                }else{
                                     if (rightBoxes.includes(relatedBox)){
                                         const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
                                         hoveredarrows.push(arrow);
@@ -1032,7 +1051,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                         hoveredarrows.push(arrow);
                                     } 
                                 }
-                                 
                             }
                         }
                 });
@@ -1078,14 +1096,20 @@ document.addEventListener('DOMContentLoaded', function () {
                                 //drawing arrows connecting components using the arrowLine function
                                 //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
                                 if (relatedBox != smallBoxName){
-                                    if (!(smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible') && !(smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection')){
+                                    if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
+                                        //only arrow drawn when clicking individual traits is from selection
+                                    }else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection'){
+                                        //only arrow drawn when clicking social composition is from selection
+                                    }else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible'){
+                                        //only arrow drawn when clicking selection is to individual traits and social composition
+                                    }else{
                                         if (rightBoxes.includes(relatedBox)){
                                             const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                            clickedarrows.push(arrow)
+                                            clickedarrows.push(arrow);
                                         }else{
                                             const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
-                                            clickedarrows.push(arrow)
-                                        }  
+                                            clickedarrows.push(arrow);
+                                        } 
                                     }
                                 }
                             }
