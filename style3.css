@@ -20,7 +20,7 @@ rounded borders, text size and font*/
     flex-direction: column; /* Arrange content in a column */
     box-sizing: border-box;
     font-family: monospace, monospace;
-    font-size: 14px;
+    font-size: 13px;
     align-items: center;
     position: relative;
     text-align: center;
@@ -81,7 +81,7 @@ rounded borders, text size and font*/
     background-color: rgb(209, 235, 228);
     color: black;
     display: flex;
-    text-align: center;
+    text-align: left;
     padding: 1%;
 }
 
@@ -98,7 +98,7 @@ e.g. centered text, font color and size*/
 .mission_events,
 .crew_size,
 .social_support,
-.social_density,
+.density,
 .social_monotony,
 .group_living,
 .extraversion,
@@ -107,10 +107,9 @@ e.g. centered text, font color and size*/
 .resilience,
 .openness,
 .conscientiousness,
-.emotional_bandwidth,
 .genetics,
 .psychological_resources,
-.training_and_preperation,
+.training_and_preparation,
 .ground_support,
 .medical_resources,
 .family_and_friends,
@@ -157,7 +156,7 @@ e.g. centered text, font color and size*/
 .boredom,
 .tranquility,
 .discontentment,
-.nostalgia,
+.nostalgia_homesickness,
 .fear,
 .awe,
 .depression {
@@ -413,14 +412,6 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.emotional_bandwidth{
-    width: calc(40%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(27%);
-    right: 7%;
-    background-color: #56B4E9;
-}
 /*-----------------------------------------*/
 /*Boxes laying inside crew composition*/
 .social_composition {
@@ -468,7 +459,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.social_density{
+.density{
     width: calc(40%); 
     height: calc(6%);
     position: absolute;
@@ -504,7 +495,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.training_and_preperation{
+.training_and_preparation{
     width: calc(40%); 
     height: calc(6%);
     position: absolute;
@@ -988,7 +979,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.nostalgia{
+.nostalgia_homesickness{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
