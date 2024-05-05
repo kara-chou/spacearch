@@ -384,6 +384,10 @@ var relatedBoxContents = {
         title: "Communication Delay (related to ...)",
         explanation: "Explanations."
     },
+    isolated_distance_from_earth:{
+        title: "Distance from earth results in isolation",
+        explanation: "As the distance from Earth increases, Earth will disappear into the background of space, termed the ‘Earth-out-of-view phenomenon’. Along with the awareness of the impossibility of rapid return and confinement as the only option during the whole mission, these psychological factors will increase the sense of isolation [Musso 2018]."
+    },
     isolated:{
         title: "Isolated (related to ...)",
         explanation: "Explanations."
