@@ -388,6 +388,10 @@ var relatedBoxContents = {
         title: "Isolated &#8594; Stress",
         explanation: "Prolonged isolation is a well-established negative stressor; particularly, limited communication with psychological support, family, and friends may negatively impact behavioral health and performance [Schorn and Roma 2020][Kanas 2007].        <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press. <br> Kanas, N. A., Salnitskiy, V. P., Ritsher, J. B., Gushin, V. I., Weiss, D. S., … Marmar, C. R. (2007). Psychosocial interactions during ISS missions. Acta Astronautica, 60, 329–335. </span> "
     },
+    isolated_distance_from_earth:{
+        title: "Distance from earth results in isolation",
+        explanation: "As the distance from Earth increases, Earth will disappear into the background of space, termed the ‘Earth-out-of-view phenomenon’. Along with the awareness of the impossibility of rapid return and confinement as the only option during the whole mission, these psychological factors will increase the sense of isolation [Musso 2018]."
+    },
     confined_social_monotony:{
         title: "Confined  &#8594; Social monotony",
         explanation: "Groups that undergo confinement lose immediate access to friends, family, and nominal networks of support <span style='color:gray'>[Palinkas 1992]</span>. Social isolation, monotony, and intensified social conflicts can also occur in confinement with the same group of people without a possibility of leaving <span style='color:gray'>[Palinkas 2004]</span>.         <br><br><br> <span style='color:gray'> Palinkas, L. A. (1992). Going to extremes: The cultural context of stress, illness and coping in Antarctica. Social Science & Medicine, 35(5), 651–664. <br> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163. </span>        "
