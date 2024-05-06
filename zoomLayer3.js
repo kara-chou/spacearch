@@ -122,11 +122,11 @@ var boxContents = {
     },
     ground_support:{
         title: "Ground Support",
-        explanation: "Explanations."
+        explanation: "Spaceflight is an incredibly demanding effort and supported by an enormous amount of facilities, technology, and people on the ground. Each of the major space agencies with astronauts on the International Space Station has mission control and research/technology centers, comprising highly trained experts that support the challenges each agency may face (including spaceflight) <span style='color:gray'>[NASA 2023]</span>.      <br><br><br> <span style='color:gray'> NASA. “Ground Facilities”. Updated Dec 28, 2023. Accessed April 30, 2024. https://www.nasa.gov/international-space-station/ground-facilities/ </span>        "
     },
-    medical_resources:{
+    medical_capability:{
         title: "Medical Resources",
-        explanation: "Explanations."
+        explanation: "Medical capability is the “complete set of resources that enables the crew to perform medical monitoring, diagnosis, and treatment of medical conditions” <span style='color:gray'>[Antonsen 2022]</span>. These may include tools, medicine, equipment, (crew and ground support) knowledge, training, references, and other resources. <br> Medical capabilities should adequately match medical needs. However, prediction of medical capability requirements for untested mission profiles (e.g., Lunar or Martian mission) are difficult; medical needs are attributed by a complex web of factors, may be acute or chronic, and could develop/escalate as comorbidities <span style='color:gray'>[Antonsen 2022]</span>.       <br><br><br> <span style='color:gray'> Antonsen, E. L., Myers, J. G., Boley, L., Arellano, J., Kerstman, E., Kadwa, B., Buckland, D. M., & Van Baalen, M. (2022). Estimating medical risk in human spaceflight. Npj Microgravity, 8(1), 8. </span> "
     },
     family_and_friends:{
         title: "Family and Friends",
@@ -344,7 +344,7 @@ var relatedBoxContents = {
         title: "Distance from Earth &#8594; Resource constrained",
         explanation: "When moving from home (migration, relocation, immigration), refugees and immigrants face challenges such as language difficulties, rejection of qualifications, limitation of personal resources, and barriers to social support <span style='color:gray'>[Stewart 2008][Faret 2021]</span>.<br>The current space mission paradigm is to bring all resources (consumable and non-consumable) from Earth. Increased distance, such as the one from Mars to Earth, creates logistical and cost difficulties <span style='color:gray'>[Sullivan and McKay 1991]</span>. Solutions such as regenerative systems and in-situ resource utilization have been proposed <span style='color:gray'>[Pickett 2020][Starr 2020]</span>. <br><br><br> <span style='color:gray'> Stewart, M., Anderson, J., Beiser, M., Mwakarimba, E., Neufeld, A., Simich, L., & Spitzer, D. (2008). Multicultural Meanings of Social Support among Immigrants and Refugees. International Migration, 46(3), 123–159.<br>Faret, L., Cornejo, A. P. G., Aguirre, J. N. N., & González, I. A. T. (2021). The city under constraint: International migrants’ challenges and strategies to access urban resources in Mexico City. Canadian Geographies / Géographies Canadiennes, 65(4), 423–434.<br>Sullivan, T. A., & McKay, D. S. (1991). Using space resources. NASA Johnson Space Center.<br>Pickett, M. T., Roberson, L. B., Calabria, J. L., Bullard, T. J., Turner, G., & Yeh, D. H. (2020). Regenerative water purification for space applications: Needs, challenges, and technologies towards “closing the loop.” Life Sciences in Space Research, 24, 64–82.<br>Starr, S. O., & Muscatello, A. C. (2020). Mars in situ resource utilization: A review. Planetary and Space Science, 182. </span>"
     },
-    distance_from_earth_medical_resources:{
+    distance_from_earth_medical_capability:{
         title: "Distance from Earth &#8594; Medical resources",
         explanation: "Distance from Earth limits the availability of medical care, including unavailability of resources, limited alternatives for ineffectiveness/side effects of medicine, and degradation of medications <span style='color:gray'>[Wotring 2015]</span>. <br><br><br> <span style='color:gray'> Wotring, V. E. (2015). Medication use by U.S. crewmembers on the International Space Station. FASEB Journal: Offcial Publication of the Federation of American Societies for Experimental Biology, 29(11), 4417–4423. </span>"
     },
@@ -584,13 +584,17 @@ var relatedBoxContents = {
         title: "Training and Preparation &#8594; Group living",
         explanation: "During astronaut training, teams will spend part of their two-year training period learning and practicing expeditionary skills during operational field events, unlike other military groups who do not specifically practice team skills in non-work environments <span style='color:gray'>[Landon and Paoletti 2020]</span>.      <br><br><br> <span style='color:gray'> Landon, L. B., & Paoletti, J. (2020). Extreme roommates: Exploring group-living skills as a unique team skill area. In Psychology and human performance in space programs (pp. 217-235). CRC Press. </span> "
     },
-    ground_support:{
-        title: "Ground Support &#8594; ",
-        explanation: "Explanations."
+    ground_support_psychological_resources:{
+        title: "Ground Support &#8594; Psychological resources",
+        explanation: "The current spaceflight (ISS) model of behavioral health care and intervention relies on private medical conferences. The reliance on access to ground support renders the current model of psychotherapy impossible with increased mission distance <span style='color:gray'>[Ad Hoc Committee 2008]</span>. Alternatives, including email and text communication, makes psychological assessment and potential treatment far more difficult <span style='color:gray'>[Ad Hoc Committee 2008]</span>.       <br><br><br> <span style='color:gray'> Ad Hoc Committee of Members of the Space Medicine Association and the Society of NASA Flight Surgeons. Human health and performance for long-duration spaceflight. Aviat Space Environ Med 2008; 79:629–35. </span>        "
     },
-    medical_resources:{
-        title: "Medical Resources &#8594; ",
-        explanation: "Explanations."
+    ground_support_medical_capability:{
+        title: "Ground Support &#8594; Medical resources",
+        explanation: "Current medical operations in Low Earth Orbit rely on real-time communication from flight surgeons and medical experts to provide evaluations and recommendations <span style='color:gray'>[Antonsen 2022]</span>. The relatively short distance can also allow the ground team to resupply medical resources and offer evacuation as a possibility <span style='color:gray'>[Antonsen 2022]</span>.     <br><br><br> <span style='color:gray'> Antonsen, E. L., Myers, J. G., Boley, L., Arellano, J., Kerstman, E., Kadwa, B., Buckland, D. M., & Van Baalen, M. (2022). Estimating medical risk in human spaceflight. Npj Microgravity, 8(1), 8.  </span>        "
+    },
+    medical_capability_physical_health:{
+        title: "Medical Resources &#8594; Physical health",
+        explanation: "Physical health is maintained when the capability matches or exceeds the medical needs. Medical needs may be dependent on initial conditions and remain high even with access to medical care. Based on a study of nearly 300 Iraqi refugees in southeastern Michigan, 100% and 99% of respondents indicated they needed medical and dental care, respectively – this remained consistent in the first two years of arrival [Wright 2016].         <br><br><br> <span style='color:gray'> Wright, A.M., Aldhalimi, A., Lumley, M.A. et al. (2016). Determinants of resource needs and utilization among refugees over time. Soc Psychiatry Psychiatr Epidemiol 51, 539–549.</span>"
     },
     family_and_friends:{
         title: "Family and Friends &#8594; ",
@@ -812,7 +816,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'team_processes_invisible':
                 return ['team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case "distance_from_earth":
-                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated','medical_resources','food']
+                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated','medical_capability','food']
             case "mission_duration":
                 return ['mission_duration', 'isolated', 'boredom']
             case "communication_delay":
@@ -861,12 +865,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case "ground_support":
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "medical_resources":
-                return ['medical_resources', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "medical_capability":
+                return ['medical_capability', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "family_and_friends":
                 return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "supplies":
-                return ['supplies', 'medical_resources', 'exercise_equipment', 'fixtures', 'food', 'cognitive_function', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
+                return ['supplies', 'medical_capability', 'exercise_equipment', 'fixtures', 'food', 'cognitive_function', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
             case "food":
                 return ['food', 'nutrition', 'environmental_monotony', 'sleep', 'cognitive_function', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
             case "exercise_equipment":
@@ -976,7 +980,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'team_processes_invisible':
                 return ['team_processes_invisible', 'training_and_preparation', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case 'distance_from_earth':
-                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated', 'medical_resources','food']
+                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated', 'medical_capability','food']
             case 'mission_duration':
                 return ['mission_duration', 'isolated', 'boredom']
             case 'communication_delay':
@@ -1029,12 +1033,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case "ground_support":
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "medical_resources":
-                return ['medical_resources', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+            case "medical_capability":
+                return ['medical_capability', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "family_and_friends":
                 return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "supplies":
-                return ['supplies', 'medical_resources', 'exercise_equipment', 'fixtures', 'food', 'cognitive_function', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
+                return ['supplies', 'medical_capability', 'exercise_equipment', 'fixtures', 'food', 'cognitive_function', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
             case "food":
                 return ['food', 'nutrition', 'environmental_monotony', 'sleep', 'cognitive_function', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
             case "exercise_equipment":
