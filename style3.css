@@ -111,7 +111,7 @@ e.g. centered text, font color and size*/
 .psychological_resources,
 .training_and_preparation,
 .ground_support,
-.medical_resources,
+.medical_capability,
 .family_and_friends,
 .supplies,
 .food,
@@ -513,7 +513,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.medical_resources{
+.medical_capability{
     width: calc(47%); 
     height: calc(6%);
     position: absolute;
