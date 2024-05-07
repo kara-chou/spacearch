@@ -144,7 +144,39 @@ var boxContents = {
         title: "Exercise Equipment",
         explanation: "Exercise equipment are tools and machines whose primary function is to provide an exercise environment or program. Early space missions used elastic bands coupled with physical exercises as the primary countermeasure against musculoskeletal deconditioning <span style='color:gray'>[Scott 2023]</span>. Currently, the International Space Station exercise equipment include the Advanced Resistive Exercise Device (ARED), a treadmill (T2), and a cycle ergometer (CEVIS) <span style='color:gray'>[Scott 2023]</span>.        <br><br><br> <span style='color:gray'> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span>      "
     },
-    physical_ergonomics:{
+    light_dark_cycles:{
+        title: "Light/Dark Cycles",
+        explanation: "Light/dark cycles typically occur every 24 hours on Earth with shifting portions of light and dark, depending on where one resides and the time of year. Polar regions on Earth experience 6 months of day and 6 months of darkness, also known as polar day and night <span style='color:gray'>[Palinkas and Suedfeld 2008]</span>. On the International Space Station, light/dark transitions occur every 45 minutes due to the velocity of the station in its orbit, resulting in 16 sunrises and sunsets every day <span style='color:gray'>[Thirsk 2009]</span>.         <br><br><br> <span style='color:gray'> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163. <br> Thirsk, R., Kuipers, A., Mukai, C., & Williams, D. (2009). The space-flight environment: the International Space Station and beyond. Cmaj, 180(12), 1216-1220. </span>  "
+    },
+    altered_gravity:{
+        title: "Altered Gravity",
+        explanation: "We denote the gravity level on Earth (~9.81 m/s^2 acceleration toward the Earth, depending on elevation) as 1 ‘g’. Altered gravity includes microgravity ‘0g’ (e.g., around the International space Station [DeLombard 2004]) and partial gravity: Martian ‘0.38g’ (or about 1/3 Earth gravity) and Lunar ‘0.16g’ (or about 1/6 Earth gravity) [Pletser 2012].         <br><br><br> <span style='color:gray'> Norsk, P. (2021). Physiological effects of spaceflight–Weightlessness: An overview. Handbook of Bioastronautics, 93-105.  <br> Pletser, V., Winter, J., Duclos, F., Bret-Dibat, T., Friedrich, U., Clervoy, J. F., ... & Sundblad, P. (2012). The first joint European partial-G parabolic flight campaign at Moon and Mars gravity levels for science and exploration. Microgravity Science and Technology, 24, 383-395. </span>  "
+    },
+    radiation:{
+        title: "Radiation",
+        explanation: "In extreme environments (such as deep space), radiation levels are elevated due to a combination of background Galactic Cosmic Radiation (GCR), Solar Particle Events (SPEs), and localized trapped particle belts. Radiation protection for spacesuits and habitats can alter the radiation dose received by the crew <span style='color:gray'>[Allen 2018]</span>. <br> Events on Earth, such as nuclear facility accidents (e.g., Fukushiima Dachii, 2011), can have impacts on the safety of nearby water and food, and increased mortalities and morbidities <span style='color:gray'>[Jones 2013]</span>. On a much larger scale, the use of atomic bombs (only time in history – Hiroshima and Nagasaki, 1945) resulted in over 200,000 deaths before year’s end <span style='color:gray'>[Ten Hoeve and Jacobson 2012]</span>.        <br><br><br> <span style='color:gray'>Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier. <br> Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757.  </span> "
+    },
+    atmosphere:{
+        title: "Atmosphere",
+        explanation: "Explanations."
+    },
+    environmental_control:{
+        title: "Environmental Control",
+        explanation: "Explanations."
+    },
+    habitable_volume:{
+        title: "Habitable Volume",
+        explanation: "Explanations."
+    },
+    acoustics:{
+        title: "Temperature/Humidity",
+        explanation: "Explanations."
+    },
+    nutrition:{
+        title: "Nutrition",
+        explanation: "Explanations."
+    },
+    ergonomics:{
         title: "Physical Ergonomics",
         explanation: "Explanations."
     },
@@ -174,38 +206,6 @@ var boxContents = {
     },
     fixtures:{
         title: "Fixtures",
-        explanation: "Explanations."
-    },
-    light_dark_cycles:{
-        title: "Light/Dark Cycles",
-        explanation: "Explanations."
-    },
-    altered_gravity:{
-        title: "Altered Gravity",
-        explanation: "Explanations."
-    },
-    atmosphere:{
-        title: "Atmosphere",
-        explanation: "Explanations."
-    },
-    radiation:{
-        title: "Radiation",
-        explanation: "Explanations."
-    },
-    environmental_control:{
-        title: "Environmental Control",
-        explanation: "Explanations."
-    },
-    habitable_volume:{
-        title: "Habitable Volume",
-        explanation: "Explanations."
-    },
-    acoustics:{
-        title: "Temperature/Humidity",
-        explanation: "Explanations."
-    },
-    nutrition:{
-        title: "Nutrition",
         explanation: "Explanations."
     },
     physical_workload:{
@@ -635,7 +635,43 @@ var relatedBoxContents = {
         title: "Exercise Equipment &#8594; Physical workload",
         explanation: "Current exercise protocol for International Space Station crewmembers averages around 10 hours per week, or 2 hours per day [Scott 2023]. The exercise protocol is the primary source of physical workload, beyond mission events such as extravehicular activity, due to the lack of loading and stress in the microgravity environment. Based on a study of over 45 astronauts on the ISS, the median aerobic exercise duration was 65 minutes per session for the cycle ergometer and 84 minutes per session for the treadmill. Resistance training varied roughly between 100-300 pounds of force, depending on the specific exercise (e.g., squats, bench press, deadlift) <span style='color:gray'>[Scott 2023]</span>.        <br><br><br> <span style='color:gray'> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span>     "
     },
-    physical_ergonomics:{
+    light_dark_cycles_sleep:{
+        title: "Light/Dark Cycles &#8594; Sleep",
+        explanation: "Circadian rhythms are internal ‘biological clocks’ comprising multiple systems across the body <span style='color:gray'>[Turek 1994]</span>. While the circadian rhythm continues regardless of external inputs (i.e., “freerunning” circadian rhythm, which is a little less than 24 hours), they are influenced, or entrained, by external cues <span style='color:gray'>[Vitaterna 2001]</span>. The most powerful of these is the light/dark cycle <span style='color:gray'>[Vitaterna 2001]</span>. The circadian rhythm modulates the sleep-wake cycle and desynchronized circadian rhythms can alter sleep patterns <span style='color:gray'>[Turek 1994]</span>. <br> In a study of altered light/dark cycles and disturbed sleep on the Space Shuttle (n=5), participants reported ~6.5hr/night of sleep on average, lower sleep quality compared to preflight baselines, more wakefulness, less slow-wave sleep, and sleep was unimproved by melatonin administration <span style='color:gray'>[Dijk 2001]</span>.     <br><br><br> <span style='color:gray'> Turek, F. W. (1994, January). Circadian rhythms. In Proceedings of the 1992 Laurentian Hormone Conference (pp. 43-90). Academic Press. <br> Vitaterna, M. H., Takahashi, J. S., & Turek, F. W. (2001). Overview of circadian rhythms. Alcohol research & health, 25(2), 85. <br>  Dijk, D.-J., Neri, D. F., Wyatt, J. K., Ronda, J. M., Riel, E., Ritz-De Cecco, A., Hughes, R. J., Elliott, A. R., Prisk, G. K., West, J. B., & Czeisler, C. A. (2001). Sleep, performance, circadian rhythms, and light-dark cycles during two space shuttle flights. American Journal of Physiology-Regulatory, Integrative and Comparative Physiology, 281(5), R1647–R1664. </span> "
+    },
+    altered_gravity_ergonomics:{
+        title: "Altered Gravity &#8594; Ergonomics",
+        explanation: "The neutral body posture in space was first described by Tengwall in 1982 through Skylab photographs. Since then, more work has been done to fully characterize the body posture that naturally arises from the lack of gravity <span style='color:gray'>[Zimmerman and Akin 2001][Kim 2019]</span>. The posture is characterized by a semi-crouched torso, bent legs, raised arms, and a forward tilt in the neck/head. Consideration of the neutral body posture is critical for design, as deviations away from this posture equates to physical energy expenditure <span style='color:gray'>[Tengwall 1982]</span>. The neutral body posture can be observed in weightlessness (microgravity and neutral buoyancy) <span style='color:gray'>[Zimmerman and Akin 2001]</span> and when sleeping <span style='color:gray'>[Tengwall 1982]</span>. <br> For altered gravity in between 0g and 1g, or beyond 1g, considerations for gait become more critical. Gravity level is a significant factor in changing gait patterns, including altered run-walk transition speeds <span style='color:gray'>[De Witt 2014]</span> and narrowed visual fields <span style='color:gray'>[Schlacht 2016]</span>. Ergonomics and the design of peripheral systems, spacesuits, information displays, and equipment must then change to support altered biomechanics.       <br><br><br> <span style='color:gray'> Zimmerman, J., & Akin, D. L. (2001). Effect of Orientation on Human Posture in Neutral Buoyancy and Parabolic Flight (No. 2001-01-2149). SAE Technical Paper. <br> Kim, H. K., Young, K. S., & Rajulu, S. L. (2019, November). Neutral body posture in spaceflight. In Proceedings of the Human Factors and Ergonomics Society Annual Meeting (Vol. 63, No. 1, pp. 992-996). Sage CA: Los Angeles, CA: SAGE Publications. <br> Tengwall, R., Jackson, J., Kimura, T., Komenda, S., Okada, M., & Preuschoft, H. (1982). Human Posture in Zero Gravity [and Comments and Reply]. Current Anthropology, 23(6), 657–666. <br> De Witt, J. K., Edwards, W. B., Scott-Pandorf, M. M., Norcross, J. R., & Gernhardt, M. L. (2014). The preferred walk to run transition speed in actual lunar gravity. Journal of Experimental Biology, 217(18), 3200-3203. <br> Schlacht, I.L. et al. (2016). From Virtual Reality to Neutral Buoyancy—Methodologies for Analyzing Walking Pattern on Moon and Mars. In: Arezes, P. (eds) Advances in Safety Management and Human Factors. Advances in Intelligent Systems and Computing, vol 491. Springer, Cham. </span> "
+    },
+    altered_gravity_physical_health:{
+        title: "Altered Gravity &#8594; Physical health",
+        explanation: "Physical adaptation to the microgravity environment causes a myriad of physiological changes, including cardiovascular deconditioning, bone & muscle atrophy, and neurological changes <span style='color:gray'>[Norsk 2021]</span>. Fluid shifts due to the removal of the hydrostatic gradient provided by 1g causes cardiovascular changes, phenomena known as ‘puffy face’ and ‘bird legs’, congestion, and is thought to play a role in inducing SANS (Spaceflight Associated Neuro-ocular Syndrome - a series of intracranial and ocular changes) <span style='color:gray'>[Stenger 2017][Norsk 2021]</span>. Between 40-50% of crewmembers experience Space Adaptation Sickness during their first few days in space, including symptoms of nausea, disorientation, and headache <span style='color:gray'>[West 1985]</span>.        <br><br><br> <span style='color:gray'> Norsk, P. (2021). Physiological effects of spaceflight–Weightlessness: An overview. Handbook of Bioastronautics, 93-105. <br> Stenger MB, Tarver WJ, Brunstetter T, Gibson CR, Laurie SS, Lee SMC, Macias BR, Mader TH, Otto C, Smith SM, Zwart SR (2017) Risk of spaceflight associated neuro-ocular syndrome (SANS). Evidence report (Nov 30), NASA, Lyndon B. Johnson Space Center, Houston.   </span> "
+    },
+    radiation_physical_health:{
+        title: "Radiation &#8594; Physical health",
+        explanation: "High-dose radiation exposure has disastrous impacts on mortality and morbidity, as established through longitudinal studies of atomic bombing victims from Hiroshima and Nagasaki <span style='color:gray'>[Kamiya 2015][Ten Hoeve and Jacobson 2012]</span>. A very-worst case Solar Particle Event would cause significant injury even with thick radiation shielding. Extreme radiative events during extravehicular activities in high-altitude regions of Mars could cause potential death. Currently, lifelong radiation exposure limits for astronauts only exist for Low-Earth Orbit mission profiles  <span style='color:gray'>[Allen 2018]</span>.        <br><br><br> <span style='color:gray'>  <br> Kamiya, K., Ozasa, K., Akiba, S., Niwa, O., Kodama, K., Takamura, N., Zaharieva, E. K., Kimura, Y., & Wakeford, R. (2015). Long-term effects of radiation exposure on health. The Lancet, 386(9992), 469–478. <br>  Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757. <br> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier.</span> "
+    },
+    atmosphere:{
+        title: "Atmosphere &#8594; ",
+        explanation: "Explanations."
+    },
+    environmental_control:{
+        title: "Environmental Control &#8594; ",
+        explanation: "Explanations."
+    },
+    habitable_volume:{
+        title: "Habitable Volume &#8594; ",
+        explanation: "Explanations."
+    },
+    acoustics:{
+        title: "Temperature/Humidity &#8594; ",
+        explanation: "Explanations."
+    },
+    nutrition:{
+        title: "Nutrition &#8594; ",
+        explanation: "Explanations."
+    },
+    ergonomics:{
         title: "Physical Ergonomics &#8594; ",
         explanation: "Explanations."
     },
@@ -665,38 +701,6 @@ var relatedBoxContents = {
     },
     fixtures:{
         title: "Fixtures &#8594; ",
-        explanation: "Explanations."
-    },
-    light_dark_cycles:{
-        title: "Light/Dark Cycles &#8594; ",
-        explanation: "Explanations."
-    },
-    altered_gravity:{
-        title: "Altered Gravity &#8594; ",
-        explanation: "Explanations."
-    },
-    atmosphere:{
-        title: "Atmosphere &#8594; ",
-        explanation: "Explanations."
-    },
-    radiation:{
-        title: "Radiation &#8594; ",
-        explanation: "Explanations."
-    },
-    environmental_control:{
-        title: "Environmental Control &#8594; ",
-        explanation: "Explanations."
-    },
-    habitable_volume:{
-        title: "Habitable Volume &#8594; ",
-        explanation: "Explanations."
-    },
-    acoustics:{
-        title: "Temperature/Humidity &#8594; ",
-        explanation: "Explanations."
-    },
-    nutrition:{
-        title: "Nutrition &#8594; ",
         explanation: "Explanations."
     },
     physical_workload:{
@@ -899,7 +903,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "light_dark_cycles":
                 return ['light_dark_cycles', 'sleep']
             case "altered_gravity":
-                return ['altered_gravity', 'physical_health']
+                return ['altered_gravity', 'physical_health','ergonomics']
             case "radiation":
                 return ['radiation', 'physical_health']
             case "atmosphere":
@@ -911,17 +915,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case "habitable_volume":
                 return ['habitable_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "environmental_control":
-                return ['environmental_control', 'physical_ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['environmental_control', 'ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "circulation_paths":
                 return ['circulation_paths', 'reconfigurability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship']
             case "layout":
                 return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'interpersonal_processes', 'kinship']
             case "lighting":
-                return ['lighting', 'privacy', 'habitable_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['lighting', 'privacy', 'habitable_volume', 'ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
             case "privacy":
                 return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "physical_ergonomics":
-                return ['physical_ergonomics', 'cognitive_function', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "ergonomics":
+                return ['ergonomics', 'cognitive_function', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "fixtures":
                 return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
             case "reconfigurability":
@@ -1065,7 +1069,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "light_dark_cycles":
                 return ['light_dark_cycles', 'sleep','extreme']
             case "altered_gravity":
-                return ['altered_gravity', 'physical_health','extreme']
+                return ['altered_gravity', 'physical_health','ergonomics','extreme']
             case "radiation":
                 return ['radiation', 'physical_health','extreme']
             case "atmosphere":
@@ -1077,17 +1081,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case "habitable_volume":
                 return ['habitable_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
             case "environmental_control":
-                return ['environmental_control', 'physical_ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['environmental_control', 'ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "circulation_paths":
                 return ['circulation_paths', 'reconfigurability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship']
             case "layout":
                 return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'interpersonal_processes', 'kinship']
             case "lighting":
-                return ['lighting', 'privacy', 'habitable_volume', 'physical_ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['lighting', 'privacy', 'habitable_volume', 'ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
             case "privacy":
                 return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "physical_ergonomics":
-                return ['physical_ergonomics', 'cognitive_function', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+            case "ergonomics":
+                return ['ergonomics', 'cognitive_function', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
             case "fixtures":
                 return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
             case "reconfigurability":
