@@ -154,59 +154,59 @@ var boxContents = {
     },
     radiation:{
         title: "Radiation",
-        explanation: "In extreme environments (such as deep space), radiation levels are elevated due to a combination of background Galactic Cosmic Radiation (GCR), Solar Particle Events (SPEs), and localized trapped particle belts. Radiation protection for spacesuits and habitats can alter the radiation dose received by the crew <span style='color:gray'>[Allen 2018]</span>. <br> Events on Earth, such as nuclear facility accidents (e.g., Fukushiima Dachii, 2011), can have impacts on the safety of nearby water and food, and increased mortalities and morbidities <span style='color:gray'>[Jones 2013]</span>. On a much larger scale, the use of atomic bombs (only time in history – Hiroshima and Nagasaki, 1945) resulted in over 200,000 deaths before year’s end <span style='color:gray'>[Ten Hoeve and Jacobson 2012]</span>.        <br><br><br> <span style='color:gray'>Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier. <br> Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757.  </span> "
+        explanation: "In extreme environments (such as deep space), radiation levels are elevated due to a combination of background Galactic Cosmic Radiation (GCR), Solar Particle Events (SPEs), and localized trapped particle belts. Radiation protection for spacesuits and habitats can alter the radiation dose received by the crew <span style='color:gray'>[Allen 2018]</span>. <br> Events on Earth, such as nuclear facility accidents (e.g., Fukushiima Dachii, 2011), can have impacts on the safety of nearby water and food, and increased mortalities and morbidities <span style='color:gray'>[Jones 2013]</span>. On a much larger scale, the use of atomic bombs (only time in history – Hiroshima and Nagasaki, 1945) resulted in over 200,000 deaths before year’s end <span style='color:gray'>[Ten Hoeve and Jacobson 2012]</span>.        <br><br><br> <span style='color:gray'> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier. <br> Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757.  </span> "
     },
     atmosphere:{
         title: "Atmosphere",
-        explanation: "Explanations."
-    },
-    environmental_control:{
-        title: "Environmental Control",
-        explanation: "Explanations."
-    },
-    habitable_volume:{
-        title: "Habitable Volume",
-        explanation: "Explanations."
+        explanation: "Atmospheric considerations include pressure, gas composition, partial pressure, absolute/relative humidity, temperature, microbes, trace contaminants, and particulate matter. In closed, pressurized, artificial atmospheres such as the one onboard the International Space Station, the atmosphere must be carefully monitored and managed <span style='color:gray'> [Wieland 2005]</span>. <br> One of the main effects of climate change is the escalation of average global temperatures and increased CO2 concentration (currently over 425 ppm as of April 2024) <span style='color:gray'> [NOAA 2024]</span>. These changes may create additional considerations for atmospheric management when designing for Earth.         <br><br><br> <span style='color:gray'> Wieland, P.O. (2005). Designing For Human Presence in Space: An Introduction to Environmental Control and Life Support Systems (ECLSS). NASA. NASA/TM—2005–214007. <br> NOAA. (2024) Trends in Atmospheric Carbon Dioxide. National Oceanic and Atmospheric Administration Global Monitoring Laboratory. Accessed April 9, 2024. https://gml.noaa.gov/ccgg/trends/monthly.html. </span>        "
     },
     acoustics:{
-        title: "Temperature/Humidity",
-        explanation: "Explanations."
+        title: "Acoustics",
+        explanation: "The acoustic environment includes continuous and intermittent noise. Continuous noise may be due to the environment or equipment, and typically measured with noise criteria (NC) curves that describe permissible levels (dB) of noise at given frequencies (hz) <span style='color:gray'>[Allen 2018]</span>. Intermittent noise, defined as noise for 8 hours or less in a 24 hour period, has a ceiling of 115-dBA (weighted with time) as set by OSHA <span style='color:gray'>[US Occupational Safety & Health Administration 1983]</span>. Noise may impact communication, nominal operations, and sleep <span style='color:gray'>[Allen 2018]</span>.         <br><br><br> <span style='color:gray'> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier. <br> Occupational Safety and Health Administration, US Department of Labor (1983). Occupational Noise Exposure: Hearing Conservation Amendment. Final Rule. 29 CFR 1910.95, Federal Register 46 (11), 4978–4981. </span>       "
     },
     nutrition:{
         title: "Nutrition",
-        explanation: "Explanations."
+        explanation: "Nutrition encompasses what we consume (nutrients and other substances), the interactions between the consumed and health/disease, body processes (absorption, digestion, excretion, etc), and the social/cultural/psychological implications of eating <span style='color:gray'>[Insel 2014]</span>.      <br><br><br> <span style='color:gray'> Insel, P. M. (2014). Nutrition. Jones & Bartlett Publishers. </span>        "
     },
-    ergonomics:{
-        title: "Physical Ergonomics",
-        explanation: "Explanations."
+    habitable_volume:{
+        title: "Habitable Volume",
+        explanation: "When considering a pressurized system, there are differences between the total pressurized volume (the interior volume determined by the inner physical envelope) and the usable volume by its occupants <span style='color:gray'>[Rudisill 2010]</span>. After the equipment, stowage, and outfitting of the interior, the remaining space is typically termed the “sand” volume (i.e., volume if sand could fill all crevices) <span style='color:gray'>[Rudisill 2010]</span>. However, not all sand volume is usable or relevant for day-to-day living; for example, consider the volume beneath a couch or inside the fridge. Therefore, a smaller “net habitable volume” is typically the figure of merit for habitat design, and traditionally about 60% of total pressurized volume for space habitats <span style='color:gray'>[Rudisill 2010]</span>. <br> Requirements for net habitable volume as a function of mission days was developed by Celentano et al., famously described by the Celentano curves of “tolerable”, “performance”, and “optimal” volume for space habitats <span style='color:gray'>[Cohen 2008]</span>. Since then, further work has been done to characterize volume requirements, for instance NASA’s Long Duration Habitable Volume Aggregate Function, which extends Celentano’s optimal curve in time <span style='color:gray'>[Simon 2011]</span>.       <br><br> <span style='color:gray'> Rudisill, M., Howard, R., Griffin, B., Green, J., Toups, L., Kennedy, K. (2008). 'Lunar Architecture Team – Phase 2 Habitat Volume Estimation: ‘Caution When Using Analogs’ ', ASCE Earth and Space Conference, Long Beach, CA. <br> Cohen, M. M. (2008). Testing the celentano curve: An empirical survey of predictions for human spacecraft pressurized volume. SAE International Journal of Aerospace, 1(2008-01-2027), 107-142. <br> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). </span>  "
+    },
+    environmental_control:{
+        title: "Environmental Control",
+        explanation: "Environmental monitoring and control is necessary to maintain a habitable environment inside a confined space. For spacecrafts, the system responsible for regulating the environment is termed “Environmental Control and Life Support Systems”, or ECLSS. ECLSS comprises many subcomponents, which are responsible for maintaining and monitoring atmospheric content (pressure, partial pressures, moisture, microbes, contaminants), water, and waste. It also typically includes fire detection, suppression, and cleanup systems <span style='color:gray'>[Broyan 2021]</span>.        <br><br><br> <span style='color:gray'> Broyan, J. L., Shaw, L., McKinley, M., Meyer, C., Ewert, M. K., Schneider, W. F., Meyer, M., Ruff, G. A., Owens, A. C., & Gatens, R. L. (2021). NASA Environmental Control and Life Support Technology Development for Exploration: 2020 to 2021 Overview. 50th International Conference on Environmental Systems. </span>        "
     },
     circulation_paths:{
         title: "Circulation Paths",
-        explanation: "Explanations."
-    },
-    privacy:{
-        title: "Privacy",
-        explanation: "Explanations."
-    },
-    lighting:{
-        title: "lighting",
-        explanation: "Explanations."
-    },
-    environmental_monotony:{
-        title: "Environmental Monotony",
-        explanation: "Explanations."
+        explanation: "Circulation refers to the movement through space. Circulation spaces encompass movement during the “approach” and “entry” phases, before entering into the actual building or space <span style='color:gray'>[Ching 2023]</span>, which may be relevant for extravehicular missions (e.g., visible and compatible docking ports for vehicles). In the interior, considerations include “configurations of the path” (e.g., linear, radial, spiral) that dictates the sequence of spaces; and “path-space relationships”, which considers if paths run adjacent to spaces, cut through spaces, or terminate in a space <span style='color:gray'>[Ching 2023]</span>. <br> Circulation may be designed, and change over time. For instance, “desire paths” refer to dirt paths that form over time due to pedestrians bypassing sidewalks <span style='color:gray'>[Lidwell 2010]</span>.        <br><br><br> <span style='color:gray'> Ching, F. D. (2023). Architecture: Form, space, and order. John Wiley & Sons. <br> Lidwell, W., Holden, K., & Butler, J. (2010). Universal principles of design, revised and updated: 125 ways to enhance usability, influence perception, increase appeal, make better design decisions, and teach through design. Rockport Pub. </span>  "
     },
     layout:{
         title: "Layout",
-        explanation: "Explanations."
+        explanation: "Layout refers to the arrangement of spaces and the relationships (e.g., spatial, acoustic) between them. <br> Typically, layouts for space habitats are arranged programmatically (i.e., by “programs” or primary activities supported by the space). For instance, one study organized activities taken place in space habitats (from Apollo to the International Space Station) into the following programs: sleep, hygiene, food, work, and leisure. Subsystems can also have specific layouts. For example, the International Space Station uses “racks” as a standard unit so systems (e.g., CO2 removal scrubber) and experiments can share standardized interfaces <span style='color:gray'>[Pelfrey and Jordan 2008]</span>.      <br><br><br> <span style='color:gray'> Pelfrey, J., & Jordan, L. (2008). An EXPRESS Rack overview and support for microgravity research on the International Space Station (ISS). In 46th AIAA Aerospace Sciences Meeting and Exhibit (p. 819). </span>        "
     },
-    reconfigurability:{
-        title: "reconfigurability",
-        explanation: "Explanations."
+    lighting:{
+        title: "lighting",
+        explanation: "While natural lighting is important for everyday life, it is limited in extreme environments. Here, we discuss artificial lighting created to support living and working tasks. Some considerations for lighting include color (wavelength on the visible spectrum), color temperature (in degrees Kelvin), and brightness (lumens) <span style='color:gray'>[Karlen 2017]</span>. Operationally, additional design features such as dimmability, adjustments throughout the day to support circadian rhythms, and design of lighting layers (daylight, decorative, focal, task, and ambient) can be considered <span style='color:gray'>[Karlen 2017]</span>.      <br><br><br> <span style='color:gray'> Karlen, M., Spangler, C., & Benya, J. R. (2017). Lighting design basics. John Wiley & Sons. </span>        "
+    },
+    privacy:{
+        title: "Privacy",
+        explanation: "Most privacy definitions vary in scope: personal privacy, as a state of being private <span style='color:gray'>[Bailey 1979]</span>; environmental privacy, as a characteristic of the architecture and built environment <span style='color:gray'>[Webster 1979]</span>; and the person-environment relationship of privacy as a transactional and regulated process <span style='color:gray'>[Altman 1975]</span>. Choice and the ability to regulate privacy is crucial. Components of privacy include the ability to be alone, as well as visual and auditory privacy <span style='color:gray'>[Marshall 1972]</span>.     <br><br><br> <span style='color:gray'> Bailey, G. W. S. (1979).  Privacy and the mental. Amsterdam: Rodopi N.V. <br>  Webster, N. (1979).  Webster’s new twentieth century unabridged dictionary. New York: Publishers International. <br> Altman, I. (1975). The environment and social behavior: Privacy, personal space, territory, crowding. Monterey, CA: Brooks/Cole. <br> Marshall, N. J. (1972). Privacy and environment. Human Ecology, 1(2), 93–110. </span>  "
+    },
+    ergonomics:{
+        title: "Ergonomics",
+        explanation: "The field of ergonomics integrates knowledge about the human physical and cognitive limitations with the design of interfaces, products, environments, and jobs <span style='color:gray'>[Nussbaum and Van Dieën 2005]</span>. Physical ergonomics focuses on the demands placed on the human and the capabilities of the human to fulfill these, to ensure the demands do not exceed the capabilities <span style='color:gray'>[Nussbaum and Van Dieën 2005]</span>. One example is anthropometry, which is a science that characterizes the human body and a design tool for physical ergonomics; NASA has published an Anthropometric Source Book based largely on data from the military population <span style='color:gray'>[Churchill 1978]</span>. <br> Cognitive ergonomics focuses on the cognitive resources and demands for a given task, environment, and user <span style='color:gray'>[Stanton 2005]</span>. The quality of work is affected by the user’s understanding of the situation (e.g., situation awareness, mental models, goals), which in turn affects the quality of work <span style='color:gray'>[Hollnagel 1997]</span>. One key area of application is in human-robot interaction and joint cognitive systems, where cognitive ergonomics provides a lens of the “fit” of the work and mind in a coupled system, as opposed to simply the effects of one on the other <span style='color:gray'>[Hollnagel 1997]</span>.    <br><br> <span style='color:gray'>  Nussbaum, M. A., & Van Dieën, J. H. (2005). Physical Ergonomics. In M. Kutz (Ed.), Mechanical Engineers’ Handbook (1st ed., pp. 762–781). Wiley. <br> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. <br> Churchill, E., Laubach, L. L., Mcconville, J. T., & Tebbetts, I. (1978). Anthropometric Source Book—Volume I; Anthropometry for Designers.pdf. NASA. 19790003563 <br> Hollnagel, E. (1997). Cognitive ergonomics: It’s all in the mind. Ergonomics, 40(10), 1170–1182. </span>  "
     },
     fixtures:{
         title: "Fixtures",
-        explanation: "Explanations."
+        explanation: "Here, we define fixtures to include assets of the habitat that are installed, fixed, and/or (semi-)permanent. Some examples include apertures (i.e., openings such as doors, windows, docking ports), signage (e.g., node labels on the International Space Station), stowage (e.g., spaces for personal items and photos), and furniture. Fixtures can serve function and decorative purposes for the habitat. Note that while exercise equipment may fall under “fixtures”, but we have defined it separately due to its significance in the space paradigm.         "
+    },
+    reconfigurability:{
+        title: "reconfigurability",
+        explanation: "The extent to which the habitat can be altered (physically, psychologically, or programmatically) to serve a different purpose. In a study of architectural themes across analogs and space habitats (from Apollo to the International Space Station), “flexibility” (i.e., allowing adjustments according to user requirements) was defined as a key desire, specifically <span style='color:gray'>[Häuplik-Meusburger 2011]</span>: <br> 1. Spatial flexibility (variation in size and locations) <br> 2. Object flexibility (variation in usage) <br> 3.Individual flexibility (personalized variations)    <br><br><br> <span style='color:gray'> Häuplik-Meusburger, S. (2011). Architecture for astronauts: an activity-based approach. Springer Science & Business Media. </span>       "
+    },
+    environmental_monotony:{
+        title: "Environmental Monotony",
+        explanation: "Monotony is described by an unchanging environment, repetition of events or situations, and chronic absence of novelty <span style='color:gray'>[Das 2015]</span>. Here, environmental monotony is associated with characteristics of the built and natural environment, including layout, lighting, colors, textures, views, and sensory inputs.    <br><br><br> <span style='color:gray'> Das, S.K., Barhwal, K., Hota, S.K. (2015). Disrupting monotony during social isolation stress prevents early development of anxiety and depression like traits in male rats. BMC Neurosci 16, 2. </span>        "
     },
     physical_workload:{
         title: "Physical Workload",
@@ -615,14 +615,6 @@ var relatedBoxContents = {
         title: "Food &#8594; Nutrition",
         explanation: "Food is the primary source of nutrition. Food choices may be due to personal preferences, availability, sensory influences (taste, texture, smell), and economics <span style='color:gray'>[Insel 2014]</span>. Food supplies essential nutrients, providing energy, hydration, vitamins, minerals, carbohydrates, and proteins <span style='color:gray'>[Insel 2014]</span>.          <br><br><br> <span style='color:gray'> Insel, P. M. (2014). Nutrition. Jones & Bartlett Publishers. </span>        "
     },
-    food_depression:{
-        title: "Food &#8594; Depression",
-        explanation: "Deficiencies in zinc, vitamin D, and omega-3 are associated with depression, anxiety, and other mood disorders <span style='color:gray'>[Mitsuya 2015][Patrick and Ames 2015]</span>.     <br><br><br> <span style='color:gray'> Mitsuya, H., Omata, N., Kiyono, Y., Mizuno, T., Murata, T., Mita, K., … Wada, Y. (2015). The co-occurrence of zinc deficiency and social isolation has the opposite effects on mood compared with either condition alone due to changes in the central norepinephrine system. Behavioural Brain Research, 284, 125–130. <br> Patrick, R. P., & Ames, B. N. (2015). Vitamin D and the omega-3 fatty acids control serotonin synthesis and action, part 2: Relevance for ADHD, bipolar disorder, schizophrenia, and impulsive behavior. FASEB Journal: Official Publication of the Federation of American Societies for Experimental Biology, 29(6), 2207–2222.         </span>        "
-    },
-    food_anxiety:{
-        title: "Food &#8594; Anxiety",
-        explanation: "Deficiencies in zinc, vitamin D, and omega-3 are associated with depression, anxiety, and other mood disorders <span style='color:gray'>[Mitsuya 2015][Patrick and Ames 2015]</span>.     <br><br><br> <span style='color:gray'> Mitsuya, H., Omata, N., Kiyono, Y., Mizuno, T., Murata, T., Mita, K., … Wada, Y. (2015). The co-occurrence of zinc deficiency and social isolation has the opposite effects on mood compared with either condition alone due to changes in the central norepinephrine system. Behavioural Brain Research, 284, 125–130. <br> Patrick, R. P., & Ames, B. N. (2015). Vitamin D and the omega-3 fatty acids control serotonin synthesis and action, part 2: Relevance for ADHD, bipolar disorder, schizophrenia, and impulsive behavior. FASEB Journal: Official Publication of the Federation of American Societies for Experimental Biology, 29(6), 2207–2222.         </span>        "
-    },
     food_kinship:{
         title: "Food &#8594; Kinship",
         explanation: "Food can be a highly effective bonding tool, particularly in care packages sent from home or sharing a meal around the dinner table. Food variability, quality, and availability has been found to positively influence social cohesion and morale <span style='color:gray'>[Douglas 2016][Smith 2015][Stuster 2010]</span>.     <br><br><br> <span style='color:gray'> Douglas, G. L. C. (2016). Risk of performance decrement and crew illness due to an inadequate food system (NASA 20160011582). Houston, TX: NASA Johnson Space Center. <br>  Smith, S., Zwart, S., & Heer, M. (2015). Evidence report: Risk factor of inadequate nutrition. Retrieved from https://ntrs.nasa.gov/search.jsp?R=20150000512. <br>  Stuster, J. W. (2010). Behavioral issues associated with long-duration space expeditions: Review and analysis of astronaut journals—Final report (No. NASA TM-2010-216130).  </span>        "
@@ -649,59 +641,135 @@ var relatedBoxContents = {
     },
     radiation_physical_health:{
         title: "Radiation &#8594; Physical health",
-        explanation: "High-dose radiation exposure has disastrous impacts on mortality and morbidity, as established through longitudinal studies of atomic bombing victims from Hiroshima and Nagasaki <span style='color:gray'>[Kamiya 2015][Ten Hoeve and Jacobson 2012]</span>. A very-worst case Solar Particle Event would cause significant injury even with thick radiation shielding. Extreme radiative events during extravehicular activities in high-altitude regions of Mars could cause potential death. Currently, lifelong radiation exposure limits for astronauts only exist for Low-Earth Orbit mission profiles  <span style='color:gray'>[Allen 2018]</span>.        <br><br><br> <span style='color:gray'>  <br> Kamiya, K., Ozasa, K., Akiba, S., Niwa, O., Kodama, K., Takamura, N., Zaharieva, E. K., Kimura, Y., & Wakeford, R. (2015). Long-term effects of radiation exposure on health. The Lancet, 386(9992), 469–478. <br>  Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757. <br> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier.</span> "
+        explanation: "High-dose radiation exposure has disastrous impacts on mortality and morbidity, as established through longitudinal studies of atomic bombing victims from Hiroshima and Nagasaki <span style='color:gray'>[Kamiya 2015][Ten Hoeve and Jacobson 2012]</span>. A very-worst case Solar Particle Event would cause significant injury even with thick radiation shielding. Extreme radiative events during extravehicular activities in high-altitude regions of Mars could cause potential death. Currently, lifelong radiation exposure limits for astronauts only exist for Low-Earth Orbit mission profiles  <span style='color:gray'>[Allen 2018]</span>.        <br><br><br> <span style='color:gray'> Kamiya, K., Ozasa, K., Akiba, S., Niwa, O., Kodama, K., Takamura, N., Zaharieva, E. K., Kimura, Y., & Wakeford, R. (2015). Long-term effects of radiation exposure on health. The Lancet, 386(9992), 469–478. <br>  Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757. <br> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier.</span> "
     },
-    atmosphere:{
-        title: "Atmosphere &#8594; ",
-        explanation: "Explanations."
+    atmosphere_sleep:{
+        title: "Atmosphere &#8594; Sleep",
+        explanation: "Based on a review of 200 literature sources on sleep for the normal healthy population, it was found that sleep is dependent on ambient temperature (which can be regulated with the aid of clothing and bedding) between 17 (with external insulation) and 28C and 40-60% relative humidity <span style='color:gray'>[Caddick 2018]</span>. The “thermoneutral zone” that allows for optimal maintenance of core and skin temperature is quite narrow, from 27.9 to 28.5 °C – within the zone, lower temperatures can enhance slow wave sleep and higher temperatures can facilitate sleep onset <span style='color:gray'>[Caddick 2018]</span>. Temperatures outside of this thermoneutral range may result in lowered sleep quality <span style='color:gray'>[Caddick 2018]</span>.         <br><br><br> <span style='color:gray'> Caddick, Z. A., Gregory, K., Arsintescu, L., & Flynn-Evans, E. E. (2018). A review of the environmental parameters necessary for an optimal sleep environment. Building and Environment, 132, 11–20. </span>  "
     },
-    environmental_control:{
-        title: "Environmental Control &#8594; ",
-        explanation: "Explanations."
+    atmosphere_crew_performance:{
+        title: "Atmosphere &#8594; Crew performance",
+        explanation: "Standards for the built environment suggest that a CO2 concentration of 400-800 ppm (parts per million) is suitable for habitation <span style='color:gray'>[European Committee for Standardization 2007]</span>. On the International Space Station, minimum concentrations of CO2 are approximately 3000 ppm, and can reach greater than 6500 ppm <span style='color:gray'>[Georgescu 2007]</span>. High concentrations of CO2 affects cognition negatively and can result in physiological symptoms, including headaches and congestion <span style='color:gray'>[Law 2014]</span>. As an example, keep the risk of headaches below 1% (the general “rule of thumb” level of risk for spaceflight for NASA), CO2 concentrations would need to be below 3300 ppm across a 7-day average <span style='color:gray'>[Law 2014]</span>. However, a head-down bed rest study (n=19) did not find significant differences in cognition speed with vs. without elevated CO2 concentrations <span style='color:gray'>[Basner 2021]</span>.         <br><br><br> <span style='color:gray'> EUROPEAN COMMITTEE FOR STANDARDIZATION, En 13779, Management, 2007, p. 72. <br> Georgescu, M. R., Meslem, A., & Nastase, I. (2020). Accumulation and spatial distribution of CO2 in the astronaut's crew quarters on the International Space Station. Building and Environment, 185, 107278. <br>  Law, J., Van Baalen, M., Foy, M., Mason, S. S., Mendez, C., Wear, M. L., ... & Alexander, D. (2014). Relationship between carbon dioxide levels and reported headaches on the international space station. Journal of occupational and environmental medicine, 56(5), 477-483. <br> Basner, M., Stahn, A. C., Nasrini, J., Dinges, D. F., Moore, T. M., Gur, R. C., ... & Laurie, S. S. (2021). Effects of head-down tilt bed rest plus elevated CO2 on cognitive performance. Journal of Applied Physiology, 130(4), 1235-1246.  </span>  "
     },
-    habitable_volume:{
-        title: "Habitable Volume &#8594; ",
-        explanation: "Explanations."
+    acoustics_sleep:{
+        title: "Acoustics &#8594; Sleep",
+        explanation: "Based on a review of 200 literature sources on sleep for the normal healthy population, it was found that the sleep environment should be below 35dB, otherwise intermittent noises above this threshold have the potential to cause sleep disruption <span style='color:gray'>[Caddick 2018]</span>.        <br><br><br> <span style='color:gray'> Caddick, Z. A., Gregory, K., Arsintescu, L., & Flynn-Evans, E. E. (2018). A review of the environmental parameters necessary for an optimal sleep environment. Building and Environment, 132, 11–20. </span>        "
     },
-    acoustics:{
-        title: "Temperature/Humidity &#8594; ",
-        explanation: "Explanations."
+    acoustics_crew_performance:{
+        title: "Acoustics &#8594; Crew performance",
+        explanation: "Excessive noise can lead to physiological and psychological symptoms, including temporary/permanent hearing loss, headaches, discomfort, fatigue, irritability, distraction, decreased productivity, and inability to concentrate <span style='color:gray'> [Allen 2018]</span>.    <br><br><br> <span style='color:gray'> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier.   </span>        "
     },
-    nutrition:{
-        title: "Nutrition &#8594; ",
-        explanation: "Explanations."
+    nutrition_physical_health:{
+        title: "Nutrition &#8594; Physical health",
+        explanation: "The key nutrients for maintaining physical health are lipids, vitamins, water, carbohydrates, protein, and minerals  <span style='color:gray'>[Insel 2014]</span>. Lipids provide energy sources for the body and provide building blocks for hormones; vitamins are essential for efficient energy extraction from other nutrients; water makes up 60% of the body, providing lubrication and transportation through the body; carbohydrates provide glucose, the source of energy for cells and tissues; protein provides energy, body structure, and regulate processes; and minerals provide regulatory (e.g., fluid balance) and structural support (e.g., calcium for bones) <span style='color:gray'>[Insel 2014]</span>. Deficiencies in these areas, or malnutrition, can cause health problems, diseases, and increased morbidity and mortality risks [Zavitsanou and Drigas 2021]. Similarly, an excessive intake of these (e.g., lipids or sugars) can likewise cause morbidities (e.g., type II diabetes) <span style='color:gray'>[Johnson 2017]</span>.     <br><br><br> <span style='color:gray'> Insel, P. M. (2014). Nutrition. Jones & Bartlett Publishers. <br> Zavitsanou, A., & Drigas, A. (2021). Nutrition in mental and physical health. Technium Soc. Sci. J., 23, 67. <br> Johnson, R. J., Sánchez-Lozada, L. G., Andrews, P., & Lanaspa, M. A. (2017). Perspective: a historical and scientific perspective of sugar and its relation with obesity and diabetes. Advances in Nutrition, 8(3), 412-422. </span>    "
     },
-    ergonomics:{
-        title: "Physical Ergonomics &#8594; ",
-        explanation: "Explanations."
+    nutrition_depression:{
+        title: "Nutrition &#8594; Depression",
+        explanation: "Deficiencies in zinc, vitamin D, and omega-3 are associated with depression, anxiety, and other mood disorders <span style='color:gray'>[Mitsuya 2015][Patrick and Ames 2015]</span>.     <br><br><br> <span style='color:gray'> Mitsuya, H., Omata, N., Kiyono, Y., Mizuno, T., Murata, T., Mita, K., … Wada, Y. (2015). The co-occurrence of zinc deficiency and social isolation has the opposite effects on mood compared with either condition alone due to changes in the central norepinephrine system. Behavioural Brain Research, 284, 125–130. <br> Patrick, R. P., & Ames, B. N. (2015). Vitamin D and the omega-3 fatty acids control serotonin synthesis and action, part 2: Relevance for ADHD, bipolar disorder, schizophrenia, and impulsive behavior. FASEB Journal: Official Publication of the Federation of American Societies for Experimental Biology, 29(6), 2207–2222.         </span>        "
     },
-    circulation_paths:{
-        title: "Circulation Paths &#8594; ",
-        explanation: "Explanations."
+    nutrition_anxiety:{
+        title: "Nutrition &#8594; Anxiety",
+        explanation: "Deficiencies in zinc, vitamin D, and omega-3 are associated with depression, anxiety, and other mood disorders <span style='color:gray'>[Mitsuya 2015][Patrick and Ames 2015]</span>.     <br><br><br> <span style='color:gray'> Mitsuya, H., Omata, N., Kiyono, Y., Mizuno, T., Murata, T., Mita, K., … Wada, Y. (2015). The co-occurrence of zinc deficiency and social isolation has the opposite effects on mood compared with either condition alone due to changes in the central norepinephrine system. Behavioural Brain Research, 284, 125–130. <br> Patrick, R. P., & Ames, B. N. (2015). Vitamin D and the omega-3 fatty acids control serotonin synthesis and action, part 2: Relevance for ADHD, bipolar disorder, schizophrenia, and impulsive behavior. FASEB Journal: Official Publication of the Federation of American Societies for Experimental Biology, 29(6), 2207–2222.         </span>        "
     },
-    privacy:{
-        title: "Privacy &#8594; ",
-        explanation: "Explanations."
+    habitable_volume_privacy:{
+        title: "Habitable Volume &#8594; Privacy",
+        explanation: "Habitable volume considerations should ensure adequate allocation of private and personal spaces, such as a ‘crew quarters’ in spaceflight or in polar exploration missions <span style='color:gray'>[Stuster 1996][Simon 2011]</span>.        <br><br><br> <span style='color:gray'> Stuster, J. (1996). Bold endeavors: Lessons from polar and space exploration. Naval Institute Press. <br> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). </span>  "
     },
-    lighting:{
-        title: "lighting &#8594; ",
-        explanation: "Explanations."
+    habitable_volume_density:{
+        title: "Habitable Volume &#8594; Density",
+        explanation: "Physical density can be increased by adding more people into a given space (increasing social density) or decreasing the size of the space (increasing spatial density) <span style='color:gray'>[Fleming 1987]</span>.         <br><br><br> <span style='color:gray'> Fleming, I., Baum, A., & Weiss, L. (1987). Social density and perceived control as mediators of crowding stress in high-density residential neighborhoods. Journal of Personality and Social Psychology, 52(5), 899–906.  </span>  "
     },
-    environmental_monotony:{
-        title: "Environmental Monotony &#8594; ",
-        explanation: "Explanations."
+    environmental_control_atmosphere:{
+        title: "Environmental Control &#8594; Atmosphere",
+        explanation: "Environmental control manages the atmosphere pressure and compositions of various gases and particulate matter within the environment <span style='color:gray'>[Broyan 2021]</span>. A particularly important design parameter for orbital habitations is the lack of air movement in microgravity. Environmental systems considerations will therefore include considerations for hot spots of CO2 collection and “CO2 washout” (i.e., sufficient flow rate to “wash” CO2 away from the face) <span style='color:gray'>[Watts and Vogel 2016]</span>.         <br><br><br> <span style='color:gray'>  Broyan, J. L., Shaw, L., McKinley, M., Meyer, C., Ewert, M. K., Schneider, W. F., Meyer, M., Ruff, G. A., Owens, A. C., & Gatens, R. L. (2021). NASA Environmental Control and Life Support Technology Development for Exploration: 2020 to 2021 Overview. 50th International Conference on Environmental Systems. <br> Watts, C., & Vogel, M. (2016). Space Suit Portable Life Support System 2.0 Human-in-the-Loop Testing. ICES-2016-87, presented at the 46th International Conference on Environmental Systems 10-14 July 2016, Vienna, Austria. </span>  "
     },
-    layout:{
-        title: "Layout &#8594; ",
-        explanation: "Explanations."
+    circulation_paths_density:{
+        title: "Circulation Paths &#8594; Density",
+        explanation: "Circulation path planning has an important role, alongside habitable volume, in reducing the number of ‘traffic interactions’, or where one has to step aside and deviate from their original path to let someone else through <span style='color:gray'>[Simon 2011]</span>. These interactions can contribute to the feeling of crowdedness, inadequate space, and heightened density within the habitat.            <br><br><br> <span style='color:gray'> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). </span>        "
     },
-    reconfigurability:{
-        title: "reconfigurability &#8594; ",
-        explanation: "Explanations."
+    circulation_paths_reconfigurability:{
+        title: "Circulation Paths &#8594; Reconfigurability",
+        explanation: "The setup of circulation paths may influence how reprogrammable a space is. For instance, a grid pattern circulation path allows most spaces to have equal priority and therefore a high degree of reconfiguration; whereas a linear circulation path may place more emphasis on the endpoints of the path, where spaces become less reconfigurable. "
     },
-    fixtures:{
-        title: "Fixtures &#8594; ",
-        explanation: "Explanations."
+    circulation_paths_interpersonal_processes:{
+        title: "Circulation Paths &#8594; Interpersonal processes",
+        explanation: "Design and placement of circulation spaces, including hallways, access paths, stairs, entrances, contribute to the formation of friendships and social cohesion <span style='color:gray'>[Festinger 1950][Skjaeveland and Garling 1997]</span>. Promotion of interpersonal processes can be designed into circulation spaces, much like common spaces <span style='color:gray'>[Adianto 2021]</span>. Importantly, circulation spaces may be neither private or public, and can be flexible to provide the level of privacy needed (as described in Altman’s theory of privacy <span style='color:gray'>[Alman 1975]</span>).        <br><br><br> <span style='color:gray'> Festinger, L., Schachter, S., & Back, K. (1950). Social pressures in informal groups; a study of human factors in housing. Harper. <br> Skjaeveland, O., & Garling, T. (1997). EFFECTS OF INTERACTIONAL SPACE ON NEIGHBOURING. Journal of Environmental Psychology, 17(3), 181–198. <br> Adianto, J., Gabe, R. T., Ristanto, D. F., & Sihombing, A. (2021). Circulation Space as “The Fourth Place” in a Private Student Housing Complex in Depok, Indonesia. The International Journal of Design in Society, 15(1), 59–72. <br>  Altman, I. (1975). The environment and social behavior: Privacy, personal space, territory, crowding. Monterey, CA: Brooks/Cole.   </span>        "
+    },
+    circulation_paths_ergonomics:{
+        title: "Circulation Paths &#8594; Ergonomics",
+        explanation: "Circulation paths provide physical paths to translate and move through a larger space. Hazards along the circulation path may pose risks and restrictions for individuals using the path. For instance, translation paths that are physically inaccessible to limited-mobility users disadvantage their access to public services <span style='color:gray'>[Banda-Chalwe 2014]</span>. The design of circulation paths also promotes wayfinding, which is a combination of physical and cognitive processes <span style='color:gray'>[Golledge 1999]</span>. The selected circulation design(s) may impact the interpreted complexity and wayfinding difficulty for the occupants <span style='color:gray'>[Natapov 2020]</span>.      <br><br><br> <span style='color:gray'> Banda-Chalwe, M., Nitz, J. C., & De Jonge, D. (2014). Impact of inaccessible spaces on community participation of people with mobility limitations in Zambia. African journal of disability, 3(1), 1-17. <br> Golledge, R. G. 1999. “Human Wayfinding and Cognitive Maps.” In Wayfinding Behavior: Cognitive Mapping and Other Spatial Processes, edited by R. G. Golledge, 5–45. Baltimore: JHU press. <br> Natapov, A., Kuliga, S., Dalton, R. C., & Hölscher, C. (2020). Linking building-circulation typology and wayfinding: Design, spatial analysis, and anticipated wayfinding difficulty of circulation types. Architectural Science Review, 63(1), 34–46. </span>        "
+    },
+    layout_reconfigurability:{
+        title: "Layout &#8594; Reconfigurability",
+        explanation: "Layouts endowed with spatial flexibility (variation in size and locations) can contribute to greater reconfigurability <span style='color:gray'>[Häuplik-Meusburger 2011]</span>. For instance, reconfigurable layouts could provide multiple activities to be held in the same space, or for multiple configurations of adjacent spaces.       <br><br><br> <span style='color:gray'> Häuplik-Meusburger, S. (2011). Architecture for astronauts: an activity-based approach. Springer Science & Business Media.        </span>        "
+    },
+    layout_circulation_paths:{
+        title: "Layout &#8594; Circulation paths",
+        explanation: "Part of circulation is the interaction between movement paths and spaces <span style='color:gray'> [Ching 2023]</span>. For instance, spaces can be adjacent to the paths, such as classrooms off of a hallway. Paths can cross through spaces, for instance in an art gallery. Paths can also end in a space, for instance at a church altar.        <br><br><br> <span style='color:gray'> Ching, F. D. (2023). Architecture: Form, space, and order. John Wiley & Sons. </span>        "
+    },
+    layout_privacy:{
+        title: "Layout &#8594; Privacy",
+        explanation: "Private spaces and private-public relationships of spaces are crucial for layout planning. Private, personal, personalizable spaces are psychologically important <span style='color:gray'>[Altman and Haythorn 1967][Kanas and Manzey 2008][Stuster 1996]</span>. Layout design and ensuring the availability of private spaces directly contributes to the ability to regulate one’s privacy.        <br><br><br> <span style='color:gray'> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. <br>  Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). Springer Science + Business Media; Microcosm Press. <br> Stuster, J. (1996). Bold endeavors: Lessons from polar and space exploration. Naval Institute Press. </span>        "
+    },
+    layout_interpersonal_processes:{
+        title: "Layout &#8594; Interpersonal processes",
+        explanation: "Group spaces (and the lack of) can facilitate group activities and interpersonal processes, such as crew cohesion and bonding <span style='color:gray'>[Simon 2011]</span>. Public social spaces can also help social cohesion processes amongst strangers <span style='color:gray'>[Aelbrecht 2019]</span>.        <br><br><br> <span style='color:gray'> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). <br> Aelbrecht, P. (2019). New Public Spaces of Circulation, Consumption and Recreation and their Scope for Informal Social Interaction and Cohesion. In P. Aelbrecht & Q. Stevens (Eds.), Public Space Design and Social Cohesion (1st ed., pp. 199–219). Routledge.   </span>        "
+    },
+    lighting_sleep:{
+        title: "lighting &#8594; Sleep",
+        explanation: "Lighting is the primary entrainment factor for circadian rhythm regulation <span style='color:gray'>[Broadway and Arendt 1988]</span>. Lowered light levels and warm tones of light closer to the evening promotes the production of melatonin, which in turn promotes sleep desire <span style='color:gray'>[Karlen 2017]</span>. In recent years, the International Space Station has introduced a solid state lighting system in the crew quarters that has yielded preliminary results that light-responsive melatonin regulation is possible in the spaceflight environment <span style='color:gray'>[Brainard 2013]</span>.          <br><br><br> <span style='color:gray'> Broadway JW and Arendt J. (1988). Seasonal and bright light changes of the phase position of the human melatonin rhythms in Antarctica. Arctic Med Res; 47 (suppl 1): 201–03. <br> Karlen, M., Spangler, C., & Benya, J. R. (2017). Lighting design basics. John Wiley & Sons. <br>   Brainard, G. C., Coyle, W., Ayers, M., Kemp, J., Warfield, B., Maida, J., ... & Hanifin, J. P. (2013). Solid-state lighting for the International Space Station: Tests of visual performance and melatonin regulation. Acta Astronautica, 92(1), 21-28. </span>" 
+    },
+    privacy_sleep:{
+        title: "Privacy &#8594; Sleep",
+        explanation: "Anecdotal evidence shows that the need for privacy often manifests itself in a need to be alone <span style='color:gray'>[Stuster 1996]</span>, for instance in a sleep area. In isolation, a bed is often the first thing people claim as their own, showing the importance of a personal sleeping area <span style='color:gray'>[Altman and Haythorn 1967]</span>.        <br><br><br> <span style='color:gray'> Stuster, J. (1996). Bold endeavors: Lessons from polar and space exploration. Naval Institute Press. <br> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. </span>        "
+    },
+    privacy_placemaking:{
+        title: "Privacy &#8594; Placemaking",
+        explanation: "Privacy is closely related to territoriality and space appropriation. For instance, one study of over 100 college students found that privacy regulation behaviors (i.e., managing one’s social contact) was correlated with adjustment to university life <span style='color:gray'>[Vinsel 1980]</span>. Private spaces are also often where one can perform placemaking behavior and form stronger bonds to personalized areas. For instance, in a study of 18 pairs of confined sailors, it was found that the territoriality over the bed areas were enacted first, followed by more public areas (table and chairs) <span style='color:gray'>[Altman and Haythorn 1967]</span>.        <br><br><br> <span style='color:gray'> Vinsel, A., Brown, B. B., Altman, I., & Foss, C. (1980). Privacy regulation, territorial displays, and effectiveness of individual functioning. Journal of Personality and Social Psychology, 39(6), 1104–1115.     <br> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. </span>        "
+    },
+    privacy_stress_regulation:{
+        title: "Privacy &#8594; Stress regulation",
+        explanation: "The lack of privacy can lead to stress <span style='color:gray'>[Harrison 1991]</span>. Privacy is critical, particularly in long-duration missions and in isolated and confined environments, to afford a personal space away from social and work stressors <span style='color:gray'>[Kanas and Manzy 2008][Simon 2011][Landon and Paoletti 2020]</span>.         <br><br><br> <span style='color:gray'> Harrison, A. A., Clearwater, Y. A., & McKay, C. P. (Eds.). (1991). From Antarctica to Outer Space: Life in Isolation and Confinement. Springer New York. <br> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). Springer Science + Business Media; Microcosm Press. <br> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). <br> Landon, L. B., & Paoletti, J. (2020). Extreme roommates: Exploring group-living skills as a unique team skill area. In Psychology and human performance in space programs (pp. 217-235). CRC Press.  </span>        "
+    },
+    privacy_crew_performance:{
+        title: "Privacy &#8594; Crew performance",
+        explanation: "In spaceflight missions, privacy is necessary for mental restoration and supports performance, but must be in moderation to avoid isolation within teams <span style='color:gray'>[Kearney 2016]</span>.        <br><br><br> <span style='color:gray'> Kearney, A. R. (2016). Team health and performance in spacefight habitats risks, countermeasures, and research recommendations (NASA/TM-2016-219274). Houston, TX: NASA         </span>        "
+    },
+    privacy_crew_kinship:{
+        title: "Privacy &#8594; Kinship",
+        explanation: "In a study of over 1000 residents in Norway, it was found that the presence of private/public spaces, such as gardens, promoted “neighboring” (i.e., attachment to neighborhood, social support amongst neighbors) due to the ability to regulate privacy and social contacts <span style='color:gray'>[Skjaeveland and Garling 1997]</span>.      <br><br><br> <span style='color:gray'> Skjaeveland, O., & Garling, T. (1997). EFFECTS OF INTERACTIONAL SPACE ON NEIGHBOURING. Journal of Environmental Psychology, 17(3), 181–198.    </span>        "
+    },
+    ergonomics_physical_health:{
+        title: "Ergonomics &#8594; Physical health",
+        explanation: "If a system is not ergonomic, users may be prone to accidents or errors. Many musculoskeletal injuries begin with discomfort, which is an indicator that the demands placed on the physical system are exceeding the capabilities <span style='color:gray'>[Stanton 2005]</span>. If left unmanaged, discomfort can turn into aches and pains, and eventually into musculoskeletal injury <span style='color:gray'>[Stanton 2005]</span>.       <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. </span>        "
+    },
+    ergonomics_crew_performance:{
+        title: "Ergonomics &#8594; Crew performance",
+        explanation: "Discomfort (physical, cognitive, or psychological) due to incompatibilities with interfaces also adversely impacts performance through degraded quantity or quality (e.g., errors) <span style='color:gray'>[Stanton 2005]</span>.         <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. </span>        "
+    },
+    ergonomics_situation_awareness:{
+        title: "Ergonomics &#8594; Situation awareness",
+        explanation: "Cognitive ergonomics are important to maintain a balance between the cognitive resources (e.g., knowledge, experience, training, user manuals, user interface clarity) and cognitive demands (e.g., task complexity, multitasking, user goals) <span style='color:gray'> [Stanton 2005]</span>. An imbalance between the resources and demands can occur as task underload or task overload <span style='color:gray'> [Stanton 2005]</span>, which could then lead to an improper level of situation awareness.    <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. </span>        "
+    },
+    fixtures_placemaking:{
+        title: "Fixtures &#8594; Placemaking",
+        explanation: "Fixtures contribute to the habitability of a space. In particular, furnishings that enable the personalization of spaces – including decorating/furnishing rooms and  distribution of personal items – enable space appropriation, which in turn promotes place attachment <span style='color:gray'>[Graumann 1976]</span>.  <br><br><br> <span style='color:gray'> Graumann, C. F. (1976). Concept of Appropriation. </span>        "
+    },
+    fixtures_reconfiguability:{
+        title: "Fixtures &#8594; Reconfigurability",
+        explanation: "Flexibility in the attachment or fixtures, or modularity in the design and implementation of fixtures, can contribute to reconfigurability. "
+    },
+    reconfigurability_placemaking:{
+        title: "reconfigurability &#8594; Placemaking",
+        explanation: "The ability to reconfigure and personalize a space is important to create and reflect a sense of attachment <span style='color:gray'>[Simon 2011][Rioux 2017]</span>.     <br><br><br> <span style='color:gray'>  Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). <br>  Rioux, L., Scrima, F., & Werner, C. M. (2017). Space appropriation and place attachment: University students create places. Journal of Environmental Psychology, 50, 60–68. </span> "
+    },
+    reconfigurability_sleep:{
+        title: "reconfigurability &#8594; Sleep",
+        explanation: "Insufficient control over personal environments (e.g., temperature, humidity, noise), particularly during sleep, can result in poorer sleep quality <span style='color:gray'>[Simon 2011]</span>.        <br><br><br> <span style='color:gray'>  Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). </span> "
+    },
+    environmental_monotony_boredom:{
+        title: "Environmental Monotony &#8594; Boredom",
+        explanation: "Monotony within the environment, understimulation, or sensory deprivation are common attributes of boredom <span style='color:gray'>[Todman 2003][Leong and Schneller 1993][Mikulas and Vodanovich 1993][Suedfeld and Steel 2000]</span>. Sensory deprivation in spaceflight can be mitigated through novel additions to food, for instance, through crew care packages (which becomes difficult with distance away from Earth) <span style='color:gray'>[Kanas and Manzey 2008]</span>.        <br><br><br> <span style='color:gray'> Todman, M. (2003). Boredom and Psychotic Disorders: Cognitive and Motivational Issues. Psychiatry: Interpersonal and Biological Processes, 66(2), 146–167. <br> Leong, F. T., & Schneller, G. R. (1993). Boredom proneness: Temperamental and cognitive components. Personality and individual differences, 14(1), 233-239. <br> Mikulas, W. L., & Vodanovich, S. J. (1993). The essence of boredom. The psychological record, 43(1), 3. <br> Suedfeld, P., & Steel, G. D. (2000). The Environmental Psychology of Capsule Habitats. Annual Review of Psychology, 51(1), 227–253. <br> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. </span> "
     },
     physical_workload:{
         title: "Physical Workload &#8594; ",
@@ -897,7 +965,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "supplies":
                 return ['supplies', 'environmental_monotony', 'placemaking']
             case "food":
-                return ['food', 'nutrition', 'depression', 'anxiety', 'kinship']
+                return ['food', 'nutrition', 'kinship']
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'physical_health']
             case "light_dark_cycles":
@@ -911,27 +979,27 @@ document.addEventListener('DOMContentLoaded', function () {
             case "acoustics":
                 return ['acoustics', 'sleep', 'crew_performance']
             case "nutrition":
-                return ['nutrition', 'physical_health']
+                return ['nutrition', 'physical_health','anxiety','depression']
             case "habitable_volume":
-                return ['habitable_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['habitable_volume', 'privacy', 'density']
             case "environmental_control":
-                return ['environmental_control', 'ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['environmental_control', 'atmosphere']
             case "circulation_paths":
-                return ['circulation_paths', 'reconfigurability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship']
+                return ['circulation_paths', 'reconfigurability', 'interpersonal_processes','ergonomics']
             case "layout":
-                return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'interpersonal_processes', 'kinship']
+                return ['layout', 'circulation_paths', 'privacy','interpersonal_processes','reconfigurability']
             case "lighting":
-                return ['lighting', 'privacy', 'habitable_volume', 'ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['lighting', 'sleep']
             case "privacy":
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'kinship','crew_performance']
             case "ergonomics":
-                return ['ergonomics', 'cognitive_function', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['ergonomics', 'physical_workload', 'crew_performance','situation_awareness']
             case "fixtures":
-                return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
+                return ['fixtures', 'placemaking','reconfigurability']
             case "reconfigurability":
-                return ['reconfigurability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+                return ['reconfigurability', 'placemaking', 'sleep']
             case "environmental_monotony":
-                return ['environmental_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['environmental_monotony', 'boredom']
             case "physical_workload":
                 return ['physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "cognitive_workload":
@@ -1063,7 +1131,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "supplies":
                 return ['supplies', 'environmental_monotony', 'placemaking','resource_constrained']
             case "food":
-                return ['food', 'nutrition', 'depression', 'anxiety', 'kinship','resource_constrained','distance_from_earth']
+                return ['food', 'nutrition', 'kinship','resource_constrained','distance_from_earth']
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'physical_health']
             case "light_dark_cycles":
@@ -1077,27 +1145,27 @@ document.addEventListener('DOMContentLoaded', function () {
             case "acoustics":
                 return ['acoustics', 'sleep', 'crew_performance']
             case "nutrition":
-                return ['nutrition', 'physical_health','food']
+                return ['nutrition', 'physical_health','anxiety','depression','food']
             case "habitable_volume":
-                return ['habitable_volume', 'privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['habitable_volume', 'privacy', 'density']
             case "environmental_control":
-                return ['environmental_control', 'ergonomics', 'sleep', 'cognitive_function', 'acoustics', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['environmental_control', 'atmosphere']
             case "circulation_paths":
-                return ['circulation_paths', 'reconfigurability', 'group_living', 'placemaking', 'interpersonal_processes', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'kinship']
+                return ['circulation_paths', 'reconfigurability', 'interpersonal_processes','ergonomics','layout']
             case "layout":
-                return ['layout', 'reconfigurability', 'circulation_paths', 'placemaking', 'group_living', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'interpersonal_processes', 'kinship']
+                return ['layout', 'circulation_paths', 'privacy','interpersonal_processes','reconfigurability']
             case "lighting":
-                return ['lighting', 'privacy', 'habitable_volume', 'ergonomics', 'layout', 'placemaking', 'sleep', 'stress_regulation', 'cognitive_function', 'acoustics', 'reconfigurability', 'circulation_paths', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress', 'tranquility', 'environmental_monotony', 'group_living', 'boredom', 'interpersonal_processes', 'kinship']
+                return ['lighting', 'sleep']
             case "privacy":
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
+                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'kinship','crew_performance','media_attention','layout','habitable_volume','density','confined']
             case "ergonomics":
-                return ['ergonomics', 'cognitive_function', 'acoustics', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'environmental_monotony', 'boredom', 'stress_regulation', 'discontentment']
+                return ['ergonomics', 'physical_workload', 'crew_performance','situation_awareness','circulation_paths']
             case "fixtures":
-                return ['fixtures', 'social_monotony', 'interpersonal_processes', 'kinship']
+                return ['fixtures', 'placemaking','reconfigurability']
             case "reconfigurability":
-                return ['reconfigurability', 'placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+                return ['reconfigurability', 'placemaking', 'sleep','layout','fixtures','circulation_paths']
             case "environmental_monotony":
-                return ['environmental_monotony', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['environmental_monotony', 'boredom','supplies']
             case "physical_workload":
                 return ['physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "cognitive_workload":
