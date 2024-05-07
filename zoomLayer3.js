@@ -210,35 +210,27 @@ var boxContents = {
     },
     physical_workload:{
         title: "Physical Workload",
-        explanation: "Explanations."
+        explanation: "Physical workload refers to the physical work being performed. It can be measured in many ways, including physical assessments (e.g., musculoskeletal discomfort surveys, muscle fatigue assessments), physiological measurements (e.g., heart rate, respiration, electromyography), and behavioral measurements (e.g., observation) <span style='color:gray'>[Stanton 2005]</span>.        <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. </span>        "
     },
     cognitive_workload:{
         title: "Cognitive Workload",
-        explanation: "Explanations."
+        explanation: "Cognitive workload refers to the amount of cognitive and mental effort required to perform a task or a set of concurrent tasks <span style='color:gray'>[Hoedemaeker 2002]</span>. Examples of cognitive workload measurement include subjective surveys (usually administered immediately after task completion), performance metrics (e.g., errors, time to task completion), and physiological measures (e.g., heart rate, pupil dilation) <span style='color:gray'>[Staton 2005][Marshall 2002]</span>.        <br><br><br> <span style='color:gray'> Hoedemaeker, M. (2002). Summary Description of Workload Indicators: WP1 Workload Measures. Human Machine Interface and the Safety of Traffic in Europe Growth Project. GRD1-2000-25361. HASTE. Institute for Transport Studies. Leeds, UK: University of Leeds. <br> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. <br> Marshall, S. P. (2002, September). The index of cognitive activity: Measuring cognitive workload. In Proceedings of the IEEE 7th conference on Human Factors and Power Plants (pp. 7-7). IEEE. </span> "
     },
     media_attention:{
         title: "Media Attention",
-        explanation: "Explanations."
-    },
-    conflicts:{
-        title: "Conflicts",
-        explanation: "Explanations."
-    },
-    injuries:{
-        title: "Injuries",
-        explanation: "Explanations."
+        explanation: "Media attention is particularly important to the spaceflight population and other populations who may be in Isolated, Confined, and Extreme environments (e.g., refugees, civilians in war zones). Since 1958, when NASA was chartered with providing the “widest practicable and appropriate dissemination of information concerning its activities”, NASA has maintained a public presence in the media <span style='color:gray'>[Makemson 2009]</span>. Since 2009 with Mike Massimo’s first ‘tweet’ from space, it has become common practice for astronauts to have public social media accounts. In most space-faring countries, astronauts are popular figures (as a group and some in their own right) with important public relations duties <span style='color:gray'>[Hersch 2012]</span>.        <br><br><br> <span style='color:gray'> Makemson, H. (2009). Media, NASA, and America's Quest for the Moon (Vol. 4). Peter Lang. <br> Hersch, M. H. (2012). Public Space. In Inventing the American Astronaut (pp. 131-158). New York: Palgrave Macmillan US. </span>"
     },
     transition_processes:{
         title: "Transition Processes",
-        explanation: "Explanations."
+        explanation: "Transition phases are when teams are primarily focused on planning and evaluation of team goals. Processes most salient during the transition phase are as follows <span style='color:gray'>[Marks 2011]</span>: <br> - Mission analysis: identifying and evaluating the mission goals, environmental conditions, and resources available to execute the mission. This includes ensuring a shared mental model of the team’s purpose and objectives. <br> - Goal specification: identification and prioritization of goals, discussing how much needs to be accomplished within a certain time frame, to what quality. <br> - Strategy formulation: developing courses of action, including prioritization, task assignment, and discussion of expectations. Further delineating strategy formulation, this process can be broken down into 1) planning for nominal/planned activities, 2) emergency/contingency planning, and 3) reactive strategy adjustment.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span>        "
     },
     action_processes:{
         title: "Action Processes",
-        explanation: "Explanations."
+        explanation: "Action phases are when teams are actively conducting activities that lead to goal achievement. Processes most salient during the action phase are as follows <span style='color:gray'>[Marks 2011]</span>: <br> - Monitor progress: tracking tasks and progress toward team goals. This includes providing feedback and updates to team members to evaluate progress and likelihood of success. <br> - Systems monitoring: tracking status of resources and environmental conditions. This is also known as situation awareness, or monitoring of internal systems (e.g., equipment, resources) and external systems (e.g., weather) relevant to mission success. <br> - Team monitoring: assisting team members to complete their tasks, including offering feedback, helping, or offloading the task. <br> - Coordination: managing the sequence and timing of interdependent tasks. This information exchange and mutual adjustment of activities aligns the pace and sequencing of actions for more productive goal accomplishment.         <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span>   "
     },
     interpersonal_processes:{
         title: "interpersonal Processes",
-        explanation: "Explanations."
+        explanation: "Interpersonal processes occur through both transition and action phases, and lay the foundation for the effectiveness of other team processes [Marks 2011]. They are as follows [Marks 2011]: <br> - Conflict management: helps resolve or manage conflict in two ways: 1) preemptively, by establishing conditions to prevent, control, or guide conflicts (e.g., establishing team norms), and 2) reactively, by working through task or interpersonal conflicts that have arisen (e.g., problem-solving, compromising). <br> - Motivating: preserving a collective sense of confidence, motivation, and cohesion toward the team goal. <br> - Affect management: calibrating and regulating team members’ emotions that may be shifting due to task-based (e.g., stress), personal (e.g., animosity), and external (e.g., job security) factors.         <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span> "
     },
     stress_regulation:{
         title: "Stress Regulation",
@@ -771,37 +763,65 @@ var relatedBoxContents = {
         title: "Environmental Monotony &#8594; Boredom",
         explanation: "Monotony within the environment, understimulation, or sensory deprivation are common attributes of boredom <span style='color:gray'>[Todman 2003][Leong and Schneller 1993][Mikulas and Vodanovich 1993][Suedfeld and Steel 2000]</span>. Sensory deprivation in spaceflight can be mitigated through novel additions to food, for instance, through crew care packages (which becomes difficult with distance away from Earth) <span style='color:gray'>[Kanas and Manzey 2008]</span>.        <br><br><br> <span style='color:gray'> Todman, M. (2003). Boredom and Psychotic Disorders: Cognitive and Motivational Issues. Psychiatry: Interpersonal and Biological Processes, 66(2), 146–167. <br> Leong, F. T., & Schneller, G. R. (1993). Boredom proneness: Temperamental and cognitive components. Personality and individual differences, 14(1), 233-239. <br> Mikulas, W. L., & Vodanovich, S. J. (1993). The essence of boredom. The psychological record, 43(1), 3. <br> Suedfeld, P., & Steel, G. D. (2000). The Environmental Psychology of Capsule Habitats. Annual Review of Psychology, 51(1), 227–253. <br> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. </span> "
     },
-    physical_workload:{
-        title: "Physical Workload &#8594; ",
-        explanation: "Explanations."
+    physical_workload_physical_health:{
+        title: "Physical Workload &#8594; Physical health",
+        explanation: "Many musculoskeletal injuries begin with discomfort, which can turn into pains and injuries if left unmanaged <span style='color:gray'>[Stanton 2005]</span>. However, an appropriate level of physical workload is needed to sustain musculoskeletal health. In spaceflight, where multiple systems experience deconditioning due to microgravity unloading, aerobic and resistance exercise can help protect against muscle mass loss, bone mass, muscle strength, and aerobic capacity <span style='color:gray'>[Petersen 2016]</span>.         <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. <br> Petersen, N., Jaekel, P., Rosenberger, A., Weber, T., Scott, J., Castrucci, F., ... & Mester, J. (2016). Exercise in space: the European Space Agency approach to in-flight exercise countermeasures for long-duration missions on ISS. Extreme physiology & medicine, 5, 1-13. </span>  "
     },
-    cognitive_workload:{
-        title: "Cognitive Workload &#8594; ",
-        explanation: "Explanations."
+    physical_workload_depression:{
+        title: "Physical Workload &#8594; Depression",
+        explanation: "Studies have shown that physical activity is beneficial to those with depressive symptoms <span style='color:gray'>[Morgan 1985][Farmer 1988][Martinsen 1989a][Dimeo 2001][Leppamaki 2002]</span>. Proposed mechanisms for the linkage between physical activity and mental health include physiological benefits (e.g., release of feel-good endorphins and hormones), improve self-image and self-efficacy, and serve as distraction and social interaction <span style='color:gray'>[Peluso and De Andrade 2005]</span>.       <br><br> <span style='color:gray'> Morgan, W. P. (1985). Affective beneficence of vigorous physical activity. Medicine and science in sports and exercise, 17(1), 94-100. <br> Farmer, M.E., Locke, B.Z., Mościcki, E.K., et al. (1988). Physical activity and depressive symptoms: the NHANES I Epidemiologic Follow-up Study. American journal of epidemiology, 128(6), 1340-1351. <br> Martinsen, E.W., Hoffart, A., & Solberg, Ø. (1989). Comparing aerobic with nonaerobic forms of exercise in the treatment of clinical depression: a randomized trial. Comprehensive psychiatry, 30(4), 324-331. <br> Dimeo, F., Bauer, M., Varahram, I., et al. (2001). Benefits from aerobic exercise in patients with major depression: a pilot study. British journal of sports medicine, 35(2), 114-117. <br> Leppamaki, S. J., Partonen, T. T., Hurme, J., Haukka, J. K., & Lonnqvist, J. K. (2002). Randomized trial of the efficacy of bright-light exposure and aerobic exercise on depressive symptoms and serum lipids. Journal of Clinical Psychiatry, 63(4), 316-321. <br> Peluso, M. A. M., & De Andrade, L. H. S. G. (2005). Physical activity and mental health: the association between exercise and mood. Clinics, 60(1), 61-70. </span>  "
     },
-    media_attention:{
-        title: "Media Attention &#8594; ",
-        explanation: "Explanations."
+    physical_workload_anxiety:{
+        title: "Physical Workload &#8594; Anxiety",
+        explanation: "Studies have shown that physical activity is beneficial to those with anxious symptoms <span style='color:gray'>[Petruzzello 1991][Martinsen 1989][Dunn 2001]</span>. Proposed mechanisms for the linkage between physical activity and mental health include physiological benefits (e.g., release of feel-good endorphins and hormones), improve self-image and self-efficacy, and serve as distraction and social interaction <span style='color:gray'>[Peluso and De Andrade 2005]</span>.        <br><br><br> <span style='color:gray'> Petruzzello, S. J., Landers, D. M., Hatfield, B. D., Kubitz, K. A., & Salazar, W. (1991). A meta-analysis on the anxiety-reducing effects of acute and chronic exercise: Outcomes and mechanisms. Sports medicine, 11, 143-182. <br> Martinsen, E. W., Hoffart, A., & Solberg, Ø. Y. (1989). Aerobic and non‐aerobic forms of exercise in the treatment of anxiety disorders. Stress Medicine, 5(2), 115-120. <br> Dunn, A. L., Trivedi, M. H., & O'Neal, H. A. (2001). Physical activity dose-response effects on outcomes of depression and anxiety. Database of Abstracts of Reviews of Effects (DARE): Quality-assessed Reviews [Internet]. <br> Peluso, M. A. M., & De Andrade, L. H. S. G. (2005). Physical activity and mental health: the association between exercise and mood. Clinics, 60(1), 61-70.     </span>  "
     },
-    conflicts:{
-        title: "Conflicts &#8594; ",
-        explanation: "Explanations."
+    cognitive_workload_stress:{
+        title: "Cognitive Workload &#8594; Stress",
+        explanation: "High mental workload can be stressful when the mental resources are burdened <span style='color:gray'>[Mandrick 2016]</span>. Higher cognitive workload demands necessitate higher mental energy expenditure, which is characterized as stress <span style='color:gray'>[Gaillard 2018]</span>. Maintained levels of high cognitive workload and high performance may be possible, but at a detriment to physiological and psychological systems, as the workload is stressing the existing resources and limiting the ability to assess other concerns/threats <span style='color:gray'>[Warm 2018]</span>.        <br><br><br> <span style='color:gray'> Mandrick, K., Peysakhovich, V., Rémy, F., Lepron, E., & Causse, M. (2016). Neural and psychophysiological correlates of human performance under stress and high mental workload. Biological psychology, 121, 62-73. <br> Gaillard, A. W. (2018). Concentration, stress and performance. In Performance under stress (pp. 75-92). CRC Press. <br> Warm, J. S., Matthews, G., & Finomore Jr, V. S. (2018). Vigilance, workload, and stress. In Performance under stress (pp. 131-158). CRC Press. </span>   "
     },
-    injuries:{
-        title: "Injuries &#8594; ",
-        explanation: "Explanations."
+    cognitive_workload_crew_performance:{
+        title: "Cognitive Workload &#8594; Crew performance",
+        explanation: "The type of cognitive workload may be important as well. Meaningful work promotes performance and satisfaction <span style='color:gray'>[Landon 2024]</span>; interesting work also allows cognitive resources to be allocated to the work, as opposed to overcoming the tedium of the work <span style='color:gray'>[Warm 2018]</span>.        <br><br><br> <span style='color:gray'> Landon, L. B., Doerr, A., Khader, A., Bell, S., Roma, P. G., & Dinges, D. F. (2024, February). Meaningful Work as a Resilience Countermeasure in Extreme Environments. In Human Research Program-Investigators Working Group (HRP-IWG) Workshop. <br> Warm, J. S., Matthews, G., & Finomore Jr, V. S. (2018). Vigilance, workload, and stress. In Performance under stress (pp. 131-158). CRC Press. </span> "
     },
-    transition_processes:{
-        title: "Transition Processes &#8594; ",
-        explanation: "Explanations."
+    cognitive_workload_boredom:{
+        title: "Cognitive Workload &#8594; Boredom",
+        explanation: "The strains of work, including low cognitive workload and decreased stimulation, can lead to boredom <span style='color:gray'>[Bench and Lench 2013][Landon 2024]</span>.         <br><br><br> <span style='color:gray'> Bench, S. W., & Lench, H. C. (2013). On the function of boredom. Behavioral sciences, 3(3), 459-472. <br>  Landon, L. B., Doerr, A., Khader, A., Bell, S., Roma, P. G., & Dinges, D. F. (2024, February). Meaningful Work as a Resilience Countermeasure in Extreme Environments. In Human Research Program-Investigators Working Group (HRP-IWG) Workshop. </span>   "
     },
-    action_processes:{
-        title: "Action Processes &#8594; ",
-        explanation: "Explanations."
+    cognitive_workload_sleep:{
+        title: "Cognitive Workload &#8594; Sleep",
+        explanation: "From the largest study of sleep and neurobehavioral functioning in 6-month stays on the ISS, elevated workload was found to be associated with shorter sleep durations. Observational data suggests that when the workload demand is low, astronauts can sleep longer if provided the opportunity <span style='color:gray'>[Jones 2022]</span>.         <br><br><br> <span style='color:gray'> Jones, C. W., Basner, M., Mollicone, D. J., Mott, C. M., & Dinges, D. F. (2022). Sleep deficiency in spaceflight is associated with degraded neurobehavioral functions and elevated stress in astronauts on six-month missions aboard the International Space Station. Sleep, 45(3), zsac006. </span>   "
     },
-    interpersonal_processes:{
-        title: "interpersonal Processes &#8594; ",
-        explanation: "Explanations."
+    media_attention_privacy:{
+        title: "Media Attention &#8594; Privacy",
+        explanation: "In the (social) media world, privacy is currency – people willingly or unknowingly disclose private information to gain access to digital tools and services  <span style='color:gray'>[Quinn 2019]</span>. In public facing jobs or situations, such as an astronaut/spaceflight participant or as someone in the midst of a natural disaster with high media attention, access privacy may become harder to manage.     <br><br><br> <span style='color:gray'> Quinn, K., Epstein, D., & Moon, B. (2019). We care about different things: Non-elite conceptualizations of social media privacy. Social Media+ Society, 5(3). </span>        "
+    },
+    transition_processes_crew_performance:{
+        title: "Transition Processes &#8594; Crew performance",
+        explanation: "A shared mental model, situation awareness, and communication of expectations to the entire team is necessary for accomplishing goals effectively. Teams that abbreviate or ignore the planning processes are at risk of misdirecting their attention and resources until it’s too late to recover <span style='color:gray'>[Gersick 1988][Marks 2011]</span>. When teams are unable to plan, this forces them to rely on past experience or improvisation, which can be difficult for complex and/or novel tasks <span style='color:gray'>[Marks 2011]</span>.     <br><br><br> <span style='color:gray'> Gersick, C. J. G. (1988). Time and transition in work teams: Toward a new model of group development. Academy of Management Journal, 31: 9-41. <br> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span> "
+    },
+    action_processes_crew_performance:{
+        title: "Action Processes &#8594; Crew performance",
+        explanation: "During the action phase, critical processes include monitoring and providing effective feedback on the progress/status of resources, environmental/system conditions, and team members. These processes are important to ensure the team is aware and in sync with each other and the environment, so adjustments can be made to reach goals successfully [Marks 2011].     <br><br><br><span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>   "
+    },
+    interpersonal_processes_crew_performance:{
+        title: "interpersonal Processes &#8594; Crew performance",
+        explanation: "Low motivation levels can decrease the individual effort expended, thereby decreasing the overall team performance <span style='color:gray'>[Marks 2011]</span>.   <br><br><br> <span style='color:gray'>Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>  "
+    },
+    interpersonal_processes_social_support:{
+        title: "interpersonal Processes &#8594; Social support",
+        explanation: "Interpersonal processes are rooted in building relationships with one another. These processes help cope with life’s adversities (conflict and affect management) and promote growth and development (motivating processes), which are processes central to social support <span style='color:gray'>[Feeney and Collins 2015]</span>.   <br><br><br> <span style='color:gray'> Feeney, B. C., & Collins, N. L. (2015). A New Look at Social Support: A Theoretical Perspective on Thriving Through Relationships. Personality and Social Psychology Review, 19(2), 113–147.  </span>  "
+    },
+    interpersonal_processes_kinship:{
+        title: "interpersonal Processes &#8594; Kinship",
+        explanation: "Interpersonal processes underlay team member feelings toward each other, and can rally or derail team cohesion at any time. Social activities can build cohesion, break tension, and aid in stress management <span style='color:gray'>[Marks 2011]</span>.    <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>  "
+    },
+    interpersonal_processes_stress_regulation:{
+        title: "interpersonal Processes &#8594; Stress regulation",
+        explanation: "Social activities can aid in stress management <span style='color:gray'>[Marks 2011]</span>. A study of 60 dyadic couples (romantic and platonic) showed that a brief (10 minute) affectionate interaction prior to a stressful experience acted as a buffer, limiting the magnitude of cardiovascular arousal <span style='color:gray'>[Pauley 2015]</span>.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  <br> Pauley, P. M., Floyd, K., & Hesse, C. (2015). The stress-buffering effects of a brief dyadic interaction before an acute stressor. Health communication, 30(7), 646-659.        </span>  "
+    },
+    interpersonal_processes_placemaking:{
+        title: "interpersonal Processes &#8594; Placemaking",
+        explanation: "A commonly studied predictor of place attachment is social interaction [Bonaiuto 1999][Bonaiuto 2006][Brown 2004][Kasarda and Janowitz 1974][Lewicka 2005][Mesch and Manor 1998][Moser 2002][Ringel and Finkelstein 1991]. The strength of community ties consistently positively predicts place attachment.    <br><br><br> <span style='color:gray'> Bonaiuto, M., Aiello, A., Perugini, M., Bonnes, M., & Ercolani, A. P. (1999). Multidimensional perception of residential environment quality and neighbourhood attachment in the urban environment. Journal of Environmental Psychology, 19,331-352. <br> Bonaiuto, M., Fornara, F., & Bonnes, M. (2006). Perceived residential environment quality in middle- and low-extension Italian cities. European Review of Applied Psychology, 56, 23-34. <br> Brown, B. B., Perkins, D. D., & Brown, G. (2004). Incivilities, place attachment and crime: Block and individual effects. Journal of Environmental Psychology, 24, 359-371. <br> Kasarda, J. D., & Janowitz, M. (1974). Community attachment in mass society. American Sociological Review, 39, 328-339. <br> Lewicka, M. (2005). Ways to make people active: Role of place attachment, cultural capital and neighborhood ties. Journal of Environmental Psychology, 4, 381-395. <br> Mesch, G. S., & Manor, O. (1998). Social ties, environmental perception and local attachment. Environment and Behavior, 30, 504-519. <br> Moser, G., Ratiu, E., & Fleury-Bahi, G. (2002). Appropriation and interpersonal relations. From Dwelling to City through the neighborhood. Environment and Behavior, 34,122-136. <br> Ringel, N. B., & Finkelstein, J. C. (1991). Differentiating neighborhood satisfaction and neighborhood attachment among urban residents. Basic and Applied Social Psychology, 12,177-193. </span>  "
     },
     stress_regulation:{
         title: "Stress Regulation &#8594; ",
@@ -1001,21 +1021,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case "environmental_monotony":
                 return ['environmental_monotony', 'boredom']
             case "physical_workload":
-                return ['physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['physical_workload', 'physical_health', 'depression', 'anxiety']
             case "cognitive_workload":
                 return ['cognitive_workload', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality']
             case "media_attention":
-                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "conflicts":
-                return ['conflicts', 'interpersonal_processes', 'action_processes', 'kinship', 'crew_performance']
-            case "injuries":
-                return ['injuries', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['media_attention', 'privacy']
             case "transition_processes":
                 return ['transition_processes', 'crew_performance']
             case "action_processes":
                 return ['action_processes', 'crew_performance']
             case "interpersonal_processes":
-                return ['interpersonal_processes', 'crew_performance', 'kinship']
+                return ['interpersonal_processes', 'crew_performance', 'social_support','kinship', 'stress_regulation','placemaking']
             case "stress_regulation":
                 return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "placemaking":
@@ -1023,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "sleep":
                 return ['sleep', 'depression', 'anxiety', 'sleep_quality']
             case "cognitive_function":
-                return ['cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['cognitive_function', 'stress','crew_performance','boredom','sleep']
             case "sleep_quality":
                 return ['sleep_quality']
             case "anxiety":
@@ -1167,21 +1183,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case "environmental_monotony":
                 return ['environmental_monotony', 'boredom','supplies']
             case "physical_workload":
-                return ['physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['physical_workload', 'physical_health', 'depression', 'anxiety','mission_demands','mission_events','exercise_equipment','ergonomics']
             case "cognitive_workload":
-                return ['cognitive_workload', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality']
+                return ['cognitive_function', 'stress','crew_performance','boredom','sleep','mission_demands']
             case "media_attention":
-                return ['media_attention', 'privacy', 'cognitive_workload', 'placemaking', 'sleep', 'stress_regulation', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment', 'depression', 'anxiety', 'sleep_quality', 'stress']
-            case "conflicts":
-                return ['conflicts', 'interpersonal_processes', 'action_processes', 'kinship', 'crew_performance']
-            case "injuries":
-                return ['injuries', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['media_attention', 'privacy']
             case "transition_processes":
                 return ['transition_processes', 'crew_performance']
             case "action_processes":
                 return ['action_processes', 'crew_performance', 'conscientiousness']
             case "interpersonal_processes":
-                return ['interpersonal_processes', 'crew_performance', 'kinship','extraversion','agreeableness','neuroticism']
+                return ['interpersonal_processes', 'crew_performance', 'social_support','kinship', 'stress_regulation','placemaking','extraversion','agreeableness','neuroticism','circulation_paths','layout']
             case "stress_regulation":
                 return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "placemaking":
