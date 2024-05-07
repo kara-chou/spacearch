@@ -125,24 +125,24 @@ var boxContents = {
         explanation: "Spaceflight is an incredibly demanding effort and supported by an enormous amount of facilities, technology, and people on the ground. Each of the major space agencies with astronauts on the International Space Station has mission control and research/technology centers, comprising highly trained experts that support the challenges each agency may face (including spaceflight) <span style='color:gray'>[NASA 2023]</span>.      <br><br><br> <span style='color:gray'> NASA. “Ground Facilities”. Updated Dec 28, 2023. Accessed April 30, 2024. https://www.nasa.gov/international-space-station/ground-facilities/ </span>        "
     },
     medical_capability:{
-        title: "Medical Resources",
+        title: "Medical Capability",
         explanation: "Medical capability is the “complete set of resources that enables the crew to perform medical monitoring, diagnosis, and treatment of medical conditions” <span style='color:gray'>[Antonsen 2022]</span>. These may include tools, medicine, equipment, (crew and ground support) knowledge, training, references, and other resources. <br> Medical capabilities should adequately match medical needs. However, prediction of medical capability requirements for untested mission profiles (e.g., Lunar or Martian mission) are difficult; medical needs are attributed by a complex web of factors, may be acute or chronic, and could develop/escalate as comorbidities <span style='color:gray'>[Antonsen 2022]</span>.       <br><br><br> <span style='color:gray'> Antonsen, E. L., Myers, J. G., Boley, L., Arellano, J., Kerstman, E., Kadwa, B., Buckland, D. M., & Van Baalen, M. (2022). Estimating medical risk in human spaceflight. Npj Microgravity, 8(1), 8. </span> "
     },
     family_and_friends:{
         title: "Family and Friends",
-        explanation: "Explanations."
+        explanation: "Family and friends are close interpersonal relationships that provide social support.        "
     },
     supplies:{
         title: "Supplies",
-        explanation: "Explanations."
+        explanation: "Supplies encompass temporary, consumable, and depletable assets. Supplies may include personal effects, logistical support (e.g., vacuum, trash bags), scientific equipment (e.g., rodents, plants, test tubes), ECLSS (e.g., water filters, CO2 regeneration substrates), and tools. Certain supplies have been defined separately due to their relative significance, for instance food/water and medical supplies. <br>  Note that supplies are defined separately from fixtures, which is an arbitrary distinction at times. In general, we would describe supplies as items that are meant to be replaced on a more regular basis than fixtures, which may be intended to serve the same function for the lifespan of the habitat.    "
     },
     food:{
         title: "Food",
-        explanation: "Explanations."
+        explanation: "Consumables containing the six types of nutrients: lipids, vitamins, water, carbohydrates, protein, and minerals <span style='color:gray'>[Insel 2014]</span>. <br> Considerations for the space food system include safety, nutrition, usability, resource minimization, reliability, stability, variety, and palatability <span style='color:gray'>[Douglas 2020]</span>. These sets of considerations may be similar for environments burdened by resource limitations, such as for disaster-relief.         <br><br><br> <span style='color:gray'>Insel, P. M. (2014). Nutrition. Jones & Bartlett Publishers. <br>Douglas, G. L., Zwart, S. R., & Smith, S. M. (2020). Space food for thought: Challenges and considerations for food and nutrition on exploration missions. The Journal of Nutrition, 150(9), 2242-2244. </span>        "
     },
     exercise_equipment:{
         title: "Exercise Equipment",
-        explanation: "Explanations."
+        explanation: "Exercise equipment are tools and machines whose primary function is to provide an exercise environment or program. Early space missions used elastic bands coupled with physical exercises as the primary countermeasure against musculoskeletal deconditioning <span style='color:gray'>[Scott 2023]</span>. Currently, the International Space Station exercise equipment include the Advanced Resistive Exercise Device (ARED), a treadmill (T2), and a cycle ergometer (CEVIS) <span style='color:gray'>[Scott 2023]</span>.        <br><br><br> <span style='color:gray'> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span>      "
     },
     physical_ergonomics:{
         title: "Physical Ergonomics",
@@ -592,25 +592,48 @@ var relatedBoxContents = {
         title: "Ground Support &#8594; Medical resources",
         explanation: "Current medical operations in Low Earth Orbit rely on real-time communication from flight surgeons and medical experts to provide evaluations and recommendations <span style='color:gray'>[Antonsen 2022]</span>. The relatively short distance can also allow the ground team to resupply medical resources and offer evacuation as a possibility <span style='color:gray'>[Antonsen 2022]</span>.     <br><br><br> <span style='color:gray'> Antonsen, E. L., Myers, J. G., Boley, L., Arellano, J., Kerstman, E., Kadwa, B., Buckland, D. M., & Van Baalen, M. (2022). Estimating medical risk in human spaceflight. Npj Microgravity, 8(1), 8.  </span>        "
     },
+    medical_capability_ground_support:{
+        title: "Ground Support &#8594; Medical capability",
+        explanation: "Current medical operations in Low Earth Orbit rely on real-time communication from flight surgeons and medical experts to provide evaluations and recommendations <span style='color:gray'>[Antonsen 2022]</span>. The relatively short distance can also allow the ground team to resupply medical resources and offer evacuation as a possibility <span style='color:gray'>[Antonsen 2022]</span>.     <br><br><br> <span style='color:gray'> Antonsen, E. L., Myers, J. G., Boley, L., Arellano, J., Kerstman, E., Kadwa, B., Buckland, D. M., & Van Baalen, M. (2022). Estimating medical risk in human spaceflight. Npj Microgravity, 8(1), 8.  </span>        "
+    },
     medical_capability_physical_health:{
-        title: "Medical Resources &#8594; Physical health",
+        title: "Medical capability &#8594; Physical health",
         explanation: "Physical health is maintained when the capability matches or exceeds the medical needs. Medical needs may be dependent on initial conditions and remain high even with access to medical care. Based on a study of nearly 300 Iraqi refugees in southeastern Michigan, 100% and 99% of respondents indicated they needed medical and dental care, respectively – this remained consistent in the first two years of arrival [Wright 2016].         <br><br><br> <span style='color:gray'> Wright, A.M., Aldhalimi, A., Lumley, M.A. et al. (2016). Determinants of resource needs and utilization among refugees over time. Soc Psychiatry Psychiatr Epidemiol 51, 539–549.</span>"
     },
-    family_and_friends:{
-        title: "Family and Friends &#8594; ",
-        explanation: "Explanations."
+    family_and_friends_stress_regulation:{
+        title: "Family and Friends &#8594; Stress regulation",
+        explanation: "During spaceflight, conference calls with and care packages from friends and family are important to help crewmembers mitigate stress <span style='color:gray'>[Kanas and Manzey 2008][Sipes and Ark 2005][Deming and Vasterling 2017]</span>.        <br><br><br> <span style='color:gray'> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. <br> Sipes, W. E., & Ark, S. T. V. (2005). Operational Behavioral Health and Performance Resources for International Space Station Crews and Families. Aviation, Space, and Environmental Medicine, 76(6). <br> Deming, C. A., & Vasterling, J. J. (2017). Workplace social support and behavioral health prior to long-duration spaceflight. Aerospace medicine and human performance, 88(6), 565-573. </span> "  },
+    supplies_environmental_monotony:{
+        title: "Supplies &#8594; Environmental monotony",
+        explanation: "The limitation of supplies due to mass, volume, or transportation distance may contribute to environmental or material monotony (e.g., the lack of fresh fruit or care packages) <span style='color:gray'>[Kanas and Manzey 2008]</span>.      <br><br><br> <span style='color:gray'> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. </span>        "
     },
-    supplies:{
-        title: "Supplies &#8594; ",
-        explanation: "Explanations."
+    supplies_placemaking:{
+        title: "Supplies &#8594; Environmental monotony",
+        explanation: "The distribution of personal items and decorating/furnishing rooms are an example of space appropriation, which can facilitate place attachment <span style='color:gray'>[Graumann 1976]</span>.         <br><br><br> <span style='color:gray'> Graumann, C. F. (1976). Concept of Appropriation.        </span>        "
     },
-    food:{
-        title: "Food &#8594; ",
-        explanation: "Explanations."
+    food_nutrition:{
+        title: "Food &#8594; Nutrition",
+        explanation: "Food is the primary source of nutrition. Food choices may be due to personal preferences, availability, sensory influences (taste, texture, smell), and economics <span style='color:gray'>[Insel 2014]</span>. Food supplies essential nutrients, providing energy, hydration, vitamins, minerals, carbohydrates, and proteins <span style='color:gray'>[Insel 2014]</span>.          <br><br><br> <span style='color:gray'> Insel, P. M. (2014). Nutrition. Jones & Bartlett Publishers. </span>        "
     },
-    exercise_equipment:{
-        title: "Exercise Equipment &#8594; ",
-        explanation: "Explanations."
+    food_depression:{
+        title: "Food &#8594; Depression",
+        explanation: "Deficiencies in zinc, vitamin D, and omega-3 are associated with depression, anxiety, and other mood disorders <span style='color:gray'>[Mitsuya 2015][Patrick and Ames 2015]</span>.     <br><br><br> <span style='color:gray'> Mitsuya, H., Omata, N., Kiyono, Y., Mizuno, T., Murata, T., Mita, K., … Wada, Y. (2015). The co-occurrence of zinc deficiency and social isolation has the opposite effects on mood compared with either condition alone due to changes in the central norepinephrine system. Behavioural Brain Research, 284, 125–130. <br> Patrick, R. P., & Ames, B. N. (2015). Vitamin D and the omega-3 fatty acids control serotonin synthesis and action, part 2: Relevance for ADHD, bipolar disorder, schizophrenia, and impulsive behavior. FASEB Journal: Official Publication of the Federation of American Societies for Experimental Biology, 29(6), 2207–2222.         </span>        "
+    },
+    food_anxiety:{
+        title: "Food &#8594; Anxiety",
+        explanation: "Deficiencies in zinc, vitamin D, and omega-3 are associated with depression, anxiety, and other mood disorders <span style='color:gray'>[Mitsuya 2015][Patrick and Ames 2015]</span>.     <br><br><br> <span style='color:gray'> Mitsuya, H., Omata, N., Kiyono, Y., Mizuno, T., Murata, T., Mita, K., … Wada, Y. (2015). The co-occurrence of zinc deficiency and social isolation has the opposite effects on mood compared with either condition alone due to changes in the central norepinephrine system. Behavioural Brain Research, 284, 125–130. <br> Patrick, R. P., & Ames, B. N. (2015). Vitamin D and the omega-3 fatty acids control serotonin synthesis and action, part 2: Relevance for ADHD, bipolar disorder, schizophrenia, and impulsive behavior. FASEB Journal: Official Publication of the Federation of American Societies for Experimental Biology, 29(6), 2207–2222.         </span>        "
+    },
+    food_kinship:{
+        title: "Food &#8594; Kinship",
+        explanation: "Food can be a highly effective bonding tool, particularly in care packages sent from home or sharing a meal around the dinner table. Food variability, quality, and availability has been found to positively influence social cohesion and morale <span style='color:gray'>[Douglas 2016][Smith 2015][Stuster 2010]</span>.     <br><br><br> <span style='color:gray'> Douglas, G. L. C. (2016). Risk of performance decrement and crew illness due to an inadequate food system (NASA 20160011582). Houston, TX: NASA Johnson Space Center. <br>  Smith, S., Zwart, S., & Heer, M. (2015). Evidence report: Risk factor of inadequate nutrition. Retrieved from https://ntrs.nasa.gov/search.jsp?R=20150000512. <br>  Stuster, J. W. (2010). Behavioral issues associated with long-duration space expeditions: Review and analysis of astronaut journals—Final report (No. NASA TM-2010-216130).  </span>        "
+    },
+    exercise_equipment_physical_health:{
+        title: "Exercise Equipment &#8594; Physical health",
+        explanation: "Current exercise protocols are necessary to mitigate adverse effects of musculoskeletal deconditioning due to the microgravity environment, but decreases in muscle strength/mass and cardiorespiratory performance were found even in 6 month spaceflights (n=46) <span style='color:gray'>[Scott 2023]</span>.         <br><br><br> <span style='color:gray'> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span>     "
+    },
+    exercise_equipment_physical_workload:{
+        title: "Exercise Equipment &#8594; Physical workload",
+        explanation: "Current exercise protocol for International Space Station crewmembers averages around 10 hours per week, or 2 hours per day [Scott 2023]. The exercise protocol is the primary source of physical workload, beyond mission events such as extravehicular activity, due to the lack of loading and stress in the microgravity environment. Based on a study of over 45 astronauts on the ISS, the median aerobic exercise duration was 65 minutes per session for the cycle ergometer and 84 minutes per session for the treadmill. Resistance training varied roughly between 100-300 pounds of force, depending on the specific exercise (e.g., squats, bench press, deadlift) <span style='color:gray'>[Scott 2023]</span>.        <br><br><br> <span style='color:gray'> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span>     "
     },
     physical_ergonomics:{
         title: "Physical Ergonomics &#8594; ",
@@ -857,24 +880,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['genetics', 'physical_health', 'extraversion', 'agreeableness', 'neuroticism']
             case "resilience":
                 return ['resilience', 'stress_regulation']
-            case "emotional_bandwidth":
-                return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'interpersonal_processes', 'kinship']
             case "psychological_resources":
-                return ['psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['psychological_resources', 'stress_regulation', 'anxiety']
             case "training_and_preparation":
-                return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
+                return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible']
             case "ground_support":
                 return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "medical_capability":
-                return ['medical_capability', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['medical_capability', 'physical_health']
             case "family_and_friends":
-                return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['family_and_friends', 'stress_regulation']
             case "supplies":
-                return ['supplies', 'medical_capability', 'exercise_equipment', 'fixtures', 'food', 'cognitive_function', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
+                return ['supplies', 'environmental_monotony', 'placemaking']
             case "food":
-                return ['food', 'nutrition', 'environmental_monotony', 'sleep', 'cognitive_function', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
+                return ['food', 'nutrition', 'depression', 'anxiety', 'kinship']
             case "exercise_equipment":
-                return ['exercise_equipment', 'physical_workload', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['exercise_equipment', 'physical_workload', 'physical_health']
             case "light_dark_cycles":
                 return ['light_dark_cycles', 'sleep']
             case "altered_gravity":
@@ -1018,31 +1039,29 @@ document.addEventListener('DOMContentLoaded', function () {
             case "conscientiousness":
                 return ['conscientiousness', 'crew_performance', 'physical_health', 'action_processes']
             case "genetics":
-                return ['genetics', 'cognitive_function', 'extraversion', 'agreeableness', 'neuroticism','extreme']
+                return ['genetics', 'physical_health', 'extraversion', 'agreeableness', 'neuroticism','extreme']
             case "resilience":
                 return ['resilience', 'stress_regulation']
-            case 'emotional_bandwidth':
-                return ['emotional_bandwidth', 'stress_regulation', 'social_support', 'depression', 'anxiety', 'discontentment', 'stress', 'interpersonal_processes', 'kinship']
             case 'genetics':
                 return ['genetics', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case 'resilience':
                 return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
             case "psychological_resources":
-                return ['psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['psychological_resources', 'stress_regulation', 'anxiety', 'ground_support']
             case "training_and_preparation":
-                return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
+                return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible']
             case "ground_support":
-                return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['ground_support', 'psychological_resources', 'medical_capability','communication_delay', 'isolated']
             case "medical_capability":
-                return ['medical_capability', 'cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['medical_capability', 'physical_health','ground_support','distance_from_earth']
             case "family_and_friends":
-                return ['family_and_friends', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['family_and_friends', 'stress_regulation']
             case "supplies":
-                return ['supplies', 'medical_capability', 'exercise_equipment', 'fixtures', 'food', 'cognitive_function', 'environmental_monotony', 'physical_workload', 'social_monotony', 'nutrition', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress', 'boredom', 'stress_regulation', 'interpersonal_processes', 'discontentment', 'kinship']
+                return ['supplies', 'environmental_monotony', 'placemaking','resource_constrained']
             case "food":
-                return ['food', 'nutrition', 'environmental_monotony', 'sleep', 'cognitive_function', 'boredom', 'stress_regulation', 'depression', 'anxiety', 'sleep_quality', 'tranquility', 'stress', 'discontentment']
+                return ['food', 'nutrition', 'depression', 'anxiety', 'kinship','resource_constrained','distance_from_earth']
             case "exercise_equipment":
-                return ['exercise_equipment', 'physical_workload', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['exercise_equipment', 'physical_workload', 'physical_health']
             case "light_dark_cycles":
                 return ['light_dark_cycles', 'sleep','extreme']
             case "altered_gravity":
