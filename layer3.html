@@ -1,143 +1,1053 @@
-<!-- Layer 3
-Links to style3.css and zoomLayer3.js
-Builds onto layer 2 by adding smaller boxes
-e.g. distance_from_earth falls under chronic_stressors, which falls under box1
-Adds an additional text-area to the right to provide detailed explanation upon hovering
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Architecture Mapping</title>
-    <link rel="stylesheet" href="style3.css">
-    <script src="zoomLayer3.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/arrow-line/dist/arrow-line.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="box box1"><!--Everything falls under box-->
-            <div class="selection">Selection</div> <!--Box on layer 2, placed in left-most column box1-->
-            <div class="chronic_stressors">Chronic Stressors <!--Box on layer 2, placed in left-most column box1-->
-                <!--These smaller boxes are factors that fall under chronic stressor-->
-                <div class="distance_from_earth">Distance From Earth</div>
-                <div class="mission_duration">Mission Duration</div>
-                <div class="communication_delay">Communication Delay</div>
-                <div class="isolated">Isolated</div>
-                <div class="confined">Confined</div>
-                <div class="extreme">Extreme</div>
-                <div class="resource_constrained">Resource Constrained</div>
-            </div>
-            <div class="acute_stressors">Acute Stressors <!--Box on layer 2, placed in left-most column box1-->
-                <div class="mission_demands">Mission Demands</div>
-                <div class="mission_events">Mission Events</div>
-            </div>
-        </div>
-        <div class="box box2">
-            <div class="individual_traits">Individual Traits
-                <div class = "individual_traits_invisible">Individual Traits</div>
-                <div class="extraversion">Extraversion</div>
-                <div class="agreeableness">Agreeableness</div>
-                <div class="neuroticism">Neuroticism</div>
-                <div class="resilience">Resilience</div>
-                <div class="openness">Openness</div>
-                <div class="conscientiousness">Conscientiousness</div>
-                <div class="genetics">Genetics</div>
-            </div>
-            <div class="designed_features">Designed Features
-                <div class="habitable_volume">Habitable Volume</div>
-                <div class="environmental_control">Environmental Control</div>
-                <div class="circulation_paths">Circulation Paths</div>
-                <div class="layout">Layout</div>
-                <div class="lighting">Lighting</div>
-                <div class="privacy">Privacy</div>
-                <div class="ergonomics">Ergonomics</div>
-                <div class="fixtures">Fixtures</div>
-                <div class="reconfigurability">Reconfigurability</div>
-                <div class="environmental_monotony">Environmental Monotony</div>
-            </div>
-            <div class="environmental_stressors">Environmental Stressors
-                <div class="light_dark_cycles">Light/Dark Cycles</div>
-                <div class="altered_gravity">Altered Gravity</div>
-                <div class="atmosphere">Atmosphere</div>
-                <div class="radiation">Radiation</div>
-                <div class="acoustics">Acoustics</div>
-                <div class="nutrition">Nutrition</div>
-            </div>
-        </div>
-        <div class="box box6">
-            <div class="social_composition">Social Composition
-                <div class="social_composition_invisible">Social Composition</div>
-                <div class="crew_size">Crew size</div>
-                <div class="social_support">Social Support</div>
-                <div class="social_monotony">Social Monotony</div>
-                <div class="density">Density</div>
-                <div class="group_living">Group Living</div>
-            </div>
-            <div class="resources">Resources
-                <div class="psychological_resources">Psychological Resources</div>
-                <div class="training_and_preparation">Training and Preparation</div>
-                <div class="ground_support">Ground Support</div>
-                <div class="medical_capability">Medical Capability</div>
-                <div class="family_and_friends">Family and Friends</div>
-                <div class="supplies">Supplies</div>
-                <div class="food">Food</div>
-                <div class="exercise_equipment">Exercise Equipment</div>
-            </div>
-            <div class="operational_stressors">Operational Stressors
-                <div class="physical_workload">Physical Workload</div>
-                <div class="cognitive_workload">Cognitive Workload</div>
-                <div class="media_attention">Media Attention</div>
-                <div class="conflicts">Conflicts</div>
-                <div class="injuries">Injuries</div>
-            </div>
-        </div>
-        <div class="box box3">
-            <div class="team_processes">Team Processes
-                <div class="team_processes_invisible">Team Processes</div>
-                <div class="transition_processes">Transition Processes</div>
-                <div class="action_processes">Action Processes</div>
-                <div class="interpersonal_processes">Interpersonal Processes</div>
-            </div>
-            <div class="individual_processes">Individual Processes
-                <div class="stress_regulation">Stress Regulation</div>
-                <div class="placemaking">Placemaking</div>
-                <div class="sleep">Sleep</div>
-                <div class="physical_health">Physical Health</div>  
-            </div>
-        </div>
-        <div class="box box4">
-            <div class="performance">Performance
-                <div class="anxiety">Anxiety</div>
-                <div class="agency">Agency</div>
-                <div class="stress">Stress</div>
-                <div class="crew_performance">Crew Performance</div>
-                <div class="attachment">Attachment</div>
-                <div class="trust">Trust</div>
-                <div class="cognitive_function">Cognitive Function</div>
-            </div>
-            <div class="mood_and_effect">Mood and Affect
-                <div class="curiosity">Curiosity</div>
-                <div class="kinship">Kinship</div>
-                <div class="boredom">Boredom</div>
-                <div class="tranquility">Tranquility</div>
-                <div class="discontentment">Discontentment</div>
-                <div class="nostalgia_homesickness">Nostalgia/<br>Homesickness</div>
-                <div class="fear">Fear</div>
-                <div class="awe">Awe</div>
-                <div class="depression">Depression</div>
-            </div>
-        </div>
-        <div class="box box5">
-            <div class="loss_of_mission">Loss of Mission</div>
-            <div class="loss_of_crew_life">Loss of Crew Life</div>
-            <div class="quality_of_life">Quality of Life</div>
-        </div>    
-        <div class="box explanation">
-            <p><strong>Hover</strong> over each box for their definitions. </p> 
-            <p><strong>Click</strong> on a factor and <strong>hover</strong> over its related boxes to read about their relationships.</p> 
-            <p><strong>Click again</strong> to reset the diagram.</p>
-        </div>
-    </div>
-</body>
-</html>
+body, html { /*Container where all boxes are stored in*/
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #bcd8e5;
+}
+.container {
+    display: flex;
+    width: 100vw; 
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/*General structure for the boxes, include common features like 
+rounded borders, text size and font*/
+.box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    box-sizing: border-box;
+    font-family: monospace, monospace;
+    font-size: 13px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.box1,
+.box3,
+.box4,
+.box5,
+.box6 {
+    margin-right: 0.8%; /*Adding space between the columns*/
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 { /*Make sure everything is centered*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Control width of each column*/
+.box1 {
+    width: calc(15vw); 
+    margin-left: 0.8%;
+}
+
+.box2 {
+    width: calc(18vw);
+    margin-right: 0.2%;
+}
+
+.box6 {
+    width: calc(18vw);
+}
+
+.box3 {
+    width: calc(10vw);
+}
+
+.box4 {
+    width: calc(15vw); 
+}
+
+.box5 {
+    width: 0;
+}
+
+/*explanation box on the right side*/
+.explanation{ 
+    margin-right: 0.5%;
+    width: calc(25%);
+    border-color: rgb(49, 169, 137);
+    border-width: 10px;
+    background-color: rgb(209, 235, 228);
+    color: black;
+    display: flex;
+    text-align: left;
+    padding: 1%;
+}
+
+/*features common to smaller boxes, 
+e.g. centered text, font color and size*/
+.distance_from_earth,
+.mission_duration,
+.communication_delay,
+.isolated,
+.confined,
+.extreme,
+.resource_constrained,
+.mission_demands,
+.mission_events,
+.crew_size,
+.social_support,
+.density,
+.social_monotony,
+.group_living,
+.extraversion,
+.agreeableness,
+.neuroticism,
+.resilience,
+.openness,
+.conscientiousness,
+.genetics,
+.psychological_resources,
+.training_and_preparation,
+.ground_support,
+.medical_capability,
+.family_and_friends,
+.supplies,
+.food,
+.exercise_equipment,
+.ergonomics,
+.circulation_paths,
+.privacy,
+.lighting,
+.environmental_monotony,
+.layout,
+.reconfigurability,
+.fixtures,
+.light_dark_cycles,
+.altered_gravity,
+.atmosphere,
+.radiation,
+.environmental_control,
+.habitable_volume,
+.acoustics,
+.nutrition,
+.physical_workload,
+.cognitive_workload,
+.media_attention,
+.transition_processes,
+.action_processes,
+.interpersonal_processes,
+.stress_regulation,
+.placemaking,
+.sleep,
+.physical_health,
+.cognitive_function,
+.anxiety,
+.agency,
+.stress,
+.crew_performance,
+.attachment,
+.trust,
+.curiosity,
+.kinship,
+.boredom,
+.tranquility,
+.discontentment,
+.nostalgia_homesickness,
+.fear,
+.awe,
+.depression {
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: rgb(69, 65, 65);
+    font-size: 11px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    cursor: default; /*do not change cursor shape when hovering over text*/
+}
+
+/*Features common to second layer boxes
+e.g. rounded borders, centered elements*/
+.selection,
+.chronic_stressors,
+.acute_stressors,
+.social_composition,
+.individual_traits,
+.individual_traits_invisible,
+.social_composition_invisible,
+.team_processes_invisible,
+.resources,
+.environmental_stressors,
+.designed_features,
+.operational_stressors,
+.team_processes,
+.individual_processes,
+.performance,
+.mood_and_effect,
+.loss_of_mission,
+.loss_of_crew_life,
+.quality_of_life,
+.loss_of_mission,
+.loss_of_crew_life,
+.quality_of_life 
+{
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5vh; /*add margin to the bottom of the boxes*/
+    padding-top: 1vh;
+}
+
+/*add margin to the top of the top boxes*/
+.individual_traits,
+.social_composition,
+.team_processes,
+.performance,
+.loss_of_mission
+{
+    margin-top: 0.5vh;
+}
+
+/*Features unique to individual smaller boxes*/
+.selection {
+    width: calc(100%); 
+    height: calc(100% * 0.2);
+    background-color: #0072B2;
+    align-items: center;
+    color: white;
+    margin-top: 2%;
+}
+
+/*--------------------------------------*/
+/*Boxes laying inside chronic stressors*/
+.chronic_stressors {
+    width: calc(100%); 
+    height: calc(100% * 0.5);
+    background-color: #dbd7d7;
+    color: rgba(0, 0, 0, 0.668);
+}
+
+.distance_from_earth{
+    width: calc(40%); 
+    height: calc(8%); 
+    position: absolute;
+    top: calc(37%); /*relative to top of page*/
+    left: 3%; /*relative to chronic_stressors*/
+    background-color: #929090;
+}
+
+.mission_duration{
+    width: calc(40%); 
+    height: calc(8%); 
+    position: absolute;
+    top: calc(48%);
+    left: 3%;
+    background-color: #929090;
+}
+
+.communication_delay{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(27%);
+    right: 14%;
+    background-color: #929090;
+}
+
+.isolated{
+    width: calc(40%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(35%);
+    right: 5%;
+    color: rgb(201, 198, 198);
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.confined{
+    width: calc(40%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(43%);
+    right: 5%;
+    color: rgb(201, 198, 198);
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.extreme {
+    width: calc(40%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(51%);
+    right: 5%;
+    color: rgb(201, 198, 198);
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+.resource_constrained{
+    width: calc(40%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(59%);
+    right: 50%;
+    color: rgb(201, 198, 198);
+    background-color: rgba(0, 0, 0, 0.735);
+}
+
+/*--------------------------------------*/
+/*Boxes laying inside acute stressors*/
+.acute_stressors {
+    width: calc(100%);
+    height: calc(100% * 0.3);
+    background-color: #dbd7d7;
+    color: rgba(0, 0, 0, 0.668);
+}
+
+.mission_demands{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(78%);
+    left: 3%;
+    background-color: #929090;
+}
+
+.mission_events{
+    width: calc(50%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(86%);
+    right: 3%;
+    color: rgb(201, 198, 198);
+    background-color: rgba(0, 0, 0, 0.735);
+}
+/*-----------------------------------------*/
+/*Boxes laying inside personality trait*/
+.individual_traits {
+    width: calc(100%);
+    height: calc(100% * 0.37);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.individual_traits_invisible{ /*Overall mask for the bigger individual traits*/
+    position: absolute;
+    left: 0%;
+    height: 34%;
+    width: 100%;
+    top: 0.5%;
+    background-color: #94ecff;
+    opacity: 100%;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.extraversion{
+    width: calc(35%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(5.5%);
+    left: 10%;
+    background-color: #56B4E9;
+}
+
+.agreeableness{
+    width: calc(37%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(12%);
+    left: 5%;
+    background-color: #56B4E9;
+}
+
+.neuroticism{
+    width: calc(33%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(20%);
+    right: 8%;
+    background-color: #56B4E9;
+}
+
+.resilience{
+    width: calc(33%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(26.5%);
+    left: 7%;
+    background-color: #56B4E9;
+}
+
+.openness{
+    width: calc(33%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(6%);
+    right: 8%;
+    background-color: #56B4E9;
+}
+
+.conscientiousness{
+    width: calc(48%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(19%);
+    left:9%;
+    background-color: #56B4E9;
+}
+
+.genetics{
+    width: calc(30%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(12.5%);
+    right: 22%;
+    background-color: #56B4E9;
+}
+
+/*-----------------------------------------*/
+/*Boxes laying inside crew composition*/
+.social_composition {
+    width: calc(100%);
+    height: calc(100% * 0.3);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.social_composition_invisible{ /*Overall mask for the bigger social composition box*/
+    position: absolute;
+    left: 0%;
+    height: 29%;
+    width: 100%;
+    top: 0.5%;
+    background-color: #94ecff;
+    opacity: 100%;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.crew_size{
+    width: calc(30%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(8%);
+    left:8%;
+    background-color: #56B4E9;
+}
+
+.social_support{
+    width: calc(35%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(18%);
+    left:4%;
+    background-color: #56B4E9;
+}
+
+.social_monotony{
+    width: calc(33%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(6.5%);
+    right:5%;
+    background-color: #56B4E9;
+}
+
+.density{
+    width: calc(40%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(13.5%);
+    right:18%;
+    background-color: #56B4E9;
+}
+
+.group_living{
+    width: calc(35%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(21.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside resources*/
+.resources {
+    width: calc(100%);
+    height: calc(100% * 0.45);
+    top: calc(80% * 0.4 + 80px);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.psychological_resources{
+    width: calc(40%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(36%);
+    left:10%;
+    background-color: #56B4E9;
+}
+
+.training_and_preparation{
+    width: calc(40%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(45.5%);
+    left: 38%;
+    background-color: #56B4E9;
+}
+
+.ground_support{
+    width: calc(40%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(52.5%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.medical_capability{
+    width: calc(47%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(59.5%);
+    left:20%;
+    background-color: #56B4E9;
+}
+
+.family_and_friends{
+    width: calc(43%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(38.5%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.supplies{
+    width: calc(30%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(52.5%);
+    right:5%;
+    background-color: #56B4E9;
+}
+
+.food{
+    width: calc(30%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(66.5%);
+    left:10%;
+    background-color: #56B4E9;
+}
+
+.exercise_equipment{
+    width: calc(45%); 
+    height: calc(6%);
+    position: absolute;
+    top: calc(66%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+/*-----------------------------------------*/
+/*Boxes laying inside designed features*/
+.designed_features {
+    width: calc(100%);
+    height: calc(100% * 0.35);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.lighting{
+    width: calc(27%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(50.5%);
+    right: 35%;
+    background-color: #56B4E9;
+}
+
+.circulation_paths{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(39.5%);
+    left: 35%;
+    background-color: #56B4E9;
+}
+
+.layout{
+    width: calc(30%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(54%);
+    left:5%;
+    background-color: #56B4E9;
+}
+
+.privacy{
+    width: calc(30%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(61.5%);
+    right: 5%;
+    background-color: #56B4E9;
+}
+
+.ergonomics{
+    width: calc(47%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(61.5%);
+    left: 4%;
+    background-color: #56B4E9;
+}
+
+.fixtures{
+    width: calc(33%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(46%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.reconfigurability{
+    width: calc(48%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(56%);
+    right: 10%;
+    background-color: #56B4E9;
+}
+
+.environmental_monotony{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(45%);
+    left:8%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside environmental stressors*/
+.environmental_stressors {
+    width: calc(100%);
+    height: calc(100% * 0.35);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.light_dark_cycles{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(73%);
+    left:15%;
+    background-color: #56B4E9;
+}
+
+.altered_gravity{
+    width: calc(40%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(86%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.atmosphere{
+    width: calc(33%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(79%);
+    left:2.5%;
+    background-color: #56B4E9;
+}
+
+.radiation{
+    width: calc(30%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(80%);
+    right:30%;
+    background-color: #56B4E9;
+}
+
+.environmental_control{
+    width: calc(40%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(92%);
+    left:8%;
+    background-color: #56B4E9;
+}
+
+.habitable_volume{
+    width: calc(30%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(74%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.acoustics{
+    width: calc(47%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(93%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.nutrition{
+    width: calc(30%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(86%);
+    right:8%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside operational stressors*/
+.operational_stressors {
+    width: calc(100%);
+    height: calc(100% * 0.26);
+    background-color: #94ecff;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.physical_workload{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(86%);
+    left:5%;
+    background-color: #56B4E9;
+}
+
+.cognitive_workload{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(93%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.media_attention{
+    width: calc(43%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(80%);
+    right:20%;
+    background-color: #56B4E9;
+}
+
+.conflicts{
+    width: calc(35%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(86%);
+    right:2.5%;
+    background-color: #56B4E9;
+}
+
+.injuries{
+    width: calc(35%); 
+    height: calc(5%);
+    position: absolute;
+    top: calc(92%);
+    left:15%;
+    background-color: #56B4E9;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside team processes*/
+.team_processes {
+    width: calc(100%); 
+    height: calc(45%);
+    background-color: #ffcbfb;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.team_processes_invisible{ /*Overall mask for the bigger social composition box*/
+    position: absolute;
+    left: 0%;
+    height: 44.3%;
+    width: 100%;
+    top: 0.5%;
+    background-color: #ffcbfb;
+    opacity: 100%;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.transition_processes{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(6.5%);
+    background-color: #CC79A7;
+}
+
+.action_processes{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(19%);
+    background-color: #CC79A7;
+}
+
+.interpersonal_processes{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(31.5%);
+    background-color: #CC79A7;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside individual processes*/
+.individual_processes {
+    width: calc(100%); 
+    height: calc(55%);
+    background-color: #ffcbfb;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.stress_regulation{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(53%);
+    background-color: #CC79A7;
+}
+
+.placemaking{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(64.5%);
+    background-color: #CC79A7;
+}
+
+.sleep{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(76%);
+    background-color: #CC79A7;
+}
+
+.physical_health{
+    width: calc(80%); 
+    height: calc(10%);
+    position: absolute;
+    top: calc(87.5%);
+    background-color: #CC79A7;
+}
+.cognitive_function{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(6.5%);
+    left:3%;
+    background-color: #E69F00;
+}
+/*-----------------------------------------*/
+/*Boxes laying inside performance*/
+.performance {
+    width: calc(100%); 
+    height: calc(100% * 0.45);
+    background-color: #ffd54d;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.anxiety{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(16%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.agency{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(25.5%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.stress{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(35%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.crew_performance{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(11%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+.attachment{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(20.5%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+.trust{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(30%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+/*-----------------------------------------*/
+/*Boxes laying inside mood and effect*/
+.mood_and_effect {
+    width: calc(100%);
+    height: calc(100% * 0.55);
+    background-color: #ffd54d;
+    color: rgba(42, 41, 41, 0.668);
+}
+
+.curiosity{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(56%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.kinship{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(65.5%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.boredom{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(75%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.tranquility{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(84.5%);
+    left:3%;
+    background-color: #E69F00;
+}
+
+.discontentment{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(52%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+.nostalgia_homesickness{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(61.5%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+.fear{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(71%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+.awe{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(80.5%);
+    right:3%;
+    background-color: #E69F00;
+}
+
+.depression{
+    width: calc(45%); 
+    height: calc(8%);
+    position: absolute;
+    top: calc(90%);
+    right:3%;
+    background-color: #E69F00;
+}
+/*-----------------------------------------*/
+/*Right-most factor column*/
+.loss_of_mission {
+    width: calc(100%);
+    height: calc(100% * 0.33);
+    background-color: #b4b4b4;
+    align-items: center;
+    color: white;
+}
+
+.loss_of_crew_life {
+    width: calc(100%);
+    height: calc(100% * 0.33);
+    background-color: #b4b4b4;
+    align-items: center;
+    color: white;
+}
+
+.quality_of_life {
+    width: calc(100%);
+    height: calc(100% * 0.33);
+    background-color: #b4b4b4;
+    align-items: center;
+    color: white;
+}
+
+.greyed-out{ /*Specify what happens to the rest of elements upon clicking*/
+    background-color: grey; 
+    color: rgba(0,0,0,0.2);
+}
+
+.greyed-out-hover{ /*Specify what happens to the rest of elements upon hovering*/
+    background-color: grey; 
+    color: rgba(0,0,0,0.2);
+}
+
+.clicked{ /*Specify what happens to the element when clicked*/
+    font-weight: 300;
+}
