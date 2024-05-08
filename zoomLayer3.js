@@ -234,15 +234,15 @@ var boxContents = {
     },
     stress_regulation:{
         title: "Stress Regulation",
-        explanation: "Explanations."
+        explanation: "When faced with a stressor (a situation in which an individual needs to adjust their usual behavior), individuals usually vary greatly in how they respond, manage, and resolve stress. The variables of the stress regulation process includes the magnitude of physiological/emotional responses, length of time for recovery, and the extent of adequate recovery during/following the stressor – also denoted as exposure, reactivity, recovery, and restoration <span style='color:gray'>[Williams 2009]</span>.      <br><br><br> <span style='color:gray'> Williams, P. G., Suchy, Y., & Rau, H. K. (2009). Individual differences in executive functioning: Implications for stress regulation. Annals of Behavioral Medicine, 37(2), 126-140. </span>        "
     },
-    placemaking:{
-        title: "Placemaking",
-        explanation: "Explanations."
+    place_attachment:{
+        title: "Place Attachment",
+        explanation: "Place attachment is the affective bond and the process of bonding (i.e., “attachment”) between an individual and a space of significance (i.e., “place”)  <span style='color:gray'>[Altman and Low 1992][Scannell and Gifford 2010]</span>. It has been argued that a “sense of place” fulfills a universal human need  <span style='color:gray'>[Relph 1976]</span> and promotes safety and security  <span style='color:gray'>[Fried 2000]</span>. <br> In Isolated, Confined, and/or Extreme environments, place attachment can refer to the current place (e.g., spacecraft) that we may seek to support; or to the “home” environment (e.g., Earth) that we might seek to manage.            <br><br><br> <span style='color:gray'>  Altman, I., & Low, S. M. (Eds.). (1992). Place Attachment. Springer US. <br> Scannell, L., & Gifford, R. (2010). Defining place attachment: A tripartite organizing framework. Journal of Environmental Psychology, 30(1), 1–10. <br>  Relph, Edward. Place and Placelessness (1976): In P. Hubbard, R. Kitchin, & G. Valentine, Key Texts in Human Geography (pp. 43–52). SAGE Publications Ltd. <br> Fried, M. (2000). CONTINUITIES AND DISCONTINUITIES OF PLACE. Journal of Environmental Psychology, 20(3), 193–205. </span> "
     },
     sleep:{
         title: "Sleep",
-        explanation: "Explanations."
+        explanation: "Adults are recommended to sleep at least 7 hours per night for optimal health  <span style='color:gray'>[Watson 2015]</span>. Qualifiers for healthy sleep comprise duration, quality, regularity, and timing – often defined broadly as ‘sleep architecture’ in space studies. Two separate studies on the International Space Station found that astronauts slept less than 6 hours on 35-45% of nights  <span style='color:gray'>[Jones 2022][Barger 2014]</span>.        <br><br><br> <span style='color:gray'>  Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society. Journal of Clinical Sleep Medicine, 11(06), 591–592. <br> Jones, C. W., Basner, M., Mollicone, D. J., Mott, C. M., & Dinges, D. F. (2022). Sleep deficiency in spaceflight is associated with degraded neurobehavioral functions and elevated stress in astronauts on six-month missions aboard the International Space Station. Sleep, 45(3), zsac006. <br> Barger, L. K., Flynn-Evans, E. E., Kubey, A., Walsh, L., Ronda, J. M., Wang, W., Wright, K. P., & Czeisler, C. A. (2014). Prevalence of sleep deficiency and use of hypnotic drugs in astronauts before, during, and after spaceflight: An observational study. The Lancet Neurology, 13(9), 904–912. </span>    "
     },
     cognitive_function:{
         title: "Physical Health",
@@ -599,7 +599,7 @@ var relatedBoxContents = {
         title: "Supplies &#8594; Environmental monotony",
         explanation: "The limitation of supplies due to mass, volume, or transportation distance may contribute to environmental or material monotony (e.g., the lack of fresh fruit or care packages) <span style='color:gray'>[Kanas and Manzey 2008]</span>.      <br><br><br> <span style='color:gray'> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. </span>        "
     },
-    supplies_placemaking:{
+    supplies_place_attachment:{
         title: "Supplies &#8594; Environmental monotony",
         explanation: "The distribution of personal items and decorating/furnishing rooms are an example of space appropriation, which can facilitate place attachment <span style='color:gray'>[Graumann 1976]</span>.         <br><br><br> <span style='color:gray'> Graumann, C. F. (1976). Concept of Appropriation.        </span>        "
     },
@@ -715,9 +715,9 @@ var relatedBoxContents = {
         title: "Privacy &#8594; Sleep",
         explanation: "Anecdotal evidence shows that the need for privacy often manifests itself in a need to be alone <span style='color:gray'>[Stuster 1996]</span>, for instance in a sleep area. In isolation, a bed is often the first thing people claim as their own, showing the importance of a personal sleeping area <span style='color:gray'>[Altman and Haythorn 1967]</span>.        <br><br><br> <span style='color:gray'> Stuster, J. (1996). Bold endeavors: Lessons from polar and space exploration. Naval Institute Press. <br> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. </span>        "
     },
-    privacy_placemaking:{
-        title: "Privacy &#8594; Placemaking",
-        explanation: "Privacy is closely related to territoriality and space appropriation. For instance, one study of over 100 college students found that privacy regulation behaviors (i.e., managing one’s social contact) was correlated with adjustment to university life <span style='color:gray'>[Vinsel 1980]</span>. Private spaces are also often where one can perform placemaking behavior and form stronger bonds to personalized areas. For instance, in a study of 18 pairs of confined sailors, it was found that the territoriality over the bed areas were enacted first, followed by more public areas (table and chairs) <span style='color:gray'>[Altman and Haythorn 1967]</span>.        <br><br><br> <span style='color:gray'> Vinsel, A., Brown, B. B., Altman, I., & Foss, C. (1980). Privacy regulation, territorial displays, and effectiveness of individual functioning. Journal of Personality and Social Psychology, 39(6), 1104–1115.     <br> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. </span>        "
+    privacy_place_attachment:{
+        title: "Privacy &#8594; Place_attachment",
+        explanation: "Privacy is closely related to territoriality and space appropriation. For instance, one study of over 100 college students found that privacy regulation behaviors (i.e., managing one’s social contact) was correlated with adjustment to university life <span style='color:gray'>[Vinsel 1980]</span>. Private spaces are also often where one can perform place_attachment behavior and form stronger bonds to personalized areas. For instance, in a study of 18 pairs of confined sailors, it was found that the territoriality over the bed areas were enacted first, followed by more public areas (table and chairs) <span style='color:gray'>[Altman and Haythorn 1967]</span>.        <br><br><br> <span style='color:gray'> Vinsel, A., Brown, B. B., Altman, I., & Foss, C. (1980). Privacy regulation, territorial displays, and effectiveness of individual functioning. Journal of Personality and Social Psychology, 39(6), 1104–1115.     <br> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. </span>        "
     },
     privacy_stress_regulation:{
         title: "Privacy &#8594; Stress regulation",
@@ -743,16 +743,16 @@ var relatedBoxContents = {
         title: "Ergonomics &#8594; Situation awareness",
         explanation: "Cognitive ergonomics are important to maintain a balance between the cognitive resources (e.g., knowledge, experience, training, user manuals, user interface clarity) and cognitive demands (e.g., task complexity, multitasking, user goals) <span style='color:gray'> [Stanton 2005]</span>. An imbalance between the resources and demands can occur as task underload or task overload <span style='color:gray'> [Stanton 2005]</span>, which could then lead to an improper level of situation awareness.    <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. </span>        "
     },
-    fixtures_placemaking:{
-        title: "Fixtures &#8594; Placemaking",
+    fixtures_place_attachment:{
+        title: "Fixtures &#8594; Place_attachment",
         explanation: "Fixtures contribute to the habitability of a space. In particular, furnishings that enable the personalization of spaces – including decorating/furnishing rooms and  distribution of personal items – enable space appropriation, which in turn promotes place attachment <span style='color:gray'>[Graumann 1976]</span>.  <br><br><br> <span style='color:gray'> Graumann, C. F. (1976). Concept of Appropriation. </span>        "
     },
     fixtures_reconfiguability:{
         title: "Fixtures &#8594; Reconfigurability",
         explanation: "Flexibility in the attachment or fixtures, or modularity in the design and implementation of fixtures, can contribute to reconfigurability. "
     },
-    reconfigurability_placemaking:{
-        title: "reconfigurability &#8594; Placemaking",
+    reconfigurability_place_attachment:{
+        title: "reconfigurability &#8594; Place_attachment",
         explanation: "The ability to reconfigure and personalize a space is important to create and reflect a sense of attachment <span style='color:gray'>[Simon 2011][Rioux 2017]</span>.     <br><br><br> <span style='color:gray'>  Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). <br>  Rioux, L., Scrima, F., & Werner, C. M. (2017). Space appropriation and place attachment: University students create places. Journal of Environmental Psychology, 50, 60–68. </span> "
     },
     reconfigurability_sleep:{
@@ -819,21 +819,45 @@ var relatedBoxContents = {
         title: "interpersonal Processes &#8594; Stress regulation",
         explanation: "Social activities can aid in stress management <span style='color:gray'>[Marks 2011]</span>. A study of 60 dyadic couples (romantic and platonic) showed that a brief (10 minute) affectionate interaction prior to a stressful experience acted as a buffer, limiting the magnitude of cardiovascular arousal <span style='color:gray'>[Pauley 2015]</span>.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  <br> Pauley, P. M., Floyd, K., & Hesse, C. (2015). The stress-buffering effects of a brief dyadic interaction before an acute stressor. Health communication, 30(7), 646-659.        </span>  "
     },
-    interpersonal_processes_placemaking:{
-        title: "interpersonal Processes &#8594; Placemaking",
+    interpersonal_processes_place_attachment:{
+        title: "interpersonal Processes &#8594; Place_attachment",
         explanation: "A commonly studied predictor of place attachment is social interaction [Bonaiuto 1999][Bonaiuto 2006][Brown 2004][Kasarda and Janowitz 1974][Lewicka 2005][Mesch and Manor 1998][Moser 2002][Ringel and Finkelstein 1991]. The strength of community ties consistently positively predicts place attachment.    <br><br><br> <span style='color:gray'> Bonaiuto, M., Aiello, A., Perugini, M., Bonnes, M., & Ercolani, A. P. (1999). Multidimensional perception of residential environment quality and neighbourhood attachment in the urban environment. Journal of Environmental Psychology, 19,331-352. <br> Bonaiuto, M., Fornara, F., & Bonnes, M. (2006). Perceived residential environment quality in middle- and low-extension Italian cities. European Review of Applied Psychology, 56, 23-34. <br> Brown, B. B., Perkins, D. D., & Brown, G. (2004). Incivilities, place attachment and crime: Block and individual effects. Journal of Environmental Psychology, 24, 359-371. <br> Kasarda, J. D., & Janowitz, M. (1974). Community attachment in mass society. American Sociological Review, 39, 328-339. <br> Lewicka, M. (2005). Ways to make people active: Role of place attachment, cultural capital and neighborhood ties. Journal of Environmental Psychology, 4, 381-395. <br> Mesch, G. S., & Manor, O. (1998). Social ties, environmental perception and local attachment. Environment and Behavior, 30, 504-519. <br> Moser, G., Ratiu, E., & Fleury-Bahi, G. (2002). Appropriation and interpersonal relations. From Dwelling to City through the neighborhood. Environment and Behavior, 34,122-136. <br> Ringel, N. B., & Finkelstein, J. C. (1991). Differentiating neighborhood satisfaction and neighborhood attachment among urban residents. Basic and Applied Social Psychology, 12,177-193. </span>  "
     },
-    stress_regulation:{
-        title: "Stress Regulation &#8594; ",
-        explanation: "Explanations."
+    stress_regulation_stress:{
+        title: "Stress Regulation &#8594; Stress",
+        explanation: "Individual variability in stress regulation (exposure, reactivity, recovery, and restoration) accounts for how stressed they may feel and how long it takes for the stress to be resolved <span style='color:gray'>[Williams 2009]</span>.        <br><br><br> <span style='color:gray'> Williams, P. G., Suchy, Y., & Rau, H. K. (2009). Individual differences in executive functioning: Implications for stress regulation. Annals of Behavioral Medicine, 37(2), 126-140. </span>        "
     },
-    placemaking:{
-        title: "Placemaking &#8594; ",
-        explanation: "Explanations."
+    stress_regulation_depression:{
+        title: "Stress Regulation &#8594; Depression",
+        explanation: "Effective regulation strategies have been linked to improved mental wellness <span style='color:gray'>[Gross and John 2003][Ochsner and Gross 2005][Troy 2010]</span>. In a study of over 150 college students, it was found that emotional regulation fully mediate the relationship between interpersonal stress and depression; while interpersonal stress does not have a significant relationship to depression, maladaptive regulation strategies contribute to an increase in depression after stressful events <span style='color:gray'>[Moriya and Takahashi 2013]</span>.     <br><br><br> <span style='color:gray'> Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85, 348–362. <br> Ochsner, K. N., & Gross, J. J. (2005). The cognitive control of emotion. Trends in Cognitive Sciences, 9, 242–249. <br>  Troy, A. S., Wilhelm, F. H., Shallcross, A. J., & Mauss, I. B. (2010). Seeing the silver lining: Cognitive reappraisal ability moderates the relationship between stress and depressive symptoms. Emotion, 10, 783–795. <br> Moriya, J., & Takahashi, Y. (2013). Depression and interpersonal stress: The mediating role of emotion regulation. Motivation and Emotion, 37, 600-608.        </span>        "
     },
-    sleep:{
-        title: "Sleep &#8594; ",
-        explanation: "Explanations."
+    stress_regulation_anxiety:{
+        title: "Stress Regulation &#8594; Anxiety",
+        explanation: "Effective regulation strategies have been linked to improved mental wellness <span style='color:gray'>[Gross and John 2003][Ochsner and Gross 2005][Troy 2010]</span>. Anxiety disorders have been characterized as dysfunction in systems regulating stress <span style='color:gray'>[Mineka and Zinbarg 1996][Nolte 2011]</span>. Excessive anxiety and worry of situations are also symptoms of dysregulation of stress.           <br><br><br> <span style='color:gray'> Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: Implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85, 348–362. <br> Ochsner, K. N., & Gross, J. J. (2005). The cognitive control of emotion. Trends in Cognitive Sciences, 9, 242–249. <br>  Troy, A. S., Wilhelm, F. H., Shallcross, A. J., & Mauss, I. B. (2010). Seeing the silver lining: Cognitive reappraisal ability moderates the relationship between stress and depressive symptoms. Emotion, 10, 783–795. <br> Mineka, S., and Zinbarg, R. (1996). Conditioning and ethological models of anxiety disorders: stress-in-dynamic-context anxiety models. Perspectives on anxiety, panic, and fear. Nebr. Symp. Motiv. 43, 135–211. <br>   Nolte, T., Guiney, J., Fonagy, P., Mayes, L. C., & Luyten, P. (2011). Interpersonal stress regulation and the development of anxiety disorders: an attachment-based developmental framework. Frontiers in behavioral neuroscience, 5, 55.  </span>        "
+    },
+    stress_regulation_kinship:{
+        title: "Stress Regulation &#8594; Kinship",
+        explanation: "During a study of 6 crewmembers in isolation and confinement for 520 days, two of the crewmember with the highest ratings of stress accounted for 85% of the conflicts <span style='color:gray'>[Basner 2014]</span>. Coping styles that center acceptance and replanning are also considered “positive” regulation strategies, as opposed to blaming others <span style='color:gray'>[Martin 2005]</span>, can have positive effects for interpersonal closeness.        <br><br><br> <span style='color:gray'> Basner M, Dinges DF, Mollicone DJ, Savelev I, Ecker AJ, Di Antonio A, Jones CW, Hyder EC, Kan K, Morukov BV, Sutton JP. Psychological and behavioral changes during confinement in a 520-day simulated interplanetary mission to mars. PLoS One. 2014 Mar 27;9(3):e93298. <br> Martin, R. C., & Dahlen, E. R. (2005). Cognitive emotion regulation in the prediction of depression, anxiety, stress, and anger. Personality and individual differences, 39(7), 1249-1260.        </span>        "
+    },
+    stress_regulation_sleep:{
+        title: "Stress Regulation &#8594; Sleep",
+        explanation: "From the largest study of sleep and neurobehavioral functioning in 6-month stays on the ISS, evidence suggests that increased reporting of stress was associated with shorter sleep durations <span style='color:gray'>[Jones 2022]</span>.        <br><br><br> <span style='color:gray'> Jones, C. W., Basner, M., Mollicone, D. J., Mott, C. M., & Dinges, D. F. (2022). Sleep deficiency in spaceflight is associated with degraded neurobehavioral functions and elevated stress in astronauts on six-month missions aboard the International Space Station. Sleep, 45(3), zsac006.  </span>        "
+    },
+    place_attachment_stress_regulation:{
+        title: "Place_attachment &#8594; Stress regulation",
+        explanation: "Highly-attached places often have restorative qualities <span style='color:gray'>[Korpela 1989]</span> and provide a safe, comfortable environment that promotes stress relief and self-regulation <span style='color:gray'>[Scannell and Gifford 2010]</span>.       <br><br><br> <span style='color:gray'> Korpela, K. M. (1989). Place-identity as a product of environmental self-regulation. Journal of Environmental Psychology, 9, 241–256. <br> Scannell, L., & Gifford, R. (2010). Defining place attachment: A tripartite organizing framework. Journal of Environmental Psychology, 30(1), 1–10. </span> "
+    },
+    place_attachment_autonomy:{
+        title: "Place_attachment &#8594; Autonomy",
+        explanation: "Place attachment provides security within the place or community, which in turn encourages greater exploration, confidence, and curiosity <span style='color:gray'>[Fried 2000]</span>.        <br><br><br> <span style='color:gray'> Fried, M. (2000). CONTINUITIES AND DISCONTINUITIES OF PLACE. Journal of Environmental Psychology, 20(3), 193–205.   </span> "
+    },
+    place_attachment_nostalgia_homesickness:{
+        title: "Place_attachment &#8594; Nostalgia/homesickness",
+        explanation: "Nostalgia and homesickness arise from the loss of people and places <span style='color:gray'>[Brown and Perkins 1992]</span>. Often following events of “disruption”, such as voluntary migration or involuntary displacement, feelings of homesickness are often experienced, multifaceted, and change in intensity over time <span style='color:gray'>[Brown and Perkins 1992]</span>. While promoting attachment to a new place or with new people can help, homesickness often arises independently of the quality of attachment in the new setting <span style='color:gray'>[Brown and Perkins 1992]</span>. <br> Place attachment to a home may induce homesickness when moving away from home. In a study of 200 college students in Italy, it was found that strong home attachment positively predicted homesickness <span style='color:gray'>[Scopelliti and Tiberio 2010]</span>. In more severe cases, dysfunctional place attachment/dependence can arise, particularly when the place that one wishes to return to is no longer possible <span style='color:gray'>[Fried 2000]</span>.     <br><br><br> <span style='color:gray'> Brown, B. B., & Perkins, D. D. (1992). Disruptions in Place Attachment. In I. Altman & S. M. Low (Eds.), Place Attachment (pp. 279–304). Springer US. <br>  Scopelliti, M., & Tiberio, L. (2010). Homesickness in University Students: The Role of Multiple Place Attachment. Environment and Behavior, 42(3), 335–350. <br>  Fried, M. (2000). CONTINUITIES AND DISCONTINUITIES OF PLACE. Journal of Environmental Psychology, 20(3), 193–205.   </span> "
+    },
+    sleep_fatigue:{
+        title: "Sleep &#8594; Fatigue",
+        explanation: "Insufficient sleep or decreased sleep quality can lead to fatigue. Based on a review of numerous nation-wide studies of air traffic controllers with shifted sleep schedules (n > 100,000), it was found that most ATCs experience elevated chronic fatigue <span style='color:gray'>[Nealley and Gawron 2015]</span>. Reviews of shift work studies have also revealed a higher prevalence of disturbed sleep and chronic fatigue in sleep-shifted workers as compared to their day-shift counterparts <span style='color:gray'>[Harrington 2001][Waterhouse 1992]</span>.           <br><br><br> <span style='color:gray'> Nealley, M. A., & Gawron, V. J. (2015). The effect of fatigue on air traffic controllers. The International Journal of Aviation Psychology, 25(1), 14-47. <br> Harrington, J. M. (2001). Health effects of shift work and extended hours of work. Occupational and Environmental medicine, 58(1), 68-72. <br> Waterhouse, J. M., Minors, D. S., & Folkard, S. (1992). Shiftwork, health and safety: an overview of the scientific literature 1978-1990. HSE books. </span>   "
     },
     physical_health:{
         title: "Physical Health &#8594; ",
@@ -983,7 +1007,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "family_and_friends":
                 return ['family_and_friends', 'stress_regulation']
             case "supplies":
-                return ['supplies', 'environmental_monotony', 'placemaking']
+                return ['supplies', 'environmental_monotony', 'place_attachment']
             case "food":
                 return ['food', 'nutrition', 'kinship']
             case "exercise_equipment":
@@ -1011,13 +1035,13 @@ document.addEventListener('DOMContentLoaded', function () {
             case "lighting":
                 return ['lighting', 'sleep']
             case "privacy":
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'kinship','crew_performance']
+                return ['privacy', 'place_attachment', 'sleep', 'stress_regulation', 'kinship','crew_performance']
             case "ergonomics":
                 return ['ergonomics', 'physical_workload', 'crew_performance','situation_awareness']
             case "fixtures":
-                return ['fixtures', 'placemaking','reconfigurability']
+                return ['fixtures', 'place_attachment','reconfigurability']
             case "reconfigurability":
-                return ['reconfigurability', 'placemaking', 'sleep']
+                return ['reconfigurability', 'place_attachment', 'sleep']
             case "environmental_monotony":
                 return ['environmental_monotony', 'boredom']
             case "physical_workload":
@@ -1031,11 +1055,11 @@ document.addEventListener('DOMContentLoaded', function () {
             case "action_processes":
                 return ['action_processes', 'crew_performance']
             case "interpersonal_processes":
-                return ['interpersonal_processes', 'crew_performance', 'social_support','kinship', 'stress_regulation','placemaking']
+                return ['interpersonal_processes', 'crew_performance', 'social_support','kinship', 'stress_regulation','place_attachment']
             case "stress_regulation":
-                return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "placemaking":
-                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+                return ['stress_regulation', 'stress','depression', 'anxiety', 'kinship','sleep']
+            case "place_attachment":
+                return ['place_attachment', 'stress_regulation','autonomy', 'nostalgia_homesickness']
             case "sleep":
                 return ['sleep', 'depression', 'anxiety', 'sleep_quality']
             case "cognitive_function":
@@ -1145,7 +1169,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "family_and_friends":
                 return ['family_and_friends', 'stress_regulation']
             case "supplies":
-                return ['supplies', 'environmental_monotony', 'placemaking','resource_constrained']
+                return ['supplies', 'environmental_monotony', 'place_attachment','resource_constrained']
             case "food":
                 return ['food', 'nutrition', 'kinship','resource_constrained','distance_from_earth']
             case "exercise_equipment":
@@ -1173,13 +1197,13 @@ document.addEventListener('DOMContentLoaded', function () {
             case "lighting":
                 return ['lighting', 'sleep']
             case "privacy":
-                return ['privacy', 'placemaking', 'sleep', 'stress_regulation', 'kinship','crew_performance','media_attention','layout','habitable_volume','density','confined']
+                return ['privacy', 'place_attachment', 'sleep', 'stress_regulation', 'kinship','crew_performance','media_attention','layout','habitable_volume','density','confined']
             case "ergonomics":
                 return ['ergonomics', 'physical_workload', 'crew_performance','situation_awareness','circulation_paths']
             case "fixtures":
-                return ['fixtures', 'placemaking','reconfigurability']
+                return ['fixtures', 'place_attachment','reconfigurability']
             case "reconfigurability":
-                return ['reconfigurability', 'placemaking', 'sleep','layout','fixtures','circulation_paths']
+                return ['reconfigurability', 'place_attachment', 'sleep','layout','fixtures','circulation_paths']
             case "environmental_monotony":
                 return ['environmental_monotony', 'boredom','supplies']
             case "physical_workload":
@@ -1193,11 +1217,11 @@ document.addEventListener('DOMContentLoaded', function () {
             case "action_processes":
                 return ['action_processes', 'crew_performance', 'conscientiousness']
             case "interpersonal_processes":
-                return ['interpersonal_processes', 'crew_performance', 'social_support','kinship', 'stress_regulation','placemaking','extraversion','agreeableness','neuroticism','circulation_paths','layout']
+                return ['interpersonal_processes', 'crew_performance', 'social_support','kinship', 'stress_regulation','place_attachment','extraversion','agreeableness','neuroticism','circulation_paths','layout']
             case "stress_regulation":
-                return ['stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
-            case "placemaking":
-                return ['placemaking', 'trust', 'agency', 'discontentment', 'nostalgia_homesickness', 'attachment']
+                return ['stress_regulation', 'stress','depression', 'anxiety', 'kinship','sleep','social_support','density','group_living','resilience','psychological_resources','family_and_friends','privacy','interpersonal_processes','place_attachment','sleep']
+            case "place_attachment":
+                return ['place_attachment', 'stress_regulation','autonomy', 'nostalgia_homesickness','supplies','privacy','fixtures','reconfigurability','interpersonal_processes']
             case "sleep":
                 return ['sleep', 'depression', 'anxiety', 'sleep_quality']
             case "cognitive_function":
