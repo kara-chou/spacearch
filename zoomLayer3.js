@@ -118,11 +118,11 @@ var boxContents = {
     },
     training_and_preparation:{
         title: "Training and Preparation",
-        explanation: "The goal of training is to provide knowledge and skills to execute mission tasks, including living in the mission environment. Knowledge areas for spaceflight include introductory topics (e.g., agency involvement, global space sector), spaceflight systems, scientific fundamentals (e.g., aerospace engineering, life sciences, Earth sciences), operations (e.g., space health, systems and infrastructure), and special skills (e.g., robotic arm operations, extravehicular activity, fitness training, media skills, team dynamics) <span style='color:gray'>[Steimle and Norberg 2013]</span>. <br> For professional career astronauts, training can take anywhere from 3.5 to 5 years, comprising basic, advanced, and increment specific training <span style='color:gray'>[Steimle and Norberg 2013]</span>.        <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. </span> "
+        explanation: "The goal of training is to provide knowledge and skills to execute mission tasks, including living in the mission environment. Knowledge areas for spaceflight include introductory topics (e.g., autonomy involvement, global space sector), spaceflight systems, scientific fundamentals (e.g., aerospace engineering, life sciences, Earth sciences), operations (e.g., space health, systems and infrastructure), and special skills (e.g., robotic arm operations, extravehicular activity, fitness training, media skills, team dynamics) <span style='color:gray'>[Steimle and Norberg 2013]</span>. <br> For professional career astronauts, training can take anywhere from 3.5 to 5 years, comprising basic, advanced, and increment specific training <span style='color:gray'>[Steimle and Norberg 2013]</span>.        <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. </span> "
     },
     ground_support:{
         title: "Ground Support",
-        explanation: "Spaceflight is an incredibly demanding effort and supported by an enormous amount of facilities, technology, and people on the ground. Each of the major space agencies with astronauts on the International Space Station has mission control and research/technology centers, comprising highly trained experts that support the challenges each agency may face (including spaceflight) <span style='color:gray'>[NASA 2023]</span>.      <br><br><br> <span style='color:gray'> NASA. “Ground Facilities”. Updated Dec 28, 2023. Accessed April 30, 2024. https://www.nasa.gov/international-space-station/ground-facilities/ </span>        "
+        explanation: "Spaceflight is an incredibly demanding effort and supported by an enormous amount of facilities, technology, and people on the ground. Each of the major space agencies with astronauts on the International Space Station has mission control and research/technology centers, comprising highly trained experts that support the challenges each autonomy may face (including spaceflight) <span style='color:gray'>[NASA 2023]</span>.      <br><br><br> <span style='color:gray'> NASA. “Ground Facilities”. Updated Dec 28, 2023. Accessed April 30, 2024. https://www.nasa.gov/international-space-station/ground-facilities/ </span>        "
     },
     medical_capability:{
         title: "Medical Capability",
@@ -246,71 +246,59 @@ var boxContents = {
     },
     crew_performance:{
         title: "Crew Performance",
-        explanation: " <span style='font-size:8pt'>Individual-level performance is typically task-related (e.g., accomplishment of task goals, errors, task duration). However, most often tasks are accomplished as a team <span style='color:gray'>[1]</span>, and overall performance relies on both the individual team members and the team as a whole <span style='color:gray'>[2]</span>. <br> Team performance comprises the health of a team and the individual performances of each member. Based on the input-mediator-output-input model <span style='color:gray'>[3][4]</span>, team performance here encompasses both the accomplishment of tasks and goals as set by mission parameters, and also the cognitive and affective “emergent” states of a team <span style='color:gray'>[4][5]</span>. Affective states include team cohesion, team confidence, and team trust; cognitive states include team mental models, situational awareness, and team learning <span style='color:gray'>[4]</span>. <br>  In isolated environments, the effect of team cohesion has an exaggerated relationship with team performance due to the extreme environment <span style='color:gray'>[6]</span>.       <br><br> <span style='color:gray'> 1. Bell, S. T. et al. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration. <br> 2. Mathieu, J. E., Tannenbaum, S. I., Donsbach, J. S., & Alliger, G. M. (2014). A Review and Integration of Team Composition Models: Moving Toward a Dynamic and Temporal Framework. Journal of Management, 40(1), 130-160. <br> 3. Ilgen, D. R. et al. (2005). Teams in organizations: From input–process–output models to IMOI models. Annual Review of Psychology, 56, 517–543. <br> 4. Grossman, R. et al. (2017). Teamwork Processes and Emergent States. In E. Salas et al., The Wiley Blackwell Handbook of the Psychology of Team Working and Collaborative Processes (p. 243–269). Wiley. <br> 5. Marks, M.A. et al. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. <br>  6. Vessey, W. B., & Landon, L. B. (2017). Team Performance in Extreme Environments. In E. Salas, R. Rico, & J. Passmore (Eds.), The Wiley Blackwell Handbook of the Psychology of Team Working and Collaborative Processes (1st ed., pp. 531–553). Wiley. </span> </span> "
+        explanation: " <span style='font-size:8pt'>Individual-level performance is typically task-related (e.g., accomplishment of task goals, errors, task duration). However, most often tasks are accomplished as a team <span style='color:gray'>[Bell 2015]</span>, and overall performance relies on both the individual team members and the team as a whole <span style='color:gray'>[Mathieu 2014]</span>. <br> Team performance comprises the health of a team and the individual performances of each member. Based on the input-mediator-output-input model <span style='color:gray'>[Ilgen 2005][Grossman 2017]</span>, team performance here encompasses both the accomplishment of tasks and goals as set by mission parameters, and also the cognitive and affective “emergent” states of a team <span style='color:gray'>[Grossman 2017][Marks 2001]</span>. Affective states include team cohesion, team confidence, and team trust; cognitive states include team mental models, situational awareness, and team learning <span style='color:gray'>[Grossman 2017]</span>. <br>  In isolated environments, the effect of team cohesion has an exaggerated relationship with team performance due to the extreme environment <span style='color:gray'>[Vessey and Landon 2017]</span>.       <br><br> <span style='color:gray'> Bell, S. T. et al. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration. <br> Mathieu, J. E., Tannenbaum, S. I., Donsbach, J. S., & Alliger, G. M. (2014). A Review and Integration of Team Composition Models: Moving Toward a Dynamic and Temporal Framework. Journal of Management, 40(1), 130-160. <br> Ilgen, D. R. et al. (2005). Teams in organizations: From input–process–output models to IMOI models. Annual Review of Psychology, 56, 517–543. <br> Grossman, R. et al. (2017). Teamwork Processes and Emergent States. In E. Salas et al., The Wiley Blackwell Handbook of the Psychology of Team Working and Collaborative Processes (p. 243–269). Wiley. <br> Marks, M.A. et al. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. <br>  Vessey, W. B., & Landon, L. B. (2017). Team Performance in Extreme Environments. In E. Salas, R. Rico, & J. Passmore (Eds.), The Wiley Blackwell Handbook of the Psychology of Team Working and Collaborative Processes (1st ed., pp. 531–553). Wiley. </span> </span> "
     },
-    cognitive_function:{
+    physical_health:{
         title: "Physical Health",
-        explanation: "Explanations."
-    },
-    sleep_quality:{
-        title: "Sleep Quality",
-        explanation: "Explanations."
-    },
-    anxiety:{
-        title: "Anxiety",
-        explanation: "Explanations."
-    },
-    agency:{
-        title: "Agency",
-        explanation: "Explanations."
+        explanation: "Health is a large umbrella term. A typical consideration is the length of life, expressed in average life expectancy, mortality rates, and death due to specific causes <span style='color:gray'>[NCHS 2024]</span>. Physical health metrics may include physical ability, physical limitations, pain, and health outlook <span style='color:gray'>[Ware 1987]</span>. <br> Spaceflight considerations include adverse effects to radiation (e.g., increased cancer risk, degenerative tissue diseases), central nervous system deconditioning, muscle/bone/cardiovascular atrophy due to unloading/migravity, inadequate food and nutrition, lunar dust exposure, and injuries due to extravehicular activities <span style='color:gray'>[McPhee and Charles 2009]</span>. On Earth, the United States Center for Disease Control recommends 30 minutes of moderate exercise every day to maintain health <span style='color:gray'>[Pate 1995]</span>.      <br><br><br> <span style='color:gray'> NCHS: Health. (2024). United States: U.S. Department of Health and Human Services. Accessed May 5, 2024. <br> Ware, E. J. (1987). Standards for validating health measures: Definition and content. Journal of Chronic Diseases, 40(6), 473–480. <br> McPhee, J. C., & Charles, J. B. (Eds.). (2009). Human health and performance risks of space exploration missions: evidence reviewed by the NASA human research program (Vol. 3405). US National Aeronautics & Space Administration. <br>  Pate, R. R., Pratt, M., Blair, S. N., et al. (1995). Physical activity and public health: a recommendation from the Centers for Disease Control and Prevention and the American College of Sports Medicine. Jama, 273(5), 402-407. </span>"
     },
     stress:{
         title: "Stress",
-        explanation: "Explanations."
+        explanation: "Stress refers to any environmental, social, or internal demand which prompts an individual to adjust their usual behavior <span style='color:gray'>[Holmes and Rahe 1967][Thoits 1995]</span>. We feel stressed when the demand is beyond our capability to successfully cope <span style='color:gray'>[Brown 2021]</span>. Stress also has biological responses, promoting various physical and psychological effects on the body (e.g., neuroendocrine/hormone system, cerebral cortex), as well as adverse cognitive effects (e.g., executive function and task performance) <span style='color:gray'>[Cibrian-Llanderal 2018]</span>.       <br><br><br> <span style='color:gray'> Holmes, T. H., & Rahe, R. H. (1967). The social readjustment rating scale. Journal of Psychosomatic Research, 11(2), 213–218. <br> Thoits, P. A. (1995). Stress, Coping, and Social Support Processes: Where Are We? What Next? Journal of Health and Social Behavior, 35, 53. <br>  Cibrian-Llanderal, T., Melgarejo-Gutierrez, M., & Hernandez-Baltazar, D. (2018). Stress and cognition: Psychological basis and support resources. Health and academic achievement, 11(10.5772). <br>  Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. </span> "
     },
-    attachment:{
-        title: "Attachment",
-        explanation: "Explanations."
+    fatigue:{
+        title: "Fatigue",
+        explanation: "Fatigue is multidimensional, encompassing physical, physiological, and psychological aspects.  Fatigue is defined as “the awareness of a decreased capacity for physical and/or mental activity due to an imbalance in the availability, utilization, and/or restoration of resources needed to perform activity” [Aaronson 1999]. The standard measure questionnaire for mood used by NASA, the Profile of Mood States (POMS), encompasses a fatigue-inertia subconstruct <span style='color:gray'>[McNair 1971]</span>.       <br><br><br> <span style='color:gray'> McNair, D. M., Lorr, M., & Droppleman, L. F. (1971). Profiles of mood states. San Diego: Educational and Industrial Testing Services. <br> Aaronson, L. S., Teel, C. S., Cassmeyer, V., Neuberger, G. B., Pallikkathayil, L., Pierce, J., ... & Wingate, A. (1999). Defining and measuring fatigue. Image: the journal of nursing scholarship, 31(1), 45-50. </span>"
+    },
+    anxiety:{
+        title: "Anxiety",
+        explanation: "Anxiety is characterized by tension, worried thoughts, and physiological responses (e.g., elevated blood pressure) <span style='color:gray'>[Corsini and Ozaki 1994]</span>. Anxiety is both a state and trait, meaning that some people are more disposed to anxious feelings, while others may experience anxiety more acutely [Brown 2021]. Beyond clinical interviews or professional assessments, subjective measures of anxiety exists in the form of surveys; some widely-used ones are the State-Trait Anxiety Inventory (STAI), Beck Anxiety Inventory (BAI), and the Hospital Anxiety and Depression Scale - Anxiety (HADS-A) [Julian 2011]. The standard measure questionnaire for mood used by NASA, the Profile of Mood States (POMS), encompasses a tension-anxiety subconstruct <span style='color:gray'>[McNair 1971]</span>.        <br><br><br> <span style='color:gray'> Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. <br> Corsini, R. J., & Ozaki, B. D. (1994). Encyclopedia of psychology (Vol. 1). New York: Wiley. <br> Julian, L. J. (2011). Measures of anxiety: state‐trait anxiety inventory (STAI), Beck anxiety inventory (BAI), and Hospital anxiety and Depression scale‐anxiety (HADS‐A). Arthritis care & research, 63(S11), S467-S472. <br> McNair, D. M., Lorr, M., & Droppleman, L. F. (1971). Profiles of mood states. San Diego: Educational and Industrial Testing Services. </span>"
+    },
+    autonomy:{
+        title: "Autonomy",
+        explanation: "Autonomy is the ability to make independent decisions, often task-related (how and when to complete a task) in spaceflight settings. Closely related is autonomy, which refers to the capacity to act intentionally and/or the sense of volition (the power to enact one’s will) <span style='color:gray'>[Schlosser 2015][Goemaere 2016]</span>. Current Low Earth Orbit operational paradigms provide little autonomy to the crewmembers, as work schedules are set by mission control and modifications to procedures or plans are consulted with ground <span style='color:gray'>[Goemaere 2016]</span>. However, current autonomy levels will need to change as mission distances and communication delay increase, leading to less ground support <span style='color:gray'>[Marquez 2017]</span>. While there are efforts to increase crew autonomy through self-scheduling activities, for example, there are still major unknowns on the balance between crew and ground control <span style='color:gray'>[Marquez 2017]</span>.        <br><br><br> <span style='color:gray'> Schlosser, M. (2015). Agency. Stanford Encyclopedia of Philosophy. Accessed May 2, 2024. <br>  Goemaere, S., Vansteenkiste, M., & Van Petegem, S. (2016). Gaining deeper insight into the psychological challenges of human spaceflight: The role of motivational dynamics. Acta Astronautica, 121, 130-143. <br> Marquez, J. J., Hillenius, S., Kanefsky, B., Zheng, J., Deliz, I., & Reagan, M. (2017, March). Increasing crew autonomy for long duration exploration missions: self-scheduling. In 2017 IEEE Aerospace Conference (pp. 1-10). IEEE. </span> "
+    },
+    situation_awareness:{
+        title: "Situation Awareness",
+        explanation: "Situation awareness is the internalized mental model of the current state of one’s environments <span style='color:gray'>[Endsley 2021]</span>. Formally, it is defined most widely as “the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning and the projection of their status in the near future” <span style='color:gray'>[Endsley 1988]</span>. There are three components: 1) perceiving relevant information in the environments, 2) understanding what they mean for one’s goals, and 3) predicting what will happen in the system in the near future – defined as levels 1, 2, and 3 situation awareness, respectively <span style='color:gray'>[Endsley 2021]</span>.        <br><br><br> <span style='color:gray'> Endsley, M. R. (1988). Design and evaluation for situation awareness enhancement. In Proceedings of the Human Factors Society 32nd Annual Meeting (pp. 97–101). Santa Monica, CA: Human Factors Society. <br> Endsley, M. R. (2021). Situation awareness. Handbook of human factors and ergonomics, 434-455. </span> "
     },
     trust:{
         title: "Trust",
-        explanation: "Explanations."
+        explanation: "Trust is a cognitive assessment about the level of risk of making something valued, vulnerable to someone’s (or something’s) actions <span style='color:gray'>[Feltman 2011]</span>. Some aspects of trust (-building or -maintaining) include respecting boundaries, reliability, accountability, integrity, and non-judgement <span style='color:gray'>[Brown 2021]</span>. These may be referred to as the interpersonal or ability-based aspects of trust, important on a personal or team level <span style='color:gray'>[Mayor 1995][Hoff and Bashir 2015]</span>. Trust in automation, which is especially relevant in spaceflight contexts, are more heavily reliant on performance-based trust (i.e., performance, process, or purpose) <span style='color:gray'>[Lee and Moray 1992]</span>.        <br><br><br> <span style='color:gray'>  Feltman, C. (2011). The thin book of trust: An essential primer for building trust at work. Thin Book Publishing. <br> Mayer R. C., Davis J. H., Schoorman F. D. (1995). An integrative model of organizational trust. Academy of Management Review, 20, 709–734. <br>  Hoff, K. A., & Bashir, M. (2015). Trust in automation: Integrating empirical evidence on factors that influence trust. Human factors, 57(3), 407-434. <br>  Lee J. D., Moray N. (1992). Trust, control strategies and allocation of function in human machine systems. Ergonomics, 22, 671–691. </span>"
     },
     curiosity:{
         title: "Curiosity",
-        explanation: "Explanations."
+        explanation: "Curiosity can be a state (i.e., a curious person) or a trait (i.e., feel curious in the moment), and has both cognitive and affective components <span style='color:gray'>[Brown 2021]</span>. Interest, or the intellectual component of curiosity, is a prerequisite to the eventual recognition of a knowledge gap and investment to fill the gap through exploration and learning <span style='color:gray'>[Brown 2021]</span>.       <br><br><br> <span style='color:gray'>  Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. </span>       "
     },
     kinship:{
         title: "Kinship",
-        explanation: "Explanations."
+        explanation: "During its conception, kinship was used to describe familial or genealogical ties, for example in “next of kin”. David Durkheim, the founder of sociology as a formal discipline, sought to explain kinship as “mutual relations of being, participation in one another’s existence” <span style='color:gray'>[Sahlins 2011]</span>. Kinship, whose definition has been debated in anthropology for over 150 years <span style='color:gray'>[Sahlins 2011]</span>, is chosen here to be the encompassing umbrella of mutual relational closeness, which comprises several subconstructs: belonging, connection, and loneliness. <br><br> Belonging – the connection that arises between people and groups without the need to compromise authenticity or values <span style='color:gray'>[Brown 2021]</span> – is a core concept to kinship. Meaningful connections, that allows people to feel seen and valued, are psychologically critical <span style='color:gray'>[Maslow and Lewis 1987]</span>. Loneliness is the absence of such meaningful connections, and is associated with a greater risk of physiological and psychological illnesses <span style='color:gray'>[Brown 2021]</span>.       <br><br><br> <span style='color:gray'> Sahlins, M. (2011). What kinship is (part one). Journal of the Royal Anthropological Institute, 17(1), 2-19. <br> Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. <br> Maslow, A., & Lewis, K. J. (1987). Maslow's hierarchy of needs. Salenger Incorporated, 14(17), 987-990. </span> "
     },
     boredom:{
         title: "Boredom",
-        explanation: "Explanations."
-    },
-    tranquility:{
-        title: "Tranquility",
-        explanation: "Explanations."
-    },
-    discontentment:{
-        title: "Discontentment",
-        explanation: "Explanations."
-    },
-    nostalgia_homesickness:{
-        title: "Nostalgia/Homesickness",
-        explanation: "Explanations."
-    },
-    fear:{
-        title: "Fear",
-        explanation: "Explanations."
-    },
-    awe:{
-        title: "Awe",
-        explanation: "Explanations."
+        explanation: "Boredom arises from a lack of stimulation, attention, or arousal <span style='color:gray'>[Bench and Lench 2013]</span>. It is defined as the negative experience of wanting, but being unable to, engage in satisfying activity <span style='color:gray'>[Eastwood 2012]</span>. The standard measure questionnaire for mood used by NASA, the Profile of Mood States (POMS), encompasses a vigor-activity subconstruct, which may be a close approximate <span style='color:gray'>[McNair 1971]</span>.        <br><br><br> <span style='color:gray'>  Bench, S. W., & Lench, H. C. (2013). On the function of boredom. Behavioral sciences, 3(3), 459-472. <br> Eastwood, J. D., Frischen, A., Fenske, M. J., & Smilek, D. (2012). The unengaged mind: Defining boredom in terms of attention. Perspectives on psychological science, 7(5), 482-495. <br> McNair, D. M., Lorr, M., & Droppleman, L. F. (1971). Profiles of mood states. San Diego: Educational and Industrial Testing Services. </span>"
     },
     depression:{
         title: "Depression",
-        explanation: "Explanations."
+        explanation: "<span style='font-size:8.5pt'>Depression has been studied as a clinical symptom for over 2,000 years <span style='color:gray'>[Beck and Alford 2009]</span>. Depression is a cluster of behaviors that are persistent in time, including lack of interest in activities, loss of appetite, negative self-view, and alteration of mood (e.g., sadness, loneliness, apathy) <span style='color:gray'>[Brown 2021][Beck and Alford 2009]</span>. Common scales for measuring depression include the Beck Depression Inventory (BDI) and the Depression Anxiety Stress Scales (DASS) [Beck 1987][Lovibond and Lovibond 1995]. The standard measure questionnaire for mood used by NASA, the Profile of Mood States (POMS), encompasses a depression-dejection subconstruct <span style='color:gray'>[McNair 1971]</span>. <br>  While sadness is common to depression, it is not a necessary trait of depression <span style='color:gray'>[Beck and Alford 2009]</span>. Although we have not defined it explicitly, it is an important component of the human emotional spectrum, with its most salient representation in behavioral health as a symptom of depression. Similarly, grief - composed of feelings of loss and longing – may be associated with ‘depressed mood’ but is realistically distinct <span style='color:gray'>[Brown 2021]</span>.     <br><br><br> <span style='color:gray'> Beck, A. T., & Alford, B. A. (2009). Depression: Causes and treatment. University of Pennsylvania Press. <br> Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. <br> Beck, A. T., Steer, R. A., & Brown, G. K. (1987). Beck depression inventory. San Antonio, TX. <br> Lovibond, P. F., & Lovibond, S. H. (1995). The structure of negative emotional states: Comparison of the Depression Anxiety Stress Scales (DASS) with the Beck Depression and Anxiety Inventories. Behaviour research and therapy, 33(3), 335-343. <br>  McNair, D. M., Lorr, M., & Droppleman, L. F. (1971). Profiles of mood states. San Diego: Educational and Industrial Testing Services. </span> </span>"
+    },
+    nostalgia_homesickness:{
+        title: "Nostalgia/Homesickness",
+        explanation: "Homesickness is the set of feelings that are associated with the loss of known people and places <span style='color:gray'>[Brown and Perkins 1992]</span>. Nostalgia is difficult to define precisely, but one interpretation is a primarily positive, context-specific emotion that combines sadness, happiness, yearning, and loss <span style='color:gray'>[Brown 2021]</span>. We grouped them here since they are likely to occur in parallel in the context of Isolated, Confined, and Extreme environments.         <br><br><br> <span style='color:gray'> Brown, B. B., & Perkins, D. D. (1992). Disruptions in Place Attachment. In I. Altman & S. M. Low (Eds.), Place Attachment (pp. 279–304). Springer US. <br>  Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. </span>"
+    },
+    contentment:{
+        title: "Contentment",
+        explanation: "We distinguish contentment here as a low-arousal emotion that may compose feelings of peace, tranquility, satisfaction, and calm <span style='color:gray'>[Brown 2021]</span>. Closely related constructs – happiness, joy, and gratitude – are more high-arousal emotions. We choose contentment here as the ‘catch-all’ for these positive emotions connected to the environment, as a more tangible attribute to promote as a behavioral health outcome.  <br>  To distinguish against contentment, the state of happiness is a feeling of pleasure related to the immediate environment or circumstances <span style='color:gray'>[Brown 2021]</span>. Happiness is more immediate, while other factors (e.g., joy and contentment) may be more chronic, and acute happiness may not necessarily contribute to long-term contentment <span style='color:gray'>[Brown 2021]</span>.       <br><br><br> <span style='color:gray'> Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. </span> "
     },
 };
 
@@ -863,15 +851,15 @@ var relatedBoxContents = {
         title: "Physical Health &#8594; ",
         explanation: "Explanations."
     },
-    sleep_quality:{
-        title: "Sleep Quality &#8594; ",
+    fatigue:{
+        title: "Fatigue &#8594; ",
         explanation: "Explanations."
     },
     anxiety:{
         title: "Anxiety &#8594; ",
         explanation: "Explanations."
     },
-    agency:{
+    autonomy:{
         title: "Agency &#8594; ",
         explanation: "Explanations."
     },
@@ -907,8 +895,8 @@ var relatedBoxContents = {
         title: "Tranquility &#8594; ",
         explanation: "Explanations."
     },
-    discontentment:{
-        title: "Discontentment &#8594; ",
+    contentment:{
+        title: "Contentment &#8594; ",
         explanation: "Explanations."
     },
     nostalgia_homesickness:{
@@ -1001,7 +989,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "training_and_preparation":
                 return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible']
             case "ground_support":
-                return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'contentment', 'stress']
             case "medical_capability":
                 return ['medical_capability', 'physical_health']
             case "family_and_friends":
@@ -1047,7 +1035,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "physical_workload":
                 return ['physical_workload', 'physical_health', 'depression', 'anxiety']
             case "cognitive_workload":
-                return ['cognitive_workload', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'discontentment', 'stress', 'sleep_quality']
+                return ['cognitive_workload', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'contentment', 'stress', 'fatigue']
             case "media_attention":
                 return ['media_attention', 'privacy']
             case "transition_processes":
@@ -1062,20 +1050,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['place_attachment', 'stress_regulation','autonomy', 'nostalgia_homesickness']
             case "sleep":
                 return ['sleep', 'fatigue','stress_regulation','physical_health','depression', 'anxiety', 'crew_performance']
-            case "cognitive_function":
-                return ['cognitive_function', 'stress','crew_performance','boredom','sleep']
-            case "sleep_quality":
-                return ['sleep_quality']
-            case "anxiety":
-                return ['anxiety']
-            case "agency":
-                return ['agency']
-            case "stress":
-                return ['stress']
             case "crew_performance":
                 return ['crew_performance']
-            case "attachment":
-                return ['attachment']
+            case "physical_health":
+                return ['physical_health']
+            case "stress":
+                return ['stress']
+            case "fatigue":
+                return ['fatigue']
+            case "anxiety":
+                return ['anxiety']
+            case "autonomy":
+                return ['autonomy']
+            case "situation_awareness":
+                return ['situation_awareness']
             case "trust":
                 return ['trust']
             case "curiosity":
@@ -1084,18 +1072,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['kinship']
             case "boredom":
                 return ['boredom']
-            case "tranquility":
-                return ['tranquility']
-            case "discontentment":
-                return ['discontentment']
-            case "nostalgia_homesickness":
-                return ['nostalgia_homesickness']
-            case "fear":
-                return ['fear']
-            case "awe":
-                return ['awe']
             case "depression":
                 return ['depression']
+            case "nostalgia_homesickness":
+                return ['nostalgia_homesickness']
+            case "contentment":
+                return ['contentment']
             default:
                 return []
         }
@@ -1155,9 +1137,9 @@ document.addEventListener('DOMContentLoaded', function () {
             case "resilience":
                 return ['resilience', 'stress_regulation']
             case 'genetics':
-                return ['genetics', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
+                return ['genetics', 'physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'fatigue', 'stress']
             case 'resilience':
-                return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'discontentment', 'stress']
+                return ['resilience', 'stress_regulation', 'depression', 'anxiety', 'contentment', 'stress']
             case "psychological_resources":
                 return ['psychological_resources', 'stress_regulation', 'anxiety', 'ground_support']
             case "training_and_preparation":
@@ -1209,7 +1191,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "physical_workload":
                 return ['physical_workload', 'physical_health', 'depression', 'anxiety','mission_demands','mission_events','exercise_equipment','ergonomics']
             case "cognitive_workload":
-                return ['cognitive_function', 'stress','crew_performance','boredom','sleep','mission_demands']
+                return ['physical_health', 'stress','crew_performance','boredom','sleep','mission_demands']
             case "media_attention":
                 return ['media_attention', 'privacy']
             case "transition_processes":
@@ -1224,20 +1206,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['place_attachment', 'stress_regulation','autonomy', 'nostalgia_homesickness','supplies','privacy','fixtures','reconfigurability','interpersonal_processes']
             case "sleep":
                 return ['sleep', 'fatigue','stress_regulation','physical_health','depression', 'anxiety', 'crew_performance', 'light_dark_cycles','atmosphere','acoustics','lighting','privacy','reconfigurability','cognitive_workload','stress_regulation']
-            case "cognitive_function":
-                return ['cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
-            case "sleep_quality":
-                return ['sleep_quality']
-            case "anxiety":
-                return ['anxiety']
-            case "agency":
-                return ['agency']
+            case "crew_performance":
+                return ['crew_performance','sleep','interpersonal_processes','action_processes', 'transition_processes', 'cognitive_workload','ergonomics','privacy','acoustics','atmosphere','conscientiousness']
+            case "physical_health":
+                return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'fatigue', 'stress']
             case "stress":
                 return ['stress']
-            case "crew_performance":
-                return ['crew_performance']
-            case "attachment":
-                return ['attachment']
+            case "fatigue":
+                return ['fatigue']
+            case "anxiety":
+                return ['anxiety']
+            case "autonomy":
+                return ['autonomy']
+            case "situation_awareness":
+                return ['situation_awareness']
             case "trust":
                 return ['trust']
             case "curiosity":
@@ -1246,18 +1228,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['kinship']
             case "boredom":
                 return ['boredom']
-            case "tranquility":
-                return ['tranquility']
-            case "discontentment":
-                return ['discontentment']
-            case "nostalgia_homesickness":
-                return ['nostalgia_homesickness']
-            case "fear":
-                return ['fear']
-            case "awe":
-                return ['awe']
             case "depression":
                 return ['depression']
+            case "nostalgia_homesickness":
+                return ['nostalgia_homesickness']
+            case "contentment":
+                return ['contentment']
             default:
                 return [];
         }
