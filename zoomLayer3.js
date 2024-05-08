@@ -244,6 +244,10 @@ var boxContents = {
         title: "Sleep",
         explanation: "Adults are recommended to sleep at least 7 hours per night for optimal health  <span style='color:gray'>[Watson 2015]</span>. Qualifiers for healthy sleep comprise duration, quality, regularity, and timing – often defined broadly as ‘sleep architecture’ in space studies. Two separate studies on the International Space Station found that astronauts slept less than 6 hours on 35-45% of nights  <span style='color:gray'>[Jones 2022][Barger 2014]</span>.        <br><br><br> <span style='color:gray'>  Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society. Journal of Clinical Sleep Medicine, 11(06), 591–592. <br> Jones, C. W., Basner, M., Mollicone, D. J., Mott, C. M., & Dinges, D. F. (2022). Sleep deficiency in spaceflight is associated with degraded neurobehavioral functions and elevated stress in astronauts on six-month missions aboard the International Space Station. Sleep, 45(3), zsac006. <br> Barger, L. K., Flynn-Evans, E. E., Kubey, A., Walsh, L., Ronda, J. M., Wang, W., Wright, K. P., & Czeisler, C. A. (2014). Prevalence of sleep deficiency and use of hypnotic drugs in astronauts before, during, and after spaceflight: An observational study. The Lancet Neurology, 13(9), 904–912. </span>    "
     },
+    crew_performance:{
+        title: "Crew Performance",
+        explanation: " <span style='font-size:8pt'>Individual-level performance is typically task-related (e.g., accomplishment of task goals, errors, task duration). However, most often tasks are accomplished as a team <span style='color:gray'>[1]</span>, and overall performance relies on both the individual team members and the team as a whole <span style='color:gray'>[2]</span>. <br> Team performance comprises the health of a team and the individual performances of each member. Based on the input-mediator-output-input model <span style='color:gray'>[3][4]</span>, team performance here encompasses both the accomplishment of tasks and goals as set by mission parameters, and also the cognitive and affective “emergent” states of a team <span style='color:gray'>[4][5]</span>. Affective states include team cohesion, team confidence, and team trust; cognitive states include team mental models, situational awareness, and team learning <span style='color:gray'>[4]</span>. <br>  In isolated environments, the effect of team cohesion has an exaggerated relationship with team performance due to the extreme environment <span style='color:gray'>[6]</span>.       <br><br> <span style='color:gray'> 1. Bell, S. T. et al. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration. <br> 2. Mathieu, J. E., Tannenbaum, S. I., Donsbach, J. S., & Alliger, G. M. (2014). A Review and Integration of Team Composition Models: Moving Toward a Dynamic and Temporal Framework. Journal of Management, 40(1), 130-160. <br> 3. Ilgen, D. R. et al. (2005). Teams in organizations: From input–process–output models to IMOI models. Annual Review of Psychology, 56, 517–543. <br> 4. Grossman, R. et al. (2017). Teamwork Processes and Emergent States. In E. Salas et al., The Wiley Blackwell Handbook of the Psychology of Team Working and Collaborative Processes (p. 243–269). Wiley. <br> 5. Marks, M.A. et al. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. <br>  6. Vessey, W. B., & Landon, L. B. (2017). Team Performance in Extreme Environments. In E. Salas, R. Rico, & J. Passmore (Eds.), The Wiley Blackwell Handbook of the Psychology of Team Working and Collaborative Processes (1st ed., pp. 531–553). Wiley. </span> </span> "
+    },
     cognitive_function:{
         title: "Physical Health",
         explanation: "Explanations."
@@ -262,10 +266,6 @@ var boxContents = {
     },
     stress:{
         title: "Stress",
-        explanation: "Explanations."
-    },
-    crew_performance:{
-        title: "Crew Performance",
         explanation: "Explanations."
     },
     attachment:{
@@ -1061,7 +1061,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "place_attachment":
                 return ['place_attachment', 'stress_regulation','autonomy', 'nostalgia_homesickness']
             case "sleep":
-                return ['sleep', 'depression', 'anxiety', 'sleep_quality']
+                return ['sleep', 'fatigue','stress_regulation','physical_health','depression', 'anxiety', 'crew_performance']
             case "cognitive_function":
                 return ['cognitive_function', 'stress','crew_performance','boredom','sleep']
             case "sleep_quality":
@@ -1223,7 +1223,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "place_attachment":
                 return ['place_attachment', 'stress_regulation','autonomy', 'nostalgia_homesickness','supplies','privacy','fixtures','reconfigurability','interpersonal_processes']
             case "sleep":
-                return ['sleep', 'depression', 'anxiety', 'sleep_quality']
+                return ['sleep', 'fatigue','stress_regulation','physical_health','depression', 'anxiety', 'crew_performance', 'light_dark_cycles','atmosphere','acoustics','lighting','privacy','reconfigurability','cognitive_workload','stress_regulation']
             case "cognitive_function":
                 return ['cognitive_function', 'sleep', 'depression', 'anxiety', 'tranquility', 'sleep_quality', 'stress']
             case "sleep_quality":
