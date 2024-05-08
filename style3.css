@@ -47,7 +47,7 @@ rounded borders, text size and font*/
 
 /*Control width of each column*/
 .box1 {
-    width: calc(15vw); 
+    width: calc(12vw); 
     margin-left: 0.8%;
 }
 
@@ -142,22 +142,19 @@ e.g. centered text, font color and size*/
 .place_attachment,
 .sleep,
 .physical_health,
-.cognitive_function,
-.anxiety,
-.agency,
-.stress,
 .crew_performance,
-.attachment,
+.stress,
+.fatigue,
+.anxiety,
+.autonomy,
+.situation_awareness,
 .trust,
 .curiosity,
 .kinship,
 .boredom,
-.tranquility,
-.discontentment,
+.depression,
 .nostalgia_homesickness,
-.fear,
-.awe,
-.depression {
+.contentment {
     border-radius: 10px;
     box-sizing: border-box;
     color: rgb(69, 65, 65);
@@ -217,7 +214,7 @@ e.g. rounded borders, centered elements*/
 /*Features unique to individual smaller boxes*/
 .selection {
     width: calc(100%); 
-    height: calc(100% * 0.2);
+    height: calc(100% * 0.1);
     background-color: #0072B2;
     align-items: center;
     color: white;
@@ -228,35 +225,35 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside chronic stressors*/
 .chronic_stressors {
     width: calc(100%); 
-    height: calc(100% * 0.5);
+    height: calc(100% * 0.65);
     background-color: #dbd7d7;
     color: rgba(0, 0, 0, 0.668);
 }
 
-.distance_from_earth{
-    width: calc(40%); 
-    height: calc(8%); 
+.communication_delay{
+    width: calc(80%); 
+    height: calc(7%);
     position: absolute;
-    top: calc(37%); /*relative to top of page*/
-    left: 3%; /*relative to chronic_stressors*/
+    top: calc(17%);
+    right: 10%;
+    background-color: #929090;
+}
+
+.distance_from_earth{
+    width: calc(80%); 
+    height: calc(7%); 
+    position: absolute;
+    top: calc(26%); /*relative to top of page*/
+    right: 10%; /*relative to chronic_stressors*/
     background-color: #929090;
 }
 
 .mission_duration{
-    width: calc(40%); 
-    height: calc(8%); 
+    width: calc(80%); 
+    height: calc(7%); 
     position: absolute;
-    top: calc(48%);
-    left: 3%;
-    background-color: #929090;
-}
-
-.communication_delay{
-    width: calc(50%); 
-    height: calc(7%);
-    position: absolute;
-    top: calc(27%);
-    right: 14%;
+    top: calc(35%);
+    right: 10%;
     background-color: #929090;
 }
 
@@ -264,8 +261,8 @@ e.g. rounded borders, centered elements*/
     width: calc(40%); 
     height: calc(7%);
     position: absolute;
-    top: calc(35%);
-    right: 5%;
+    top: calc(45%);
+    left: 7%;
     color: rgb(201, 198, 198);
     background-color: rgba(0, 0, 0, 0.735);
 }
@@ -274,8 +271,8 @@ e.g. rounded borders, centered elements*/
     width: calc(40%); 
     height: calc(7%);
     position: absolute;
-    top: calc(43%);
-    right: 5%;
+    top: calc(55%);
+    left: 7%;
     color: rgb(201, 198, 198);
     background-color: rgba(0, 0, 0, 0.735);
 }
@@ -284,18 +281,18 @@ e.g. rounded borders, centered elements*/
     width: calc(40%); 
     height: calc(7%);
     position: absolute;
-    top: calc(51%);
-    right: 5%;
+    top: calc(50%);
+    right: 6%;
     color: rgb(201, 198, 198);
     background-color: rgba(0, 0, 0, 0.735);
 }
 
 .resource_constrained{
-    width: calc(40%); 
+    width: calc(80%); 
     height: calc(7%);
     position: absolute;
-    top: calc(59%);
-    right: 50%;
+    top: calc(65%);
+    left: 12%;
     color: rgb(201, 198, 198);
     background-color: rgba(0, 0, 0, 0.735);
 }
@@ -304,26 +301,26 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside acute stressors*/
 .acute_stressors {
     width: calc(100%);
-    height: calc(100% * 0.3);
+    height: calc(100% * 0.25);
     background-color: #dbd7d7;
     color: rgba(0, 0, 0, 0.668);
 }
 
 .mission_demands{
-    width: calc(50%); 
+    width: calc(80%); 
     height: calc(7%);
     position: absolute;
-    top: calc(78%);
-    left: 3%;
+    top: calc(80%);
+    left: 10%;
     background-color: #929090;
 }
 
 .mission_events{
-    width: calc(50%); 
+    width: calc(80%); 
     height: calc(7%);
     position: absolute;
-    top: calc(86%);
-    right: 3%;
+    top: calc(90%);
+    right: 10%;
     color: rgb(201, 198, 198);
     background-color: rgba(0, 0, 0, 0.735);
 }
@@ -752,7 +749,7 @@ e.g. rounded borders, centered elements*/
     background-color: #56B4E9;
 }
 
-.conflicts{
+/* .conflicts{
     width: calc(35%); 
     height: calc(5%);
     position: absolute;
@@ -768,7 +765,7 @@ e.g. rounded borders, centered elements*/
     top: calc(92%);
     left:15%;
     background-color: #56B4E9;
-}
+} */
 /*-----------------------------------------*/
 /*Boxes laying inside team processes*/
 .team_processes {
@@ -829,7 +826,7 @@ e.g. rounded borders, centered elements*/
     background-color: #CC79A7;
 }
 
-.placemaking{
+.place_attachment{
     width: calc(80%); 
     height: calc(10%);
     position: absolute;
@@ -845,28 +842,23 @@ e.g. rounded borders, centered elements*/
     background-color: #CC79A7;
 }
 
-.physical_health{
-    width: calc(80%); 
-    height: calc(10%);
-    position: absolute;
-    top: calc(87.5%);
-    background-color: #CC79A7;
+
+/*-----------------------------------------*/
+/*Boxes laying inside performance*/
+.performance {
+    width: calc(100%); 
+    height: calc(100%);
+    background-color: #ffd54d;
+    color: rgba(42, 41, 41, 0.668);
 }
-.cognitive_function{
+
+.physical_health{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
     top: calc(6.5%);
     left:3%;
     background-color: #E69F00;
-}
-/*-----------------------------------------*/
-/*Boxes laying inside performance*/
-.performance {
-    width: calc(100%); 
-    height: calc(100% * 0.45);
-    background-color: #ffd54d;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .anxiety{
@@ -878,7 +870,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.agency{
+.autonomy{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
@@ -905,7 +897,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.attachment{
+.situation_awareness{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
@@ -925,12 +917,12 @@ e.g. rounded borders, centered elements*/
 
 /*-----------------------------------------*/
 /*Boxes laying inside mood and effect*/
-.mood_and_effect {
+/* .mood_and_effect {
     width: calc(100%);
     height: calc(100% * 0.55);
     background-color: #ffd54d;
     color: rgba(42, 41, 41, 0.668);
-}
+} */
 
 .curiosity{
     width: calc(45%); 
@@ -959,7 +951,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.tranquility{
+.fatigue{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
@@ -968,7 +960,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.discontentment{
+.contentment{
     width: calc(45%); 
     height: calc(8%);
     position: absolute;
@@ -982,24 +974,6 @@ e.g. rounded borders, centered elements*/
     height: calc(8%);
     position: absolute;
     top: calc(61.5%);
-    right:3%;
-    background-color: #E69F00;
-}
-
-.fear{
-    width: calc(45%); 
-    height: calc(8%);
-    position: absolute;
-    top: calc(71%);
-    right:3%;
-    background-color: #E69F00;
-}
-
-.awe{
-    width: calc(45%); 
-    height: calc(8%);
-    position: absolute;
-    top: calc(80.5%);
     right:3%;
     background-color: #E69F00;
 }
