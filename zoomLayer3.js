@@ -860,7 +860,7 @@ var relatedBoxContents = {
         explanation: "Explanations."
     },
     autonomy:{
-        title: "Agency &#8594; ",
+        title: "Autonomy &#8594; ",
         explanation: "Explanations."
     },
     stress:{
