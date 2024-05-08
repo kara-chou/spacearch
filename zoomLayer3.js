@@ -16,8 +16,8 @@ var boxContents = {
         explanation: 
             "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts <span style='color:gray'>[NASA 2024]</span>. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]. <br><br> Selection criteria include educational/professional qualifications and candidates must be able to pass the astronaut physical, medical, and psychological exams. More restrictively, astronaut candidates from most programs must exhibit mental and personal capabilities which are selected for and evaluated by a panel of experts <span style='color:gray'>[Steimle and Norberg 2013]</span>. <br><br><br> <span style='color:gray'>NASA. (2024) 'Becoming an astronaut: Frequently asked questions,' NASA.gov. Last updated March 5, 2024. Accessed March 7, 2024. https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/<br>Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-23725-6_7</span>"
     },
-    distance_from_earth:{
-        title: "Distance From Earth",
+    distance_from_home_earth:{
+        title: "Distance From Home/Earth",
         explanation: "In general applications, distance from home is dependent on the changing definition of home, which has been hypothesized to generally fall into categories of physical structures, territories, self and self-identity, and social-cultural units <span style='color:gray'>[Hayward 1975][Case 1996]</span>. Therefore, “home” may be multiple, constructed, and changing as one leaves and creates new homes. Distance from home can be considered as difficulties due to physical constraints (distance, time), economic (unemployment, cost), social-cultural (values), or political (visas, policies, asylum, deportation) <span style='color:gray'>[Angulo 2010]</span>. Space-specific considerations include orbit alignment, mission impacts, and resource limitations (food, water, fuel). <br><br><br> <span style='color:gray'>Hayward, G. (1975). Home as an environmental and psychological concept. Landscape, 20, 2–9. <br>Case, D. (1996). CONTRIBUTIONS OF JOURNEYS AWAY TO THE DEFINITION OF HOME: AN EMPIRICAL STUDY OF A DIALECTICAL PROCESS. Journal of Environmental Psychology, 16(1), 1–15. https://doi.org/10.1006/jevp.1996.0001. <br> Angulo, M. I. (2010). WHEN HOME IS NO LONGER THERE: RETURN MIGRATION IN A TIME OF CRISIS. Migration, 48. </span>"
     },
     mission_duration:{
@@ -48,7 +48,7 @@ var boxContents = {
         title: "Mission Demands",
         explanation: "Mission demands vary based on the specific mission profile and goals. This includes cognitive and physical demands encountered due to launch, flight profile, re-entry (if any), and landing/splashdown."
     },
-    mission_events:{
+    life_mission_events:{
         title: "Mission Events",
         explanation: "Either planned (nominal) or unplanned (contingency/emergency) acute events, including Extravehicular Activity, crew docking and transfer, injury, conflicts, and emergency egress.        "
     },
@@ -222,15 +222,15 @@ var boxContents = {
     },
     transition_processes:{
         title: "Transition Processes",
-        explanation: "Transition phases are when teams are primarily focused on planning and evaluation of team goals. Processes most salient during the transition phase are as follows <span style='color:gray'>[Marks 2011]</span>: <br> - Mission analysis: identifying and evaluating the mission goals, environmental conditions, and resources available to execute the mission. This includes ensuring a shared mental model of the team’s purpose and objectives. <br> - Goal specification: identification and prioritization of goals, discussing how much needs to be accomplished within a certain time frame, to what quality. <br> - Strategy formulation: developing courses of action, including prioritization, task assignment, and discussion of expectations. Further delineating strategy formulation, this process can be broken down into 1) planning for nominal/planned activities, 2) emergency/contingency planning, and 3) reactive strategy adjustment.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span>        "
+        explanation: "Transition phases are when teams are primarily focused on planning and evaluation of team goals. Processes most salient during the transition phase are as follows <span style='color:gray'>[Marks 2001]</span>: <br> - Mission analysis: identifying and evaluating the mission goals, environmental conditions, and resources available to execute the mission. This includes ensuring a shared mental model of the team’s purpose and objectives. <br> - Goal specification: identification and prioritization of goals, discussing how much needs to be accomplished within a certain time frame, to what quality. <br> - Strategy formulation: developing courses of action, including prioritization, task assignment, and discussion of expectations. Further delineating strategy formulation, this process can be broken down into 1) planning for nominal/planned activities, 2) emergency/contingency planning, and 3) reactive strategy adjustment.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span>        "
     },
     action_processes:{
         title: "Action Processes",
-        explanation: "Action phases are when teams are actively conducting activities that lead to goal achievement. Processes most salient during the action phase are as follows <span style='color:gray'>[Marks 2011]</span>: <br> - Monitor progress: tracking tasks and progress toward team goals. This includes providing feedback and updates to team members to evaluate progress and likelihood of success. <br> - Systems monitoring: tracking status of resources and environmental conditions. This is also known as situation awareness, or monitoring of internal systems (e.g., equipment, resources) and external systems (e.g., weather) relevant to mission success. <br> - Team monitoring: assisting team members to complete their tasks, including offering feedback, helping, or offloading the task. <br> - Coordination: managing the sequence and timing of interdependent tasks. This information exchange and mutual adjustment of activities aligns the pace and sequencing of actions for more productive goal accomplishment.         <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span>   "
+        explanation: "Action phases are when teams are actively conducting activities that lead to goal achievement. Processes most salient during the action phase are as follows <span style='color:gray'>[Marks 2001]</span>: <br> - Monitor progress: tracking tasks and progress toward team goals. This includes providing feedback and updates to team members to evaluate progress and likelihood of success. <br> - Systems monitoring: tracking status of resources and environmental conditions. This is also known as situation awareness, or monitoring of internal systems (e.g., equipment, resources) and external systems (e.g., weather) relevant to mission success. <br> - Team monitoring: assisting team members to complete their tasks, including offering feedback, helping, or offloading the task. <br> - Coordination: managing the sequence and timing of interdependent tasks. This information exchange and mutual adjustment of activities aligns the pace and sequencing of actions for more productive goal accomplishment.         <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span>   "
     },
     interpersonal_processes:{
         title: "interpersonal Processes",
-        explanation: "Interpersonal processes occur through both transition and action phases, and lay the foundation for the effectiveness of other team processes [Marks 2011]. They are as follows [Marks 2011]: <br> - Conflict management: helps resolve or manage conflict in two ways: 1) preemptively, by establishing conditions to prevent, control, or guide conflicts (e.g., establishing team norms), and 2) reactively, by working through task or interpersonal conflicts that have arisen (e.g., problem-solving, compromising). <br> - Motivating: preserving a collective sense of confidence, motivation, and cohesion toward the team goal. <br> - Affect management: calibrating and regulating team members’ emotions that may be shifting due to task-based (e.g., stress), personal (e.g., animosity), and external (e.g., job security) factors.         <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span> "
+        explanation: "Interpersonal processes occur through both transition and action phases, and lay the foundation for the effectiveness of other team processes [Marks 2001]. They are as follows [Marks 2001]: <br> - Conflict management: helps resolve or manage conflict in two ways: 1) preemptively, by establishing conditions to prevent, control, or guide conflicts (e.g., establishing team norms), and 2) reactively, by working through task or interpersonal conflicts that have arisen (e.g., problem-solving, compromising). <br> - Motivating: preserving a collective sense of confidence, motivation, and cohesion toward the team goal. <br> - Affect management: calibrating and regulating team members’ emotions that may be shifting due to task-based (e.g., stress), personal (e.g., animosity), and external (e.g., job security) factors.         <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376. </span> "
     },
     stress_regulation:{
         title: "Stress Regulation",
@@ -306,31 +306,43 @@ var boxContents = {
 var relatedBoxContents = {
     selection_individual_traits_invisible: {
         title: "Selection &#8594; Individual Traits",
-        explanation: "Historically, NASA has grouped select-in criteria as “the right stuff” (“virtuous, no-nonsense, able and professional astronauts”), or traits that may be more desirable to select for in astronaut candidates <span style='color:gray'>[Vakoch 2013][Steimle and Norberg 2013]</span>. In a study of ESA astronaut applicants (n=902), higher levels of neuroticism (specifically anxiety, anger hostility, and depression) were found for candidates who were not selected <span style='color:gray'>[Mittelstädt 2016]</span>. However, “the right stuff” is a compilation of ideals that humans cannot attain; more focus has been put on behavioral health research for long-duration missions <span style='color:gray'>[Vakoch 2013]</span>. <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-23725-6_7 <br> Vakoch, D. A. (Ed.). (2013). On Orbit and Beyond: Psychological Perspectives on Human Spaceflight. Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-642-30583. <br>Mittelstädt, J. M., Pecena, Y., Oubaid, V., & Maschke, P. (2016). Psychometric Personality Differences Between Candidates in Astronaut Selection. Aerospace Medicine and Human Performance, 87(11), 933–939. https://doi.org/10.3357/AMHP.4548.2016.</span>"
+        explanation: "Historically, NASA has grouped select-in criteria as “the right stuff” (“virtuous, no-nonsense, able and professional astronauts”), or traits that may be more desirable to select for in astronaut candidates <span style='color:gray'>[Vakoch 2013][Steimle and Norberg 2013]</span>. In a study of ESA astronaut applicants (n=902), higher levels of neuroticism (specifically anxiety, anger hostility, and depression) were found for candidates who were not selected <span style='color:gray'>[Mittelstädt 2016]</span>. However, “the right stuff” is a compilation of ideals that humans cannot attain; more focus has been put on behavioral health research for long-duration missions <span style='color:gray'>[Vakoch 2013]</span>. <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. <br> Vakoch, D. A. (Ed.). (2013). On Orbit and Beyond: Psychological Perspectives on Human Spaceflight. Springer Berlin Heidelberg. <br>Mittelstädt, J. M., Pecena, Y., Oubaid, V., & Maschke, P. (2016). Psychometric Personality Differences Between Candidates in Astronaut Selection. Aerospace Medicine and Human Performance, 87(11), 933–939.</span>"
+    },
+    individual_traits_invisible_selection: {
+        title: "Selection &#8594; Individual Traits",
+        explanation: "Historically, NASA has grouped select-in criteria as “the right stuff” (“virtuous, no-nonsense, able and professional astronauts”), or traits that may be more desirable to select for in astronaut candidates <span style='color:gray'>[Vakoch 2013][Steimle and Norberg 2013]</span>. In a study of ESA astronaut applicants (n=902), higher levels of neuroticism (specifically anxiety, anger hostility, and depression) were found for candidates who were not selected <span style='color:gray'>[Mittelstädt 2016]</span>. However, “the right stuff” is a compilation of ideals that humans cannot attain; more focus has been put on behavioral health research for long-duration missions <span style='color:gray'>[Vakoch 2013]</span>. <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. <br> Vakoch, D. A. (Ed.). (2013). On Orbit and Beyond: Psychological Perspectives on Human Spaceflight. Springer Berlin Heidelberg. <br>Mittelstädt, J. M., Pecena, Y., Oubaid, V., & Maschke, P. (2016). Psychometric Personality Differences Between Candidates in Astronaut Selection. Aerospace Medicine and Human Performance, 87(11), 933–939. </span>"
     },
     selection_social_composition_invisible: {
         title: "Selection &#8594; Social Composition",
-        explanation: "Crew compatibility is a major consideration as astronauts perform their missions with a team. Indirect assessments of compatibility (such as personality inventories) are effective when used in the selection process to create specific team configurations (e.g., homogenous). However, applicants can “game” the system via social desirability (tendency to provide responses that are socially desired) <span style='color:gray'>[Ganster 1983][Bell 2015]</span>. While in-depth interviews and direct/operational methods of assessment may help mitigate these issues, they can be expensive and time-intensive. Furthermore, crews may change in mission <span style='color:gray'>[Bell 2015]</span>. <br><br><br> <span style='color:gray'>Ganster, D. C., Hennessey, H. W., & Luthans, F. (1983). Social desirability response effects: Three alternative models. Academy of Management Journal, 26(2), 321–331. https://doi.org/10.2307/255979. <br>Bell, S. T., Brown, S. G., Outland, N. B., & Abben, D. R. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration.</span>"
+        explanation: "Crew compatibility is a major consideration as astronauts perform their missions with a team. Indirect assessments of compatibility (such as personality inventories) are effective when used in the selection process to create specific team configurations (e.g., homogenous). However, applicants can “game” the system via social desirability (tendency to provide responses that are socially desired) <span style='color:gray'>[Ganster 1983][Bell 2015]</span>. While in-depth interviews and direct/operational methods of assessment may help mitigate these issues, they can be expensive and time-intensive. Furthermore, crews may change in mission <span style='color:gray'>[Bell 2015]</span>. <br><br><br> <span style='color:gray'>Ganster, D. C., Hennessey, H. W., & Luthans, F. (1983). Social desirability response effects: Three alternative models. Academy of Management Journal, 26(2), 321–331. <br>Bell, S. T., Brown, S. G., Outland, N. B., & Abben, D. R. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration.</span>"
     },
-    distance_from_earth_communication_delay:{
-        title: "Distance from Earth &#8594; Communication delay",
-        explanation: "During a lunar mission, a communication delay of 5-14 second is expected <span style='color:gray'>[Parisi 2023]</span>. During a Mars surface mission, depending on the relative positions of the Earth and Mars, a roundtrip communication delay is approximately 6.5 to 44 minutes <span style='color:gray'>[Schuster 2007]</span>. <br><br><br> <span style='color:gray'> Parisi, M., Panontin, T., Wu, S., Mctigue, K., Vera, A.  (2023). Effects of Communication Delay on Human Spaceflight Missions. In: Pedro Arezes and Susana Costa (eds) Human-Centered Aerospace Systems and Sustainability Applications. AHFE (2023) International Conference. AHFE Open Access, vol 98. AHFE International, USA. http://doi.org/10.54941/ahfe1003920. <br> Schuster, Alfons (2007): Intelligent Computing Everywhere. Springer, Berlin. P. 235-236. </span>"
+    social_composition_invisible_selection: {
+        title: "Selection &#8594; Social Composition",
+        explanation: "Crew compatibility is a major consideration as astronauts perform their missions with a team. Indirect assessments of compatibility (such as personality inventories) are effective when used in the selection process to create specific team configurations (e.g., homogenous). However, applicants can “game” the system via social desirability (tendency to provide responses that are socially desired) <span style='color:gray'>[Ganster 1983][Bell 2015]</span>. While in-depth interviews and direct/operational methods of assessment may help mitigate these issues, they can be expensive and time-intensive. Furthermore, crews may change in mission <span style='color:gray'>[Bell 2015]</span>. <br><br><br> <span style='color:gray'>Ganster, D. C., Hennessey, H. W., & Luthans, F. (1983). Social desirability response effects: Three alternative models. Academy of Management Journal, 26(2), 321–331. <br>Bell, S. T., Brown, S. G., Outland, N. B., & Abben, D. R. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration.</span>"
     },
-    distance_from_earth_isolated:{
-        title: "Distance from Earth &#8594; Isolation",
-        explanation: "As the distance from Earth increases, Earth will disappear into the background of space, termed the ‘Earth-out-of-view phenomenon’. Along with the awareness of the impossibility of rapid return and confinement as the only option during the whole mission, these psychological factors will increase the sense of isolation <span style='color:gray'>[Musso 2018]</span>.<br><br><br> <span style='color:gray'>Musso, G., Ferraris, S., Fenoglio, F., Zafarana, A., Salatino, A., Ricci, R. (2018). Habitability Issues in Long Duration Space Missions Far from Earth. In: Stanton, N. (eds) Advances in Human Aspects of Transportation. AHFE 2017. Advances in Intelligent Systems and Computing, vol 597. Springer, Cham. </span>>"
+    distance_from_home_earth_communication_delay:{
+        title: "Distance from Home/Earth &#8594; Communication delay",
+        explanation: "During a lunar mission, a communication delay of 5-14 second is expected <span style='color:gray'>[Parisi 2023]</span>. During a Mars surface mission, depending on the relative positions of the Earth and Mars, a roundtrip communication delay is approximately 6.5 to 44 minutes <span style='color:gray'>[Schuster 2007]</span>. <br><br><br> <span style='color:gray'> Parisi, M., Panontin, T., Wu, S., Mctigue, K., Vera, A.  (2023). Effects of Communication Delay on Human Spaceflight Missions. In: Pedro Arezes and Susana Costa (eds) Human-Centered Aerospace Systems and Sustainability Applications. AHFE (2023) International Conference. AHFE Open Access, vol 98. AHFE International, USA. <br> Schuster, Alfons (2007): Intelligent Computing Everywhere. Springer, Berlin. P. 235-236. </span>"
     },
-    distance_from_earth_resource_constrained:{
-        title: "Distance from Earth &#8594; Resource constrained",
+    distance_from_home_earth_isolated:{
+        title: "Distance from Home/Earth &#8594; Isolated",
+        explanation: "As the distance from Home/Earth increases, Earth will disappear into the background of space, termed the ‘Earth-out-of-view phenomenon’. Along with the awareness of the impossibility of rapid return and confinement as the only option during the whole mission, these psychological factors will increase the sense of isolation <span style='color:gray'>[Musso 2018]</span>.<br><br><br> <span style='color:gray'>Musso, G., Ferraris, S., Fenoglio, F., Zafarana, A., Salatino, A., Ricci, R. (2018). Habitability Issues in Long Duration Space Missions Far from Earth. In: Stanton, N. (eds) Advances in Human Aspects of Transportation. AHFE 2017. Advances in Intelligent Systems and Computing, vol 597. Springer, Cham. </span>>"
+    },
+    distance_from_home_earth_resource_constrained:{
+        title: "Distance from Home/Earth &#8594; Resource constrained",
         explanation: "When moving from home (migration, relocation, immigration), refugees and immigrants face challenges such as language difficulties, rejection of qualifications, limitation of personal resources, and barriers to social support <span style='color:gray'>[Stewart 2008][Faret 2021]</span>.<br>The current space mission paradigm is to bring all resources (consumable and non-consumable) from Earth. Increased distance, such as the one from Mars to Earth, creates logistical and cost difficulties <span style='color:gray'>[Sullivan and McKay 1991]</span>. Solutions such as regenerative systems and in-situ resource utilization have been proposed <span style='color:gray'>[Pickett 2020][Starr 2020]</span>. <br><br><br> <span style='color:gray'> Stewart, M., Anderson, J., Beiser, M., Mwakarimba, E., Neufeld, A., Simich, L., & Spitzer, D. (2008). Multicultural Meanings of Social Support among Immigrants and Refugees. International Migration, 46(3), 123–159.<br>Faret, L., Cornejo, A. P. G., Aguirre, J. N. N., & González, I. A. T. (2021). The city under constraint: International migrants’ challenges and strategies to access urban resources in Mexico City. Canadian Geographies / Géographies Canadiennes, 65(4), 423–434.<br>Sullivan, T. A., & McKay, D. S. (1991). Using space resources. NASA Johnson Space Center.<br>Pickett, M. T., Roberson, L. B., Calabria, J. L., Bullard, T. J., Turner, G., & Yeh, D. H. (2020). Regenerative water purification for space applications: Needs, challenges, and technologies towards “closing the loop.” Life Sciences in Space Research, 24, 64–82.<br>Starr, S. O., & Muscatello, A. C. (2020). Mars in situ resource utilization: A review. Planetary and Space Science, 182. </span>"
     },
-    distance_from_earth_medical_capability:{
-        title: "Distance from Earth &#8594; Medical resources",
-        explanation: "Distance from Earth limits the availability of medical care, including unavailability of resources, limited alternatives for ineffectiveness/side effects of medicine, and degradation of medications <span style='color:gray'>[Wotring 2015]</span>. <br><br><br> <span style='color:gray'> Wotring, V. E. (2015). Medication use by U.S. crewmembers on the International Space Station. FASEB Journal: Offcial Publication of the Federation of American Societies for Experimental Biology, 29(11), 4417–4423. </span>"
+    distance_from_home_earth_medical_capability:{
+        title: "Distance from Home/Earth &#8594; Medical capability",
+        explanation: "Distance from Home/Earth limits the availability of medical care, including unavailability of resources, limited alternatives for ineffectiveness/side effects of medicine, and degradation of medications <span style='color:gray'>[Wotring 2015]</span>. <br><br><br> <span style='color:gray'> Wotring, V. E. (2015). Medication use by U.S. crewmembers on the International Space Station. FASEB Journal: Offcial Publication of the Federation of American Societies for Experimental Biology, 29(11), 4417–4423. </span>"
     },
-    distance_from_earth_food:{
-        title: "Distance from Earth &#8594; Food",
-        explanation: "Distance from Earth highly constrains the food system to be shelf stable, nutritional, and palatable for long durations <span style='color:gray'>[Schorn and Roma 2020]</span>. <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press.</span>"
+    distance_from_home_earth_food:{
+        title: "Distance from Home/Earth &#8594; Food",
+        explanation: "Distance from Home/Earth highly constrains the food system to be shelf stable, nutritional, and palatable for long durations <span style='color:gray'>[Schorn and Roma 2020]</span>. <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press.</span>"
+    },
+    distance_from_home_earth_family_and_friends:{
+        title: "Distance from Home/Earth &#8594; Family and friends",
+        explanation: "As one moves away from home, one also often moves away from existing social ties <span style='color:gray'>[Scopelliti and Tiberio 2010]</span>. In the United States, ⅕ of the nation’s children are growing up in immigrant homes; in the process of immigration, families often undergo separation from extended relatives, immediate family, and their social networks <span style='color:gray'>[Suárez-Orozco 2012]</span>.        <br><br><br> <span style='color:gray'> Scopelliti, M., & Tiberio, L. (2010). Homesickness in University Students: The Role of Multiple Place Attachment. Environment and Behavior, 42(3), 335–350. <br>  Suárez-Orozco, C., Todorova, I. L., & Louie, J. (2012). Making up for lost time: The experience of separation and reunification among immigrant families. In The new immigration (pp. 179-196). Routledge. </span>"
     },
     mission_duration_isolated:{
         title: "Mission duration &#8594; Isolation",
@@ -340,21 +352,41 @@ var relatedBoxContents = {
         title: "Mission duration &#8594; Boredom",
         explanation: "During a study of a crew of 6 in isolation for 520 days, crew sedentariness increased over the mission as captured by actigraphy (motion data) <span style='color:gray'> [Basner 2013]</span>. <br><br><br> <span style='color:gray'>Basner M, Dinges DF, Mollicone DJ, Ecker A, Jones CW, et al. (2013) Mars 520-d mission simulation reveals protracted crew hypokinesis and alterations of sleep duration and timing. Proc Natl Acad Sci USA 110: 2635–2640. </span>"
     },
+    communication_delay_distance_from_home_earth:{
+        title: "Distance from Home/Earth &#8594; Communication delay",
+        explanation: "During a lunar mission, a communication delay of 5-14 second is expected <span style='color:gray'>[Parisi 2023]</span>. During a Mars surface mission, depending on the relative positions of the Earth and Mars, a roundtrip communication delay is approximately 6.5 to 44 minutes <span style='color:gray'>[Schuster 2007]</span>. <br><br><br> <span style='color:gray'> Parisi, M., Panontin, T., Wu, S., Mctigue, K., Vera, A.  (2023). Effects of Communication Delay on Human Spaceflight Missions. In: Pedro Arezes and Susana Costa (eds) Human-Centered Aerospace Systems and Sustainability Applications. AHFE (2023) International Conference. AHFE Open Access, vol 98. AHFE International, USA.  <br> Schuster, Alfons (2007): Intelligent Computing Everywhere. Springer, Berlin. P. 235-236. </span>"
+    },
     communication_delay_ground_support:{
         title: "Communication delay &#8594; Ground support",
         explanation: "All human space exploration thus far has been within the Earth-Moon range, where minimal communication delay has allowed the majority of the operations to be ground-based <span style='color:gray'>[Frank 2013]</span>. In an analog habitat study of communication delay (N = 16), it was found that with the current ISS operational mode, a one-way communication delay of over 300 seconds (5 minutes) resulted in a level of workload requiring mitigation <span style='color:gray'>[Frank 2013]</span>. <br><br><br> <span style='color:gray'> Frank, J., Spirkovska, L., McCann, R., Lui Wang, Pohlkamp, K., & Morin, L. (2013). Autonomous mission operations. 2013 IEEE Aerospace Conference, 1–20.</span>"
     },
     communication_delay_transition_processes:{
-        title: "Communication delay &#8594; Ground support",
+        title: "Communication delay &#8594; Transition processes",
         explanation: "During an isolation analog of 520 days (N = 6, Mars 500 experiment), crew reported that the presence, not the duration, of communication delay mattered. During decision making processes, both crew and ground support developed dissatisfaction and inefficiencies in subsequent decisions due to the lack of shared understanding <span style='color:gray'>[Ushakov 2014]</span>. <br><br><br> <span style='color:gray'> Ushakov, I. B., Vladimirovich, M. B., Bubeev, Y. A., Gushin, V. I., Vasil’eva, G. Y., Vinokhodova, A. G., & Shved, D. M. (2014). Main findings of psychophysiological studies in the Mars 500 experiment. Herald of the Russian Academy of Sciences, 84(2), 106–114. </span>"
     },
-    communication_delay_social_monotony:{
-        title: "Communication delay &#8594; Social monotony",
+    communication_delay_family_and_friends:{
+        title: "Communication delay &#8594; Family and friends",
         explanation: "Prolonged autonomy and communication delays contribute to long term isolation, resulting in greater need for psychological support from family and friends <span style='color:gray'>[Ushakov 2014]</span>. During an isolation analog of 520 days (N = 6, Mars 500) and previous international isolation studies (HUBES 94; SFINCSS 99), the number and size of outgoing emails to family and friends increased with mission duration <span style='color:gray'>[Ushakov 2014]</span>. <br><br><br> <span style='color:gray'> Ushakov, I. B., Vladimirovich, M. B., Bubeev, Y. A., Gushin, V. I., Vasil’eva, G. Y., Vinokhodova, A. G., & Shved, D. M. (2014). Main findings of psychophysiological studies in the Mars 500 experiment. Herald of the Russian Academy of Sciences, 84(2), 106–114. </span>"
     },
     communication_delay_stress:{
         title: "Communication delay &#8594; Stress",
         explanation: "Prolonged isolation and limited interfaces with existing sources of support with communication delay compounds the stress associated with long-duration space exploration missions <span style='color:gray'>[Schorn and Roma 2020]</span>. <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press. </span>"
+    },
+    isolated_distance_from_home_earth:{
+        title: "Distance from Home/Earth &#8594; Isolation",
+        explanation: "As the distance from Home/Earth increases, Earth will disappear into the background of space, termed the ‘Earth-out-of-view phenomenon’. Along with the awareness of the impossibility of rapid return and confinement as the only option during the whole mission, these psychological factors will increase the sense of isolation <span style='color:gray'>[Musso 2018]</span>.<br><br><br> <span style='color:gray'>Musso, G., Ferraris, S., Fenoglio, F., Zafarana, A., Salatino, A., Ricci, R. (2018). Habitability Issues in Long Duration Space Missions Far from Earth. In: Stanton, N. (eds) Advances in Human Aspects of Transportation. AHFE 2017. Advances in Intelligent Systems and Computing, vol 597. Springer, Cham. </span>>"
+    },
+    isolated_mission_duration:{
+        title: "Mission duration &#8594; Isolation",
+        explanation: "Not only does increased mission duration limit the amount of contact with usual sources of support, prolonged isolation can decrease the perceived quality and satisfaction of support, even when readily available <span style='color:gray'> [Palinkas 2004]</span>. <br><br><br> <span style='color:gray'> Palinkas, L. A., Johnson, J. C., & Boster, J. S. (2004). Social support and depressed mood in isolated and confined environments. Acta Astronautica, 54(9), 639–647. </span>"
+    },
+    isolated_extreme:{
+        title: "Extreme &#8594; Isolated",
+        explanation: "Due to the darkness and weather conditions, winter-over Antarctica stays are also limited in visitors, opportunities for leaving, and fresh supplies due to difficulties in transportation and logistics <span style='color:gray'>[Harrison 1991][Palinkas 2008]</span>.         <br><br><br> <span style='color:gray'> Harrison, A. A., Clearwater, Y. A., & McKay, C. P. (Eds.). (1991). From Antarctica to Outer Space: Life in Isolation and Confinement. Springer New York. <br> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163.  </span>  "
+    },
+    isolated_social_support:{
+        title: "Isolated &#8594; Social support",
+        explanation: "In a study of 200+ winter-over personnel in Antarctica, advice seeking decreased in frequency through the mission; moreover, negative mood after advice seeking provided evidence to the frustrating experience of seeking advice from fellow crewmembers who were experiencing the same stressors. In certain scenarios, crewmembers experiencing the same isolation and confinement may be inadequate sources of support <span style='color:gray'>[Palinkas 2004]</span>.         <br><br><br> <span style='color:gray'> Palinkas, L. A., Johnson, J. C., & Boster, J. S. (2004). Social support and depressed mood in isolated and confined environments. Acta Astronautica, 54(9), 639–647.</span> "
     },
     isolated_ground_support:{
         title: "Isolated &#8594; Ground support",
@@ -380,6 +412,10 @@ var relatedBoxContents = {
         title: "Extreme &#8594; Genetics",
         explanation: "During a spaceflight study of one year or shorter missions (N = 11), it was found that telomere lengths shortened significantly for all crewmembers upon return to Earth, regardless of in-space telomere dynamics. An increased frequency of chromosomal inversions were also observed in- and post-flight. One hypothesis is that this telomerase activity is a response to the extreme environment-induced chronic oxidative stress, which all crewmembers were found to experience during spaceflight <span style='color:gray'>[Luxton 2020]</span>.       <br><br><br> <span style='color:gray'> Luxton, J. J., McKenna, M. J., Lewis, A., Taylor, L. E., George, K. A., Dixit, S. M., Moniz, M., Benegas, W., Mackay, M. J., Mozsary, C., Butler, D., Bezdan, D., Meydan, C., Crucian, B. E., Zwart, S. R., Smith, S. M., Mason, C. E., & Bailey, S. M. (2020). Telomere Length Dynamics and DNA Damage Responses Associated with Long-Duration Spaceflight. Cell Reports, 33(10), 108457. </span>  "
     },
+    extreme_isolated:{
+        title: "Extreme &#8594; Isolated",
+        explanation: "Due to the darkness and weather conditions, winter-over Antarctica stays are also limited in visitors, opportunities for leaving, and fresh supplies due to difficulties in transportation and logistics <span style='color:gray'>[Harrison 1991][Palinkas 2008]</span>.         <br><br><br> <span style='color:gray'> Harrison, A. A., Clearwater, Y. A., & McKay, C. P. (Eds.). (1991). From Antarctica to Outer Space: Life in Isolation and Confinement. Springer New York. <br> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163.  </span>  "
+    },
     extreme_resource_constrained:{
         title: "Extreme &#8594; Resource constrained",
         explanation: "In extreme environments such as Antarctica, little life can exist without artificial support <span style='color:gray'>[Natani and Shurley 1974]</span>. Therefore, support, logistics, and resources must be carefully planned to maintain life and operations in extreme environments. However, the geographic isolation, cost, policies, and extreme conditions make transport and logistics complicated <span style='color:gray'>[Kennicutt 2016]</span>. <br> While costs to launch into space have declined appreciatively from $1 million/kg in the 1950s to $1400/kg in 2020s (SpaceX’s Falcon Heavy), the price tag still constrains resource availability for Low-Earth Orbit, and particularly for Moon and Mars missions <span style='color:gray'>[Jones 2018]</span>. <br> Impacts of climate change are projected to lead to resource depletion in already deprived areas <span style='color:gray'>[Beveniste 2022]</span>.         <br><br><br> <span style='color:gray'> Natani, K., & Shurley, J. T. (1974). Sociopsychological aspects of a winter vigil at South Pole station. In E. K. E. Gunderson (Ed.), Antarctic Research Series (Vol. 22, pp. 89–114). American Geophysical Union. <br> Kennicutt, M. C., Kim, Y., & Rogan-Finnemore, M. (2016). Antarctic roadmap challenges. Council of Managers of National Antarctic Programs. <br> Jones, H. W. (2018). The Future Impact of Much Lower Launch Cost. 48th International Conference on Environmental Systems.<br> Benveniste, H., Oppenheimer, M. & Fleurbaey, M. (2022). Climate change increases resource-constrained international immobility. Nat. Clim. Chang. 12, 634–641. </span>        "
@@ -395,6 +431,14 @@ var relatedBoxContents = {
     extreme_light_dark_cycles:{
         title: "Extreme &#8594; Light/Dark cycles",
         explanation: "Extreme environments, like polar regions, can experience perpetual night or day <span style='color:gray'>[Palinkas and Suedfeld 2008]</span>. In Low-Earth Orbit, the International Space Station experiences a sunrise every 45 minutes <span style='color:gray'>[Thirsk 2009]</span>. Altered (non-24 hour) light/dark cycles can cause disturbances in circadian rhythms due to regular, daily light cycles being the primary factor for entrainment <span style='color:gray'>[Broadway and Arendt 1988]</span>.        <br><br><br> <span style='color:gray'> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163. <br> Thirsk, R., Kuipers, A., Mukai, C., & Williams, D. (2009). The space-flight environment: The International Space Station and beyond. Canadian Medical Association Journal, 180(12), 1216–1220. <br> Broadway JW and Arendt J. (1988). Seasonal and bright light changes of the phase position of the human melatonin rhythms in Antarctica. Arctic Med Res; 47 (suppl 1): 201–03. </span>     "
+    },
+    resource_constrained_distance_from_home_earth:{
+        title: "Distance from Home/Earth &#8594; Resource constrained",
+        explanation: "When moving from home (migration, relocation, immigration), refugees and immigrants face challenges such as language difficulties, rejection of qualifications, limitation of personal resources, and barriers to social support <span style='color:gray'>[Stewart 2008][Faret 2021]</span>.<br>The current space mission paradigm is to bring all resources (consumable and non-consumable) from Earth. Increased distance, such as the one from Mars to Earth, creates logistical and cost difficulties <span style='color:gray'>[Sullivan and McKay 1991]</span>. Solutions such as regenerative systems and in-situ resource utilization have been proposed <span style='color:gray'>[Pickett 2020][Starr 2020]</span>. <br><br><br> <span style='color:gray'> Stewart, M., Anderson, J., Beiser, M., Mwakarimba, E., Neufeld, A., Simich, L., & Spitzer, D. (2008). Multicultural Meanings of Social Support among Immigrants and Refugees. International Migration, 46(3), 123–159.<br>Faret, L., Cornejo, A. P. G., Aguirre, J. N. N., & González, I. A. T. (2021). The city under constraint: International migrants’ challenges and strategies to access urban resources in Mexico City. Canadian Geographies / Géographies Canadiennes, 65(4), 423–434.<br>Sullivan, T. A., & McKay, D. S. (1991). Using space resources. NASA Johnson Space Center.<br>Pickett, M. T., Roberson, L. B., Calabria, J. L., Bullard, T. J., Turner, G., & Yeh, D. H. (2020). Regenerative water purification for space applications: Needs, challenges, and technologies towards “closing the loop.” Life Sciences in Space Research, 24, 64–82.<br>Starr, S. O., & Muscatello, A. C. (2020). Mars in situ resource utilization: A review. Planetary and Space Science, 182. </span>"
+    },
+    resource_constrained_extreme:{
+        title: "Extreme &#8594; Resource constrained",
+        explanation: "In extreme environments such as Antarctica, little life can exist without artificial support <span style='color:gray'>[Natani and Shurley 1974]</span>. Therefore, support, logistics, and resources must be carefully planned to maintain life and operations in extreme environments. However, the geographic isolation, cost, policies, and extreme conditions make transport and logistics complicated <span style='color:gray'>[Kennicutt 2016]</span>. <br> While costs to launch into space have declined appreciatively from $1 million/kg in the 1950s to $1400/kg in 2020s (SpaceX’s Falcon Heavy), the price tag still constrains resource availability for Low-Earth Orbit, and particularly for Moon and Mars missions <span style='color:gray'>[Jones 2018]</span>. <br> Impacts of climate change are projected to lead to resource depletion in already deprived areas <span style='color:gray'>[Beveniste 2022]</span>.         <br><br><br> <span style='color:gray'> Natani, K., & Shurley, J. T. (1974). Sociopsychological aspects of a winter vigil at South Pole station. In E. K. E. Gunderson (Ed.), Antarctic Research Series (Vol. 22, pp. 89–114). American Geophysical Union. <br> Kennicutt, M. C., Kim, Y., & Rogan-Finnemore, M. (2016). Antarctic roadmap challenges. Council of Managers of National Antarctic Programs. <br> Jones, H. W. (2018). The Future Impact of Much Lower Launch Cost. 48th International Conference on Environmental Systems.<br> Benveniste, H., Oppenheimer, M. & Fleurbaey, M. (2022). Climate change increases resource-constrained international immobility. Nat. Clim. Chang. 12, 634–641. </span>        "
     },
     resource_constrained_supplies:{
         title: "Resource Constrained &#8594; Supplies",
@@ -416,17 +460,29 @@ var relatedBoxContents = {
         title: "Mission Demands &#8594; Fatigue",
         explanation: "Mission demands and how those demands are enacted (e.g., with adequate preparation, operational requirements, work hours, work-rest cycles) can mediate fatigue <span style='color:gray'>[Parasuraman and Hancock 2008]</span>. Within the aerospace industry, air traffic controllers are a typical analog for studying fatigue due the similarity between their high cognitive demands, working hours, and the need for accuracy and precision. Fatigue is a well-known issue for air traffic controllers, leading the Federal Aviation Administration to implement staffing measures to counteract ATC napping during midnight shifts <span style='color:gray'>[FAA 2011]</span>.        <br><br><br> <span style='color:gray'> Parasuraman, R., & Hancock, P. A. (2008). Mitigating the adverse effects of workload, stress, and fatigue with adaptive automation. Performance under stress, 45-57.<br> Federal Aviation Administration Press Office. (2011, April 13). The FAA announces additional staffing at 27 control towers [Press release]. </span>"
     },
-    mission_events_stress:{
+    life_mission_events_stress:{
         title: "Mission Events &#8594; Stress",
         explanation: "One of more major life events within 6-12 months well-predict subsequent physical morbidity, mortality, psychological stress, and psychiatric disorder <span style='color:gray'>[Cohen and Williamson 1991][Coyne and Downey 1991][Creed 1985][Kessler, Price, and Wortman 1985][Tausig 1986][Thoits 1983][Thoits 1995] </span>.       <br><br><br> <span style='color:gray'> Cohen, Sheldon and Gail M. Williamson. (1991) 'Stress and Infectious Disease in Humansx' Psychological Bulletin 109(l):5-24. <br> Coyne, James C. and Geraldine Downey. (1991) 'Social Factors and Psychopathology: Stress, Social Support, and Coping Processes.' Annual Review of Psychology. <br> Creed, Francis. (1985) 'Life Events and Physical Illness.' Journal of Psychosomatic Research 29(2): 113-23. <br> Kessler, Ronald C., Richard H. Price, and Camille B. Wortman. (1985) 'Social Factors in Psychopathology: Stress, Social Support, and Coping Processes.' Annual Review of Psychology 36:531-72. <br> Tausig, Mark. 1986. 'Measuring Life Events.' in Social Support, Life Events, and Depression, edited by N. Lin, A. Dean, and W.M. Ensel. Orlando, FL: Academic. p 71-93. <br> Thoits, Peggy A. (1983) 'Dimensions of Life Events that Influence Psychological Distress: An Evaluation and Synthesis of the Literature.' Psychosocial Stress: Trends in Theory and Research, edited by H.B. Kaplan. New York: Academic. p 33-103. <br>  Thoits, P. A. (1995). Stress, Coping, and Social Support Processes: Where Are We? What Next? Journal of Health and Social Behavior, 35, 53. </span>        "
     },
-    mission_events_physical_workload:{
+    life_mission_events_physical_workload:{
         title: "Mission Events &#8594; Physical workload",
         explanation: "Extravehicular activities are extremely demanding on the body. Spacesuits (in particular the Extravehicular Mobility Unit used by NASA) can cause injuries and discomfort, primarily due to the lack of mobility provided by the gas pressure layer <span style='color:gray'>[Diaz and Newman 2014]</span>. Additionally, the weight of the suit and the required walking past (e.g., during an emergency return scenario) increase metabolic workload, which in turn contributes to fatigue <span style='color:gray'>[Belobrajdic 2021]</span>.         <br><br><br> <span style='color:gray'> A. Diaz and D. Newman, (2014). 'Musculoskeletal human-spacesuit interaction model,'' 2014 IEEE Aerospace Conference, Big Sky, MT, USA, pp. 1-13. <br>  Belobrajdic, B., Melone, K., & Diaz-Artiles, A. (2021). Planetary extravehicular activity (EVA) risk mitigation strategies for long-duration space missions. Npj Microgravity, 7(1), 16. </span>        "
     },
     crew_size_density:{
         title: "Crew Size &#8594; Density",
         explanation: "In a given volume, increasing crew size can contribute to higher density <span style='color:gray'> [Fleming 1987]</span>. Complex tasks may also require more space <span style='color:gray'> [Stokols 1973]</span>, and one may feel like the volume is inadequate or the density is too high if there are several people working on a complex task together.        <br><br><br> <span style='color:gray'> Fleming, I., Baum, A., & Weiss, L. (1987). Social density and perceived control as mediators of crowding stress in high-density residential neighborhoods. Journal of Personality and Social Psychology, 52(5), 899–906. <br> Stokols, D. (1973). Physical, Social, and Personal Determinants of thePerception of Crowding. Environment and Behavior, 5(1). </span>"
+    },
+    social_support_isolated:{
+        title: "Isolated &#8594; Social support",
+        explanation: "In a study of 200+ winter-over personnel in Antarctica, advice seeking decreased in frequency through the mission; moreover, negative mood after advice seeking provided evidence to the frustrating experience of seeking advice from fellow crewmembers who were experiencing the same stressors. In certain scenarios, crewmembers experiencing the same isolation and confinement may be inadequate sources of support <span style='color:gray'>[Palinkas 2004]</span>.         <br><br><br> <span style='color:gray'> Palinkas, L. A., Johnson, J. C., & Boster, J. S. (2004). Social support and depressed mood in isolated and confined environments. Acta Astronautica, 54(9), 639–647.</span> "
+    },
+    social_support_extraversion:{
+        title: "Extraversion &#8594; Social support",
+        explanation: "In a study of 100+ dyad (two-people) friendships, it was found that an individual's extraversion scores predicted the extent to which they felt close to their friend <span style='color:gray'> [Berry 2000]</span>.        <br><br><br> <span style='color:gray'> Berry, D. S., Willingham, J. K., & Thayer, C. A. (2000). Affect and Personality as Predictors of Conflict and Closeness in Young Adults’ Friendships. Journal of Research in Personality, 34(1), 84–107.   </span>        "
+    },
+    social_support_interpersonal_processes_:{
+        title: "Interpersonal processes &#8594; Social support",
+        explanation: "Interpersonal processes are rooted in building relationships with one another. These processes help cope with life’s adversities (conflict and affect management) and promote growth and development (motivating processes), which are processes central to social support <span style='color:gray'>[Feeney and Collins 2015]</span>.   <br><br><br> <span style='color:gray'> Feeney, B. C., & Collins, N. L. (2015). A New Look at Social Support: A Theoretical Perspective on Thriving Through Relationships. Personality and Social Psychology Review, 19(2), 113–147.  </span>  "
     },
     social_support_stress_regulation:{
         title: "Social Support &#8594; Stress regulation",
@@ -440,9 +496,25 @@ var relatedBoxContents = {
         title: "Social Support &#8594; Kinship",
         explanation: "Providing support to others cements personal relationships and signifies mutual importance in an interpersonal relationship <span style='color:gray'>[Taylor 2011]</span>.        <br><br><br> <span style='color:gray'> Taylor, S. E. (2011). Social support: A review. The Oxford handbook of health psychology, 1, 189-214. </span>        "
     },
+    social_monotony_confined:{
+        title: "Confined  &#8594; Social monotony",
+        explanation: "Groups that undergo confinement lose immediate access to friends, family, and nominal networks of support <span style='color:gray'>[Palinkas 1992]</span>. Social isolation, monotony, and intensified social conflicts can also occur in confinement with the same group of people without a possibility of leaving <span style='color:gray'>[Palinkas 2004]</span>.         <br><br><br> <span style='color:gray'> Palinkas, L. A. (1992). Going to extremes: The cultural context of stress, illness and coping in Antarctica. Social Science & Medicine, 35(5), 651–664. <br> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163. </span>        "
+    },
     social_monotony_boredom:{
         title: "Social Monotony &#8594; Boredom",
         explanation: "Those who experience social deprivation or isolation report boredom <span style='color:gray'>[Myers 1972][Thackray 1981]</span>.       <br><br><br> <span style='color:gray'> Myers T.I. (1972). Psychobiological factors associated with monotony tolerance. Report No AIR-26400-7/72-FR, Washington, DC, Am Inst for Research. <br> Thackray, Richard I. (1981). The Stress of Boredom and Monotony: A Consideration of the Evidence. Psychosomatic Medicine 43(2):p 165-176. </span> "
+    },
+    density_crew_size:{
+        title: "Crew Size &#8594; Density",
+        explanation: "In a given volume, increasing crew size can contribute to higher density <span style='color:gray'> [Fleming 1987]</span>. Complex tasks may also require more space <span style='color:gray'> [Stokols 1973]</span>, and one may feel like the volume is inadequate or the density is too high if there are several people working on a complex task together.        <br><br><br> <span style='color:gray'> Fleming, I., Baum, A., & Weiss, L. (1987). Social density and perceived control as mediators of crowding stress in high-density residential neighborhoods. Journal of Personality and Social Psychology, 52(5), 899–906. <br> Stokols, D. (1973). Physical, Social, and Personal Determinants of thePerception of Crowding. Environment and Behavior, 5(1). </span>"
+    },
+    density_habitable_volume:{
+        title: "Habitable Volume &#8594; Density",
+        explanation: "Physical density can be increased by adding more people into a given space (increasing social density) or decreasing the size of the space (increasing spatial density) <span style='color:gray'>[Fleming 1987]</span>.         <br><br><br> <span style='color:gray'> Fleming, I., Baum, A., & Weiss, L. (1987). Social density and perceived control as mediators of crowding stress in high-density residential neighborhoods. Journal of Personality and Social Psychology, 52(5), 899–906.  </span>  "
+    },
+    density_circulation_paths:{
+        title: "Circulation Paths &#8594; Density",
+        explanation: "Circulation path planning has an important role, alongside habitable volume, in reducing the number of ‘traffic interactions’, or where one has to step aside and deviate from their original path to let someone else through <span style='color:gray'>[Simon 2011]</span>. These interactions can contribute to the feeling of crowdedness, inadequate space, and heightened density within the habitat.            <br><br><br> <span style='color:gray'> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). </span>        "
     },
     density_privacy:{
         title: "Density &#8594; Privacy",
@@ -452,6 +524,22 @@ var relatedBoxContents = {
         title: "Density &#8594; Stress regulation",
         explanation: "In one study of urban residents (n = 57), high social density was significantly correlated with high reports of stress [Fleming 1987]. One theory is that high density situations lead to perceived loss of control, and low levels of control are associated with stress [Cohen 1980][Fleming 1987].         <br><br><br> <span style='color:gray'> Fleming, I., Baum, A., & Weiss, L. (1987). Social density and perceived control as mediators of crowding stress in high-density residential neighborhoods. Journal of Personality and Social Psychology, 52(5), 899–906. <br> Cohen, Sheldon. (1980). Aftereffects of stress on human performance and social behavior: A review of research and theory. Psychological bulletin. 88. 82-108.  </span> "
     },
+    group_living_extraversion:{
+        title: "Extraversion &#8594; Group living",
+        explanation: "Extraversion is a key factor in adjustment (inner, subjective well being <span style='color:gray'>[Costa and McCrae 1980][Costa 1981]</span> and outer, perceived well being) to group living situations <span style='color:gray'> [Carp 1985]</span>.        <br><br><br> <span style='color:gray'> Costa, P. T., & McCrae, R. R. (1980). The influence of extraversion and neuroticism on subjective well-being. Journal of Gerontology, 38, 668-678. <br> Costa, P. T., McCrae, R. R., & Norris, A. H. (1981). Personal adjustment to aging: Longitudinal prediction from neuroticism and extraversion. Journal of Gerontology, 36, 78-85. <br> Carp, F. M. (1985). Relevance of Personality Traits to Adjustment in Group Living Situations. Journal of Gerontology, 40(5), 544–551.    </span>        "
+    },
+    group_living_agreeableness:{
+        title: "Agreeableness &#8594; Group living",
+        explanation: "Agreeableness may allow individuals to overcome the frustrations involved with group living <span style='color:gray'>[Graziano 1996]</span>. Furthermore, Wiggins (1991) suggested that agreeable individuals also more likely strive for intimacy, union, and solidarity with others.        <br><br><br> <span style='color:gray'> Graziano, W. G., Jensen-Campbell, L. A., & Hair, E. C. (1996). Perceiving interpersonal conflict and reacting to it: The case for agreeableness. Journal of Personality and Social Psychology, 70(4), 820–835. <br> Wiggins, J. S. (1991). Agency and communion as conceptual coordi* nates for the understanding and measurement ofinterpersonal behavior. In W. Grove & D. Cicchetti (Eds.), Thinking clearly about psychology: Essays in honor of PaulE. Meehl(pp. 89-113). Minneapolis: University of Minnesota Press. </span>        "
+    },
+    group_living_neuroticism:{
+        title: "Neuroticism  &#8594; Group living",
+        explanation: "Neuroticism is a key factor in adjustment (inner, subjective well being <span style='color:gray'>[Costa and McCrae 1980][Costa 1981]</span> and outer, perceived well being) to group living situations, with higher neuroticism associated with lower levels of adjustment <span style='color:gray'>[Carp 1985]</span>.    <br><br><br> <span style='color:gray'> Costa, P. T., & McCrae, R. R. (1980). The influence of extraversion and neuroticism on subjective well-being. Journal of Gerontology, 38, 668-678. <br> Costa, P. T., McCrae, R. R., & Norris, A. H. (1981). Personal adjustment to aging: Longitudinal prediction from neuroticism and extraversion. Journal of Gerontology, 36, 78-85. <br> Carp, F. M. (1985). Relevance of Personality Traits to Adjustment in Group Living Situations. Journal of Gerontology, 40(5), 544–551.  </span>  "
+    },
+    group_living_training_and_preparation:{
+        title: "Training and Preparation &#8594; Group living",
+        explanation: "During astronaut training, teams will spend part of their two-year training period learning and practicing expeditionary skills during operational field events, unlike other military groups who do not specifically practice team skills in non-work environments <span style='color:gray'>[Landon and Paoletti 2020]</span>.      <br><br><br> <span style='color:gray'> Landon, L. B., & Paoletti, J. (2020). Extreme roommates: Exploring group-living skills as a unique team skill area. In Psychology and human performance in space programs (pp. 217-235). CRC Press. </span> "
+    },
     group_living_stress_regulation:{
         title: "Group living &#8594; Stress regulation",
         explanation: "A crew with good group living skills can act as a buffer to the negative effects of a stressful environment <span style='color:gray'> [Landon 2024]</span>.      <br><br><br> <span style='color:gray'> Landon, L. B., Miller, J. C., Bell, S. T., & Roma, P. G. (2024). When people start getting real: The Group Living Skills Survey for extreme work environments. Frontiers in Psychology, 15, 1348119. </span>  "
@@ -459,6 +547,10 @@ var relatedBoxContents = {
     group_living_stress:{
         title: "Group living &#8594; Stress",
         explanation: "Group living can be a source of stress, for example during roommate conflicts [Dusselier 2005] and through increased conflicts over a mission <span style='color:gray'>[Stuster 2010]</span>.          <br><br><br> <span style='color:gray'> Stuster, J. W. (2010). Behavioral issues associated with long-duration space expeditions: Review and analysis of astronaut journals—Final report (No. NASA TM-2010-216130). </span>  "
+    },
+    extraversion_genetics:{
+        title: "Genetics &#8594; Extraversion",
+        explanation: "While the conclusion remains tentative, genetic variance explains for 35 to 39% of the variance in extraversion based on 12 twin studies over different familial structures and environmental conditions <span style='color:gray'>[Matthews 2003]</span>.      <br><br><br> <span style='color:gray'> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span> "
     },
     extraversion_interpersonal_processes:{
         title: "Extraversion &#8594; Interpersonal processes",
@@ -480,6 +572,10 @@ var relatedBoxContents = {
         title: "Openness &#8594; Curiosity",
         explanation: "Openness is the trait that is most strongly associated with intelligence <span style='color:gray'>[Ackerman 1997]</span>, with a correlation of around 0.3 in studies with N=4-500 <span style='color:gray'>[Austin 2002][Ackerman and Heggestad 1997]</span>. Other studies around this size  Openness is associated with motivation to pursue ideas and intellectual activities, and mastery of intellectual skills may in turn prompt more openness <span style='color:gray'>[Rolfus 1996][Matthews 2003]</span>.       <br><br><br> <span style='color:gray'> Rolfhus, E. L. and Ackerman, P. L. (1996) Self-report knowledge: at the crossroads of ability, interest, and personality. Journal ofEducational Psychology, 88, 174–88. <br> Austin, E. J., Deary, I. J., Whiteman, M. C., Fowkes, F. G. R., Pedersen, N. L., Rabbitt, P., Bent, N. and McInnes, L. (2002) Relationships between ability and personality: does intelligence contribute positively to personal and social adjustment? Personality and Individual Differences, 32, 1391–411. <br> Ackerman, P. L. and Heggestad, E. D. (1997) Intelligence, personality and interests: evidence for overlapping traits. Psychological Bulletin, 121, 219–45. <br> Ackerman, P. L., & Heggestad, E. D. (1997). Intelligence, personality, and interests: Evidence for overlapping traits. Psychological Bulletin, 121(2), 219–245. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span>"
     },
+    agreeableness_genetics:{
+        title: "Genetics &#8594; Agreeableness",
+        explanation: "From the Minnesota Study of Twins, one of the most comprehensive studies of twins reared apart conducted in history, more than 100 sets of twins were studied. It was found that genetic variation accounted for about 30% of the variance in agreeability <span style='color:gray'>[Bouchard 1994][Matthews 2003]</span>.        <br><br><br> <span style='color:gray'> Bouchard, T. J. (1994). Genes, Environment, and Personality. Science, 264(5166), 1700–1701. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span> "
+    },
     agreeableness_group_living:{
         title: "Agreeableness &#8594; Group living",
         explanation: "Agreeableness may allow individuals to overcome the frustrations involved with group living <span style='color:gray'>[Graziano 1996]</span>. Furthermore, Wiggins (1991) suggested that agreeable individuals also more likely strive for intimacy, union, and solidarity with others.        <br><br><br> <span style='color:gray'> Graziano, W. G., Jensen-Campbell, L. A., & Hair, E. C. (1996). Perceiving interpersonal conflict and reacting to it: The case for agreeableness. Journal of Personality and Social Psychology, 70(4), 820–835. <br> Wiggins, J. S. (1991). Agency and communion as conceptual coordi* nates for the understanding and measurement ofinterpersonal behavior. In W. Grove & D. Cicchetti (Eds.), Thinking clearly about psychology: Essays in honor of PaulE. Meehl(pp. 89-113). Minneapolis: University of Minnesota Press. </span>        "
@@ -487,6 +583,10 @@ var relatedBoxContents = {
     agreeableness_interpersonal_processes:{
         title: "Agreeableness &#8594; Interpersonal processes",
         explanation: "Agreeableness is a key component in social interactions. Highly agreeable individuals have less conflict, respond to conflicts more positively, and generally like their social interactions more <span style='color:gray'>[Graziano 1996]</span>. However, it’s been shown that highly agreeable individuals experience more distress and greater decreases in self-esteem following conflict <span style='color:gray'>[Suls 1998][Barrett and Pietromonaco 1997]</span>.        <br><br><br> <span style='color:gray'> Graziano, W. G., Jensen-Campbell, L. A., & Hair, E. C. (1996). Perceiving interpersonal conflict and reacting to it: The case for agreeableness. Journal of Personality and Social Psychology, 70(4), 820–835. <br> Suls, J., Martin, R. and David, J. P. (1998) Person–environment fit and its limits: agreeableness, neuroticism, and emotional reactivity to interpersonal conflict. Personality and Social Psychology Bulletin, 24, 88–98. <br> Barrett, L. F. and Pietromonaco, P. R. (1997) Accuracy of the five-factor model in predicting perceptions of daily social interactions. Personality and Social Psychology Bulletin, 23, 1173–87.  </span>        "
+    },
+    neuroticism_genetics:{
+        title: "Genetics &#8594; Neuroticism",
+        explanation: "From the Minnesota Study of Twins, one of the most comprehensive studies of twins reared apart conducted in history, more than 100 sets of twins were studied. It was found that genetic variation accounted for about 50% of the variance in agreeability <span style='color:gray'>[Bouchard 1994][Matthews 2003]</span>.        <br><br><br> <span style='color:gray'> Bouchard, T. J. (1994). Genes, Environment, and Personality. Science, 264(5166), 1700–1701. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span> "
     },
     neuroticism_anxiety:{
         title: "Neuroticism  &#8594; Anxiety",
@@ -524,6 +624,10 @@ var relatedBoxContents = {
         title: "Conscientiousness &#8594; Action processes",
         explanation: "When faced with stress, highly conscientious people tend to use active, problem-focused strategies  <span style='color:gray'>[Watson and Hubbard 1996][Matthews 2003]</span>.         <br><br><br> <span style='color:gray'> Watson, D. and Hubbard, B. (1996) Adaptational style and dispositional structure: coping in the context of the five-factor model. Journal ofPersonality, 64, 737–74.<br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press.  </span> "
     },
+    genetics_extreme:{
+        title: "Extreme &#8594; Genetics",
+        explanation: "During a spaceflight study of one year or shorter missions (N = 11), it was found that telomere lengths shortened significantly for all crewmembers upon return to Earth, regardless of in-space telomere dynamics. An increased frequency of chromosomal inversions were also observed in- and post-flight. One hypothesis is that this telomerase activity is a response to the extreme environment-induced chronic oxidative stress, which all crewmembers were found to experience during spaceflight <span style='color:gray'>[Luxton 2020]</span>.       <br><br><br> <span style='color:gray'> Luxton, J. J., McKenna, M. J., Lewis, A., Taylor, L. E., George, K. A., Dixit, S. M., Moniz, M., Benegas, W., Mackay, M. J., Mozsary, C., Butler, D., Bezdan, D., Meydan, C., Crucian, B. E., Zwart, S. R., Smith, S. M., Mason, C. E., & Bailey, S. M. (2020). Telomere Length Dynamics and DNA Damage Responses Associated with Long-Duration Spaceflight. Cell Reports, 33(10), 108457. </span>  "
+    },
     genetics_physical_health:{
         title: "Genetics &#8594; Physical health",
         explanation: "Genes contribute to predisposition to chronic illnesses and diseases, physical activity, and aging <span style='color:gray'>[Kujala 2011]</span>. Telomere (DNA-protein complexes capping chromosome ends) shortening may be correlated to physical inactivity and chronic diseases <span style='color:gray'>[Puterman 2010]</span>.        <br><br><br> <span style='color:gray'> Kujala, U. M. (2011). Physical activity, genes, and lifetime predisposition to chronic disease. European Review of Aging and Physical Activity, 8(1), 31–36. <br> Puterman E, Lin J, Blackburn E, O'Donovan A, Adler N, Epel E (2010) The power of exercise: buffering the effect of chronic stress on telomere length. PLoS ONE 5:e10837. </span> "
@@ -543,6 +647,10 @@ var relatedBoxContents = {
     resilience_stress_regulation:{
         title: "Resilience &#8594; Stress regulation",
         explanation: "From a survey of 2000+ individuals, it was found that higher resilience has a protective effect against stress, but the effect diminishes in high-strain, difficult work environments. The relationship between hardiness and stress are mixed. Hardiness has been found to regulate stress <span style='color:gray'> [Pengilly and Dowd 2000]</span>, but other investigators have not found that hardiness precludes negative reactions to adverse events <span style='color:gray'> [Cohen and Edwards 1989]</span> – which may be a similar phenomenon to the limited protective effect resilience has on challenging work environments.         <br><br><br> <span style='color:gray'> Pengilly, J. W. and Dowd, E. T. (2000) Hardiness and social support as moderators of stress. Journal ofClinical Psychology, 56, 813–20. <br> Cohen, S. and Edwards, J. (1989) Personality characteristics as moderators of the relationship between stress and health. In R. W. Neufeld (ed.), Advances in investigations of psychological stress. New York: Wiley. </span>"
+    },
+    psychological_resources_ground_support:{
+        title: "Ground Support &#8594; Psychological resources",
+        explanation: "The current spaceflight (ISS) model of behavioral health care and intervention relies on private medical conferences. The reliance on access to ground support renders the current model of psychotherapy impossible with increased mission distance <span style='color:gray'>[Ad Hoc Committee 2008]</span>. Alternatives, including email and text communication, makes psychological assessment and potential treatment far more difficult <span style='color:gray'>[Ad Hoc Committee 2008]</span>.       <br><br><br> <span style='color:gray'> Ad Hoc Committee of Members of the Space Medicine Association and the Society of NASA Flight Surgeons. Human health and performance for long-duration spaceflight. Aviat Space Environ Med 2008; 79:629–35. </span>        "
     },
     psychological_resources_stress_regulation:{
         title: "psychological_resources &#8594; Stress regulation",
@@ -564,13 +672,33 @@ var relatedBoxContents = {
         title: "Training and Preparation &#8594; Group living",
         explanation: "During astronaut training, teams will spend part of their two-year training period learning and practicing expeditionary skills during operational field events, unlike other military groups who do not specifically practice team skills in non-work environments <span style='color:gray'>[Landon and Paoletti 2020]</span>.      <br><br><br> <span style='color:gray'> Landon, L. B., & Paoletti, J. (2020). Extreme roommates: Exploring group-living skills as a unique team skill area. In Psychology and human performance in space programs (pp. 217-235). CRC Press. </span> "
     },
+    ground_support_isolated:{
+        title: "Isolated &#8594; Ground support",
+        explanation: "In one study of 200+ winter-over personnel in Antarctica, it was found that although the availability of support didn’t change during prolonged isolation, the perceived quality of support decreased <span style='color:gray'>[Palinkas 2004]</span>.  <br><br><br> <span style='color:gray'> Palinkas, L. A., Johnson, J. C., & Boster, J. S. (2004). Social support and depressed mood in isolated and confined environments. Acta Astronautica, 54(9), 639–647.</span> "
+    },
+    ground_support_communication_delay:{
+        title: "Communication delay &#8594; Ground support",
+        explanation: "All human space exploration thus far has been within the Earth-Moon range, where minimal communication delay has allowed the majority of the operations to be ground-based <span style='color:gray'>[Frank 2013]</span>. In an analog habitat study of communication delay (N = 16), it was found that with the current ISS operational mode, a one-way communication delay of over 300 seconds (5 minutes) resulted in a level of workload requiring mitigation <span style='color:gray'>[Frank 2013]</span>. <br><br><br> <span style='color:gray'> Frank, J., Spirkovska, L., McCann, R., Lui Wang, Pohlkamp, K., & Morin, L. (2013). Autonomous mission operations. 2013 IEEE Aerospace Conference, 1–20.</span>"
+    },
     ground_support_psychological_resources:{
         title: "Ground Support &#8594; Psychological resources",
         explanation: "The current spaceflight (ISS) model of behavioral health care and intervention relies on private medical conferences. The reliance on access to ground support renders the current model of psychotherapy impossible with increased mission distance <span style='color:gray'>[Ad Hoc Committee 2008]</span>. Alternatives, including email and text communication, makes psychological assessment and potential treatment far more difficult <span style='color:gray'>[Ad Hoc Committee 2008]</span>.       <br><br><br> <span style='color:gray'> Ad Hoc Committee of Members of the Space Medicine Association and the Society of NASA Flight Surgeons. Human health and performance for long-duration spaceflight. Aviat Space Environ Med 2008; 79:629–35. </span>        "
     },
     ground_support_medical_capability:{
-        title: "Ground Support &#8594; Medical resources",
+        title: "Ground Support &#8594; Medical capability",
         explanation: "Current medical operations in Low Earth Orbit rely on real-time communication from flight surgeons and medical experts to provide evaluations and recommendations <span style='color:gray'>[Antonsen 2022]</span>. The relatively short distance can also allow the ground team to resupply medical resources and offer evacuation as a possibility <span style='color:gray'>[Antonsen 2022]</span>.     <br><br><br> <span style='color:gray'> Antonsen, E. L., Myers, J. G., Boley, L., Arellano, J., Kerstman, E., Kadwa, B., Buckland, D. M., & Van Baalen, M. (2022). Estimating medical risk in human spaceflight. Npj Microgravity, 8(1), 8.  </span>        "
+    },
+    ground_support_autonomy:{
+        title: "Ground Support &#8594; Autonomy",
+        explanation: "Scenarios in which crew will not be able to communicate with (due to communication delay, loss of communication, lack of bandwidth, or other emergency scenario) ground support, crew will be required to operate autonomously <span style='color:gray'>[Marquez 2017]</span>.        <br><br><br> <span style='color:gray'> Marquez, J. J., Hillenius, S., Kanefsky, B., Zheng, J., Deliz, I., & Reagan, M. (2017). Increasing crew autonomy for long duration exploration missions: Self-scheduling. 2017 IEEE Aerospace Conference, 1–10.        </span>        "
+    },
+    ground_support_situation_awareness:{
+        title: "Ground Support &#8594; Situation awareness",
+        explanation: "On the International Space Station, astronauts currently are supported by a large team of experts that provide them with task-specific and vehicle state information <span style='color:gray'> [Marquez 2017]</span>. Situation awareness is largely maintained by the integrated presence of mission control.        <br><br><br> <span style='color:gray'> Marquez, J. J., Hillenius, S., Kanefsky, B., Zheng, J., Deliz, I., & Reagan, M. (2017). Increasing crew autonomy for long duration exploration missions: Self-scheduling. 2017 IEEE Aerospace Conference, 1–10.        </span>        "
+    },
+    medical_capability_distance_from_home_earth:{
+        title: "Distance from Home/Earth &#8594; Medical resources",
+        explanation: "Distance from Home/Earth limits the availability of medical care, including unavailability of resources, limited alternatives for ineffectiveness/side effects of medicine, and degradation of medications <span style='color:gray'>[Wotring 2015]</span>. <br><br><br> <span style='color:gray'> Wotring, V. E. (2015). Medication use by U.S. crewmembers on the International Space Station. FASEB Journal: Offcial Publication of the Federation of American Societies for Experimental Biology, 29(11), 4417–4423. </span>"
     },
     medical_capability_ground_support:{
         title: "Ground Support &#8594; Medical capability",
@@ -580,9 +708,22 @@ var relatedBoxContents = {
         title: "Medical capability &#8594; Physical health",
         explanation: "Physical health is maintained when the capability matches or exceeds the medical needs. Medical needs may be dependent on initial conditions and remain high even with access to medical care. Based on a study of nearly 300 Iraqi refugees in southeastern Michigan, 100% and 99% of respondents indicated they needed medical and dental care, respectively – this remained consistent in the first two years of arrival [Wright 2016].         <br><br><br> <span style='color:gray'> Wright, A.M., Aldhalimi, A., Lumley, M.A. et al. (2016). Determinants of resource needs and utilization among refugees over time. Soc Psychiatry Psychiatr Epidemiol 51, 539–549.</span>"
     },
+    family_and_friends_distance_from_home_earth:{
+        title: "Distance from Home/Earth &#8594; Family and friends",
+        explanation: "As one moves away from home, one also often moves away from existing social ties <span style='color:gray'>[Scopelliti and Tiberio 2010]</span>. In the United States, ⅕ of the nation’s children are growing up in immigrant homes; in the process of immigration, families often undergo separation from extended relatives, immediate family, and their social networks <span style='color:gray'>[Suárez-Orozco 2012]</span>.        <br><br><br> <span style='color:gray'> Scopelliti, M., & Tiberio, L. (2010). Homesickness in University Students: The Role of Multiple Place Attachment. Environment and Behavior, 42(3), 335–350. <br>  Suárez-Orozco, C., Todorova, I. L., & Louie, J. (2012). Making up for lost time: The experience of separation and reunification among immigrant families. In The new immigration (pp. 179-196). Routledge. </span>"
+    },
+    family_and_friends_communication_delay:{
+        title: "Communication delay &#8594; Family and friends",
+        explanation: "Prolonged autonomy and communication delays contribute to long term isolation, resulting in greater need for psychological support from family and friends <span style='color:gray'>[Ushakov 2014]</span>. During an isolation analog of 520 days (N = 6, Mars 500) and previous international isolation studies (HUBES 94; SFINCSS 99), the number and size of outgoing emails to family and friends increased with mission duration <span style='color:gray'>[Ushakov 2014]</span>. <br><br><br> <span style='color:gray'> Ushakov, I. B., Vladimirovich, M. B., Bubeev, Y. A., Gushin, V. I., Vasil’eva, G. Y., Vinokhodova, A. G., & Shved, D. M. (2014). Main findings of psychophysiological studies in the Mars 500 experiment. Herald of the Russian Academy of Sciences, 84(2), 106–114. </span>"
+    },
     family_and_friends_stress_regulation:{
         title: "Family and Friends &#8594; Stress regulation",
-        explanation: "During spaceflight, conference calls with and care packages from friends and family are important to help crewmembers mitigate stress <span style='color:gray'>[Kanas and Manzey 2008][Sipes and Ark 2005][Deming and Vasterling 2017]</span>.        <br><br><br> <span style='color:gray'> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. <br> Sipes, W. E., & Ark, S. T. V. (2005). Operational Behavioral Health and Performance Resources for International Space Station Crews and Families. Aviation, Space, and Environmental Medicine, 76(6). <br> Deming, C. A., & Vasterling, J. J. (2017). Workplace social support and behavioral health prior to long-duration spaceflight. Aerospace medicine and human performance, 88(6), 565-573. </span> "  },
+        explanation: "During spaceflight, conference calls with and care packages from friends and family are important to help crewmembers mitigate stress <span style='color:gray'>[Kanas and Manzey 2008][Sipes and Ark 2005][Deming and Vasterling 2017]</span>.        <br><br><br> <span style='color:gray'> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. <br> Sipes, W. E., & Ark, S. T. V. (2005). Operational Behavioral Health and Performance Resources for International Space Station Crews and Families. Aviation, Space, and Environmental Medicine, 76(6). <br> Deming, C. A., & Vasterling, J. J. (2017). Workplace social support and behavioral health prior to long-duration spaceflight. Aerospace medicine and human performance, 88(6), 565-573. </span> "  
+    },
+    supplies_resource_constrained:{
+        title: "Resource Constrained &#8594; Supplies",
+        explanation: "In resource constrained environments, supplies (e.g., fresh food, water, clothing) are limited <span style='color:gray'>[Taylor 1969][Natani and Shurley 1974]</span>. With limited or impossible resupply capabilities, regenerative or closed-loops systems are one solution to maximize the use of existing resources <span style='color:gray'>[Pickett 2020]</span>.         <br><br><br> <span style='color:gray'> Taylor, A. J. W. (1969). Ability, stability, and social adjustment among Scott base personnel, Antarctica, Occup. Psychol., 43, 81-93. <br> Natani, K., & Shurley, J. T. (1974). Sociopsychological aspects of a winter vigil at South Pole station. In E. K. E. Gunderson (Ed.), Antarctic Research Series (Vol. 22, pp. 89–114). American Geophysical Union. <br> Pickett, M. T., Roberson, L. B., Calabria, J. L., Bullard, T. J., Turner, G., & Yeh, D. H. (2020). Regenerative water purification for space applications: Needs, challenges, and technologies towards “closing the loop.” Life Sciences in Space Research, 24, 64–82. </span> "
+    },
     supplies_environmental_monotony:{
         title: "Supplies &#8594; Environmental monotony",
         explanation: "The limitation of supplies due to mass, volume, or transportation distance may contribute to environmental or material monotony (e.g., the lack of fresh fruit or care packages) <span style='color:gray'>[Kanas and Manzey 2008]</span>.      <br><br><br> <span style='color:gray'> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. </span>        "
@@ -590,6 +731,14 @@ var relatedBoxContents = {
     supplies_place_attachment:{
         title: "Supplies &#8594; Environmental monotony",
         explanation: "The distribution of personal items and decorating/furnishing rooms are an example of space appropriation, which can facilitate place attachment <span style='color:gray'>[Graumann 1976]</span>.         <br><br><br> <span style='color:gray'> Graumann, C. F. (1976). Concept of Appropriation.        </span>        "
+    },
+    food_distance_from_home_earth:{
+        title: "Distance from Home/Earth &#8594; Food",
+        explanation: "Distance from Home/Earth highly constrains the food system to be shelf stable, nutritional, and palatable for long durations <span style='color:gray'>[Schorn and Roma 2020]</span>. <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press.</span>"
+    },
+    food_resource_constrained:{
+        title: "Resource Constrained &#8594; Food",
+        explanation: "Even in Low Earth Orbit, resupply logistics limit the influx of fresh food on the International Space Station. As mission distance increases, the difficulty of resupply will challenge how food and nutrition are provided <span style='color:gray'> [Douglas 2020]</span>.         <br><br><br> <span style='color:gray'> Taylor, A. J. W. (1969). Ability, stability, and social adjustment among Scott base personnel, Antarctica, Occup. Psychol., 43, 81-93. <br> Natani, K., & Shurley, J. T. (1974). Sociopsychological aspects of a winter vigil at South Pole station. In E. K. E. Gunderson (Ed.), Antarctic Research Series (Vol. 22, pp. 89–114). American Geophysical Union. <br> Pickett, M. T., Roberson, L. B., Calabria, J. L., Bullard, T. J., Turner, G., & Yeh, D. H. (2020). Regenerative water purification for space applications: Needs, challenges, and technologies towards “closing the loop.” Life Sciences in Space Research, 24, 64–82. </span> "
     },
     food_nutrition:{
         title: "Food &#8594; Nutrition",
@@ -607,9 +756,17 @@ var relatedBoxContents = {
         title: "Exercise Equipment &#8594; Physical workload",
         explanation: "Current exercise protocol for International Space Station crewmembers averages around 10 hours per week, or 2 hours per day [Scott 2023]. The exercise protocol is the primary source of physical workload, beyond mission events such as extravehicular activity, due to the lack of loading and stress in the microgravity environment. Based on a study of over 45 astronauts on the ISS, the median aerobic exercise duration was 65 minutes per session for the cycle ergometer and 84 minutes per session for the treadmill. Resistance training varied roughly between 100-300 pounds of force, depending on the specific exercise (e.g., squats, bench press, deadlift) <span style='color:gray'>[Scott 2023]</span>.        <br><br><br> <span style='color:gray'> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span>     "
     },
+    light_dark_cycles_extreme:{
+        title: "Extreme &#8594; Light/Dark cycles",
+        explanation: "Extreme environments, like polar regions, can experience perpetual night or day <span style='color:gray'>[Palinkas and Suedfeld 2008]</span>. In Low-Earth Orbit, the International Space Station experiences a sunrise every 45 minutes <span style='color:gray'>[Thirsk 2009]</span>. Altered (non-24 hour) light/dark cycles can cause disturbances in circadian rhythms due to regular, daily light cycles being the primary factor for entrainment <span style='color:gray'>[Broadway and Arendt 1988]</span>.        <br><br><br> <span style='color:gray'> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163. <br> Thirsk, R., Kuipers, A., Mukai, C., & Williams, D. (2009). The space-flight environment: The International Space Station and beyond. Canadian Medical Association Journal, 180(12), 1216–1220. <br> Broadway JW and Arendt J. (1988). Seasonal and bright light changes of the phase position of the human melatonin rhythms in Antarctica. Arctic Med Res; 47 (suppl 1): 201–03. </span>     "
+    },
     light_dark_cycles_sleep:{
         title: "Light/Dark Cycles &#8594; Sleep",
         explanation: "Circadian rhythms are internal ‘biological clocks’ comprising multiple systems across the body <span style='color:gray'>[Turek 1994]</span>. While the circadian rhythm continues regardless of external inputs (i.e., “freerunning” circadian rhythm, which is a little less than 24 hours), they are influenced, or entrained, by external cues <span style='color:gray'>[Vitaterna 2001]</span>. The most powerful of these is the light/dark cycle <span style='color:gray'>[Vitaterna 2001]</span>. The circadian rhythm modulates the sleep-wake cycle and desynchronized circadian rhythms can alter sleep patterns <span style='color:gray'>[Turek 1994]</span>. <br> In a study of altered light/dark cycles and disturbed sleep on the Space Shuttle (n=5), participants reported ~6.5hr/night of sleep on average, lower sleep quality compared to preflight baselines, more wakefulness, less slow-wave sleep, and sleep was unimproved by melatonin administration <span style='color:gray'>[Dijk 2001]</span>.     <br><br><br> <span style='color:gray'> Turek, F. W. (1994, January). Circadian rhythms. In Proceedings of the 1992 Laurentian Hormone Conference (pp. 43-90). Academic Press. <br> Vitaterna, M. H., Takahashi, J. S., & Turek, F. W. (2001). Overview of circadian rhythms. Alcohol research & health, 25(2), 85. <br>  Dijk, D.-J., Neri, D. F., Wyatt, J. K., Ronda, J. M., Riel, E., Ritz-De Cecco, A., Hughes, R. J., Elliott, A. R., Prisk, G. K., West, J. B., & Czeisler, C. A. (2001). Sleep, performance, circadian rhythms, and light-dark cycles during two space shuttle flights. American Journal of Physiology-Regulatory, Integrative and Comparative Physiology, 281(5), R1647–R1664. </span> "
+    },
+    altered_gravity_extreme:{
+        title: "Extreme &#8594; Altered gravity",
+        explanation: "Reduced gravity has physiological and operational implications <span style='color:gray'>[Lackner 1992][Stirling 2009][Massion 1998][Tanaka 2017]</span>. Various analogs for altered gravity exist to replicate conditions for operational, technological, or physiological testing. These include head-down tilt [Watenpaugh 2016], water immersion <span style='color:gray'>[Watenpaugh 2016]</span>, neutral buoyancy <span style='color:gray'>[Bury 2023]</span>, and parabolic flights <span style='color:gray'>[Johnson 2018]</span>.        <br><br><br> <span style='color:gray'> Lackner, J. R. (1992). Spatial orientation in weightless environments. In Perception (Vol. 21, pp. 803–812). <br> Stirling, L., Willcox, K., Ferguson, P., & Newman, D. (2009). Kinetics and kinematics for translational motions in microgravity during parabolic flight. Aviation Space and Environmental Medicine, 80(6), 522–531. <br> Massion, J., Amblard, B., Assaiante, C., Mouchnino, L., & Vernazza, S. (1998). Body orientation and control of coordinated movements in microgravity. Brain Research Reviews, 28(1–2), 83–91. <br> Tanaka, K., Nishimura, N., & Kawai, Y. (2017). Adaptation to microgravity, deconditioning, and countermeasures. The Journal of Physiological Sciences, 67(2), 271–281. <br> Watenpaugh, D. E. (2016). Analogs of microgravity: Head-down tilt and water immersion. Journal of Applied Physiology, 120(8), 904–914. <br> Bury, N.-A., Jenkin, M., Allison, R. S., Herpers, R., & Harris, L. R. (2023). Vection underwater illustrates the limitations of neutral buoyancy as a microgravity analog. Npj Microgravity, 9(1), 42. <br> Johnson, K. T., Taylor, S., Fedor, S., Jaques, N., Chen, W., & Picard, R. W. (2018). Vomit Comet Physiology: Autonomic Changes in Novice Flyers. </span>     "
     },
     altered_gravity_ergonomics:{
         title: "Altered Gravity &#8594; Ergonomics",
@@ -618,6 +775,10 @@ var relatedBoxContents = {
     altered_gravity_physical_health:{
         title: "Altered Gravity &#8594; Physical health",
         explanation: "Physical adaptation to the microgravity environment causes a myriad of physiological changes, including cardiovascular deconditioning, bone & muscle atrophy, and neurological changes <span style='color:gray'>[Norsk 2021]</span>. Fluid shifts due to the removal of the hydrostatic gradient provided by 1g causes cardiovascular changes, phenomena known as ‘puffy face’ and ‘bird legs’, congestion, and is thought to play a role in inducing SANS (Spaceflight Associated Neuro-ocular Syndrome - a series of intracranial and ocular changes) <span style='color:gray'>[Stenger 2017][Norsk 2021]</span>. Between 40-50% of crewmembers experience Space Adaptation Sickness during their first few days in space, including symptoms of nausea, disorientation, and headache <span style='color:gray'>[West 1985]</span>.        <br><br><br> <span style='color:gray'> Norsk, P. (2021). Physiological effects of spaceflight–Weightlessness: An overview. Handbook of Bioastronautics, 93-105. <br> Stenger MB, Tarver WJ, Brunstetter T, Gibson CR, Laurie SS, Lee SMC, Macias BR, Mader TH, Otto C, Smith SM, Zwart SR (2017) Risk of spaceflight associated neuro-ocular syndrome (SANS). Evidence report (Nov 30), NASA, Lyndon B. Johnson Space Center, Houston.   </span> "
+    },
+    radiation_extreme:{
+        title: "Extreme &#8594; Radiation",
+        explanation: "In extreme environments (such as deep space), radiation levels are elevated due to a combination of background Galactic Cosmic Radiation, Solar Particle Events, and localized trapped particle belts <span style='color:gray'>[Allen 2018]</span>. <br> Extreme events on Earth, such a nuclear facility accidents (e.g., Fukushiima Dachii, 2011) can have impacts on the safety of nearby water and food, and increased mortalities and morbidities <span style='color:gray'>[Jones 2013]</span>. On a much larger scale, the use of atomic bombs (only time in history – Hiroshima and Nagasaki, 1945) resulted in over 200,000 deaths before year’s end <span style='color:gray'>[Ten Hoeve and Jacobson 2012]</span>.        <br><br><br> <span style='color:gray'> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier. <br> Jones, C. F., Loh, S. L., & Satō, K. (2013). Narrating Fukushima: Scales of a nuclear meltdown. East Asian Science, Technology and Society: An International Journal, 7(4), 601-623. <br> Ten Hoeve, J. E., & Jacobson, M. Z. (2012). Worldwide health effects of the Fukushima Daiichi nuclear accident. Energy & Environmental Science, 5(9), 8743-8757. </span>     "
     },
     radiation_physical_health:{
         title: "Radiation &#8594; Physical health",
@@ -699,6 +860,10 @@ var relatedBoxContents = {
         title: "lighting &#8594; Sleep",
         explanation: "Lighting is the primary entrainment factor for circadian rhythm regulation <span style='color:gray'>[Broadway and Arendt 1988]</span>. Lowered light levels and warm tones of light closer to the evening promotes the production of melatonin, which in turn promotes sleep desire <span style='color:gray'>[Karlen 2017]</span>. In recent years, the International Space Station has introduced a solid state lighting system in the crew quarters that has yielded preliminary results that light-responsive melatonin regulation is possible in the spaceflight environment <span style='color:gray'>[Brainard 2013]</span>.          <br><br><br> <span style='color:gray'> Broadway JW and Arendt J. (1988). Seasonal and bright light changes of the phase position of the human melatonin rhythms in Antarctica. Arctic Med Res; 47 (suppl 1): 201–03. <br> Karlen, M., Spangler, C., & Benya, J. R. (2017). Lighting design basics. John Wiley & Sons. <br>   Brainard, G. C., Coyle, W., Ayers, M., Kemp, J., Warfield, B., Maida, J., ... & Hanifin, J. P. (2013). Solid-state lighting for the International Space Station: Tests of visual performance and melatonin regulation. Acta Astronautica, 92(1), 21-28. </span>" 
     },
+    privacy_confined:{
+        title: "Confined  &#8594; Privacy",
+        explanation: "The interior of the Antarctic stations emphasize efficiency, not comfort. The lack of privacy (physical and acoustic) is a primary stressor in confined environments <span style='color:gray'>[Palinkas 2008][Nicolas 2016]</span>.        <br><br><br> <span style='color:gray'> Palinkas, L. A., & Suedfeld, P. (2008). Psychological effects of polar expeditions. The Lancet, 371(9607), 153–163. <br> Nicolas, M., Suedfeld, P., Weiss, K., & Gaudino, M. (2016). Affective, Social, and Cognitive Outcomes During a 1-Year Wintering in Concordia. Environment and Behavior, 48(8), 1073–1091. </span>        "
+    },
     privacy_sleep:{
         title: "Privacy &#8594; Sleep",
         explanation: "Anecdotal evidence shows that the need for privacy often manifests itself in a need to be alone <span style='color:gray'>[Stuster 1996]</span>, for instance in a sleep area. In isolation, a bed is often the first thing people claim as their own, showing the importance of a personal sleeping area <span style='color:gray'>[Altman and Haythorn 1967]</span>.        <br><br><br> <span style='color:gray'> Stuster, J. (1996). Bold endeavors: Lessons from polar and space exploration. Naval Institute Press. <br> Altman I, Haythorn WW. 1967. The ecology of isolated groups. Behav. Sci. 32:169–82. </span>        "
@@ -751,6 +916,14 @@ var relatedBoxContents = {
         title: "Environmental Monotony &#8594; Boredom",
         explanation: "Monotony within the environment, understimulation, or sensory deprivation are common attributes of boredom <span style='color:gray'>[Todman 2003][Leong and Schneller 1993][Mikulas and Vodanovich 1993][Suedfeld and Steel 2000]</span>. Sensory deprivation in spaceflight can be mitigated through novel additions to food, for instance, through crew care packages (which becomes difficult with distance away from Earth) <span style='color:gray'>[Kanas and Manzey 2008]</span>.        <br><br><br> <span style='color:gray'> Todman, M. (2003). Boredom and Psychotic Disorders: Cognitive and Motivational Issues. Psychiatry: Interpersonal and Biological Processes, 66(2), 146–167. <br> Leong, F. T., & Schneller, G. R. (1993). Boredom proneness: Temperamental and cognitive components. Personality and individual differences, 14(1), 233-239. <br> Mikulas, W. L., & Vodanovich, S. J. (1993). The essence of boredom. The psychological record, 43(1), 3. <br> Suedfeld, P., & Steel, G. D. (2000). The Environmental Psychology of Capsule Habitats. Annual Review of Psychology, 51(1), 227–253. <br> Kanas, N., & Manzey, D. (2008). Space psychology and psychiatry (2nd ed.). El Segundo, CA: Microcosm Press. </span> "
     },
+    physical_workload_mission_demands:{
+        title: "Mission Demands &#8594; Physical workload",
+        explanation: "During launch, peak acceleration is at ~3.8g (1g = 9.81 m/s^2), and up to 15 g can be reached by the launch escape system in emergency scenarios <span style='color:gray'>[Allen 2018]</span>. Accelerations in the lunar landing profile can briefly reach up to 20g <span style='color:gray'>[Allen 2018]</span>. <br> Crewmembers onboard the International Space Station spend around 10 hours a week exercising, which was still insufficient to counteract physiological deconditioning <span style='color:gray'>[Scott 2023]</span>.        <br><br><br> <span style='color:gray'> Allen, C. S., Giraudo, M., Moratto, C., & Yamaguchi, N. (2018). Spaceflight environment. In Space Safety and Human Performance (pp. 87–138). Elsevier. <br> Scott, J. M., Feiveson, A. H., English, K. L., Spector, E. R., Sibonga, J. D., Dillon, E. L., Ploutz-Snyder, L., & Everett, M. E. (2023). Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts. Npj Microgravity, 9(1), 11. </span> "
+    },
+    physical_workload_life_mission_events:{
+        title: "Mission Events &#8594; Physical workload",
+        explanation: "Extravehicular activities are extremely demanding on the body. Spacesuits (in particular the Extravehicular Mobility Unit used by NASA) can cause injuries and discomfort, primarily due to the lack of mobility provided by the gas pressure layer <span style='color:gray'>[Diaz and Newman 2014]</span>. Additionally, the weight of the suit and the required walking past (e.g., during an emergency return scenario) increase metabolic workload, which in turn contributes to fatigue <span style='color:gray'>[Belobrajdic 2021]</span>.         <br><br><br> <span style='color:gray'> A. Diaz and D. Newman, (2014). 'Musculoskeletal human-spacesuit interaction model,'' 2014 IEEE Aerospace Conference, Big Sky, MT, USA, pp. 1-13. <br>  Belobrajdic, B., Melone, K., & Diaz-Artiles, A. (2021). Planetary extravehicular activity (EVA) risk mitigation strategies for long-duration space missions. Npj Microgravity, 7(1), 16. </span>        "
+    },
     physical_workload_physical_health:{
         title: "Physical Workload &#8594; Physical health",
         explanation: "Many musculoskeletal injuries begin with discomfort, which can turn into pains and injuries if left unmanaged <span style='color:gray'>[Stanton 2005]</span>. However, an appropriate level of physical workload is needed to sustain musculoskeletal health. In spaceflight, where multiple systems experience deconditioning due to microgravity unloading, aerobic and resistance exercise can help protect against muscle mass loss, bone mass, muscle strength, and aerobic capacity <span style='color:gray'>[Petersen 2016]</span>.         <br><br><br> <span style='color:gray'> Stanton, N. (Ed.). (2005). Handbook of human factors and ergonomics methods. CRC Press. <br> Petersen, N., Jaekel, P., Rosenberger, A., Weber, T., Scott, J., Castrucci, F., ... & Mester, J. (2016). Exercise in space: the European Space Agency approach to in-flight exercise countermeasures for long-duration missions on ISS. Extreme physiology & medicine, 5, 1-13. </span>  "
@@ -762,6 +935,10 @@ var relatedBoxContents = {
     physical_workload_anxiety:{
         title: "Physical Workload &#8594; Anxiety",
         explanation: "Studies have shown that physical activity is beneficial to those with anxious symptoms <span style='color:gray'>[Petruzzello 1991][Martinsen 1989][Dunn 2001]</span>. Proposed mechanisms for the linkage between physical activity and mental health include physiological benefits (e.g., release of feel-good endorphins and hormones), improve self-image and self-efficacy, and serve as distraction and social interaction <span style='color:gray'>[Peluso and De Andrade 2005]</span>.        <br><br><br> <span style='color:gray'> Petruzzello, S. J., Landers, D. M., Hatfield, B. D., Kubitz, K. A., & Salazar, W. (1991). A meta-analysis on the anxiety-reducing effects of acute and chronic exercise: Outcomes and mechanisms. Sports medicine, 11, 143-182. <br> Martinsen, E. W., Hoffart, A., & Solberg, Ø. Y. (1989). Aerobic and non‐aerobic forms of exercise in the treatment of anxiety disorders. Stress Medicine, 5(2), 115-120. <br> Dunn, A. L., Trivedi, M. H., & O'Neal, H. A. (2001). Physical activity dose-response effects on outcomes of depression and anxiety. Database of Abstracts of Reviews of Effects (DARE): Quality-assessed Reviews [Internet]. <br> Peluso, M. A. M., & De Andrade, L. H. S. G. (2005). Physical activity and mental health: the association between exercise and mood. Clinics, 60(1), 61-70.     </span>  "
+    },
+    cognitive_workload_mission_demands:{
+        title: "Mission Demands &#8594; Cognitive workload",
+        explanation: "In general, space missions are challenging and require crew (crewmembers and mission control) to maintain high cognitive function while operating complex and sensitive instruments <span style='color:gray'>[Barger 2014]</span>. The “cognitive-overload” hypothesis describes the disproportionate sensorimotor performance deficit that occurs when cognitively challenging tasks are performed, as compared to simple ones. Spaceflight-specific disturbances, including restructuring of the sensorimotor system and cognitive stressors (confinement, altered sleep architecture, high workload) reduce available cognitive resources <span style='color:gray'>[Bock 2010]</span>.       <br><br><br> <span style='color:gray'> Barger, L. K., Wright, K. P., Burke, T. M., Chinoy, E. D., Ronda, J. M., Lockley, S. W., & Czeisler, C. A. (2014). Sleep and cognitive function of crewmembers and mission controllers working 24-h shifts during a simulated 105-day spaceflight mission. Acta Astronautica, 93, 230–242. <br> Bock, O., Weigelt, C., & Bloomberg, J. J. (2010). Cognitive Demand of Human Sensorimotor Performance During an Extended Space Mission: A Dual-Task Study. Aviation, Space, and Environmental Medicine, 81(9), 819–824. </span>"
     },
     cognitive_workload_stress:{
         title: "Cognitive Workload &#8594; Stress",
@@ -779,37 +956,77 @@ var relatedBoxContents = {
         title: "Cognitive Workload &#8594; Sleep",
         explanation: "From the largest study of sleep and neurobehavioral functioning in 6-month stays on the ISS, elevated workload was found to be associated with shorter sleep durations. Observational data suggests that when the workload demand is low, astronauts can sleep longer if provided the opportunity <span style='color:gray'>[Jones 2022]</span>.         <br><br><br> <span style='color:gray'> Jones, C. W., Basner, M., Mollicone, D. J., Mott, C. M., & Dinges, D. F. (2022). Sleep deficiency in spaceflight is associated with degraded neurobehavioral functions and elevated stress in astronauts on six-month missions aboard the International Space Station. Sleep, 45(3), zsac006. </span>   "
     },
+    cognitive_workload_situation_awareness:{
+        title: "Cognitive Workload &#8594; Situation awareness",
+        explanation: "Given a limited amount of cognitive resources, with rising task complexity and cognitive workload, there are decreased resources available for situation awareness <span style='color:gray'>[Vidulich and Tsang 2012]</span>. However, an appropriately high level of cognitive workload is sometimes required to maintain high situation awareness (i.e. prevent boredom) <span style='color:gray'>[Endsley 1993]</span>.    <br><br><br> <span style='color:gray'> Vidulich, M. A., & Tsang, P. S. (2012). Mental workload and situation awareness. Handbook of human factors and ergonomics, 243-273. Endsley, M. R. (1993). A survey of situation awareness requirements in air-to-air combat fighters. The International Journal of Aviation Psychology, 3(2), 157–168. </span>   "
+    },
     media_attention_privacy:{
         title: "Media Attention &#8594; Privacy",
         explanation: "In the (social) media world, privacy is currency – people willingly or unknowingly disclose private information to gain access to digital tools and services  <span style='color:gray'>[Quinn 2019]</span>. In public facing jobs or situations, such as an astronaut/spaceflight participant or as someone in the midst of a natural disaster with high media attention, access privacy may become harder to manage.     <br><br><br> <span style='color:gray'> Quinn, K., Epstein, D., & Moon, B. (2019). We care about different things: Non-elite conceptualizations of social media privacy. Social Media+ Society, 5(3). </span>        "
     },
+    transition_processes_communication_delay:{
+        title: "Communication delay &#8594; Ground support",
+        explanation: "During an isolation analog of 520 days (N = 6, Mars 500 experiment), crew reported that the presence, not the duration, of communication delay mattered. During decision making processes, both crew and ground support developed dissatisfaction and inefficiencies in subsequent decisions due to the lack of shared understanding <span style='color:gray'>[Ushakov 2014]</span>. <br><br><br> <span style='color:gray'> Ushakov, I. B., Vladimirovich, M. B., Bubeev, Y. A., Gushin, V. I., Vasil’eva, G. Y., Vinokhodova, A. G., & Shved, D. M. (2014). Main findings of psychophysiological studies in the Mars 500 experiment. Herald of the Russian Academy of Sciences, 84(2), 106–114. </span>"
+    },
     transition_processes_crew_performance:{
         title: "Transition Processes &#8594; Crew performance",
-        explanation: "A shared mental model, situation awareness, and communication of expectations to the entire team is necessary for accomplishing goals effectively. Teams that abbreviate or ignore the planning processes are at risk of misdirecting their attention and resources until it’s too late to recover <span style='color:gray'>[Gersick 1988][Marks 2011]</span>. When teams are unable to plan, this forces them to rely on past experience or improvisation, which can be difficult for complex and/or novel tasks <span style='color:gray'>[Marks 2011]</span>.     <br><br><br> <span style='color:gray'> Gersick, C. J. G. (1988). Time and transition in work teams: Toward a new model of group development. Academy of Management Journal, 31: 9-41. <br> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span> "
+        explanation: "A shared mental model, situation awareness, and communication of expectations to the entire team is necessary for accomplishing goals effectively. Teams that abbreviate or ignore the planning processes are at risk of misdirecting their attention and resources until it’s too late to recover <span style='color:gray'>[Gersick 1988][Marks 2001]</span>. When teams are unable to plan, this forces them to rely on past experience or improvisation, which can be difficult for complex and/or novel tasks <span style='color:gray'>[Marks 2001]</span>.     <br><br><br> <span style='color:gray'> Gersick, C. J. G. (1988). Time and transition in work teams: Toward a new model of group development. Academy of Management Journal, 31: 9-41. <br> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span> "
     },
     action_processes_crew_performance:{
         title: "Action Processes &#8594; Crew performance",
-        explanation: "During the action phase, critical processes include monitoring and providing effective feedback on the progress/status of resources, environmental/system conditions, and team members. These processes are important to ensure the team is aware and in sync with each other and the environment, so adjustments can be made to reach goals successfully [Marks 2011].     <br><br><br><span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>   "
+        explanation: "During the action phase, critical processes include monitoring and providing effective feedback on the progress/status of resources, environmental/system conditions, and team members. These processes are important to ensure the team is aware and in sync with each other and the environment, so adjustments can be made to reach goals successfully [Marks 2001].     <br><br><br><span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>   "
+    },
+    interpersonal_processes_extraversion:{
+        title: "Extraversion &#8594; Interpersonal processes",
+        explanation: "Extraversion has high predictive validity on social behavior. In social situations with strangers, extroverts ask more questions, joke more, and initiate more conversations  <span style='color:gray'> [Matthews 2003]</span>. Based on a study of 50+ college students, distinctive patterns arose for matched dyads – introverts tend to focus on problem talk (expressing dissatisfaction with their own activities) and extroverts tend to cover a wider range of topics  <span style='color:gray'> [Thorne 1987]</span>. Based on a study of nearly 1700 individuals across 4 years, it was found that extraversion significantly predicts how people choose friends (with similar levels of extraversion) and the magnitude and likelihood of how individual levels of extraversion are influenced throughout the friendships (if A’s friend group is more extraverted that that of B’s, then A’s level of extraversion is more likely to increase than B’s)  <span style='color:gray'> [van Zalk 2020]</span>.         <br><br><br> <span style='color:gray'> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. <br> Thorne, A. (1987). The press of personality: A study of conversations between introverts and extraverts. Journal of Personality and Social Psychology, 53(4), 718–726. <br> van Zalk, M. H. W., Nestler, S., Geukes, K., Hutteman, R., & Back, M. D. (2020). The codevelopment of extraversion and friendships: Bonding and behavioral interaction mechanisms in friendship networks. Journal of Personality and Social Psychology, 118(6), 1269–1290. </span>        "
+    },
+    interpersonal_processes_agreeableness:{
+        title: "Agreeableness &#8594; Interpersonal processes",
+        explanation: "Agreeableness is a key component in social interactions. Highly agreeable individuals have less conflict, respond to conflicts more positively, and generally like their social interactions more <span style='color:gray'>[Graziano 1996]</span>. However, it’s been shown that highly agreeable individuals experience more distress and greater decreases in self-esteem following conflict <span style='color:gray'>[Suls 1998][Barrett and Pietromonaco 1997]</span>.        <br><br><br> <span style='color:gray'> Graziano, W. G., Jensen-Campbell, L. A., & Hair, E. C. (1996). Perceiving interpersonal conflict and reacting to it: The case for agreeableness. Journal of Personality and Social Psychology, 70(4), 820–835. <br> Suls, J., Martin, R. and David, J. P. (1998) Person–environment fit and its limits: agreeableness, neuroticism, and emotional reactivity to interpersonal conflict. Personality and Social Psychology Bulletin, 24, 88–98. <br> Barrett, L. F. and Pietromonaco, P. R. (1997) Accuracy of the five-factor model in predicting perceptions of daily social interactions. Personality and Social Psychology Bulletin, 23, 1173–87.  </span>        "
+    },
+    interpersonal_processes_neuroticism:{
+        title: "Neuroticism  &#8594; Interpersonal processes",
+        explanation: "In a study of 100+ dyad (two-people) friendships, it was found that an individual’s neuroticism scores predicted the number of conflicts they had with their friend <span style='color:gray'>[Berry 2000]</span>.      <br><br><br> <span style='color:gray'> Berry, D. S., Willingham, J. K., & Thayer, C. A. (2000). Affect and Personality as Predictors of Conflict and Closeness in Young Adults’ Friendships. Journal of Research in Personality, 34(1), 84–107. </span>  "
+    },
+    interpersonal_processes_circulation_paths:{
+        title: "Circulation Paths &#8594; Interpersonal processes",
+        explanation: "Design and placement of circulation spaces, including hallways, access paths, stairs, entrances, contribute to the formation of friendships and social cohesion <span style='color:gray'>[Festinger 1950][Skjaeveland and Garling 1997]</span>. Promotion of interpersonal processes can be designed into circulation spaces, much like common spaces <span style='color:gray'>[Adianto 2021]</span>. Importantly, circulation spaces may be neither private or public, and can be flexible to provide the level of privacy needed (as described in Altman’s theory of privacy <span style='color:gray'>[Alman 1975]</span>).        <br><br><br> <span style='color:gray'> Festinger, L., Schachter, S., & Back, K. (1950). Social pressures in informal groups; a study of human factors in housing. Harper. <br> Skjaeveland, O., & Garling, T. (1997). EFFECTS OF INTERACTIONAL SPACE ON NEIGHBOURING. Journal of Environmental Psychology, 17(3), 181–198. <br> Adianto, J., Gabe, R. T., Ristanto, D. F., & Sihombing, A. (2021). Circulation Space as “The Fourth Place” in a Private Student Housing Complex in Depok, Indonesia. The International Journal of Design in Society, 15(1), 59–72. <br>  Altman, I. (1975). The environment and social behavior: Privacy, personal space, territory, crowding. Monterey, CA: Brooks/Cole.   </span>        "
+    },
+    interpersonal_processes_layout:{
+        title: "Layout &#8594; Interpersonal processes",
+        explanation: "Group spaces (and the lack of) can facilitate group activities and interpersonal processes, such as crew cohesion and bonding <span style='color:gray'>[Simon 2011]</span>. Public social spaces can also help social cohesion processes amongst strangers <span style='color:gray'>[Aelbrecht 2019]</span>.        <br><br><br> <span style='color:gray'> Simon, M., Whitmire, A., Otto, C., & Neubek, D. (2011). Factors impacting habitable volume requirements: Results from the 2011 Habitable Volume Workshop (No. S-1114). <br> Aelbrecht, P. (2019). New Public Spaces of Circulation, Consumption and Recreation and their Scope for Informal Social Interaction and Cohesion. In P. Aelbrecht & Q. Stevens (Eds.), Public Space Design and Social Cohesion (1st ed., pp. 199–219). Routledge.   </span>        "
     },
     interpersonal_processes_crew_performance:{
-        title: "interpersonal Processes &#8594; Crew performance",
-        explanation: "Low motivation levels can decrease the individual effort expended, thereby decreasing the overall team performance <span style='color:gray'>[Marks 2011]</span>.   <br><br><br> <span style='color:gray'>Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>  "
+        title: "Interpersonal processes &#8594; Crew performance",
+        explanation: "Low motivation levels can decrease the individual effort expended, thereby decreasing the overall team performance <span style='color:gray'>[Marks 2001]</span>.   <br><br><br> <span style='color:gray'>Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>  "
     },
     interpersonal_processes_social_support:{
-        title: "interpersonal Processes &#8594; Social support",
+        title: "Interpersonal processes &#8594; Social support",
         explanation: "Interpersonal processes are rooted in building relationships with one another. These processes help cope with life’s adversities (conflict and affect management) and promote growth and development (motivating processes), which are processes central to social support <span style='color:gray'>[Feeney and Collins 2015]</span>.   <br><br><br> <span style='color:gray'> Feeney, B. C., & Collins, N. L. (2015). A New Look at Social Support: A Theoretical Perspective on Thriving Through Relationships. Personality and Social Psychology Review, 19(2), 113–147.  </span>  "
     },
     interpersonal_processes_kinship:{
-        title: "interpersonal Processes &#8594; Kinship",
-        explanation: "Interpersonal processes underlay team member feelings toward each other, and can rally or derail team cohesion at any time. Social activities can build cohesion, break tension, and aid in stress management <span style='color:gray'>[Marks 2011]</span>.    <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>  "
+        title: "Interpersonal processes &#8594; Kinship",
+        explanation: "Interpersonal processes underlay team member feelings toward each other, and can rally or derail team cohesion at any time. Social activities can build cohesion, break tension, and aid in stress management <span style='color:gray'>[Marks 2001]</span>.    <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  </span>  "
     },
     interpersonal_processes_stress_regulation:{
-        title: "interpersonal Processes &#8594; Stress regulation",
-        explanation: "Social activities can aid in stress management <span style='color:gray'>[Marks 2011]</span>. A study of 60 dyadic couples (romantic and platonic) showed that a brief (10 minute) affectionate interaction prior to a stressful experience acted as a buffer, limiting the magnitude of cardiovascular arousal <span style='color:gray'>[Pauley 2015]</span>.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  <br> Pauley, P. M., Floyd, K., & Hesse, C. (2015). The stress-buffering effects of a brief dyadic interaction before an acute stressor. Health communication, 30(7), 646-659.        </span>  "
+        title: "Interpersonal processes &#8594; Stress regulation",
+        explanation: "Social activities can aid in stress management <span style='color:gray'>[Marks 2001]</span>. A study of 60 dyadic couples (romantic and platonic) showed that a brief (10 minute) affectionate interaction prior to a stressful experience acted as a buffer, limiting the magnitude of cardiovascular arousal <span style='color:gray'>[Pauley 2015]</span>.        <br><br><br> <span style='color:gray'> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.  <br> Pauley, P. M., Floyd, K., & Hesse, C. (2015). The stress-buffering effects of a brief dyadic interaction before an acute stressor. Health communication, 30(7), 646-659.        </span>  "
     },
     interpersonal_processes_place_attachment:{
-        title: "interpersonal Processes &#8594; Place_attachment",
-        explanation: "A commonly studied predictor of place attachment is social interaction [Bonaiuto 1999][Bonaiuto 2006][Brown 2004][Kasarda and Janowitz 1974][Lewicka 2005][Mesch and Manor 1998][Moser 2002][Ringel and Finkelstein 1991]. The strength of community ties consistently positively predicts place attachment.    <br><br><br> <span style='color:gray'> Bonaiuto, M., Aiello, A., Perugini, M., Bonnes, M., & Ercolani, A. P. (1999). Multidimensional perception of residential environment quality and neighbourhood attachment in the urban environment. Journal of Environmental Psychology, 19,331-352. <br> Bonaiuto, M., Fornara, F., & Bonnes, M. (2006). Perceived residential environment quality in middle- and low-extension Italian cities. European Review of Applied Psychology, 56, 23-34. <br> Brown, B. B., Perkins, D. D., & Brown, G. (2004). Incivilities, place attachment and crime: Block and individual effects. Journal of Environmental Psychology, 24, 359-371. <br> Kasarda, J. D., & Janowitz, M. (1974). Community attachment in mass society. American Sociological Review, 39, 328-339. <br> Lewicka, M. (2005). Ways to make people active: Role of place attachment, cultural capital and neighborhood ties. Journal of Environmental Psychology, 4, 381-395. <br> Mesch, G. S., & Manor, O. (1998). Social ties, environmental perception and local attachment. Environment and Behavior, 30, 504-519. <br> Moser, G., Ratiu, E., & Fleury-Bahi, G. (2002). Appropriation and interpersonal relations. From Dwelling to City through the neighborhood. Environment and Behavior, 34,122-136. <br> Ringel, N. B., & Finkelstein, J. C. (1991). Differentiating neighborhood satisfaction and neighborhood attachment among urban residents. Basic and Applied Social Psychology, 12,177-193. </span>  "
+        title: "Interpersonal processes &#8594; Place_attachment",
+        explanation: "A commonly studied predictor of place attachment is social interaction [Bonaiuto 1999][Bonaiuto 2006][Brown 2004][Kasarda and Janowitz 1974][Lewicka 2005][Mesch and Manor 1998][Moser 2002][Ringel and Finkelstein 1991]. The strength of community ties consistently positively predicts place attachment.    <br><br> <span style='color:gray'> Bonaiuto, M., Aiello, A., Perugini, M., Bonnes, M., & Ercolani, A. P. (1999). Multidimensional perception of residential environment quality and neighbourhood attachment in the urban environment. Journal of Environmental Psychology, 19,331-352. <br> Bonaiuto, M., Fornara, F., & Bonnes, M. (2006). Perceived residential environment quality in middle- and low-extension Italian cities. European Review of Applied Psychology, 56, 23-34. <br> Brown, B. B., Perkins, D. D., & Brown, G. (2004). Incivilities, place attachment and crime: Block and individual effects. Journal of Environmental Psychology, 24, 359-371. <br> Kasarda, J. D., & Janowitz, M. (1974). Community attachment in mass society. American Sociological Review, 39, 328-339. <br> Lewicka, M. (2005). Ways to make people active: Role of place attachment, cultural capital and neighborhood ties. Journal of Environmental Psychology, 4, 381-395. <br> Mesch, G. S., & Manor, O. (1998). Social ties, environmental perception and local attachment. Environment and Behavior, 30, 504-519. <br> Moser, G., Ratiu, E., & Fleury-Bahi, G. (2002). Appropriation and interpersonal relations. From Dwelling to City through the neighborhood. Environment and Behavior, 34,122-136. <br> Ringel, N. B., & Finkelstein, J. C. (1991). Differentiating neighborhood satisfaction and neighborhood attachment among urban residents. Basic and Applied Social Psychology, 12,177-193. </span>  "
+    },
+    interpersonal_processes_trust:{
+        title: "Interpersonal processes &#8594; Trust",
+        explanation: "Interpersonal and social exchanges are thought to evolve relationships into trusting, mutual commitments <span style='color:gray'>[Blau 1969]</span>. Over time, interpersonal trust between team members will also influence the state of team trust <span style='color:gray'>[Marks 2001]</span>.        <br><br> <span style='color:gray'> Blau, P. (1969). The dynamics of bureaucracy: A study of interpersonal relations in two government agencies. Chicago: University of Chicago Press. <br> Marks, M. A., John E. Mathieu, & Stephen J. Zaccaro. (2001). A Temporally Based Framework and Taxonomy of Team Processes. The Academy of Management Review, 26(3), 356–376.     </span>  "
+    },
+    stress_regulation_social_support:{
+        title: "Social Support &#8594; Stress regulation",
+        explanation: "The buffering model of social support hypothesizes that social support acts as a buffer to stress and allows an individual to more effectively manage and regulate stress  <span style='color:gray'> [Cohen and Willis 1985]</span>. Social support has been shown to reduce physiological distress, including anxiety and depression  <span style='color:gray'> [Fleming 1982][Lin 1999][Sarason 1997][Taylor 2011]</span>.        <br><br><br> <span style='color:gray'> Cohen, S., & Wills, T. A. (1985). Stress, Social Support, and the Buffering Hypothesis. Psychological Bulletin, 98(2), 310–357. <br> Fleming, R., Baum, A., Gisriel, M. M., & Gatchel, R. J. (1982). Mediating influences of social support on stress at Three Mile Island. Journal of human stress, 8(3), 14–22. <br> Lin, N., Ye, X., & Ensel, W. M. (1999). Social support and depressed mood: a structural analysis. Journal of health and social behavior, 40(4), 344–359. <br> Sarason, B. R., Sarason, I. G., & Gurung, R. A. R. (1997). Close personal relationships and health outcomes: A key to the role of social support. In S. Duck (Ed.), Handbook of personal relationships: Theory, research and interventions (2nd ed., pp. 547–573). John Wiley & Sons, Inc. <br> Taylor, S. E. (2011). Social support: A review. The Oxford handbook of health psychology, 1, 189-214. </span>        "
+    },
+    stress_regulation_group_living:{
+        title: "Group living &#8594; Stress regulation",
+        explanation: "A crew with good group living skills can act as a buffer to the negative effects of a stressful environment <span style='color:gray'> [Landon 2024]</span>.      <br><br><br> <span style='color:gray'> Landon, L. B., Miller, J. C., Bell, S. T., & Roma, P. G. (2024). When people start getting real: The Group Living Skills Survey for extreme work environments. Frontiers in Psychology, 15, 1348119. </span>  "
     },
     stress_regulation_stress:{
         title: "Stress Regulation &#8594; Stress",
@@ -847,73 +1064,61 @@ var relatedBoxContents = {
         title: "Sleep &#8594; Fatigue",
         explanation: "Insufficient sleep or decreased sleep quality can lead to fatigue. Based on a review of numerous nation-wide studies of air traffic controllers with shifted sleep schedules (n > 100,000), it was found that most ATCs experience elevated chronic fatigue <span style='color:gray'>[Nealley and Gawron 2015]</span>. Reviews of shift work studies have also revealed a higher prevalence of disturbed sleep and chronic fatigue in sleep-shifted workers as compared to their day-shift counterparts <span style='color:gray'>[Harrington 2001][Waterhouse 1992]</span>.           <br><br><br> <span style='color:gray'> Nealley, M. A., & Gawron, V. J. (2015). The effect of fatigue on air traffic controllers. The International Journal of Aviation Psychology, 25(1), 14-47. <br> Harrington, J. M. (2001). Health effects of shift work and extended hours of work. Occupational and Environmental medicine, 58(1), 68-72. <br> Waterhouse, J. M., Minors, D. S., & Folkard, S. (1992). Shiftwork, health and safety: an overview of the scientific literature 1978-1990. HSE books. </span>   "
     },
-    physical_health:{
-        title: "Physical Health &#8594; ",
-        explanation: "Explanations."
+    physical_health_isolated:{
+        title: "Isolated &#8594; Physical health",
+        explanation: "Social isolation is a major risk for mortality. The positive impact of social ties on health is significant, with its effect size on the same scale as smoking, obesity, and physical activity <span style='color:gray'>[House 1988][Taylor 2011]</span>. Pathways for social support linking to physical health are varied, including stress regulation <span style='color:gray'>[Taylor 2011]</span>, and promotion of and adherence to healthy habits <span style='color:gray'>[Carlson 2011][Wilson and Ampey-Thornhill 2011]</span>.        <br><br><br> <span style='color:gray'> House, J. S., Landis, K. R., & Umberson, D. (1988). Social relationships and health. Science (New York, N.Y.), 241(4865), 540–545. <br> Taylor, S. E. (2011). Social support: A review. The Oxford handbook of health psychology, 1, 189-214. <br> Carlson, L. E., Goodey, E., Bennett, M. H., Taenzer, P., & Koopmans, J. (2002). The addition of social support to a community-based large-group behavioral smoking cessation intervention: Improved cessation rates and gender differences. Addictive Behaviors, 27, 547-559. <br> Wilson DK, Ampey-Thornhill G. The role of gender and family support on dietary compliance in an African American adolescent hypertension prevention study. Ann Behav Med. 2001;23(1):59-67. </span> "
     },
-    fatigue:{
-        title: "Fatigue &#8594; ",
-        explanation: "Explanations."
+    stress_communication_delay:{
+        title: "Communication delay &#8594; Stress",
+        explanation: "Prolonged isolation and limited interfaces with existing sources of support with communication delay compounds the stress associated with long-duration space exploration missions <span style='color:gray'>[Schorn and Roma 2020]</span>. <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press. </span>"
     },
-    anxiety:{
-        title: "Anxiety &#8594; ",
-        explanation: "Explanations."
+    stress_isolated:{
+        title: "Isolated &#8594; Stress",
+        explanation: "Prolonged isolation is a well-established negative stressor; particularly, limited communication with psychological support, family, and friends may negatively impact behavioral health and performance [Schorn and Roma 2020][Kanas 2007].        <br><br><br> <span style='color:gray'> Schorn, J. M., & Roma, P. G. (2020). Physical hazards of space exploration and the biological bases of behavioral health and performance in extreme environments. In Psychology and human performance in space programs (pp. 1-22). CRC Press. <br> Kanas, N. A., Salnitskiy, V. P., Ritsher, J. B., Gushin, V. I., Weiss, D. S., … Marmar, C. R. (2007). Psychosocial interactions during ISS missions. Acta Astronautica, 60, 329–335. </span> "
     },
-    autonomy:{
-        title: "Autonomy &#8594; ",
-        explanation: "Explanations."
+    stress_life_mission_events:{
+        title: "Mission Events &#8594; Stress",
+        explanation: "One of more major life events within 6-12 months well-predict subsequent physical morbidity, mortality, psychological stress, and psychiatric disorder <span style='color:gray'>[Cohen and Williamson 1991][Coyne and Downey 1991][Creed 1985][Kessler, Price, and Wortman 1985][Tausig 1986][Thoits 1983][Thoits 1995] </span>.       <br><br><br> <span style='color:gray'> Cohen, Sheldon and Gail M. Williamson. (1991) 'Stress and Infectious Disease in Humansx' Psychological Bulletin 109(l):5-24. <br> Coyne, James C. and Geraldine Downey. (1991) 'Social Factors and Psychopathology: Stress, Social Support, and Coping Processes.' Annual Review of Psychology. <br> Creed, Francis. (1985) 'Life Events and Physical Illness.' Journal of Psychosomatic Research 29(2): 113-23. <br> Kessler, Ronald C., Richard H. Price, and Camille B. Wortman. (1985) 'Social Factors in Psychopathology: Stress, Social Support, and Coping Processes.' Annual Review of Psychology 36:531-72. <br> Tausig, Mark. 1986. 'Measuring Life Events.' in Social Support, Life Events, and Depression, edited by N. Lin, A. Dean, and W.M. Ensel. Orlando, FL: Academic. p 71-93. <br> Thoits, Peggy A. (1983) 'Dimensions of Life Events that Influence Psychological Distress: An Evaluation and Synthesis of the Literature.' Psychosocial Stress: Trends in Theory and Research, edited by H.B. Kaplan. New York: Academic. p 33-103. <br>  Thoits, P. A. (1995). Stress, Coping, and Social Support Processes: Where Are We? What Next? Journal of Health and Social Behavior, 35, 53. </span>        "
     },
-    stress:{
-        title: "Stress &#8594; ",
-        explanation: "Explanations."
+    stress_group_living:{
+        title: "Group living &#8594; Stress",
+        explanation: "Group living can be a source of stress, for example during roommate conflicts [Dusselier 2005] and through increased conflicts over a mission <span style='color:gray'>[Stuster 2010]</span>.          <br><br><br> <span style='color:gray'> Stuster, J. W. (2010). Behavioral issues associated with long-duration space expeditions: Review and analysis of astronaut journals—Final report (No. NASA TM-2010-216130). </span>  "
     },
-    crew_performance:{
-        title: "Crew Performance &#8594; ",
-        explanation: "Explanations."
+    fatigue_mission_demands:{
+        title: "Mission Demands &#8594; Fatigue",
+        explanation: "Mission demands and how those demands are enacted (e.g., with adequate preparation, operational requirements, work hours, work-rest cycles) can mediate fatigue <span style='color:gray'>[Parasuraman and Hancock 2008]</span>. Within the aerospace industry, air traffic controllers are a typical analog for studying fatigue due the similarity between their high cognitive demands, working hours, and the need for accuracy and precision. Fatigue is a well-known issue for air traffic controllers, leading the Federal Aviation Administration to implement staffing measures to counteract ATC napping during midnight shifts <span style='color:gray'>[FAA 2011]</span>.        <br><br><br> <span style='color:gray'> Parasuraman, R., & Hancock, P. A. (2008). Mitigating the adverse effects of workload, stress, and fatigue with adaptive automation. Performance under stress, 45-57.<br> Federal Aviation Administration Press Office. (2011, April 13). The FAA announces additional staffing at 27 control towers [Press release]. </span>"
     },
-    attachment:{
-        title: "Attachment &#8594; ",
-        explanation: "Explanations."
+    anxiety_neuroticism:{
+        title: "Neuroticism  &#8594; Anxiety",
+        explanation: "Patients diagnosed with generalized anxiety disorder tend to have higher neuroticism scores, and often anxiety and depression are comorbid (co-occurring) <span style='color:gray'> [Eysenck 1985][Matthews 2003]</span>.       <br><br><br> <span style='color:gray'> Eysenck, H. J. and Eysenck, M. W. (1985) Personality and individual differences: a natural science approach. New York: Plenum. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span>        "
     },
-    trust:{
-        title: "Trust &#8594; ",
-        explanation: "Explanations."
+    situation_awareness_trust:{
+        title: "Situation awareness &#8594; Trust",
+        explanation: "In human-machine teaming, maintaining situation awareness of the problem space, the machine state and capabilities, and environmental/situational demands is critical to ensure the operator puts the appropriate amount of trust on the automation <span style='color:gray'>[Parasuraman and Riley 1997]</span>.      <br><br><br> <span style='color:gray'> Parasuraman, R., & Riley, V. (1997). Humans and automation: Use, misuse, disuse, abuse. Human factors, 39(2), 230-253. </span>   "
     },
-    curiosity:{
-        title: "Curiosity &#8594; ",
-        explanation: "Explanations."
+    curiosity_openness:{
+        title: "Openness &#8594; Curiosity",
+        explanation: "Openness is the trait that is most strongly associated with intelligence <span style='color:gray'>[Ackerman 1997]</span>, with a correlation of around 0.3 in studies with N=4-500 <span style='color:gray'>[Austin 2002][Ackerman and Heggestad 1997]</span>. Other studies around this size  Openness is associated with motivation to pursue ideas and intellectual activities, and mastery of intellectual skills may in turn prompt more openness <span style='color:gray'>[Rolfus 1996][Matthews 2003]</span>.       <br><br><br> <span style='color:gray'> Rolfhus, E. L. and Ackerman, P. L. (1996) Self-report knowledge: at the crossroads of ability, interest, and personality. Journal ofEducational Psychology, 88, 174–88. <br> Austin, E. J., Deary, I. J., Whiteman, M. C., Fowkes, F. G. R., Pedersen, N. L., Rabbitt, P., Bent, N. and McInnes, L. (2002) Relationships between ability and personality: does intelligence contribute positively to personal and social adjustment? Personality and Individual Differences, 32, 1391–411. <br> Ackerman, P. L. and Heggestad, E. D. (1997) Intelligence, personality and interests: evidence for overlapping traits. Psychological Bulletin, 121, 219–45. <br> Ackerman, P. L., & Heggestad, E. D. (1997). Intelligence, personality, and interests: Evidence for overlapping traits. Psychological Bulletin, 121(2), 219–245. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span>"
     },
-    kinship:{
-        title: "Kinship &#8594; ",
-        explanation: "Explanations."
+    boredom_mission_duration:{
+        title: "Mission duration &#8594; Boredom",
+        explanation: "During a study of a crew of 6 in isolation for 520 days, crew sedentariness increased over the mission as captured by actigraphy (motion data) <span style='color:gray'> [Basner 2013]</span>. <br><br><br> <span style='color:gray'>Basner M, Dinges DF, Mollicone DJ, Ecker A, Jones CW, et al. (2013) Mars 520-d mission simulation reveals protracted crew hypokinesis and alterations of sleep duration and timing. Proc Natl Acad Sci USA 110: 2635–2640. </span>"
     },
-    boredom:{
-        title: "Boredom &#8594; ",
-        explanation: "Explanations."
+    depression_neuroticism:{
+        title: "Neuroticism  &#8594; Depression",
+        explanation: "Numerous studies suggest depression risk is higher in individuals with higher neuroticism scores <span style='color:gray'>[Bagby 1995][Surtees and Wainwright 1996][Ormel 2001][Enns 2001][Tyssen and Vaglum 2002][Matthews 2003]</span>.        <br><br><br> <span style='color:gray'> Bagby, R. M., Joffe, R. T., Parker, J. D. A., Kalemba, V. and Harkness, K. L. (1995) Major depression and the five factor model of personality. Journal ofPersonality Disorders, 9, 224–34. <br> Surtees, P. G. and Wainwright, N. W. J. (1996) Fragile states of mind: neuroticism, vulnerability and the long-term outcome of depression. British Journal ofPsychiatry, 169, 338–47. <br> Ormel, J., Oldehinkel, A. J. and Brilman, E. I. (2001) The interplay and etiological continuity of neuroticism, difficulties, and life events in the etiology of major and subsyndromal, first and recurrent depressive episodes in later life. American Journal ofPsychiatry, 158, 885–91. <br> Enns, M. W., Cox, B. J., Sareen, J. and Freeman, P. (2001) Adaptive and maladaptive perfectionism in medical students: a longitudinal investigation. Medical Education, 35, 1034–42. <br> Tyssen, R., & Vaglum, P. (2002). Mental health problems among young doctors: an updated review of prospective studies. Harvard review of psychiatry, 10(3), 154-165. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press. </span>  "
     },
-    tranquility:{
-        title: "Tranquility &#8594; ",
-        explanation: "Explanations."
+    nostalgia_homesickness_extraversion:{
+        title: "Extraversion &#8594; Nostalgia/Homesickness",
+        explanation: "From a study of 200+ post-graduate students, students high in neuroticism and low in extraversion were more likely to be homesick. While these personality traits together explain 20% of the variance in homesickness, it drops to 4% after controlling for coping strategies; high neuroticism and low extraversion may be associated with dysfunctional stress coping strategies <span style='color:gray'> [Mohamed 1996][Matthews 2003]</span>.        <br><br><br> <span style='color:gray'> Mohamed, A. A. R. (1996) Stress processes in British and overseas students. Unpublished doctoral dissertation, University of Dundee. <br> Matthews, G., Deary, I. J., & Whiteman, M. C. (2003). Personality Traits, SECOND EDITION. Cambridge University Press.  </span>        "
     },
-    contentment:{
-        title: "Contentment &#8594; ",
-        explanation: "Explanations."
+    nostalgia_homesickness_neuroticism:{
+        title: "Neuroticism  &#8594; Nostalgia/Homesickness",
+        explanation: "From a study of 200+ post-graduate students, students high in neuroticism and low in extraversion were more likely to be homesick. While these personality traits together explain 20% of the variance in homesickness, it drops to 4% after controlling for coping strategies; high neuroticism and low extraversion may be associated with dysfunctional stress coping strategies <span style='color:gray'>[Mohamed 1996][Matthews 2003]</span>.         <br><br><br> <span style='color:gray'> Berry, D. S., Willingham, J. K., & Thayer, C. A. (2000). Affect and Personality as Predictors of Conflict and Closeness in Young Adults’ Friendships. Journal of Research in Personality, 34(1), 84–107. </span>  "
     },
-    nostalgia_homesickness:{
-        title: "Nostalgia/Homesickness &#8594; ",
-        explanation: "Explanations."
-    },
-    fear:{
-        title: "Fear &#8594; ",
-        explanation: "Explanations."
-    },
-    awe:{
-        title: "Awe &#8594; ",
-        explanation: "Explanations."
-    },
-    depression:{
-        title: "Depression &#8594; ",
-        explanation: "Explanations."
+    nostalgia_homesickness_place_attachment:{
+        title: "Place_attachment &#8594; Nostalgia/homesickness",
+        explanation: "Nostalgia and homesickness arise from the loss of people and places <span style='color:gray'>[Brown and Perkins 1992]</span>. Often following events of “disruption”, such as voluntary migration or involuntary displacement, feelings of homesickness are often experienced, multifaceted, and change in intensity over time <span style='color:gray'>[Brown and Perkins 1992]</span>. While promoting attachment to a new place or with new people can help, homesickness often arises independently of the quality of attachment in the new setting <span style='color:gray'>[Brown and Perkins 1992]</span>. <br> Place attachment to a home may induce homesickness when moving away from home. In a study of 200 college students in Italy, it was found that strong home attachment positively predicted homesickness <span style='color:gray'>[Scopelliti and Tiberio 2010]</span>. In more severe cases, dysfunctional place attachment/dependence can arise, particularly when the place that one wishes to return to is no longer possible <span style='color:gray'>[Fried 2000]</span>.     <br><br><br> <span style='color:gray'> Brown, B. B., & Perkins, D. D. (1992). Disruptions in Place Attachment. In I. Altman & S. M. Low (Eds.), Place Attachment (pp. 279–304). Springer US. <br>  Scopelliti, M., & Tiberio, L. (2010). Homesickness in University Students: The Role of Multiple Place Attachment. Environment and Behavior, 42(3), 335–350. <br>  Fried, M. (2000). CONTINUITIES AND DISCONTINUITIES OF PLACE. Journal of Environmental Psychology, 20(3), 193–205.   </span> "
     },
 };
 
@@ -942,14 +1147,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['social_composition_invisible', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
             case 'team_processes_invisible':
                 return ['team_processes_invisible', 'transition_processes', 'action_processes', 'interpersonal_processes']
-            case "distance_from_earth":
-                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated','medical_capability','food']
+            case "distance_from_home_earth":
+                return ['distance_from_home_earth', 'communication_delay', 'resource_constrained', 'isolated','medical_capability','food','family_and_friends']
             case "mission_duration":
                 return ['mission_duration', 'isolated', 'boredom']
             case "communication_delay":
-                return ['communication_delay', 'ground_support', 'social_monotony','transition_processes','stress']
+                return ['communication_delay', 'ground_support', 'family_and_friends','transition_processes','stress']
             case "isolated":
-                return ['isolated', 'social_monotony', 'ground_support', 'physical_health','stress']
+                return ['isolated', 'social_support', 'ground_support', 'physical_health','stress']
             case "confined":
                 return ['confined', 'social_monotony', 'privacy']
             case "extreme":
@@ -958,8 +1163,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['resource_constrained', 'supplies','food']
             case "mission_demands":
                 return ['mission_demands', 'cognitive_workload', 'physical_workload','fatigue']
-            case "mission_events":
-                return ['mission_events', 'stress', 'physical_workload']
+            case "life_mission_events":
+                return ['life_mission_events', 'stress', 'physical_workload']
             case "crew_size":
                 return ['crew_size', 'density']
              case "social_support":
@@ -989,7 +1194,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "training_and_preparation":
                 return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible']
             case "ground_support":
-                return ['ground_support', 'family_and_friends', 'psychological_resources', 'stress_regulation', 'depression', 'anxiety', 'contentment', 'stress']
+                return ['ground_support', 'psychological_resources', 'medical_capability','autonomy','situation_awareness']
             case "medical_capability":
                 return ['medical_capability', 'physical_health']
             case "family_and_friends":
@@ -1035,7 +1240,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "physical_workload":
                 return ['physical_workload', 'physical_health', 'depression', 'anxiety']
             case "cognitive_workload":
-                return ['cognitive_workload', 'stress_regulation', 'sleep', 'depression', 'anxiety', 'contentment', 'stress', 'fatigue']
+                return ['cognitive_workload', 'stress_regulation', 'sleep', 'situation_awareness', 'depression', 'anxiety', 'contentment', 'stress', 'fatigue']
             case "media_attention":
                 return ['media_attention', 'privacy']
             case "transition_processes":
@@ -1063,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case "autonomy":
                 return ['autonomy']
             case "situation_awareness":
-                return ['situation_awareness']
+                return ['situation_awareness','trust']
             case "trust":
                 return ['trust']
             case "curiosity":
@@ -1094,30 +1299,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['social_composition_invisible', 'selection', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
             case 'team_processes_invisible':
                 return ['team_processes_invisible', 'training_and_preparation', 'transition_processes', 'action_processes', 'interpersonal_processes']
-            case 'distance_from_earth':
-                return ['distance_from_earth', 'communication_delay', 'resource_constrained', 'isolated', 'medical_capability','food']
+            case 'distance_from_home_earth':
+                return ['distance_from_home_earth', 'communication_delay', 'resource_constrained', 'isolated', 'medical_capability','food','family_and_friends']
             case 'mission_duration':
                 return ['mission_duration', 'isolated', 'boredom']
             case 'communication_delay':
-                return ['communication_delay', 'ground_support', 'social_monotony','transition_processes','stress', 'distance_from_earth']
+                return ['communication_delay', 'ground_support','family_and_friends','transition_processes','stress', 'distance_from_home_earth']
             case "isolated":
-                return ['isolated', 'social_monotony', 'ground_support', 'physical_health', 'stress', 'distance_from_earth', 'mission_duration','extreme']
+                return ['isolated', 'social_support', 'ground_support', 'physical_health', 'stress', 'distance_from_home_earth', 'mission_duration','extreme']
             case "confined":
                 return ['confined', 'social_monotony', 'privacy']
             case "extreme":
                 return ['extreme', 'genetics', 'resource_constrained', 'altered_gravity', 'radiation', 'light_dark_cycles']
             case "resource_constrained":
-                return ['resource_constrained', 'supplies', 'food', 'distance_from_earth', 'extreme']
+                return ['resource_constrained', 'supplies', 'food', 'distance_from_home_earth', 'extreme']
             case "mission_demands":
                 return ['mission_demands', 'cognitive_workload', 'physical_workload','fatigue']
-            case 'mission_events':
-                return ['mission_events', 'stress', 'physical_workload']
+            case 'life_mission_events':
+                return ['life_mission_events', 'stress', 'physical_workload']
             case "crew_size":
                 return ['crew_size', 'density']
             case "social_support":
-                return ['social_support', 'stress_regulation', 'physical_health', 'kinship','interpersonal_process','extraversion']
+                return ['social_support', 'stress_regulation', 'physical_health', 'kinship','interpersonal_process','extraversion','isolated']
             case "social_monotony":
-                return ['social_monotony', 'boredom','communication_delay','confined','isolated']
+                return ['social_monotony', 'boredom','communication_delay','confined']
             case "density":
                 return ['density', 'privacy', 'stress_regulation','crew_size','habitable_volume']
             case "group_living":
@@ -1145,15 +1350,15 @@ document.addEventListener('DOMContentLoaded', function () {
             case "training_and_preparation":
                 return ['training_and_preparation', 'physical_health', 'group_living', 'team_processes_invisible']
             case "ground_support":
-                return ['ground_support', 'psychological_resources', 'medical_capability','communication_delay', 'isolated']
+                return ['ground_support', 'psychological_resources', 'medical_capability','autonomy', 'situation_awareness','communication_delay', 'isolated']
             case "medical_capability":
-                return ['medical_capability', 'physical_health','ground_support','distance_from_earth']
+                return ['medical_capability', 'physical_health','ground_support','distance_from_home_earth']
             case "family_and_friends":
-                return ['family_and_friends', 'stress_regulation']
+                return ['family_and_friends', 'stress_regulation','communication_delay','distance_from_home_earth']
             case "supplies":
                 return ['supplies', 'environmental_monotony', 'place_attachment','resource_constrained']
             case "food":
-                return ['food', 'nutrition', 'kinship','resource_constrained','distance_from_earth']
+                return ['food', 'nutrition', 'kinship','resource_constrained','distance_from_home_earth']
             case "exercise_equipment":
                 return ['exercise_equipment', 'physical_workload', 'physical_health']
             case "light_dark_cycles":
@@ -1189,9 +1394,9 @@ document.addEventListener('DOMContentLoaded', function () {
             case "environmental_monotony":
                 return ['environmental_monotony', 'boredom','supplies']
             case "physical_workload":
-                return ['physical_workload', 'physical_health', 'depression', 'anxiety','mission_demands','mission_events','exercise_equipment','ergonomics']
+                return ['physical_workload', 'physical_health', 'depression', 'anxiety','mission_demands','life_mission_events','exercise_equipment','ergonomics']
             case "cognitive_workload":
-                return ['physical_health', 'stress','crew_performance','boredom','sleep','mission_demands']
+                return ['physical_health', 'stress','crew_performance','boredom','sleep','situation_awareness','mission_demands']
             case "media_attention":
                 return ['media_attention', 'privacy']
             case "transition_processes":
@@ -1211,27 +1416,27 @@ document.addEventListener('DOMContentLoaded', function () {
             case "physical_health":
                 return ['physical_health', 'sleep', 'depression', 'anxiety', 'tranquility', 'fatigue', 'stress']
             case "stress":
-                return ['stress']
+                return ['stress','communication_delay','isolated','life_mission_events','group_living','neuroticism','cognitive_workload','stress_regulation']
             case "fatigue":
-                return ['fatigue']
+                return ['fatigue','mission_demands','sleep']
             case "anxiety":
-                return ['anxiety']
+                return ['anxiety','neuroticism','psychological_resources','nutrition','physical_workload','stress_regulation','sleep']
             case "autonomy":
-                return ['autonomy']
+                return ['autonomy','place_attachment','ground_support']
             case "situation_awareness":
-                return ['situation_awareness']
+                return ['situation_awareness','trust','ergonomics','ground_support','cognitive_workload']
             case "trust":
-                return ['trust']
+                return ['trust','situation_awareness','interpersonal_processes']
             case "curiosity":
-                return ['curiosity']
+                return ['curiosity','openness']
             case "kinship":
-                return ['kinship']
+                return ['kinship','social_support','food','privacy','interpersonal_processes','stress_regulation']
             case "boredom":
-                return ['boredom']
+                return ['boredom','mission_duration','social_monotony','environmental_monotony','cognitive_workload']
             case "depression":
-                return ['depression']
+                return ['depression','neuroticism','nutrition','physical_workload','stress_regulation','sleep']
             case "nostalgia_homesickness":
-                return ['nostalgia_homesickness']
+                return ['nostalgia_homesickness','extraversion','neuroticism','place_attachment']
             case "contentment":
                 return ['contentment']
             default:
