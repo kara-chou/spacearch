@@ -87,7 +87,7 @@ rounded borders, text size and font*/
 
 /*features common to smaller boxes, 
 e.g. centered text, font color and size*/
-.distance_from_earth,
+.distance_from_home_earth,
 .mission_duration,
 .communication_delay,
 .isolated,
@@ -95,7 +95,7 @@ e.g. centered text, font color and size*/
 .extreme,
 .resource_constrained,
 .mission_demands,
-.mission_events,
+.life_mission_events,
 .crew_size,
 .social_support,
 .density,
@@ -239,7 +239,7 @@ e.g. rounded borders, centered elements*/
     background-color: #929090;
 }
 
-.distance_from_earth{
+.distance_from_home_earth{
     width: calc(80%); 
     height: calc(7%); 
     position: absolute;
@@ -315,7 +315,7 @@ e.g. rounded borders, centered elements*/
     background-color: #929090;
 }
 
-.mission_events{
+.life_mission_events{
     width: calc(80%); 
     height: calc(7%);
     position: absolute;
