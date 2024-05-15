@@ -183,7 +183,7 @@ e.g. rounded borders, centered elements*/
 .operational_stressors,
 .team_processes,
 .individual_processes,
-.performance,
+.behavioral_health_and_performance_outcomes,
 .mood_and_effect,
 .loss_of_mission,
 .loss_of_crew_life,
@@ -205,7 +205,7 @@ e.g. rounded borders, centered elements*/
 .individual_traits,
 .social_composition,
 .team_processes,
-.performance,
+.behavioral_health_and_performance_outcomes,
 .loss_of_mission
 {
     margin-top: 0.5vh;
@@ -777,7 +777,7 @@ e.g. rounded borders, centered elements*/
 .team_processes_invisible{ /*Overall mask for the bigger social composition box*/
     position: absolute;
     left: 0%;
-    height: 44.3%;
+    height: 49.3%;
     width: 100%;
     top: 0.5%;
     background-color: #ffcbfb;
@@ -844,7 +844,7 @@ e.g. rounded borders, centered elements*/
 
 /*-----------------------------------------*/
 /*Boxes laying inside performance*/
-.performance {
+.behavioral_health_and_performance_outcomes {
     width: calc(100%); 
     height: calc(100%);
     background-color: #ffd54d;
@@ -869,7 +869,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.autonomy{
+.depression{
     width: calc(42%); 
     height: calc(8%);
     position: absolute;
@@ -977,7 +977,7 @@ e.g. rounded borders, centered elements*/
     background-color: #E69F00;
 }
 
-.depression{
+.autonomy{
     width: calc(42%); 
     height: calc(8%);
     position: absolute;
