@@ -189,19 +189,19 @@ lay top to bottom in box6*/
 }
 
 /*Performance, Mood and effect lay top to bottom in box4*/
-.performance {
+.behavioral_health_and_performance_outcomes {
     width: calc(93%);
-    height: calc(45%);
+    height: calc(100%);
     padding: 20px;
     background-color: #E69F00;
 }
 
-.mood_and_effect {
+/* .mood_and_effect {
     width: calc(93%);
     height: calc(55%);
     padding: 20px;
     background-color: #E69F00;
-}
+} */
 
 /*Loss of Mission, Loss of crew life, Quality of life lay top to bottom in box5*/
 /* .loss_of_mission {
@@ -234,8 +234,7 @@ lay top to bottom in box6*/
 .operational_stressors,
 .team_processes,
 .individual_processes,
-.performance,
-.mood_and_effect,
+.behavioral_health_and_performance_outcomes,
 .loss_of_mission,
 .loss_of_crew_life,
 .quality_of_life,
