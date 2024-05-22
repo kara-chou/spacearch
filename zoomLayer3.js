@@ -1829,6 +1829,20 @@ document.addEventListener('DOMContentLoaded', function () {
     <p><strong>Click again</strong> to reset the diagram.</p>`;
     explanationBox.innerHTML = defaultContent;
 
+    function resetDiagram() {
+        clickedBox = null;
+        explanationBox.innerHTML = defaultContent;
+    
+        innerBoxes.forEach(function (box) {
+            box.classList.remove('greyed-out');
+            box.classList.remove('clicked');
+        });
+    
+        clickedarrows.forEach(arrow => arrow.remove());
+        clickedarrows = [];
+    }
+
+    
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
             if (clickedBox) { //hovering over a box related to the clicked box
@@ -1891,6 +1905,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //when a box is clicked, we draw arrows to all boxes it is connected to and grey out everything else
         innerBox.addEventListener('click', function () {       
             if (!innerBox.classList.contains('clicked')){
+                // resetDiagram();
                 innerBox.classList.add('clicked');
                 //Store the original content
                 if (!explanationBox.dataset.originalContent) {
@@ -1944,20 +1959,20 @@ document.addEventListener('DOMContentLoaded', function () {
     
                 }
             }else{ //when the box is unclicked, we restore everything
-                innerBox.classList.remove('clicked');
-                clickedBox = null;
-                explanationBox.innerHTML = defaultContent;
+                resetDiagram();
+                // innerBox.classList.remove('clicked');
+                // clickedBox = null;
+                // explanationBox.innerHTML = defaultContent;
     
-                innerBoxes.forEach(function (box) {
-                    box.classList.remove('greyed-out');
-                });
+                // innerBoxes.forEach(function (box) {
+                //     box.classList.remove('greyed-out');
+                // });
     
-                clickedarrows.forEach(arrow => arrow.remove()); //remove existing arrows
-                clickedarrows = [];
+                // clickedarrows.forEach(arrow => arrow.remove()); //remove existing arrows
+                // clickedarrows = [];
             }
         });
-
-        
     });
+    
 
 });
