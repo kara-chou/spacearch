@@ -1822,6 +1822,13 @@ document.addEventListener('DOMContentLoaded', function () {
     
     var clickedarrows = [];
     var hoveredarrows = [];
+    var explanationBox = document.querySelector('.explanation');
+    explanationBox.innerHTML = defaultContent;
+
+    var defaultContent = `
+    <p><strong>Hover</strong> over each box for their definitions. </p> 
+    <p><strong>Click</strong> on a factor and <strong>hover</strong> over its related boxes to read about their relationships.</p> 
+    <p><strong>Click again</strong> to reset the diagram.</p>`;
 
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
@@ -1829,14 +1836,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 var relatedBoxes = getRelatedBoxes(clickedBox);
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
                 if (relatedBoxes.includes(smallBoxName)) {
-                    var explanationBox = document.querySelector('.explanation');
                     var clickedAndCurName = clickedBox + "_" + smallBoxName;
                     var content = relatedBoxContents[clickedAndCurName];
                     explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 }
             }else{ //when nothing is clicked, hover works on any box
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
-                var explanationBox = document.querySelector('.explanation');
                 var content = boxContents[smallBoxName];
                 explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 var relatedBoxes = getRelatedBoxes(smallBoxName);                
@@ -1880,12 +1885,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             hoveredarrows.forEach(arrow => arrow.remove()); // Remove existing arrows
             hoveredarrows = [];
+            if (!clickedBox) {
+                explanationBox.innerHTML = defaultContent;
+            }
         });
         //when a box is clicked, we draw arrows to all boxes it is connected to and grey out everything else
         innerBox.addEventListener('click', function () {       
             if (!innerBox.classList.contains('clicked')){
                 innerBox.classList.add('clicked');
-                var explanationBox = document.querySelector('.explanation');
                 //Store the original content
                 if (!explanationBox.dataset.originalContent) {
                     explanationBox.dataset.originalContent = explanationBox.innerHTML;
@@ -1940,8 +1947,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }else{ //when the box is unclicked, we restore everything
                 innerBox.classList.remove('clicked');
                 clickedBox = null;
-                var explanationBox = document.querySelector('.explanation');
-                explanationBox.innerHTML = explanationBox.dataset.originalContent;
+                explanationBox.innerHTML = defaultContent;
     
                 innerBoxes.forEach(function (box) {
                     box.classList.remove('greyed-out');
