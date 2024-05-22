@@ -1823,12 +1823,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var clickedarrows = [];
     var hoveredarrows = [];
     var explanationBox = document.querySelector('.explanation');
-    explanationBox.innerHTML = defaultContent;
-
     var defaultContent = `
     <p><strong>Hover</strong> over each box for their definitions. </p> 
     <p><strong>Click</strong> on a factor and <strong>hover</strong> over its related boxes to read about their relationships.</p> 
     <p><strong>Click again</strong> to reset the diagram.</p>`;
+    explanationBox.innerHTML = defaultContent;
 
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
