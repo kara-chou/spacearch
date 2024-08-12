@@ -1822,6 +1822,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     var clickedarrows = [];
     var hoveredarrows = [];
+    var clickedBox = null;
     var explanationBox = document.querySelector('.explanation');
     var defaultContent = `
     <p><strong>Hover</strong> over each box for their definitions. </p> 
@@ -1832,20 +1833,18 @@ document.addEventListener('DOMContentLoaded', function () {
     function resetDiagram() {
         clickedBox = null;
         explanationBox.innerHTML = defaultContent;
-    
+
         innerBoxes.forEach(function (box) {
-            box.classList.remove('greyed-out');
-            box.classList.remove('clicked');
+            box.classList.remove('greyed-out', 'clicked', 'greyed-out-hover');
         });
-    
+
         clickedarrows.forEach(arrow => arrow.remove());
         clickedarrows = [];
     }
 
-    
     innerBoxes.forEach(function (innerBox) {
         innerBox.addEventListener('mouseenter', function () {
-            if (clickedBox) { //hovering over a box related to the clicked box
+            if (clickedBox) {
                 var relatedBoxes = getRelatedBoxes(clickedBox);
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
                 if (relatedBoxes.includes(smallBoxName)) {
@@ -1853,126 +1852,117 @@ document.addEventListener('DOMContentLoaded', function () {
                     var content = relatedBoxContents[clickedAndCurName];
                     explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 }
-            }else{ //when nothing is clicked, hover works on any box
+            } else {
                 var smallBoxName = formatToSmallBoxName(innerBox.textContent);
                 var content = boxContents[smallBoxName];
                 explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
                 var relatedBoxes = getRelatedBoxes(smallBoxName);                
                 var rightBoxes = getRightBoxes(smallBoxName);
                 innerBoxes.forEach(function (box) {
-                        var relatedBox = formatToSmallBoxName(box.textContent);
-                        var isRelated = relatedBoxes.includes(relatedBox);
-                    
-                        if (!isRelated) { //if not in related, then we need to grey it out
-                            box.classList.add('greyed-out-hover');
-                        }else{
-                            if (relatedBox != smallBoxName){
-                                if (smallBoxName === 'team_processes_invisible' && relatedBox != 'training_and_preparation'){
-                                    //do nothing, only arrow drawn when hovering over team processes is from training and preparation
-                                }else if (smallBoxName === 'training_and_preparation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living'){
-                                    //do nothing, only arrow drawn when hovering over training and preparation is to team processes, physical health, and group living
-                                }else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
-                                    //do nothing, only arrow drawn when hovering over individual traits is from selection
-                                }else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection'){
-                                    //do nothing, only arrow drawn when hovering over social composition is from selection
-                                }else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible'){
-                                    //do nothing, only arrow drawn when hovering over selection is to individual traits and social composition
-                                }else{
-                                    if (rightBoxes.includes(relatedBox)){
-                                        const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                        hoveredarrows.push(arrow);
-                                    }else{
-                                        const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
-                                        hoveredarrows.push(arrow);
-                                    } 
+                    var relatedBox = formatToSmallBoxName(box.textContent);
+                    var isRelated = relatedBoxes.includes(relatedBox);
+
+                    if (!isRelated) {
+                        box.classList.add('greyed-out-hover');
+                    } else {
+                        if (relatedBox != smallBoxName) {
+                            if (smallBoxName === 'team_processes_invisible' && relatedBox != 'training_and_preparation') {
+                                // do nothing
+                            } else if (smallBoxName === 'training_and_preparation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living') {
+                                // do nothing
+                            } else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection') {
+                                // do nothing
+                            } else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection') {
+                                // do nothing
+                            } else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible') {
+                                // do nothing
+                            } else {
+                                if (rightBoxes.includes(relatedBox)) {
+                                    const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                    hoveredarrows.push(arrow);
+                                } else {
+                                    const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                    hoveredarrows.push(arrow);
                                 }
                             }
                         }
+                    }
                 });
             }
         });
-        //remove arrows when boxes are unhovered (no clicking happened)
-        innerBox.addEventListener('mouseleave', function(){ 
+
+        innerBox.addEventListener('mouseleave', function () {
             innerBoxes.forEach(function (box) {
                 box.classList.remove('greyed-out-hover');
             });
-            hoveredarrows.forEach(arrow => arrow.remove()); // Remove existing arrows
+            hoveredarrows.forEach(arrow => arrow.remove());
             hoveredarrows = [];
             if (!clickedBox) {
                 explanationBox.innerHTML = defaultContent;
             }
         });
-        //when a box is clicked, we draw arrows to all boxes it is connected to and grey out everything else
-        innerBox.addEventListener('click', function () {       
-            if (!innerBox.classList.contains('clicked')){
-                // resetDiagram();
+
+        innerBox.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent click event from propagating to document
+
+            if (!innerBox.classList.contains('clicked')) {
+                resetDiagram();
                 innerBox.classList.add('clicked');
-                //Store the original content
+
                 if (!explanationBox.dataset.originalContent) {
                     explanationBox.dataset.originalContent = explanationBox.innerHTML;
                 }
-    
-                var boxElement = innerBox.closest('.box');
-    
-                if (boxElement) {
-                    //Use the text content of the hovered element as the identifier
-                    var smallBoxName = formatToSmallBoxName(innerBox.textContent);
-                    var content = boxContents[smallBoxName];
-                    clickedBox = formatToSmallBoxName(content.title);
-                    explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
-                    
-                    var relatedBoxes = getRelatedBoxes(smallBoxName);                
-                    var rightBoxes = getRightBoxes(smallBoxName);
-    
-                    innerBoxes.forEach(function (box) {
-                            //check if the small box is in relatedBoxes
-                            var relatedBox = formatToSmallBoxName(box.textContent);
-                            var isRelated = relatedBoxes.includes(relatedBox);
-                            if (!isRelated) { //if not in related, then we need to grey it out
-                                box.classList.add('greyed-out');
-                            }else{
-                                //drawing arrows connecting components using the arrowLine function
-                                //https://github.com/stanko-arbutina/arrow-line?tab=readme-ov-file
-                                if (relatedBox != smallBoxName){
-                                    if (smallBoxName === 'team_processes_invisible' && relatedBox != 'training_and_preparation'){
-                                        //do nothing, only arrow drawn when clicking team processes is from training and preparation
-                                    }else if (smallBoxName === 'training_and_preparation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living'){
-                                        //do nothing, only arrow drawn when clicking training and preparation is to team processes, physical health, and group living
-                                    }else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection'){
-                                        //do nothing, only arrow drawn when clicking individual traits is from selection
-                                    }else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection'){
-                                        //do nothing, only arrow drawn when clicking social composition is from selection
-                                    }else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible'){
-                                        //do nothing, only arrow drawn when clicking selection is to individual traits and social composition
-                                    }else{
-                                        if (rightBoxes.includes(relatedBox)){
-                                            const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
-                                            clickedarrows.push(arrow);
-                                        }else{
-                                            const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
-                                            clickedarrows.push(arrow);
-                                        } 
-                                    }
+
+                var smallBoxName = formatToSmallBoxName(innerBox.textContent);
+                var content = boxContents[smallBoxName];
+                clickedBox = formatToSmallBoxName(content.title);
+                explanationBox.innerHTML = `<div class="box-content"><div class="box-title"><strong>${content.title}</strong></div><div class="box-explanation">${content.explanation}</div></div>`;
+
+                var relatedBoxes = getRelatedBoxes(smallBoxName);
+                var rightBoxes = getRightBoxes(smallBoxName);
+
+                innerBoxes.forEach(function (box) {
+                    var relatedBox = formatToSmallBoxName(box.textContent);
+                    var isRelated = relatedBoxes.includes(relatedBox);
+
+                    if (!isRelated) {
+                        box.classList.add('greyed-out');
+                    } else {
+                        if (relatedBox != smallBoxName) {
+                            if (smallBoxName === 'team_processes_invisible' && relatedBox != 'training_and_preparation') {
+                                // do nothing
+                            } else if (smallBoxName === 'training_and_preparation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living') {
+                                // do nothing
+                            } else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection') {
+                                // do nothing
+                            } else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection') {
+                                // do nothing
+                            } else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible') {
+                                // do nothing
+                            } else {
+                                if (rightBoxes.includes(relatedBox)) {
+                                    const arrow = arrowLine('.' + smallBoxName, '.' + relatedBox, { color: 'white' });
+                                    clickedarrows.push(arrow);
+                                } else {
+                                    const arrow = arrowLine('.' + relatedBox, '.' + smallBoxName, { color: 'white' });
+                                    clickedarrows.push(arrow);
                                 }
                             }
-                    });
-    
-                }
-            }else{ //when the box is unclicked, we restore everything
+                        }
+                    }
+                });
+
+            } else {
                 resetDiagram();
-                // innerBox.classList.remove('clicked');
-                // clickedBox = null;
-                // explanationBox.innerHTML = defaultContent;
-    
-                // innerBoxes.forEach(function (box) {
-                //     box.classList.remove('greyed-out');
-                // });
-    
-                // clickedarrows.forEach(arrow => arrow.remove()); //remove existing arrows
-                // clickedarrows = [];
             }
         });
     });
-    
+
+    // reset the diagram when clicking anywhere outside the boxes
+    document.addEventListener('click', function () {
+        resetDiagram();
+    });
+
+        
 
 });
