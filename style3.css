@@ -84,6 +84,10 @@ rounded borders, text size and font*/
     text-align: left;
     padding: 1%;
 }
+.explanation-content {
+    text-align: left;
+    line-height: 2;
+}
 
 /*features common to smaller boxes, 
 e.g. centered text, font color and size*/
