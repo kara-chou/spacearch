@@ -2113,11 +2113,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var hoveredarrows = [];
     var clickedBox = null;
     var explanationBox = document.querySelector('.explanation');
-    var defaultContent = `
-    <p><strong>Hover</strong> over each box for their definitions. </p> 
-    <p><strong>Click</strong> on a factor and <strong>hover</strong> over its related boxes to read about their relationships.</p> 
-    <p><strong>Click again</strong> to reset the diagram.</p>`;
-    explanationBox.innerHTML = defaultContent;
+     var defaultContent = `
+    <div class="explanation-content">
+        <p><strong>Hover</strong> over each box for their definitions.</p>
+        <p><strong>Click</strong> on a factor and <strong>hover</strong> over its related boxes to read about their relationships.</p>
+        <p><strong>Click again</strong> to reset the diagram.</p>
+    </div>`;
+explanationBox.innerHTML = defaultContent;
 
     function resetDiagram() {
         clickedBox = null;
