@@ -2249,9 +2249,13 @@ explanationBox.innerHTML = defaultContent;
         });
     });
 
-    // reset the diagram when clicking anywhere outside the boxes
+     // reset the diagram when clicking anywhere outside the boxes and outside explanation
     document.addEventListener('click', function () {
-        resetDiagram();
+        const clickedInsideExplanation = event.target.closest('.explanation');
+ 
+        if (!clickedInsideExplanation) {
+            resetDiagram();
+        }
     });
 
         
