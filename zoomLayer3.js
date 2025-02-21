@@ -4,17 +4,17 @@ window.addEventListener("wheel", (e) => {
     e.preventDefault();
 
     // Zooming out, leads to layer 2
-    if (e.deltaX < 0 || e.deltaY < 0) {
+    if (e.deltaX > 0 || e.deltaY > 0) {
         window.location.href = 'layer2.html';
     }
 }, { passive: false });
 
 /*Define content for each box upon clicking, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
-    selection: {
-        title: "Selection", 
+    crew_selection: {
+        title: "Crew Selection", 
         explanation: 
-            "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts <span style='color:gray'>[NASA 2024]</span>. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]. <br><br> Selection criteria include educational/professional qualifications and candidates must be able to pass the astronaut physical, medical, and psychological exams. More restrictively, astronaut candidates from most programs must exhibit mental and personal capabilities which are selected for and evaluated by a panel of experts <span style='color:gray'>[Steimle and Norberg 2013]</span>. <br><br><br> <span style='color:gray'>NASA. (2024) 'Becoming an astronaut: Frequently asked questions,' NASA.gov. Last updated March 5, 2024. Accessed March 7, 2024. https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/<br>Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-23725-6_7</span>"
+            "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts <span style='color:gray'>[NASA 2024]</span>. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]. <br><br> Selection criteria include educational/professional qualifications and candidates must be able to pass the astronaut physical, medical, and psychological exams. More restrictively, astronaut candidates from most programs must exhibit mental and personal capabilities which are selected for and evaluated by a panel of experts <span style='color:gray'>[Steimle and Norberg 2013]</span>. <br><br><br> <span style='color:gray'>NASA. (2024) 'Becoming an astronaut: Frequently asked questions,' NASA.gov. Last updated March 5, 2024. Accessed March 7, 2024. https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/<br>Steimle, H., Norberg, C. (2013). Astronaut crew_selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-23725-6_7</span>"
     },
     distance_from_home_earth:{
         title: "Distance From Home/Earth",
@@ -304,8 +304,8 @@ var boxContents = {
 
 /*Define content for each box upon clicking/hovering, CHANGE EXPLANATION TEXTS HERE*/
 var relatedBoxContents = {
-    selection_selection: {
-        title: "Selection", 
+    crew_selection_crew_selection: {
+        title: "Crew Selection", 
         explanation: 
             "Astronaut selection was originally carried out by NASA and the Soviet Space Program, and now Japan, China, Russia, Brazil, and countries in Europe have selected their own astronauts <span style='color:gray'>[NASA 2024]</span>. Due to historical and sociopolitical factors, only male candidates were originally allowed to become astronauts, with one exception in the early 1960s (Valentina Tereshkova, USSR). Female candidates were accepted regularly in the 1980s, although still comprise a minority of the program [Steimle and Norberg 2013]. <br><br> Selection criteria include educational/professional qualifications and candidates must be able to pass the astronaut physical, medical, and psychological exams. More restrictively, astronaut candidates from most programs must exhibit mental and personal capabilities which are selected for and evaluated by a panel of experts <span style='color:gray'>[Steimle and Norberg 2013]</span>. <br><br><br> <span style='color:gray'>NASA. (2024) 'Becoming an astronaut: Frequently asked questions,' NASA.gov. Last updated March 5, 2024. Accessed March 7, 2024. https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/<br>Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-23725-6_7</span>"
     },
@@ -595,20 +595,20 @@ var relatedBoxContents = {
         title: "Contentment",
         explanation: "We distinguish contentment here as a low-arousal emotion that may compose feelings of peace, tranquility, satisfaction, and calm <span style='color:gray'>[Brown 2021]</span>. Closely related constructs – happiness, joy, and gratitude – are more high-arousal emotions. We choose contentment here as the ‘catch-all’ for these positive emotions connected to the environment, as a more tangible attribute to promote as a behavioral health outcome.  <br>  To distinguish from contentment, the state of happiness is a feeling of pleasure related to the immediate environment or circumstances <span style='color:gray'>[Brown 2021]</span>. Happiness is more immediate, while other factors (e.g., joy and contentment) may be more chronic, and acute happiness may not necessarily contribute to long-term contentment <span style='color:gray'>[Brown 2021]</span>.       <br><br><br> <span style='color:gray'> Brown, B. (2021). Atlas of the heart: Mapping meaningful connection and the language of human experience. Random House. </span> "
     },
-    selection_individual_traits_invisible: {
-        title: "Selection &#8594; Individual Traits",
+    crew_selection_individual_traits_invisible: {
+        title: "crew_selection &#8594; Individual Traits",
         explanation: "Historically, NASA has grouped select-in criteria as “the right stuff” (“virtuous, no-nonsense, able and professional astronauts”), or traits that may be more desirable to select for in astronaut candidates <span style='color:gray'>[Vakoch 2013][Steimle and Norberg 2013]</span>. In a study of ESA astronaut applicants (n=902), higher levels of neuroticism (specifically anxiety, anger hostility, and depression) were found for candidates who were not selected <span style='color:gray'>[Mittelstädt 2016]</span>. However, “the right stuff” is a compilation of ideals that humans cannot attain; more focus has been put on behavioral health research for long-duration missions <span style='color:gray'>[Vakoch 2013]</span>. <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. <br> Vakoch, D. A. (Ed.). (2013). On Orbit and Beyond: Psychological Perspectives on Human Spaceflight. Springer Berlin Heidelberg. <br>Mittelstädt, J. M., Pecena, Y., Oubaid, V., & Maschke, P. (2016). Psychometric Personality Differences Between Candidates in Astronaut Selection. Aerospace Medicine and Human Performance, 87(11), 933–939.</span>"
     },
-    individual_traits_invisible_selection: {
-        title: "Selection &#8594; Individual Traits",
+    individual_traits_invisible_crew_selection: {
+        title: "crew_selection &#8594; Individual Traits",
         explanation: "Historically, NASA has grouped select-in criteria as “the right stuff” (“virtuous, no-nonsense, able and professional astronauts”), or traits that may be more desirable to select for in astronaut candidates <span style='color:gray'>[Vakoch 2013][Steimle and Norberg 2013]</span>. In a study of ESA astronaut applicants (n=902), higher levels of neuroticism (specifically anxiety, anger hostility, and depression) were found for candidates who were not selected <span style='color:gray'>[Mittelstädt 2016]</span>. However, “the right stuff” is a compilation of ideals that humans cannot attain; more focus has been put on behavioral health research for long-duration missions <span style='color:gray'>[Vakoch 2013]</span>. <br><br><br> <span style='color:gray'> Steimle, H., Norberg, C. (2013). Astronaut selection and training. In: Norberg, C. (eds) Human Spaceflight and Exploration. Springer Praxis Books. Springer, Berlin, Heidelberg. <br> Vakoch, D. A. (Ed.). (2013). On Orbit and Beyond: Psychological Perspectives on Human Spaceflight. Springer Berlin Heidelberg. <br>Mittelstädt, J. M., Pecena, Y., Oubaid, V., & Maschke, P. (2016). Psychometric Personality Differences Between Candidates in Astronaut Selection. Aerospace Medicine and Human Performance, 87(11), 933–939. </span>"
     },
-    selection_social_composition_invisible: {
-        title: "Selection &#8594; Social Composition",
+    crew_selection_social_composition_invisible: {
+        title: "crew_selection &#8594; Social Composition",
         explanation: "Crew compatibility is a major consideration as astronauts perform their missions with a team. Indirect assessments of compatibility (such as personality inventories) are effective when used in the selection process to create specific team configurations (e.g., homogenous). However, applicants can “game” the system via social desirability (tendency to provide responses that are socially desired) <span style='color:gray'>[Ganster 1983][Bell 2015]</span>. While in-depth interviews and direct/operational methods of assessment may help mitigate these issues, they can be expensive and time-intensive. Furthermore, crews may change in mission <span style='color:gray'>[Bell 2015]</span>. <br><br><br> <span style='color:gray'>Ganster, D. C., Hennessey, H. W., & Luthans, F. (1983). Social desirability response effects: Three alternative models. Academy of Management Journal, 26(2), 321–331. <br>Bell, S. T., Brown, S. G., Outland, N. B., & Abben, D. R. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration.</span>"
     },
-    social_composition_invisible_selection: {
-        title: "Selection &#8594; Social Composition",
+    social_composition_invisible_crew_selection: {
+        title: "crew_selection &#8594; Social Composition",
         explanation: "Crew compatibility is a major consideration as astronauts perform their missions with a team. Indirect assessments of compatibility (such as personality inventories) are effective when used in the selection process to create specific team configurations (e.g., homogenous). However, applicants can “game” the system via social desirability (tendency to provide responses that are socially desired) <span style='color:gray'>[Ganster 1983][Bell 2015]</span>. While in-depth interviews and direct/operational methods of assessment may help mitigate these issues, they can be expensive and time-intensive. Furthermore, crews may change in mission <span style='color:gray'>[Bell 2015]</span>. <br><br><br> <span style='color:gray'>Ganster, D. C., Hennessey, H. W., & Luthans, F. (1983). Social desirability response effects: Three alternative models. Academy of Management Journal, 26(2), 321–331. <br>Bell, S. T., Brown, S. G., Outland, N. B., & Abben, D. R. (2015). Critical Team Composition Issues for Long-Distance and Long-Duration Space Exploration.</span>"
     },
     distance_from_home_earth_communication_delay:{
@@ -1806,8 +1806,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function getRightBoxes(smallBoxName){
         switch(smallBoxName){
-            case "selection":
-                return ['selection', 'individual_traits_invisible', 'social_composition_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
+            case "crew_selection":
+                return ['crew_selection', 'individual_traits_invisible', 'social_composition_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
             case 'individual_traits_invisible':
                 return ['individual_traits_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];    
             case 'social_composition_invisible':
@@ -1958,12 +1958,12 @@ document.addEventListener('DOMContentLoaded', function () {
     //All boxes the current one is related to, left and right
     function getRelatedBoxes(smallBoxName) {
         switch (smallBoxName) {
-            case 'selection':
-                return ['selection', 'individual_traits_invisible', 'social_composition_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
+            case 'crew_selection':
+                return ['crew_selection', 'individual_traits_invisible', 'social_composition_invisible', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
             case 'individual_traits_invisible':
-                return ['individual_traits_invisible', 'selection', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];
+                return ['individual_traits_invisible', 'crew_selection', 'extraversion', 'openness', 'agreeableness', 'genetics', 'conscientiousness', 'neuroticism', 'resilience', 'emotional_bandwidth'];
             case 'social_composition_invisible':
-                return ['social_composition_invisible', 'selection', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
+                return ['social_composition_invisible', 'crew_selection', 'crew_size', 'social_support', 'social_monotony', 'density', 'group_living']
             case 'team_processes_invisible':
                 return ['team_processes_invisible', 'training_and_preparation', 'transition_processes', 'action_processes', 'interpersonal_processes']
             case 'distance_from_home_earth':
@@ -2163,11 +2163,11 @@ explanationBox.innerHTML = defaultContent;
                                 // do nothing
                             } else if (smallBoxName === 'training_and_preparation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living') {
                                 // do nothing
-                            } else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection') {
+                            } else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'crew_selection') {
                                 // do nothing
-                            } else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection') {
+                            } else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'crew_selection') {
                                 // do nothing
-                            } else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible') {
+                            } else if (smallBoxName === 'crew_selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible') {
                                 // do nothing
                             } else {
                                 if (rightBoxes.includes(relatedBox)) {
@@ -2226,11 +2226,11 @@ explanationBox.innerHTML = defaultContent;
                                 // do nothing
                             } else if (smallBoxName === 'training_and_preparation' && relatedBox != 'team_processes_invisible' && relatedBox !== 'physical_health' && relatedBox !== 'group_living') {
                                 // do nothing
-                            } else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'selection') {
+                            } else if (smallBoxName === 'individual_traits_invisible' && relatedBox !== 'crew_selection') {
                                 // do nothing
-                            } else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'selection') {
+                            } else if (smallBoxName === 'social_composition_invisible' && relatedBox !== 'crew_selection') {
                                 // do nothing
-                            } else if (smallBoxName === 'selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible') {
+                            } else if (smallBoxName === 'crew_selection' && relatedBox !== 'individual_traits_invisible' && relatedBox !== 'social_composition_invisible') {
                                 // do nothing
                             } else {
                                 if (rightBoxes.includes(relatedBox)) {
