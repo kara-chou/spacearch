@@ -30,7 +30,7 @@ rounded borders, text size and font*/
 }
 
 /*Vertical grouping of boxes
-box1: selection, chronic stressors, acute stressors
+box1: crew selection, chronic stressors, acute stressors
 box2: personality trait, environmental stressors, designed features
 box6: crew composition, resources, operational stressors
 box3: team processes, individual processes
@@ -43,7 +43,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 .box4,
 .box5,
 .box6 {
-    margin-right: 1%; /*adding white space between the columns*/
+    margin-right: 0.5%; /*adding white space between the columns*/
 }
 
 .box1,
@@ -60,35 +60,36 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 /*Rounded border, color, etc. unique to each grouping of boxes*/
 .box1 {
     width: calc(20vw); 
-    background-color: #5ba6ea;
+    background-color: #b4b4b4; /*5ba6ea*/
     border-radius: 15px; 
-    margin-left: 1%;
+    margin-left: 0.5%;
 }
 
 .box2 {
-    width: calc(21vw);
+    width: calc(17.5vw);
     background-color: #94ecff;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px; 
 }
 
 .box6 {
-    width: calc(21vw);
+    width: calc(17.5vw);
     background-color: #94ecff;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px; 
 }
 
 .box3 {
-    width: calc(14vw); 
+    width: calc(20vw); 
     background-color: #ffcbfb;
     border-radius: 15px; 
 }
 
 .box4 {
-    width: calc(20vw); 
+    width: calc(25vw); 
     background-color: #ffd54d;
     border-radius: 15px; 
+    margin-right: 0%;
 }
 
 .box5 {
@@ -103,8 +104,9 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
     width: calc(93%);
     height: calc(20%);
     padding: 20px;
+    margin-top: 3px;
     top: 0;
-    background-color: #0072B2;
+    background-color: #999999;
 }
 
 .chronic_stressors {
@@ -127,6 +129,7 @@ lay top to bottom in box2*/
     width: calc(96%);
     height: calc(37%);
     margin-left: 2.5%;
+    margin-top: 3px;
     padding: 20px;
     background-color: #56B4E9;
 }
@@ -153,6 +156,7 @@ lay top to bottom in box6*/
     width: calc(96%);
     height: calc(30%);
     margin-right: 2.5%;
+    margin-top: 3px;
     padding: 20px;
     background-color: #56B4E9;
 }
@@ -177,6 +181,7 @@ lay top to bottom in box6*/
 .team_processes {
     width: calc(93%);
     height: calc(45%);
+    margin-top: 3px;
     padding: 20px;
     background-color: #CC79A7;
 }
@@ -192,6 +197,7 @@ lay top to bottom in box6*/
 .behavioral_health_and_performance_outcomes {
     width: calc(93%);
     height: calc(100%);
+    margin-top: 3px;
     padding: 20px;
     background-color: #E69F00;
 }
