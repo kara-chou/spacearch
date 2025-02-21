@@ -31,7 +31,7 @@ rounded borders, text size and font*/
 .box4,
 .box5,
 .box6 {
-    margin-right: 0.8%; /*Adding space between the columns*/
+    margin-right: 0.5%; /*Adding space between the columns*/
 }
 
 .box1,
@@ -48,7 +48,7 @@ rounded borders, text size and font*/
 /*Control width of each column*/
 .box1 {
     width: calc(12vw); 
-    margin-left: 0.8%;
+    margin-left: 0.5%;
 }
 
 .box2 {
@@ -66,6 +66,7 @@ rounded borders, text size and font*/
 
 .box4 {
     width: calc(15vw); 
+    margin-right: 0px;
 }
 
 .box5 {
@@ -91,6 +92,7 @@ rounded borders, text size and font*/
 
 /*features common to smaller boxes, 
 e.g. centered text, font color and size*/
+.crew_selection,
 .distance_from_home_earth,
 .mission_duration,
 .communication_delay,
@@ -206,6 +208,7 @@ e.g. rounded borders, centered elements*/
 }
 
 /*add margin to the top of the top boxes*/
+.selection,
 .individual_traits,
 .social_composition,
 .team_processes,
@@ -218,11 +221,18 @@ e.g. rounded borders, centered elements*/
 /*Features unique to individual smaller boxes*/
 .selection {
     width: calc(100%); 
-    height: calc(100% * 0.1);
-    background-color: #0072B2;
-    align-items: center;
-    color: white;
-    margin-top: 2%;
+    height: calc(100% * 0.15);
+    background-color: #dbd7d7;
+    color: rgba(0, 0, 0, 0.668);
+}
+
+.crew_selection {
+    width: calc(80%); 
+    height: calc(7%);
+    position: absolute;
+    top: calc(5%);
+    right: 10%;
+    background-color: #929090;
 }
 
 /*--------------------------------------*/
@@ -238,7 +248,7 @@ e.g. rounded borders, centered elements*/
     width: calc(80%); 
     height: calc(7%);
     position: absolute;
-    top: calc(17%);
+    top: calc(19%);
     right: 10%;
     background-color: #929090;
 }
@@ -247,7 +257,7 @@ e.g. rounded borders, centered elements*/
     width: calc(80%); 
     height: calc(7%); 
     position: absolute;
-    top: calc(26%); /*relative to top of page*/
+    top: calc(28%); /*relative to top of page*/
     right: 10%; /*relative to chronic_stressors*/
     background-color: #929090;
 }
@@ -256,7 +266,7 @@ e.g. rounded borders, centered elements*/
     width: calc(80%); 
     height: calc(7%); 
     position: absolute;
-    top: calc(35%);
+    top: calc(37%);
     right: 10%;
     background-color: #929090;
 }
@@ -265,30 +275,30 @@ e.g. rounded borders, centered elements*/
     width: calc(40%); 
     height: calc(7%);
     position: absolute;
-    top: calc(45%);
+    top: calc(46%);
     left: 7%;
-    color: rgb(201, 198, 198);
-    background-color: rgba(0, 0, 0, 0.735);
+    /*color: rgb(201, 198, 198);*/
+    background-color: #929090;
 }
 
 .confined{
     width: calc(40%); 
     height: calc(7%);
     position: absolute;
-    top: calc(55%);
+    top: calc(56%);
     left: 7%;
-    color: rgb(201, 198, 198);
-    background-color: rgba(0, 0, 0, 0.735);
+    /*color: rgb(201, 198, 198);*/
+    background-color: #929090;
 }
 
 .extreme {
     width: calc(40%); 
     height: calc(7%);
     position: absolute;
-    top: calc(50%);
+    top: calc(51%);
     right: 6%;
-    color: rgb(201, 198, 198);
-    background-color: rgba(0, 0, 0, 0.735);
+    /*color: rgb(201, 198, 198);*/
+    background-color: #929090;
 }
 
 .resource_constrained{
@@ -297,8 +307,8 @@ e.g. rounded borders, centered elements*/
     position: absolute;
     top: calc(65%);
     left: 12%;
-    color: rgb(201, 198, 198);
-    background-color: rgba(0, 0, 0, 0.735);
+    /*color: rgb(201, 198, 198);*/
+    background-color: #929090;
 }
 
 /*--------------------------------------*/
@@ -325,8 +335,8 @@ e.g. rounded borders, centered elements*/
     position: absolute;
     top: calc(90%);
     right: 10%;
-    color: rgb(201, 198, 198);
-    background-color: rgba(0, 0, 0, 0.735);
+    /*color: rgb(201, 198, 198);*/
+    background-color: #929090;
 }
 /*-----------------------------------------*/
 /*Boxes laying inside personality trait*/
