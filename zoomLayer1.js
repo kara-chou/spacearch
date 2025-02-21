@@ -3,10 +3,10 @@ window.addEventListener("wheel",
     (e)=> {
         e.preventDefault();
         /*zooming in, leads to layer2 */
-        if (e.deltaX > 0){
+        if (e.deltaX < 0){
             window.location.href = 'layer2.html';
         }
-        if (e.deltaY > 0){
+        if (e.deltaY < 0){
             window.location.href = 'layer2.html';
         }
     },
