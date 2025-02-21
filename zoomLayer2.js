@@ -4,12 +4,12 @@ window.addEventListener("wheel", (e) => {
     e.preventDefault();
 
     // Zooming in, leads to layer3
-    if (e.deltaX > 0 || e.deltaY > 0) {
+    if (e.deltaX < 0 || e.deltaY < 0) {
         window.location.href = 'layer3.html';
     }
 
     // Zooming out, leads to layer 1
-    if (e.deltaX < 0 || e.deltaY < 0) {
+    if (e.deltaX > 0 || e.deltaY > 0) {
         window.location.href = 'index.html';
     }
 }, { passive: false });
@@ -19,7 +19,7 @@ Define content for each box, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {
     selection: {
         title: "Selection",
-        explanation: "<br> How we choose for the mission"
+        explanation: "<br> How we choose crew for the mission"
     },
     chronic_stressors: {
         title: "Chronic Stressors",
