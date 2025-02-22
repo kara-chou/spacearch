@@ -59,21 +59,21 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 
 /*Rounded border, color, etc. unique to each grouping of boxes*/
 .box1 {
-    width: calc(20vw); 
+    width: calc(15vw); 
     background-color: #b4b4b4; /*5ba6ea*/
     border-radius: 15px; 
     margin-left: 0.5%;
 }
 
 .box2 {
-    width: calc(17.5vw);
+    width: calc(20vw);
     background-color: #94ecff;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px; 
 }
 
 .box6 {
-    width: calc(17.5vw);
+    width: calc(20vw);
     background-color: #94ecff;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px; 
