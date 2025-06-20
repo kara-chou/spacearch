@@ -1,43 +1,47 @@
 /*zooming in and out to switch between layers*/
 window.addEventListener("wheel",
     (e)=> {
+        // Check if zoom navigation is allowed
+        if (window.zoomControls) {
+            // Only allow zoom if normal zoom is enabled or walkthrough zoom is enabled and we're zooming in
+            const isZoomingIn = (e.deltaX < 0 || e.deltaY < 0);
+            const isZoomingOut = (e.deltaX > 0 || e.deltaY > 0);
+            
+            if ((!window.zoomControls.normalZoom.allow && !window.zoomControls.walkthroughZoom.allow) ||
+                (isZoomingOut && window.zoomControls.walkthroughZoom.allow)) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
+        }
+        
         e.preventDefault();
         /*zooming in, leads to layer2 */
-        if (e.deltaX < 0){
-            window.location.href = 'layer2.html';
-        }
-        if (e.deltaY < 0){
+        if (e.deltaX < 0 || e.deltaY < 0) {
             window.location.href = 'layer2.html';
         }
     },
-    {passive:false}
-    );
+    {passive: false, capture: true}
+);
 
-// Functions to show the pop-up box
+// Functions to handle the pop-up box
 function showPopup() {
     var popup = document.getElementById("popup");
-    popup.style.display = "block";
+    if (popup) {
+        popup.style.display = "block";
+    }
 }
 
 function closePopup() {
     var popup = document.getElementById("popup");
-    popup.style.display = "none";
+    if (popup) {
+        popup.style.display = "none";
+    }
 }
 
-window.addEventListener("load", function () {
-    showPopup();
-});
 
-
-/*Displays text within the box upon hovering.
-Get all box elements*/
-var boxes = document.querySelectorAll('.box');
-
-//Get the box container element
-var boxContainer = document.querySelector('.container');
-
-//Define content for each box, CHANGE EXPLANATION TEXTS HERE
-var boxContents = {
+// Define content for each box, CHANGE EXPLANATION TEXTS HERE
+const boxContents = {
     box1: {
         title: "Mission Parameters",
         explanation: "Aspects of the planned mission"
@@ -60,20 +64,29 @@ var boxContents = {
     }
 };
 
-//Add event listeners to each box
-boxes.forEach(function (box) {
-    box.addEventListener('mouseover', function () {
-        var boxId = box.classList[1]; // Assumes the class of the box follows the pattern 'boxX'
-        var content = boxContents[boxId];
-
-        //Update content inside the box with explanation text and bolded title
-        box.querySelector('.content').innerHTML = `<div class="box-title">${content.title}</div><div class="box-explanation">${content.explanation}</div>`;
+// Initialize boxes with both title and explanation (hidden by default)
+document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
+    
+    boxes.forEach(box => {
+        const boxId = box.classList[1];
+        const content = boxContents[boxId];
+        if (content) {
+            box.querySelector('.content').innerHTML = `
+                <div class="box-title">${content.title}</div>
+                <div class="box-explanation">${content.explanation}</div>
+            `;
+        }
     });
 
-    box.addEventListener('mouseout', function () {
-        //Reset content inside the box into original
-        var boxId = box.classList[1];
-        var originalContent = boxContents[boxId].title;
-        box.querySelector('.content').innerHTML = originalContent;
+    // Add hover class to parent box for CSS transitions
+    boxes.forEach(box => {
+        box.addEventListener('mouseenter', () => {
+            box.classList.add('hovered');
+        });
+        
+        box.addEventListener('mouseleave', () => {
+            box.classList.remove('hovered');
+        });
     });
 });
