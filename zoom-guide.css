@@ -1,0 +1,179 @@
+/* Zoom Guide Animations */
+.zoom-guide-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    z-index: 20000000;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    pointer-events: none;
+    color: white;
+    opacity: 1;
+    transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-family: monospace, monospace;
+}
+
+/* Minimized zoom guide */
+
+.zoom-guide-container.minimized {
+    position: fixed;
+    height: 180px;
+    width: 350px;
+    top: 15px;
+    left: 15px;
+    transform: translate(0, 0) scale(0.8);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 20000000;
+    padding: 30px;
+    transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.zoom-guide-container.minimized .zoom-guide {
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.zoom-guide {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.zoom-guide-title {
+    font-size: 18px; /* Increased from 14px */
+    margin-bottom: 15px; /* Increased spacing */
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.5px; /* Improved readability */
+}
+
+/* Mouse Guide */
+.mouse-guide {
+    width: 80px; /* Increased from 60px */
+    height: 130px; /* Increased from 100px */
+    border: 4px solid #ffffff; /* Slightly thicker border */
+    border-radius: 40px; /* More rounded corners */
+    position: relative;
+    margin: 0 auto 15px; /* Increased bottom margin */
+}
+
+.mouse-wheel {
+    width: 4px;
+    height: 20px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scrollWheelUp 2s infinite;
+}
+
+@keyframes scrollWheelUp {
+    0% {
+        height: 20px;
+        top: 55%; /* slightly below centre */
+        background: white;
+    }
+    25% {
+        height: 14px;
+        top: 30%; /* dramatic upward move */
+        background: rgba(255,255,255,0.9);
+    }
+    65% {
+        height: 14px;
+        top: 30%; /* stay in upward position */
+        background: rgba(255,255,255,0.9);
+    }
+    100% {
+        height: 20px;
+        top: 55%; /* reset */
+        background: white;
+    }
+}
+
+/* Trackpad Guide */
+.trackpad-guide {
+    width: 160px; /* Increased from 80px */
+    height: 130px; /* Increased from 60px */
+    border: 3px solid #ffffff; /* Slightly thicker border */
+    border-radius: 8px; /* Slightly more rounded */
+    position: relative;
+    margin: 0 auto 15px; /* Increased bottom margin */
+    overflow: hidden;
+}
+
+.trackpad-fingers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.trackpad-finger {
+    position: absolute;
+    width: 16px; /* Increased from 12px */
+    height: 16px; /* Increased from 12px */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trackpad-finger-1 {
+    left: 30%;
+    top: 30%;
+    animation: pinchFinger1Out 2s infinite;
+}
+
+.trackpad-finger-2 {
+    left: 70%;
+    top: 70%;
+    animation: pinchFinger2Out 2s infinite;
+}
+
+/* Fingers move towards centre, pause, then reset */
+@keyframes pinchFinger1Out {
+    0% {
+        transform: translate(-50%, -50%) translate(20px, 20px) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    }
+    65% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) translate(20px, 20px) scale(1);
+    }
+}
+
+@keyframes pinchFinger2Out {
+    0% {
+        transform: translate(-50%, -50%) translate(-20px, -20px) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    }
+    65% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) translate(-20px, -20px) scale(1);
+    }
+}
