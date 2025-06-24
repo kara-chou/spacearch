@@ -8,7 +8,7 @@ body, html { /*Container where all boxes are stored in*/
 .container {
     display: flex;
     width: 100vw; 
-    height: 100vh;
+    height: 100dvh;
     justify-content: space-between;
 }
 
@@ -75,10 +75,9 @@ rounded borders, text size and font*/
 
 /*explanation box on the right side*/
 .explanation{ 
-    margin-right: 0.5%;
+    margin-right: 0;
     width: calc(25%);
     border-color: rgb(49, 169, 137);
-    border-width: 10px;
     background-color: rgb(209, 235, 228);
     color: black;
     display: flex;
@@ -169,9 +168,10 @@ e.g. centered text, font color and size*/
     justify-content: center; 
     align-items: center;
     text-align: center;
-    padding: 1%;
+    padding: 1% 4%;
     cursor: default; /*do not change cursor shape when hovering over text*/
     transition: all 0.2s ease-in-out;
+    position: absolute;
 }
 
 /*Features common to second layer boxes
@@ -204,8 +204,9 @@ e.g. rounded borders, centered elements*/
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 0.5vh; /*add margin to the bottom of the boxes*/
-    padding-top: 1vh;
+    margin-bottom: 0.5dvh; /*add margin to the bottom of the boxes*/
+    padding-top: 2dvh;
+    color: rgb(0, 0, 0, 0.7);
 }
 
 /*add margin to the top of the top boxes*/
@@ -216,22 +217,21 @@ e.g. rounded borders, centered elements*/
 .behavioral_health_and_performance_outcomes,
 .loss_of_mission
 {
-    margin-top: 0.5vh;
+    margin-top: 0.5dvh;
 }
 
 /*Features unique to individual smaller boxes*/
 .selection {
     width: calc(100%); 
-    height: calc(100% * 0.15);
+    height: calc(100% * 0.14);
     background-color: #dbd7d7;
-    color: rgba(0, 0, 0, 0.668);
 }
 
 .crew_selection {
     width: calc(80%); 
-    height: calc(7%);
+    height: calc(6%);
     position: absolute;
-    top: calc(5%);
+    top: calc(6%);
     right: 10%;
     background-color: #929090;
 }
@@ -240,16 +240,14 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside chronic stressors*/
 .chronic_stressors {
     width: calc(100%); 
-    height: calc(100% * 0.65);
+    height: calc(100% * 0.6);
     background-color: #dbd7d7;
-    color: rgba(0, 0, 0, 0.668);
 }
 
 .communication_delay{
     width: calc(80%); 
     height: calc(7%);
-    position: absolute;
-    top: calc(19%);
+    top: calc(21%);
     right: 10%;
     background-color: #929090;
 }
@@ -257,8 +255,7 @@ e.g. rounded borders, centered elements*/
 .distance_from_home_earth{
     width: calc(80%); 
     height: calc(7%); 
-    position: absolute;
-    top: calc(28%); /*relative to top of page*/
+    top: calc(30%); /*relative to top of page*/
     right: 10%; /*relative to chronic_stressors*/
     background-color: #929090;
 }
@@ -266,49 +263,40 @@ e.g. rounded borders, centered elements*/
 .mission_duration{
     width: calc(80%); 
     height: calc(7%); 
-    position: absolute;
-    top: calc(37%);
+    top: calc(39%);
     right: 10%;
     background-color: #929090;
 }
 
 .isolated{
     width: calc(40%); 
-    height: calc(7%);
-    position: absolute;
-    top: calc(46%);
+    height: calc(6%);
+    top: calc(48%);
     left: 7%;
-    /*color: rgb(201, 198, 198);*/
     background-color: #929090;
 }
 
 .confined{
     width: calc(40%); 
-    height: calc(7%);
-    position: absolute;
+    height: calc(6%);
     top: calc(56%);
     left: 7%;
-    /*color: rgb(201, 198, 198);*/
     background-color: #929090;
 }
 
 .extreme {
     width: calc(40%); 
-    height: calc(7%);
-    position: absolute;
-    top: calc(51%);
+    height: calc(6%);
+    top: calc(51.5%);
     right: 6%;
-    /*color: rgb(201, 198, 198);*/
     background-color: #929090;
 }
 
 .resource_constrained{
     width: calc(80%); 
     height: calc(7%);
-    position: absolute;
-    top: calc(65%);
+    top: calc(64%);
     left: 12%;
-    /*color: rgb(201, 198, 198);*/
     background-color: #929090;
 }
 
@@ -318,14 +306,12 @@ e.g. rounded borders, centered elements*/
     width: calc(100%);
     height: calc(100% * 0.25);
     background-color: #dbd7d7;
-    color: rgba(0, 0, 0, 0.668);
 }
 
 .mission_demands{
     width: calc(80%); 
     height: calc(7%);
-    position: absolute;
-    top: calc(80%);
+    top: calc(81%);
     left: 10%;
     background-color: #929090;
 }
@@ -336,89 +322,79 @@ e.g. rounded borders, centered elements*/
     position: absolute;
     top: calc(90%);
     right: 10%;
-    /*color: rgb(201, 198, 198);*/
     background-color: #929090;
 }
 /*-----------------------------------------*/
 /*Boxes laying inside personality trait*/
 .individual_traits {
     width: calc(100%);
-    height: calc(100% * 0.4);
+    height: calc(100% * 0.28);
     background-color: #94ecff;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .individual_traits_invisible{ /*Overall mask for the bigger individual traits*/
     position: absolute;
     left: 0%;
-    height: 34%;
+    height: 28%;
     width: 100%;
     top: 0.5%;
     background-color: #94ecff;
     opacity: 100%;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .extraversion{
-    width: calc(35%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(6%);
-    left: 10%;
+    width: calc(38%); 
+    height: calc(5%);
+    top: calc(6.5%);
+    left: 5%;
     background-color: #56B4E9;
 }
 
 .agreeableness{
-    width: calc(37%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(13%);
-    left: 15%;
+    width: calc(44%); 
+    height: calc(5%);
+    top: calc(13.5%);
+    left: 5%;
     background-color: #56B4E9;
 }
 
 .neuroticism{
-    width: calc(33%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(8%);
-    right: 8%;
+    width: calc(44%); 
+    height: calc(5%);
+    top: calc(13.5%);
+    right: 5%;
     background-color: #56B4E9;
 }
 
 .resilience{
-    width: calc(33%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(27%);
-    left: 10%;
+    width: calc(32%); 
+    height: calc(5%);
+    top: calc(20.5%);
+    left: 4%;
     background-color: #56B4E9;
 }
 
 .openness{
-    width: calc(33%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(17%);
-    right: 8%;
+    width: calc(28%); 
+    height: calc(5%);
+    top: calc(20.5%);
+    right: 34%;
     background-color: #56B4E9;
 }
 
 .conscientiousness{
-    width: calc(48%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(20%);
-    left:7%;
+    width: calc(50%); 
+    height: calc(5%);
+    top: calc(6.5%);
+    right:5%;
     background-color: #56B4E9;
 }
 
 .genetics{
-    width: calc(30%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(27%);
-    right: 15%;
+    width: calc(28%); 
+    height: calc(5%);
+    top: calc(20.5%);
+    right: 4%;
     background-color: #56B4E9;
 }
 
@@ -426,81 +402,72 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside crew composition*/
 .social_composition {
     width: calc(100%);
-    height: calc(100% * 0.3);
+    height: calc(100% * 0.31);
     background-color: #94ecff;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .social_composition_invisible{ /*Overall mask for the bigger social composition box*/
     position: absolute;
     left: 0%;
-    height: 29%;
+    height: 31%;
     width: 100%;
     top: 0.5%;
     background-color: #94ecff;
     opacity: 100%;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .crew_size{
-    width: calc(30%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(5%);
-    left:10%;
+    width: calc(40%); 
+    height: calc(5%);
+    top: calc(6.5%);
+    left:5%;
     background-color: #56B4E9;
 }
 
 .social_support{
-    width: calc(35%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(23%);
-    left:10%;
+    width: calc(40%); 
+    height: calc(7%);
+    top: calc(22.5%);
+    left:30%;
     background-color: #56B4E9;
 }
 
 .social_monotony{
-    width: calc(33%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(14%);
-    left:10%;
+    width: calc(40%); 
+    height: calc(7%);
+    top: calc(13.5%);
+    left:5%;
     background-color: #56B4E9;
 }
 
 .group_living{
     width: calc(40%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(8%);
-    right:10%;
+    height: calc(7%);
+    top: calc(13.5%);
+    right:5%;
     background-color: #56B4E9;
 }
 
 .density{
-    width: calc(35%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(17%);
-    right:12%;
+    width: calc(40%); 
+    height: calc(5%);
+    top: calc(6.5%);
+    right:5%;
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
 /*Boxes laying inside resources*/
 .resources {
     width: calc(100%);
-    height: calc(100% * 0.45);
+    height: calc(100% * 0.47);
     top: calc(80% * 0.4 + 80px);
     background-color: #94ecff;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .psychological_resources{
     width: calc(80%); 
     height: calc(6%);
-    position: absolute;
-    top: calc(34%);
+    top: calc(38%);
     left:10%;
     background-color: #56B4E9;
 }
@@ -508,26 +475,23 @@ e.g. rounded borders, centered elements*/
 .supplies{
     width: calc(40%); 
     height: calc(6%);
-    position: absolute;
-    top: calc(42%);
-    right: 8%;
+    top: calc(46%);
+    right: 5%;
     background-color: #56B4E9;
 }
 
 .training_and_preparation{
-    width: calc(80%); 
+    width: calc(85%); 
     height: calc(6%);
-    position: absolute;
-    top: calc(58%);
-    left:10%;
+    top: calc(63%);
+    left:7.5%;
     background-color: #56B4E9;
 }
 
 .ground_support{
-    width: calc(47%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(50%);
+    width: calc(43%); 
+    height: calc(7%);
+    top: calc(54%);
     left:5%;
     background-color: #56B4E9;
 }
@@ -535,26 +499,23 @@ e.g. rounded borders, centered elements*/
 .family_and_friends{
     width: calc(43%); 
     height: calc(6%);
-    position: absolute;
-    top: calc(42%);
+    top: calc(46%);
     left:5%;
     background-color: #56B4E9;
 }
 
 .exercise_equipment{
-    width: calc(35%); 
-    height: calc(6%);
-    position: absolute;
-    top: calc(50%);
+    width: calc(43%); 
+    height: calc(7%);
+    top: calc(54%);
     right:5%;
     background-color: #56B4E9;
 }
 
 .food{
-    width: calc(25%); 
+    width: calc(28%); 
     height: calc(6%);
-    position: absolute;
-    top: calc(66%);
+    top: calc(71%);
     left:5%;
     background-color: #56B4E9;
 }
@@ -562,8 +523,7 @@ e.g. rounded borders, centered elements*/
 .medical_capability{
     width: calc(58%); 
     height: calc(6%);
-    position: absolute;
-    top: calc(66%);
+    top: calc(71%);
     right:5%;
     background-color: #56B4E9;
 }
@@ -572,34 +532,30 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside designed features*/
 .designed_features {
     width: calc(100%);
-    height: calc(100% * 0.45);
+    height: calc(100% * 0.43);
     background-color: #94ecff;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .environmental_monotony{
-    width: calc(60%); 
-    height: calc(5%);
-    position: absolute;
-    top: calc(53%);
+    width: calc(52%); 
+    height: calc(6%);
+    top: calc(42%);
     right: 5%;
     background-color: #56B4E9;
 }
 
 .environmental_control{
-    width: calc(50%); 
+    width: calc(65%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(46%);
+    top: calc(50%);
     right: 5%;
     background-color: #56B4E9;
 }
 
 .layout{
-    width: calc(25%); 
+    width: calc(22%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(53%);
+    top: calc(50%);
     left:5%;
     background-color: #56B4E9;
 }
@@ -607,35 +563,31 @@ e.g. rounded borders, centered elements*/
 .privacy{
     width: calc(30%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(39%);
+    top: calc(35%);
     right: 5%;
     background-color: #56B4E9;
 }
 
 .ergonomics{
-    width: calc(38%); 
+    width: calc(36%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(67%);
+    top: calc(64%);
     left: 5%;
     background-color: #56B4E9;
 }
 
 .fixtures{
     width: calc(33%); 
-    height: calc(5%);
-    position: absolute;
-    top: calc(46%);
+    height: calc(6%);
+    top: calc(42%);
     left:5%;
     background-color: #56B4E9;
 }
 
 .reconfigurability{
-    width: calc(48%); 
+    width: calc(50%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(67%);
+    top: calc(64%);
     right: 5%;
     background-color: #56B4E9;
 }
@@ -643,16 +595,14 @@ e.g. rounded borders, centered elements*/
 .circulation_paths{
     width: calc(55%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(39%);
+    top: calc(35%);
     left:5%;
     background-color: #56B4E9;
 }
 .habitable_volume{
     width: calc(55%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(60%);
+    top: calc(57%);
     left:5%;
     background-color: #56B4E9;
 }
@@ -660,43 +610,38 @@ e.g. rounded borders, centered elements*/
 .lighting{
     width: calc(30%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(60%);
-    right:2.5%;
+    top: calc(57%);
+    right: 5%;
     background-color: #56B4E9;
 }
 /*-----------------------------------------*/
 /*Boxes laying inside environmental stressors*/
 .environmental_stressors {
     width: calc(100%);
-    height: calc(100% * 0.3);
+    height: calc(100% * 0.27);
     background-color: #94ecff;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .light_dark_cycles{
     width: calc(55%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(80%);
+    top: calc(79%);
     left:5%;
     background-color: #56B4E9;
 }
 
 .altered_gravity{
-    width: calc(45%); 
+    width: calc(50%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(87%);
+    top: calc(92%);
     right:5%;
     background-color: #56B4E9;
 }
 
 .atmosphere{
-    width: calc(40%); 
+    width: calc(44%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(87%);
+    top: calc(85.5%);
     left:5%;
     background-color: #56B4E9;
 }
@@ -704,26 +649,23 @@ e.g. rounded borders, centered elements*/
 .radiation{
     width: calc(30%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(80%);
+    top: calc(79%);
     right:5%;
     background-color: #56B4E9;
 }
 
 .acoustics{
-    width: calc(40%); 
+    width: calc(41%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(94%);
-    right:10%;
+    top: calc(85.5%);
+    right:5%;
     background-color: #56B4E9;
 }
 
 .nutrition{
     width: calc(35%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(94%);
+    top: calc(92%);
     left:5%;
     background-color: #56B4E9;
 }
@@ -731,35 +673,31 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside operational stressors*/
 .operational_stressors {
     width: calc(100%);
-    height: calc(100% * 0.26);
+    height: calc(100% * 0.20);
     background-color: #94ecff;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .physical_workload{
     width: calc(70%); 
     height: calc(5%);
-    position: absolute;
-    top: calc(86.5%);
-    left:5%;
+    top: calc(93%);
+    left:15%;
     background-color: #56B4E9;
 }
 
 .cognitive_workload{
-    width: calc(70%); 
-    height: calc(5%);
-    position: absolute;
-    top: calc(93%);
-    right:2.5%;
+    width: calc(43%); 
+    height: calc(6%);
+    top: calc(85.5%);
+    right: 5%;
     background-color: #56B4E9;
 }
 
 .media_attention{
-    width: calc(60%); 
-    height: calc(5%);
-    position: absolute;
-    top: calc(80%);
-    right:15%;
+    width: calc(43%); 
+    height: calc(6%);
+    top: calc(85.5%);
+    left: 5%;
     background-color: #56B4E9;
 }
 
@@ -784,75 +722,66 @@ e.g. rounded borders, centered elements*/
 /*Boxes laying inside team processes*/
 .team_processes {
     width: calc(100%); 
-    height: calc(50%);
+    height: calc(48%);
     background-color: #ffcbfb;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .team_processes_invisible{ /*Overall mask for the bigger social composition box*/
     position: absolute;
     left: 0%;
-    height: 49.3%;
+    height: 48%;
     width: 100%;
     top: 0.5%;
     background-color: #ffcbfb;
     opacity: 100%;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .transition_processes{
     width: calc(80%); 
-    height: calc(13%);
-    position: absolute;
-    top: calc(5%);
+    height: calc(12%);
+    top: calc(6%);
     background-color: #CC79A7;
 }
 
 .action_processes{
     width: calc(80%); 
-    height: calc(13%);
-    position: absolute;
+    height: calc(12%);
     top: calc(20%);
     background-color: #CC79A7;
 }
 
 .interpersonal_processes{
     width: calc(80%); 
-    height: calc(13%);
-    position: absolute;
-    top: calc(35%);
+    height: calc(12%);
+    top: calc(34%);
     background-color: #CC79A7;
 }
 /*-----------------------------------------*/
 /*Boxes laying inside individual processes*/
 .individual_processes {
     width: calc(100%); 
-    height: calc(50%);
+    height: calc(50.5%);
     background-color: #ffcbfb;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .stress_regulation{
     width: calc(80%); 
-    height: calc(13%);
-    position: absolute;
-    top: calc(57%);
+    height: calc(12%);
+    top: calc(57.5%);
     background-color: #CC79A7;
 }
 
 .place_attachment{
     width: calc(80%); 
-    height: calc(13%);
-    position: absolute;
-    top: calc(71%);
+    height: calc(12%);
+    top: calc(71.5%);
     background-color: #CC79A7;
 }
 
 .sleep{
     width: calc(80%); 
-    height: calc(13%);
-    position: absolute;
-    top: calc(85%);
+    height: calc(12%);
+    top: calc(85.5%);
     background-color: #CC79A7;
 }
 
@@ -863,14 +792,12 @@ e.g. rounded borders, centered elements*/
     width: calc(100%); 
     height: calc(100%);
     background-color: #ffd54d;
-    color: rgba(42, 41, 41, 0.668);
 }
 
 .physical_health{
     width: calc(80%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(8%);
+    top: calc(9%);
     left:10%;
     background-color: #E69F00;
 }
@@ -878,8 +805,7 @@ e.g. rounded borders, centered elements*/
 .anxiety{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(28%);
+    top: calc(29%);
     left:5%;
     background-color: #E69F00;
 }
@@ -887,8 +813,7 @@ e.g. rounded borders, centered elements*/
 .depression{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(68%);
+    top: calc(69%);
     right:5%;
     background-color: #E69F00;
 }
@@ -896,8 +821,7 @@ e.g. rounded borders, centered elements*/
 .stress{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(38%);
+    top: calc(39%);
     left:5%;
     background-color: #E69F00;
 }
@@ -905,8 +829,7 @@ e.g. rounded borders, centered elements*/
 .crew_performance{
     width: calc(80%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(48%);
+    top: calc(49%);
     right:10%;
     background-color: #E69F00;
 }
@@ -914,8 +837,7 @@ e.g. rounded borders, centered elements*/
 .situation_awareness{
     width: calc(80%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(18%);
+    top: calc(19%);
     right:10%;
     background-color: #E69F00;
 }
@@ -923,8 +845,7 @@ e.g. rounded borders, centered elements*/
 .trust{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(38%);
+    top: calc(39%);
     right:5%;
     background-color: #E69F00;
 }
@@ -941,8 +862,7 @@ e.g. rounded borders, centered elements*/
 .curiosity{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(68%);
+    top: calc(69%);
     left:5%;
     background-color: #E69F00;
 }
@@ -950,8 +870,7 @@ e.g. rounded borders, centered elements*/
 .kinship{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(78%);
+    top: calc(79%);
     right:5%;
     background-color: #E69F00;
 }
@@ -959,8 +878,7 @@ e.g. rounded borders, centered elements*/
 .boredom{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(78%);
+    top: calc(79%);
     left:5%;
     background-color: #E69F00;
 }
@@ -968,8 +886,7 @@ e.g. rounded borders, centered elements*/
 .fatigue{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(88%);
+    top: calc(89%);
     left:5%;
     background-color: #E69F00;
 }
@@ -977,8 +894,7 @@ e.g. rounded borders, centered elements*/
 .contentment{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(88%);
+    top: calc(89%);
     right:5%;
     background-color: #E69F00;
 }
@@ -986,8 +902,7 @@ e.g. rounded borders, centered elements*/
 .nostalgia_homesickness{
     width: calc(80%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(58%);
+    top: calc(59%);
     right:10%;
     background-color: #E69F00;
 }
@@ -995,8 +910,7 @@ e.g. rounded borders, centered elements*/
 .autonomy{
     width: calc(42%); 
     height: calc(8%);
-    position: absolute;
-    top: calc(28%);
+    top: calc(29%);
     right:5%;
     background-color: #E69F00;
 }

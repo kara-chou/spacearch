@@ -103,8 +103,8 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 /*Selection, Chronic stressors, Acute stressors are laid out top to bottom in box1*/
 .selection {
     width: calc(93%);
-    height: calc(23%);
-    padding: 20px;
+    height: calc(16%);
+    padding: 15px;
     margin-top: 3px;
     top: 0;
     background-color: #999999;
@@ -112,15 +112,15 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 
 .chronic_stressors {
     width: calc(93%);
-    height: calc(47%);
-    padding: 20px;
+    height: calc(59%);
+    padding: 15px;
     background-color: #999999;
 }
 
 .acute_stressors {
     width: calc(93%);
-    height: calc(30%);
-    padding: 20px;
+    height: calc(25%);
+    padding: 15px;
     background-color: #999999;
 }
 
@@ -128,26 +128,26 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 lay top to bottom in box2*/
 .individual_traits {
     width: calc(96%);
-    height: calc(53%);
+    height: calc(48%);
     margin-left: 2.5%;
     margin-top: 3px;
-    padding: 20px;
+    padding: 15px;
     background-color: #56B4E9;
 }
 
 .environmental_stressors {
     width: calc(96%);
-    height: calc(30%);
+    height: calc(27%);
     margin-left: 2.5%;
-    padding: 20px;
+    padding: 15px;
     background-color: #56B4E9;
 }
 
 .designed_features {
     width: calc(96%);
-    height: calc(23%);
+    height: calc(31%);
     margin-left: 2.5%;
-    padding: 20px;
+    padding: 15px;
     background-color: #56B4E9;
 }
 
@@ -155,42 +155,42 @@ lay top to bottom in box2*/
 lay top to bottom in box6*/
 .social_composition {
     width: calc(96%);
-    height: calc(30%);
+    height: calc(31%);
     margin-right: 2.5%;
     margin-top: 3px;
-    padding: 20px;
+    padding: 15px;
     background-color: #56B4E9;
 }
 
 .resources {
     width: calc(96%);
-    height: calc(45%);
+    height: calc(47%);
     margin-right: 2.5%;
-    padding: 20px;
+    padding: 15px;
     background-color: #56B4E9;
 }
 
 .operational_stressors {
     width: calc(96%);
-    height: calc(26%);
+    height: calc(22%);
     margin-right: 2.5%;
-    padding: 20px;
+    padding: 15px;
     background-color: #56B4E9;
 }
 
 /*Team processes, individual processes lay top to bottom in box3*/
 .team_processes {
     width: calc(93%);
-    height: calc(45%);
+    height: calc(48%);
     margin-top: 3px;
-    padding: 20px;
+    padding: 15px;
     background-color: #CC79A7;
 }
 
 .individual_processes {
     width: calc(93%);
-    height: calc(55%);
-    padding: 20px;
+    height: calc(52%);
+    padding: 15px;
     background-color: #CC79A7;
 }
 
@@ -199,7 +199,7 @@ lay top to bottom in box6*/
     width: calc(93%);
     height: calc(100%);
     margin-top: 3px;
-    padding: 20px;
+    padding: 15px;
     background-color: #E69F00;
 }
 
