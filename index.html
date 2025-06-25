@@ -9,20 +9,25 @@ Displays 5 vertical boxes across the page
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HECIA</title>
     <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="help-button.css">
-    <link rel="stylesheet" href="walkthrough.css">
-    <script src="help-button.js" defer></script>
-    <script src="walkthrough.js" defer></script>
-    <script src="zoomLayer1.js" defer></script>
+    <script src="zoomLayer1.js"></script>
     <style>
         p {
-            font-family: monospace, monospace;
-        }
+      font-family: monospace, monospace;
+    }
     </style>
 </head>
 
 <body>
-        <!-- Help button and popup will be added here automatically by help-button.js -->
+        <!-- Pop-up box -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p>How do we think about designing architecture for humans in space?</p>
+                <p><strong>Human-Environment Connection & Interaction Atlas (HECIA)</strong> explores behavioral risks associated with isolated, confined, and extreme environments, in particular spaceflight. We visually depict the intricate connections between the human and the environment through a "Directed Acyclic Graph" -- meaning the connections never form a loop. Recognizing the complexity of human-environment relationship, this framework serves as a starting point to consider relationships between habitat and human, and where design can strengthen, modify, and interact with these relationships.</p>
+                <p>The homepage is an overview of factors associated with designing human habitation in these environments. <strong>Zoom</strong> into each subsequent layer to add more complexity. <strong>Hover</strong> over each box for their definitions. <strong>Click</strong> on a factor and hover over its related boxes to read about their relationships.</p>
+                <p>This framework is a point of departure. The relationships mapped here are just as important as the arguments, reactions, and agreements that follow. We welcome thoughts and dialogue sent to <br> hecia-info@mit.edu </p>
+            </div>
+        </div>
 
         <div class="container">
             <div class="box box1"> <!--Everything falls inside box-->
@@ -42,7 +47,7 @@ Displays 5 vertical boxes across the page
             </div> -->
         </div>
     
-        <!-- Help button and popup are loaded via help-button.js -->
-        
-        <script>
-        // Add smooth animation to tooltips
+        <script src="zoomLayer1.js"></script>
+    
+</body>
+</html>

@@ -9,6 +9,32 @@
     }
 }
 
+/* Style for the pop-up box */
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure it appears above other content */
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+}
+
 /*Container where all boxes are stored in*/
 body, html {
     margin: 0;
@@ -70,47 +96,18 @@ rounded borders, text size and font*/
     width: 0; /*15%*/
     background-color: #999999;
 }
-
-/* Style for the content inside boxes */
 .content {
     text-align: center;
     color: white;
-    font-weight: normal;
-    transition: font-weight 0.1s ease-out;
 }
 
-/* Hover state for the box */
-.box.hovered .content {
+/* Add style for box title and explanation upon user interaction (e.g. hovering)
+Texts are bolded and size 20px*/
+.box-title {
+    font-size: 20px;
     font-weight: bold;
 }
 
-/* Ensure the title is always visible */
-.box-title {
-    display: block !important;
-    margin-bottom: 0;
-    transition: margin-bottom 0.1s ease-out;
-}
-
-/* Style for the explanation text */
 .box-explanation {
-    margin-top: 8px;
-    font-size: 16px;
-    font-weight: normal;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 5px;
-    transition: all 0.1s ease-out;
+    margin-top: 10px;
 }
-
-/* Show explanation on hover */
-.box.hovered .box-explanation {
-    opacity: 1;
-    max-height: 100px;
-}
-
-/* Adjust title spacing when showing explanation */
-.box.hovered .box-title {
-    margin-bottom: 8px;
-}
-
