@@ -3,18 +3,11 @@ window.addEventListener("wheel", (e) => {
     console.log("wheel");
     e.preventDefault();
 
-    // Check if we're in walkthrough mode and zooming out should be disabled
-    const isWalkthroughZoomActive = window.zoomControls && window.zoomControls.walkthroughZoom && window.zoomControls.walkthroughZoom.allow;
-    
-    // Only allow zooming out if not in walkthrough zoom mode
-    if ((e.deltaX > 0 || e.deltaY > 0) && !isWalkthroughZoomActive) {
+    // Zooming out, leads to layer 2
+    if (e.deltaX > 0 || e.deltaY > 0) {
         window.location.href = 'layer2.html';
-    } else if (isWalkthroughZoomActive) {
-        // If in walkthrough mode, prevent zooming out
-        e.stopPropagation();
-        return false;
     }
-}, { passive: false, capture: true });
+}, { passive: false });
 
 /*Define content for each box upon clicking, CHANGE EXPLANATION TEXTS HERE*/
 var boxContents = {

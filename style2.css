@@ -27,7 +27,6 @@ rounded borders, text size and font*/
     font-size: 14px;
     align-items: center;
     position: relative;
-
 }
 
 /*Vertical grouping of boxes
@@ -103,7 +102,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 /*Selection, Chronic stressors, Acute stressors are laid out top to bottom in box1*/
 .selection {
     width: calc(93%);
-    height: calc(23%);
+    height: calc(20%);
     padding: 20px;
     margin-top: 3px;
     top: 0;
@@ -112,7 +111,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 
 .chronic_stressors {
     width: calc(93%);
-    height: calc(47%);
+    height: calc(50%);
     padding: 20px;
     background-color: #999999;
 }
@@ -128,7 +127,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 lay top to bottom in box2*/
 .individual_traits {
     width: calc(96%);
-    height: calc(53%);
+    height: calc(37%);
     margin-left: 2.5%;
     margin-top: 3px;
     padding: 20px;
@@ -137,7 +136,7 @@ lay top to bottom in box2*/
 
 .environmental_stressors {
     width: calc(96%);
-    height: calc(30%);
+    height: calc(35%);
     margin-left: 2.5%;
     padding: 20px;
     background-color: #56B4E9;
@@ -145,7 +144,7 @@ lay top to bottom in box2*/
 
 .designed_features {
     width: calc(96%);
-    height: calc(23%);
+    height: calc(35%);
     margin-left: 2.5%;
     padding: 20px;
     background-color: #56B4E9;
@@ -259,49 +258,12 @@ lay top to bottom in box6*/
     cursor: default; /*do not change cursor shape when hovering over text*/
 }
 
-/* Box content - restore original styles */
-.box > div {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    cursor: default;
-    position: relative;
-}
-
-/* Content wrapper */
-.content {
-   
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-/* Title */
+/* Add style for box title and explanation upon hovering*/
 .box-title {
     font-size: 16px;
     font-weight: bold;
-    padding: 0;
-    margin: 0;
-    line-height: 1.1;
-    transition: all 0.2s ease;
 }
 
-/* Explanation */
 .box-explanation {
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    max-height: 0;
-    line-height: 1.1;
-    transition: all 0.2s ease;
-}
-
-.content.show-explanation .box-explanation {
-    opacity: 1;
-    max-height: 200px;
-    margin-top: 10px;
+    margin-top: 0.5%;
 }
