@@ -1,0 +1,40 @@
+/* Navigation buttons - matches help button style */
+#nav-buttons {
+    position: fixed;
+    bottom: 60px; /* Position above help button */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    z-index: 1000;
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+#nav-buttons button {
+    width: 30px;
+    height: 30px;
+    color: rgb(179, 179, 179);
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    padding: 0;
+    background: none;
+    border: none;
+    margin: 0;
+}
+
+#nav-buttons button:hover {
+    color: white;
+}
+
+#nav-buttons button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+}

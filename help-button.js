@@ -45,23 +45,11 @@ function closePopup() {
     popup.style.display = 'none';
 }
 
-// Launch walkthrough again from popup
+// Launch walkthrough from popup
 function launchWalkthrough() {
     // Hide popup first
     closePopup();
-    // Set walkthrough to start from the third step (0-based index 2)
-    sessionStorage.removeItem('walkthroughSkipped');
     sessionStorage.removeItem('walkthroughCompleted');
-    sessionStorage.setItem('currentWalkthroughStep', '2');
-    sessionStorage.removeItem('walkthroughShown');
-    // Reload to trigger walkthrough logic
+    // Reload and navigate to 1st layer to trigger walkthrough logic
     window.location.href = 'index.html';
 }
-
-// Close popup when clicking outside of it
-window.onclick = function(event) {
-    const popup = document.getElementById('popup');
-    if (event.target === popup) {
-        popup.style.display = 'none';
-    }
-};

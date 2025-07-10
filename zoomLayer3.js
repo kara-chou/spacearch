@@ -3,16 +3,14 @@ window.addEventListener("wheel", (e) => {
     console.log("wheel");
     e.preventDefault();
 
-    // Check if we're in walkthrough mode and zooming out should be disabled
-    const isWalkthroughZoomActive = window.zoomControls && window.zoomControls.walkthroughZoom && window.zoomControls.walkthroughZoom.allow;
-    
-    // Only allow zooming out if not in walkthrough zoom mode
-    if ((e.deltaX > 0 || e.deltaY > 0) && !isWalkthroughZoomActive) {
-        window.location.href = 'layer2.html';
-    } else if (isWalkthroughZoomActive) {
-        // If in walkthrough mode, prevent zooming out
+    // If in walkthrough (normalZoom not enabled), prevent any page navigation (return)
+    if (window.zoomControls && window.zoomControls.normalZoom && !window.zoomControls.normalZoom.allow) {
         e.stopPropagation();
         return false;
+    }
+    
+    if (e.deltaX > 0 || e.deltaY > 0) { // If zooming out
+        window.location.href = 'layer2.html'; // Navigate to layer 2
     }
 }, { passive: false, capture: true });
 

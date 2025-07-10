@@ -1,15 +1,13 @@
 //zoom events for layer navigation
 window.addEventListener("wheel", (e) => {
+    const isZoomingIn = (e.deltaX < 0 || e.deltaY < 0);
+    const isZoomingOut = (e.deltaX > 0 || e.deltaY > 0);
+
     // Check if zoom navigation is allowed
     if (window.zoomControls) {
-        const isZoomingIn = (e.deltaX < 0 || e.deltaY < 0);
-        const isZoomingOut = (e.deltaX > 0 || e.deltaY > 0);
-        
-        // Block zoom if:
-        // 1. No zoom controls are enabled, or
-        // 2. Walkthrough zoom is active and user is trying to zoom out
-        if ((!window.zoomControls.normalZoom.allow && !window.zoomControls.walkthroughZoom.allow) ||
-            (isZoomingOut && window.zoomControls.walkthroughZoom.allow)) {
+        // Block zoom if 1. No zoom controls enabled, or 2. Walkthrough zoom and trying to zoom out
+        if ((!window.zoomControls.normalZoom.allow && !window.zoomControls.walkthroughZoom.allow) 
+            || (isZoomingOut && window.zoomControls.walkthroughZoom.allow)) {
             e.preventDefault();
             e.stopPropagation();
             return false;
@@ -19,12 +17,12 @@ window.addEventListener("wheel", (e) => {
     e.preventDefault();
     console.log("wheel");
 
-    // Zooming in, leads to layer3
-    if (e.deltaX < 0 || e.deltaY < 0) {
+    // Zooming in, leads to layer 3
+    if (isZoomingIn) {
         window.location.href = 'layer3.html';
     }
     // Zooming out, leads to layer 1
-    else if (e.deltaX > 0 || e.deltaY > 0) {
+    else if (isZoomingOut) {
         window.location.href = 'index.html';
     }
 }, { passive: false, capture: true });

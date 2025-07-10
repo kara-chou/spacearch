@@ -1,44 +1,21 @@
 /*zooming in and out to switch between layers*/
 window.addEventListener("wheel",
     (e)=> {
-        // Check if zoom navigation is allowed
-        if (window.zoomControls) {
-            // Only allow zoom if normal zoom is enabled or walkthrough zoom is enabled and we're zooming in
-            const isZoomingIn = (e.deltaX < 0 || e.deltaY < 0);
-            const isZoomingOut = (e.deltaX > 0 || e.deltaY > 0);
-            
-            if ((!window.zoomControls.normalZoom.allow && !window.zoomControls.walkthroughZoom.allow) ||
-                (isZoomingOut && window.zoomControls.walkthroughZoom.allow)) {
-                e.preventDefault();
-                e.stopPropagation();
-                return false;
-            }
+        e.preventDefault();
+
+        // If zoom navigation is not allowed, returns
+        if (window.zoomControls && !window.zoomControls.normalZoom.allow && !window.zoomControls.walkthroughZoom.allow) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
         }
         
-        e.preventDefault();
-        /*zooming in, leads to layer2 */
-        if (e.deltaX < 0 || e.deltaY < 0) {
-            window.location.href = 'layer2.html';
+        if ((e.deltaX < 0 || e.deltaY < 0)) { // If zooming in
+            window.location.href = 'layer2.html'; // Navigate to layer 2
         }
     },
     {passive: false, capture: true}
 );
-
-// Functions to handle the pop-up box
-function showPopup() {
-    var popup = document.getElementById("popup");
-    if (popup) {
-        popup.style.display = "block";
-    }
-}
-
-function closePopup() {
-    var popup = document.getElementById("popup");
-    if (popup) {
-        popup.style.display = "none";
-    }
-}
-
 
 // Define content for each box, CHANGE EXPLANATION TEXTS HERE
 const boxContents = {
@@ -79,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add hover class to parent box for CSS transitions
+    // Add hover class to parent box as necessary for CSS transitions
     boxes.forEach(box => {
         box.addEventListener('mouseenter', () => {
             box.classList.add('hovered');

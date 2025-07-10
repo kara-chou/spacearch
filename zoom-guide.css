@@ -1,179 +1,326 @@
-/* Zoom Guide Animations */
+/* Zoom IN Guide Styles (for walkthrough step) – white version */
+
+/* Container */
 .zoom-guide-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    z-index: 20000000;
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    pointer-events: none;
-    color: white;
-    opacity: 1;
-    transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-    font-family: monospace, monospace;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  pointer-events: none;
+  color: white;
+  opacity: 1;
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-family: monospace, monospace;
 }
 
-/* Minimized zoom guide */
+/* Shrunken zoom guide in top left corner */
 
 .zoom-guide-container.minimized {
-    position: fixed;
-    height: 180px;
-    width: 350px;
-    top: 15px;
-    left: 15px;
-    transform: translate(0, 0) scale(0.8);
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 12px;
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    z-index: 20000000;
-    padding: 30px;
-    transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: fixed;
+  height: 180px;
+  width: 350px;
+  top: 15px;
+  left: 15px;
+  transform: translate(0, 0) scale(0.8);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+  padding: 30px;
+  transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .zoom-guide-container.minimized .zoom-guide {
-    transform: scale(0.8);
-    transition: all 0.3s ease-in-out;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
 }
 
 .zoom-guide {
-    text-align: center;
-    position: relative;
-    color: white;
+  text-align: center;
+  position: relative;
+  color: white;
 }
 
+/* Title: "Mouse" and "Trackpad" */
 .zoom-guide-title {
-    font-size: 18px; /* Increased from 14px */
-    margin-bottom: 15px; /* Increased spacing */
-    color: #ffffff;
-    font-weight: 500;
-    letter-spacing: 0.5px; /* Improved readability */
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 /* Mouse Guide */
 .mouse-guide {
-    width: 80px; /* Increased from 60px */
-    height: 130px; /* Increased from 100px */
-    border: 4px solid #ffffff; /* Slightly thicker border */
-    border-radius: 40px; /* More rounded corners */
-    position: relative;
-    margin: 0 auto 15px; /* Increased bottom margin */
+  width: 80px;
+  height: 130px;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  position: relative;
+  margin: 0 auto 15px;
 }
 
 .mouse-wheel {
-    width: 4px;
-    height: 20px;
-    background: #ffffff;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    animation: scrollWheelUp 2s infinite;
+  width: 4px;
+  height: 20px;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrollWheelDown 2s infinite;
 }
 
-@keyframes scrollWheelUp {
-    0% {
-        height: 20px;
-        top: 55%; /* slightly below centre */
-        background: white;
-    }
-    25% {
-        height: 14px;
-        top: 30%; /* dramatic upward move */
-        background: rgba(255,255,255,0.9);
-    }
-    65% {
-        height: 14px;
-        top: 30%; /* stay in upward position */
-        background: rgba(255,255,255,0.9);
-    }
-    100% {
-        height: 20px;
-        top: 55%; /* reset */
-        background: white;
-    }
+@keyframes scrollWheelDown {
+  0% {
+    height: 14px;
+    top: 30%; /* Upward position */
+    background: rgb(255, 255, 255);
+  }
+  25% {
+    height: 20px;
+    top: 55%; /* Downward motion */
+    background: rgb(255, 255, 255);
+  }
+  65% {
+    height: 20px;
+    top: 55%; /* Stay in downward position */
+    background: rgb(255, 255, 255);
+  }
+  100% {
+    height: 14px;
+    top: 30%; /* Reset to upward position */
+    background: rgb(255, 255, 255);
+  }
 }
 
 /* Trackpad Guide */
 .trackpad-guide {
-    width: 160px; /* Increased from 80px */
-    height: 130px; /* Increased from 60px */
-    border: 3px solid #ffffff; /* Slightly thicker border */
-    border-radius: 8px; /* Slightly more rounded */
-    position: relative;
-    margin: 0 auto 15px; /* Increased bottom margin */
-    overflow: hidden;
+  width: 160px;
+  height: 130px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto 15px;
+  overflow: hidden;
 }
 
 .trackpad-fingers {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .trackpad-finger {
-    position: absolute;
-    width: 16px; /* Increased from 12px */
-    height: 16px; /* Increased from 12px */
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .trackpad-finger-1 {
-    left: 30%;
-    top: 30%;
-    animation: pinchFinger1Out 2s infinite;
+  left: 30%;
+  top: 30%;
+  animation: pinchFinger1Out 2s infinite;
 }
 
 .trackpad-finger-2 {
-    left: 70%;
-    top: 70%;
-    animation: pinchFinger2Out 2s infinite;
+  left: 70%;
+  top: 70%;
+  animation: pinchFinger2Out 2s infinite;
 }
 
-/* Fingers move towards centre, pause, then reset */
+/* Fingers move out, pause, then reset */
 @keyframes pinchFinger1Out {
-    0% {
-        transform: translate(-50%, -50%) translate(20px, 20px) scale(1);
-    }
-    25% {
-        transform: translate(-50%, -50%) translate(0, 0) scale(1);
-    }
-    65% {
-        transform: translate(-50%, -50%) translate(0, 0) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) translate(20px, 20px) scale(1);
-    }
+  0% {
+    transform: translate(-50%, -50%) translate(20px, 20px);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(20px, 20px);
+  }
 }
 
 @keyframes pinchFinger2Out {
-    0% {
-        transform: translate(-50%, -50%) translate(-20px, -20px) scale(1);
-    }
-    25% {
-        transform: translate(-50%, -50%) translate(0, 0) scale(1);
-    }
-    65% {
-        transform: translate(-50%, -50%) translate(0, 0) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) translate(-20px, -20px) scale(1);
-    }
+  0% {
+    transform: translate(-50%, -50%) translate(-20px, -20px);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(-20px, -20px);
+  }
+}
+
+/* Zoom OUT Guide Styles (for tip modal) – black version */
+
+/* Container */
+.zoom-guide-container-out {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  pointer-events: none;
+  color: #000;
+}
+
+.zoom-guide-out {
+  text-align: center;
+  position: relative;
+}
+
+/* Title: "Mouse" and "Trackpad" */
+.zoom-guide-title-out {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Mouse Guide (zoom-out) */
+.mouse-guide-out {
+  width: 60px;
+  height: 100px;
+  border: 4px solid #000;
+  border-radius: 40px;
+  position: relative;
+  margin: 0 auto 15px;
+}
+
+.mouse-wheel-out {
+  width: 4px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrollWheelUp 2s infinite;
+}
+
+/* Trackpad Guide (zoom-out) */
+.trackpad-guide-out {
+  width: 130px;
+  height: 100px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto 15px;
+  overflow: hidden;
+}
+
+.trackpad-fingers-out {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.trackpad-finger-out {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trackpad-finger-1-out {
+  left: 50%;
+  top: 50%;
+  animation: pinchFinger1In 2s infinite;
+}
+
+.trackpad-finger-2-out {
+  left: 50%;
+  top: 50%;
+  animation: pinchFinger2In 2s infinite;
+}
+
+/* Zoom Guide Animations */
+
+/* Scroll Wheel for Mouse */
+@keyframes scrollWheelUp {
+  0% {
+    height: 20px;
+    top: 55%;
+    background: rgb(0, 0, 0);
+  }
+  25% {
+    height: 14px;
+    top: 30%; /* Upward move */
+    background: rgb(0, 0, 0);
+  }
+  65% {
+    height: 14px;
+    top: 30%; /* Stay in upward position */
+    background: rgb(0, 0, 0);
+  }
+  100% {
+    height: 20px;
+    top: 55%; /* Reset */
+    background: rgb(0, 0, 0);
+  }
+}
+
+/* Fingers move towards center, pause, then reset */
+@keyframes pinchFinger1In {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(20px, 20px);
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(20px, 20px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+
+@keyframes pinchFinger2In {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-20px, -20px);
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(-20px, -20px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
 }
