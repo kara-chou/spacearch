@@ -1,79 +1,75 @@
 /*zooming in and out to switch between layers*/
-window.addEventListener("wheel",
-    (e)=> {
-        e.preventDefault();
-        /*zooming in, leads to layer2 */
-        if (e.deltaX < 0){
-            window.location.href = 'layer2.html';
-        }
-        if (e.deltaY < 0){
-            window.location.href = 'layer2.html';
-        }
-    },
-    {passive:false}
-    );
+window.addEventListener(
+  "wheel",
+  (e) => {
+    e.preventDefault();
 
-// Functions to show the pop-up box
-function showPopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "block";
-}
-
-function closePopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-}
-
-window.addEventListener("load", function () {
-    showPopup();
-});
-
-
-/*Displays text within the box upon hovering.
-Get all box elements*/
-var boxes = document.querySelectorAll('.box');
-
-//Get the box container element
-var boxContainer = document.querySelector('.container');
-
-//Define content for each box, CHANGE EXPLANATION TEXTS HERE
-var boxContents = {
-    box1: {
-        title: "Mission Parameters",
-        explanation: "Aspects of the planned mission"
-    },
-    box2: {
-        title: "Mediator Variables",
-        explanation: "Design factors that influence processes and outcomes"
-    },
-    box3: {
-        title: "Processes",
-        explanation: "Time-dependent activities on team and individual levels"
-    },
-    box4: {
-        title: "Outcomes",
-        explanation: "Behavioral health and performance outcomes we care about"
-    },
-    box5: {
-        title: "Mission Success",
-        explanation: "Explanation for Mission Success."
+    // If zoom navigation is not allowed, returns
+    if (
+      window.zoomControls &&
+      !window.zoomControls.normalZoom.allow &&
+      !window.zoomControls.walkthroughZoom.allow
+    ) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
     }
+
+    if (e.deltaX < 0 || e.deltaY < 0) {
+      // If zooming in
+      window.location.href = "layer2.html"; // Navigate to layer 2
+    }
+  },
+  { passive: false, capture: true }
+);
+
+// Define content for each box, CHANGE EXPLANATION TEXTS HERE
+const boxContents = {
+  box1: {
+    title: "Mission Parameters",
+    explanation: "Aspects of the planned mission",
+  },
+  box2: {
+    title: "Mediator Variables",
+    explanation: "Design factors that influence processes and outcomes",
+  },
+  box3: {
+    title: "Processes",
+    explanation: "Time-dependent activities on team and individual levels",
+  },
+  box4: {
+    title: "Outcomes",
+    explanation: "Behavioral health and performance outcomes we care about",
+  },
+  box5: {
+    title: "Mission Success",
+    explanation: "Explanation for Mission Success.",
+  },
 };
 
-//Add event listeners to each box
-boxes.forEach(function (box) {
-    box.addEventListener('mouseover', function () {
-        var boxId = box.classList[1]; // Assumes the class of the box follows the pattern 'boxX'
-        var content = boxContents[boxId];
+// Initialize boxes with both title and explanation (hidden by default)
+document.addEventListener("DOMContentLoaded", function () {
+  const boxes = document.querySelectorAll(".box");
 
-        //Update content inside the box with explanation text and bolded title
-        box.querySelector('.content').innerHTML = `<div class="box-title">${content.title}</div><div class="box-explanation">${content.explanation}</div>`;
+  boxes.forEach((box) => {
+    const boxId = box.classList[1];
+    const content = boxContents[boxId];
+    if (content) {
+      box.querySelector(".content").innerHTML = `
+                <div class="box-title">${content.title}</div>
+                <div class="box-explanation">${content.explanation}</div>
+            `;
+    }
+  });
+
+  // Add hover class to parent box as necessary for CSS transitions
+  boxes.forEach((box) => {
+    box.addEventListener("mouseenter", () => {
+      box.classList.add("hovered");
     });
 
-    box.addEventListener('mouseout', function () {
-        //Reset content inside the box into original
-        var boxId = box.classList[1];
-        var originalContent = boxContents[boxId].title;
-        box.querySelector('.content').innerHTML = originalContent;
+    box.addEventListener("mouseleave", () => {
+      box.classList.remove("hovered");
     });
+  });
 });

@@ -1,113 +1,117 @@
-@keyframes slideIn { /*Transition between pages if needed. Not currently used*/
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Style for the pop-up box */
-.popup {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    border: 1px solid #888;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 9999; /* Ensure it appears above other content */
-}
-
-.popup-content {
-    padding: 20px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #888;
-    cursor: pointer;
+@keyframes slideIn {
+  /*Transition between pages if needed. Not currently used*/
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /*Container where all boxes are stored in*/
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-color: #d2eaf7;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #d2eaf7;
 }
 .container {
-    display: flex;
-    width: 100vw; 
-    height: 100vh; 
-    justify-content: space-between; 
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
 }
 
-/*General structure for the boxes, include common features like 
+/*General structure for the boxes, include common features like
 rounded borders, text size and font*/
 .box {
-    height: 100%;
-    border-radius: 15px; /* Round out the edges */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    opacity: 0;
-    animation: slideIn 0s ease-in forwards; /*Animation currently not used*/
-    font-family: monospace, monospace;
-	font-size: 18px;
-    margin-right: 0.5%;
-    padding: 1%;
-    cursor: default; /*Make sure cursor does not change shape when hovering over text*/
+  height: 100%;
+  border-radius: 15px; /* Round out the edges */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: slideIn 0s ease-in forwards; /*Animation currently not used*/
+  font-family: monospace, monospace;
+  font-size: 18px;
+  margin-right: 0.5%;
+  padding: 1%;
+  cursor: default; /*Make sure cursor does not change shape when hovering over text*/
 }
 
 /*Features unique to 5 boxes, each have different color and width*/
 .box1 {
-    width: calc(20vw); /*20%*/
-    background-color: #999999; /*0072B2*/
-    margin-left: 0.5%;
+  width: calc(20vw); /*20%*/
+  background-color: #999999; /*0072B2*/
+  margin-left: 0.5%;
 }
 
 .box2 {
-    width: calc(35vw); /*35%*/
-    background-color: #56B4E9;
+  width: calc(35vw); /*35%*/
+  background-color: #56b4e9;
 }
 
 .box3 {
-    width: calc(20vw); /*20%*/
-    background-color: #CC79A7; 
+  width: calc(20vw); /*20%*/
+  background-color: #cc79a7;
 }
 
 .box4 {
-    width: calc(25vw); /*25%*/
-    background-color: #E69F00; 
+  width: calc(25vw); /*25%*/
+  background-color: #e69f00;
 }
 
 .box5 {
-    width: 0; /*15%*/
-    background-color: #999999;
+  width: 0; /*15%*/
+  background-color: #999999;
 }
+
+/* Style for the content inside boxes */
 .content {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  transition: font-weight 0.1s ease-out;
 }
 
-/* Add style for box title and explanation upon user interaction (e.g. hovering)
-Texts are bolded and size 20px*/
+/* Hover state for the box */
+.box.hovered .content {
+  font-weight: bold;
+}
+
+/* Ensure the title is always visible */
 .box-title {
-    font-size: 20px;
-    font-weight: bold;
+  display: block !important;
+  margin-bottom: 0;
+  transition: margin-bottom 0.1s ease-out;
 }
 
+/* Style for the explanation text */
 .box-explanation {
-    margin-top: 10px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 5px;
+  transition: all 0.1s ease-out;
+}
+
+/* Show explanation on hover */
+.box.hovered .box-explanation {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/* Adjust title spacing when showing explanation */
+.box.hovered .box-title {
+  margin-bottom: 8px;
 }

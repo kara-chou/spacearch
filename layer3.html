@@ -6,132 +6,159 @@ Adds an additional text-area to the right to provide detailed explanation upon h
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HECIA</title>
-    <link rel="stylesheet" href="style3.css">
-    <script src="zoomLayer3.js"></script>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="help-button.css" />
+    <link rel="stylesheet" href="walkthrough.css" />
+    <link rel="stylesheet" href="navigation-buttons.css" />
+    <script src="help-button.js" defer></script>
+    <script src="navigation-buttons.js" defer></script>
+    <script src="walkthrough.js" defer></script>
+    <script src="zoomLayer3.js" defer></script>
+
     <script src="https://cdn.jsdelivr.net/npm/arrow-line/dist/arrow-line.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="box box1"><!--Everything falls under box-->
-            <div class="selection">Selection</div> <!--Box on layer 2, placed in left-most column box1-->
-                <div class="crew_selection">Crew Selection</div>
-            <div class="chronic_stressors">Chronic Stressors <!--Box on layer 2, placed in left-most column box1-->
-                <!--These smaller boxes are factors that fall under chronic stressor-->
-                <div class="distance_from_home_earth">Distance From Home/Earth</div>
-                <div class="mission_duration">Mission Duration</div>
-                <div class="communication_delay">Communication Delay</div>
-                <div class="isolated">Isolated</div>
-                <div class="confined">Confined</div>
-                <div class="extreme">Extreme</div>
-                <div class="resource_constrained">Resource Constrained</div>
-            </div>
-            <div class="acute_stressors">Acute Stressors <!--Box on layer 2, placed in left-most column box1-->
-                <div class="mission_demands">Mission Demands</div>
-                <div class="life_mission_events">Life/Mission Events</div>
-            </div>
+      <div class="box box1">
+        <!--Everything falls under box-->
+        <div class="selection">
+          Selection
+          <!--Box on layer 2, placed in left-most column box1-->
+          <div class="crew_selection">Crew Selection</div>
         </div>
-        <div class="box box2">
-            <div class="individual_traits">Individual Traits
-                <div class = "individual_traits_invisible">Individual Traits</div>
-                <div class="extraversion">Extraversion</div>
-                <div class="agreeableness">Agreeableness</div>
-                <div class="neuroticism">Neuroticism</div>
-                <div class="resilience">Resilience</div>
-                <div class="openness">Openness</div>
-                <div class="conscientiousness">Conscientiousness</div>
-                <div class="genetics">Genetics</div>
-            </div>
-            <div class="designed_features">Designed Features
-                <div class="habitable_volume">Habitable Volume</div>
-                <div class="environmental_control">Environmental Control</div>
-                <div class="circulation_paths">Circulation Paths</div>
-                <div class="layout">Layout</div>
-                <div class="lighting">Lighting</div>
-                <div class="privacy">Privacy</div>
-                <div class="ergonomics">Ergonomics</div>
-                <div class="fixtures">Fixtures</div>
-                <div class="reconfigurability">Reconfigurability</div>
-                <div class="environmental_monotony">Environmental Monotony</div>
-            </div>
-            <div class="environmental_stressors">Environmental Stressors
-                <div class="light_dark_cycles">Light/Dark Cycles</div>
-                <div class="altered_gravity">Altered Gravity</div>
-                <div class="atmosphere">Atmosphere</div>
-                <div class="radiation">Radiation</div>
-                <div class="acoustics">Acoustics</div>
-                <div class="nutrition">Nutrition</div>
-            </div>
+        <div class="chronic_stressors">
+          Chronic Stressors
+          <!--Box on layer 2, placed in left-most column box1-->
+          <!--These smaller boxes are factors that fall under chronic stressor-->
+          <div class="distance_from_home_earth">Distance From Home/Earth</div>
+          <div class="mission_duration">Mission Duration</div>
+          <div class="communication_delay">Communication Delay</div>
+          <div class="isolated">Isolated</div>
+          <div class="confined">Confined</div>
+          <div class="extreme">Extreme</div>
+          <div class="resource_constrained">Resource Constrained</div>
         </div>
-        <div class="box box6">
-            <div class="social_composition">Social Composition
-                <div class="social_composition_invisible">Social Composition</div>
-                <div class="crew_size">Crew size</div>
-                <div class="social_support">Social Support</div>
-                <div class="social_monotony">Social Monotony</div>
-                <div class="density">Density</div>
-                <div class="group_living">Group Living</div>
-            </div>
-            <div class="resources">Resources
-                <div class="psychological_resources">Psychological Resources</div>
-                <div class="training_and_preparation">Training and Preparation</div>
-                <div class="ground_support">Ground Support</div>
-                <div class="medical_capability">Medical Capability</div>
-                <div class="family_and_friends">Family and Friends</div>
-                <div class="supplies">Supplies</div>
-                <div class="food">Food</div>
-                <div class="exercise_equipment">Exercise Equipment</div>
-            </div>
-            <div class="operational_stressors">Operational Stressors
-                <div class="physical_workload">Physical Workload</div>
-                <div class="cognitive_workload">Cognitive Workload</div>
-                <div class="media_attention">Media Attention</div>
-            </div>
+        <div class="acute_stressors">
+          Acute Stressors
+          <!--Box on layer 2, placed in left-most column box1-->
+          <div class="mission_demands">Mission Demands</div>
+          <div class="life_mission_events">Life/Mission Events</div>
         </div>
-        <div class="box box3">
-            <div class="team_processes">Team Processes
-                <div class="team_processes_invisible">Team Processes</div>
-                <div class="transition_processes">Transition Processes</div>
-                <div class="action_processes">Action Processes</div>
-                <div class="interpersonal_processes">Interpersonal Processes</div>
-            </div>
-            <div class="individual_processes">Individual Processes
-                <div class="stress_regulation">Stress Regulation</div>
-                <div class="place_attachment">Place Attachment</div>
-                <div class="sleep">Sleep</div>
-            </div>
+      </div>
+      <div class="box box2">
+        <div class="individual_traits">
+          Individual Traits
+          <div class="individual_traits_invisible">Individual Traits</div>
+          <div class="extraversion">Extraversion</div>
+          <div class="agreeableness">Agreeableness</div>
+          <div class="neuroticism">Neuroticism</div>
+          <div class="resilience">Resilience</div>
+          <div class="openness">Openness</div>
+          <div class="conscientiousness">Conscientiousness</div>
+          <div class="genetics">Genetics</div>
         </div>
-        <div class="box box4">
-            <div class="behavioral_health_and_performance_outcomes">Behavioral Health and Performance Outcomes
-                <div class="anxiety">Anxiety</div>
-                <div class="autonomy">Autonomy</div>
-                <div class="stress">Stress</div>
-                <div class="crew_performance">Crew Performance</div>
-                <div class="situation_awareness">Situation Awareness</div>
-                <div class="trust">Trust</div>
-                <div class="physical_health">Physical Health</div>
-                <div class="curiosity">Curiosity</div>
-                <div class="kinship">Kinship</div>
-                <div class="boredom">Boredom</div>
-                <div class="fatigue">Fatigue</div>
-                <div class="contentment">Contentment</div>
-                <div class="nostalgia_homesickness">Nostalgia/<br>Homesickness</div>
-                <div class="depression">Depression</div>
-            </div>
+        <div class="designed_features">
+          Designed Features
+          <div class="habitable_volume">Habitable Volume</div>
+          <div class="environmental_control">Environmental Control</div>
+          <div class="circulation_paths">Circulation Paths</div>
+          <div class="layout">Layout</div>
+          <div class="lighting">Lighting</div>
+          <div class="privacy">Privacy</div>
+          <div class="ergonomics">Ergonomics</div>
+          <div class="fixtures">Fixtures</div>
+          <div class="reconfigurability">Reconfigurability</div>
+          <div class="environmental_monotony">Environmental Monotony</div>
         </div>
-        <div class="box box5">
-            <div class="loss_of_mission">Loss of Mission</div>
-            <div class="loss_of_crew_life">Loss of Crew Life</div>
-            <div class="quality_of_life">Quality of Life</div>
-        </div>    
-        <div class="box explanation">
-            <p><strong>Hover</strong> over each box for their definitions.</p> 
-            <p><strong>Click</strong> on a factor and <strong>hover</strong> over its related boxes to read about their relationships.</p> 
-            <p><strong>Click again</strong> to reset the diagram.</p>
+        <div class="environmental_stressors">
+          Environmental Stressors
+          <div class="light_dark_cycles">Light/Dark Cycles</div>
+          <div class="altered_gravity">Altered Gravity</div>
+          <div class="atmosphere">Atmosphere</div>
+          <div class="radiation">Radiation</div>
+          <div class="acoustics">Acoustics</div>
+          <div class="nutrition">Nutrition</div>
         </div>
+      </div>
+      <div class="box box6">
+        <div class="social_composition">
+          Social Composition
+          <div class="social_composition_invisible">Social Composition</div>
+          <div class="crew_size">Crew size</div>
+          <div class="social_support">Social Support</div>
+          <div class="social_monotony">Social Monotony</div>
+          <div class="density">Density</div>
+          <div class="group_living">Group Living</div>
+        </div>
+        <div class="resources">
+          Resources
+          <div class="psychological_resources">Psychological Resources</div>
+          <div class="training_and_preparation">Training and Preparation</div>
+          <div class="ground_support">Ground Support</div>
+          <div class="medical_capability">Medical Capability</div>
+          <div class="family_and_friends">Family and Friends</div>
+          <div class="supplies">Supplies</div>
+          <div class="food">Food</div>
+          <div class="exercise_equipment">Exercise Equipment</div>
+        </div>
+        <div class="operational_stressors">
+          Operational Stressors
+          <div class="physical_workload">Physical Workload</div>
+          <div class="cognitive_workload">Cognitive Workload</div>
+          <div class="media_attention">Media Attention</div>
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="team_processes">
+          Team Processes
+          <div class="team_processes_invisible">Team Processes</div>
+          <div class="transition_processes">Transition Processes</div>
+          <div class="action_processes">Action Processes</div>
+          <div class="interpersonal_processes">Interpersonal Processes</div>
+        </div>
+        <div class="individual_processes">
+          Individual Processes
+          <div class="stress_regulation">Stress Regulation</div>
+          <div class="place_attachment">Place Attachment</div>
+          <div class="sleep">Sleep</div>
+        </div>
+      </div>
+      <div class="box box4">
+        <div class="behavioral_health_and_performance_outcomes">
+          Behavioral Health and Performance Outcomes
+          <div class="anxiety">Anxiety</div>
+          <div class="autonomy">Autonomy</div>
+          <div class="stress">Stress</div>
+          <div class="crew_performance">Crew Performance</div>
+          <div class="situation_awareness">Situation Awareness</div>
+          <div class="trust">Trust</div>
+          <div class="physical_health">Physical Health</div>
+          <div class="curiosity">Curiosity</div>
+          <div class="kinship">Kinship</div>
+          <div class="boredom">Boredom</div>
+          <div class="fatigue">Fatigue</div>
+          <div class="contentment">Contentment</div>
+          <div class="nostalgia_homesickness">Nostalgia/<br />Homesickness</div>
+          <div class="depression">Depression</div>
+        </div>
+      </div>
+      <div class="box box5">
+        <div class="loss_of_mission">Loss of Mission</div>
+        <div class="loss_of_crew_life">Loss of Crew Life</div>
+        <div class="quality_of_life">Quality of Life</div>
+      </div>
+      <div class="box explanation">
+        <p><strong>Hover</strong> over each box for their definitions.</p>
+        <p>
+          <strong>Click</strong> on a factor and <strong>hover</strong> over its
+          related boxes to read about their relationships.
+        </p>
+        <p><strong>Click again</strong> to reset the diagram.</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

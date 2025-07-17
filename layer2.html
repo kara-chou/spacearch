@@ -7,47 +7,55 @@ e.g. selection falls under box1 (rightmost box)
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HECIA</title>
-    <link rel="stylesheet" href="style2.css">
-    <script src="zoomLayer2.js"></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="help-button.css" />
+    <link rel="stylesheet" href="walkthrough.css" />
+    <link rel="stylesheet" href="navigation-buttons.css" />
+    <script src="help-button.js" defer></script>
+    <script src="navigation-buttons.js" defer></script>
+    <script src="walkthrough.js" defer></script>
+    <script src="zoomLayer2.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/arrow-line/dist/arrow-line.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="box box1"> <!--Everything falls under box-->
-            <!--These smaller classes fall under box1-->
-            <div class="selection">Selection</div> <!--change text here-->
-            <div class="chronic_stressors">Chronic Stressors</div>
-            <div class="acute_stressors">Acute Stressors</div>
+      <div class="box box1">
+        <!--Everything falls under box-->
+        <!--These smaller classes fall under box1-->
+        <div class="selection">Selection</div>
+        <!--change text here-->
+        <div class="chronic_stressors">Chronic Stressors</div>
+        <div class="acute_stressors">Acute Stressors</div>
+      </div>
+      <div class="box box2">
+        <div class="individual_traits">Individual Traits</div>
+        <div class="designed_features">Designed Features</div>
+        <div class="environmental_stressors">Environmental Stressors</div>
+      </div>
+      <div class="box box6">
+        <div class="social_composition">Social Composition</div>
+        <div class="resources">Resources</div>
+        <div class="operational_stressors">Operational Stressors</div>
+      </div>
+      <div class="box box3">
+        <div class="team_processes">Team Processes</div>
+        <div class="individual_processes">Individual Processes</div>
+      </div>
+      <div class="box box4">
+        <div class="behavioral_health_and_performance_outcomes">
+          Behavioral Health and Performance Outcomes
         </div>
-        <div class="box box2">
-            <div class="individual_traits">Individual Traits</div>
-            <div class="designed_features">Designed Features</div>
-            <div class="environmental_stressors">Environmental Stressors</div>
-        </div>
-        <div class="box box6">
-            <div class="social_composition">Social Composition</div>
-            <div class="resources">Resources</div>
-            <div class="operational_stressors">Operational Stressors</div>
-        </div>
-        <div class="box box3">
-            <div class="team_processes">Team Processes</div>
-            <div class="individual_processes">Individual Processes</div>
-        </div>
-        <div class="box box4">
-            <div class="behavioral_health_and_performance_outcomes">Behavioral Health and Performance Outcomes</div>
-        </div>
-        <div class="box box5">
-            <div class="loss_of_mission">Loss of Mission</div>
-            <div class="loss_of_crew_life">Loss of Crew Life</div>
-            <div class="quality_of_life">Quality of Life</div>
-        </div>
+      </div>
+      <div class="box box5">
+        <div class="loss_of_mission">Loss of Mission</div>
+        <div class="loss_of_crew_life">Loss of Crew Life</div>
+        <div class="quality_of_life">Quality of Life</div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

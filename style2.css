@@ -1,32 +1,33 @@
 /*Container where all boxes are stored in*/
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-color: #d2eaf7;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #d2eaf7;
 }
 .container {
-    display: flex;
-    width: 100vw; 
-    height: 100vh; 
-    justify-content: space-between; 
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
 }
 
-/*General structure for the boxes, include common features like 
+/*General structure for the boxes, include common features like
 rounded borders, text size and font*/
 .box {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; 
-    box-sizing: border-box;
-    font-family: monospace, monospace;
-    font-size: 14px;
-    align-items: center;
-    position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  font-family: monospace, monospace;
+  font-size: 14px;
+  align-items: center;
+  position: relative;
 }
 
 /*Vertical grouping of boxes
@@ -43,7 +44,7 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 .box4,
 .box5,
 .box6 {
-    margin-right: 0.5%; /*adding white space between the columns*/
+  margin-right: 0.5%; /*adding white space between the columns*/
 }
 
 .box1,
@@ -51,155 +52,156 @@ Note box2 and box6 appear to fall under same stripe, but is implemented in 2 str
 .box3,
 .box4,
 .box5,
-.box6 { /*all contents are centered*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.box6 {
+  /*all contents are centered*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Rounded border, color, etc. unique to each grouping of boxes*/
 .box1 {
-    width: calc(15vw); 
-    background-color: #b4b4b4; /*5ba6ea*/
-    border-radius: 15px; 
-    margin-left: 0.5%;
+  width: calc(15vw);
+  background-color: #b4b4b4; /*5ba6ea*/
+  border-radius: 15px;
+  margin-left: 0.5%;
 }
 
 .box2 {
-    width: calc(20vw);
-    background-color: #94ecff;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px; 
-}
-
-.box6 {
-    width: calc(20vw);
-    background-color: #94ecff;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px; 
+  width: calc(20vw);
+  background-color: #94ecff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .box3 {
-    width: calc(20vw); 
-    background-color: #ffcbfb;
-    border-radius: 15px; 
+  width: calc(20vw);
+  background-color: #ffcbfb;
+  border-radius: 15px;
 }
 
 .box4 {
-    width: calc(25vw); 
-    background-color: #ffd54d;
-    border-radius: 15px; 
-    margin-right: 0%;
+  width: calc(25vw);
+  background-color: #ffd54d;
+  border-radius: 15px;
+  margin-right: 0%;
 }
 
 .box5 {
-    width: 0;
-    background-color: #b4b4b4; 
-    border-radius: 15px; 
+  width: 0;
+  background-color: #b4b4b4;
+  border-radius: 15px;
+}
+
+.box6 {
+  width: calc(20vw);
+  background-color: #94ecff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /*Control unique content for each smaller box*/
 /*Selection, Chronic stressors, Acute stressors are laid out top to bottom in box1*/
 .selection {
-    width: calc(93%);
-    height: calc(20%);
-    padding: 20px;
-    margin-top: 3px;
-    top: 0;
-    background-color: #999999;
+  width: calc(93%);
+  height: calc(16%);
+  padding: 15px;
+  margin-top: 3px;
+  top: 0;
+  background-color: #999999;
 }
 
 .chronic_stressors {
-    width: calc(93%);
-    height: calc(50%);
-    padding: 20px;
-    background-color: #999999;
+  width: calc(93%);
+  height: calc(59%);
+  padding: 15px;
+  background-color: #999999;
 }
 
 .acute_stressors {
-    width: calc(93%);
-    height: calc(30%);
-    padding: 20px;
-    background-color: #999999;
+  width: calc(93%);
+  height: calc(25%);
+  padding: 15px;
+  background-color: #999999;
 }
 
 /*Personality trait, Environmental stressors, Designed features
 lay top to bottom in box2*/
 .individual_traits {
-    width: calc(96%);
-    height: calc(37%);
-    margin-left: 2.5%;
-    margin-top: 3px;
-    padding: 20px;
-    background-color: #56B4E9;
+  width: calc(96%);
+  height: calc(48%);
+  margin-left: 2.5%;
+  margin-top: 3px;
+  padding: 15px;
+  background-color: #56b4e9;
 }
 
 .environmental_stressors {
-    width: calc(96%);
-    height: calc(35%);
-    margin-left: 2.5%;
-    padding: 20px;
-    background-color: #56B4E9;
+  width: calc(96%);
+  height: calc(27%);
+  margin-left: 2.5%;
+  padding: 15px;
+  background-color: #56b4e9;
 }
 
 .designed_features {
-    width: calc(96%);
-    height: calc(35%);
-    margin-left: 2.5%;
-    padding: 20px;
-    background-color: #56B4E9;
+  width: calc(96%);
+  height: calc(31%);
+  margin-left: 2.5%;
+  padding: 15px;
+  background-color: #56b4e9;
 }
 
 /*Crew composition, Resources, Operational stressors
 lay top to bottom in box6*/
 .social_composition {
-    width: calc(96%);
-    height: calc(30%);
-    margin-right: 2.5%;
-    margin-top: 3px;
-    padding: 20px;
-    background-color: #56B4E9;
+  width: calc(96%);
+  height: calc(31%);
+  margin-right: 2.5%;
+  margin-top: 3px;
+  padding: 15px;
+  background-color: #56b4e9;
 }
 
 .resources {
-    width: calc(96%);
-    height: calc(45%);
-    margin-right: 2.5%;
-    padding: 20px;
-    background-color: #56B4E9;
+  width: calc(96%);
+  height: calc(47%);
+  margin-right: 2.5%;
+  padding: 15px;
+  background-color: #56b4e9;
 }
 
 .operational_stressors {
-    width: calc(96%);
-    height: calc(26%);
-    margin-right: 2.5%;
-    padding: 20px;
-    background-color: #56B4E9;
+  width: calc(96%);
+  height: calc(22%);
+  margin-right: 2.5%;
+  padding: 15px;
+  background-color: #56b4e9;
 }
 
 /*Team processes, individual processes lay top to bottom in box3*/
 .team_processes {
-    width: calc(93%);
-    height: calc(45%);
-    margin-top: 3px;
-    padding: 20px;
-    background-color: #CC79A7;
+  width: calc(93%);
+  height: calc(48%);
+  margin-top: 3px;
+  padding: 15px;
+  background-color: #cc79a7;
 }
 
 .individual_processes {
-    width: calc(93%);
-    height: calc(55%);
-    padding: 20px;
-    background-color: #CC79A7;
+  width: calc(93%);
+  height: calc(52%);
+  padding: 15px;
+  background-color: #cc79a7;
 }
 
 /*Performance, Mood and effect lay top to bottom in box4*/
 .behavioral_health_and_performance_outcomes {
-    width: calc(93%);
-    height: calc(100%);
-    margin-top: 3px;
-    padding: 20px;
-    background-color: #E69F00;
+  width: calc(93%);
+  height: calc(100%);
+  margin-top: 3px;
+  padding: 15px;
+  background-color: #e69f00;
 }
 
 /* .mood_and_effect {
@@ -247,23 +249,58 @@ lay top to bottom in box6*/
 .loss_of_mission,
 .loss_of_crew_life,
 .quality_of_life {
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin-bottom: 1%;
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: default; /*do not change cursor shape when hovering over text*/
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 1%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default; /*do not change cursor shape when hovering over text*/
 }
 
-/* Add style for box title and explanation upon hovering*/
+/* Box content - restore original styles */
+.box > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: default;
+  position: relative;
+}
+
+/* Content wrapper */
+.content {
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Title */
 .box-title {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  line-height: 1.1;
+  transition: all 0.2s ease;
 }
 
+/* Explanation */
 .box-explanation {
-    margin-top: 0.5%;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  max-height: 0;
+  line-height: 1.1;
+  transition: all 0.2s ease;
+}
+
+.content.show-explanation .box-explanation {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 10px;
 }
