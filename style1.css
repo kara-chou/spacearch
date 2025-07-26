@@ -1,16 +1,8 @@
-@keyframes slideIn {
-  /*Transition between pages if needed. Not currently used*/
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+/*Container where all boxes are stored in*/
+* {
+  font-family: monospace, monospace;
 }
 
-/*Container where all boxes are stored in*/
 body,
 html {
   margin: 0;
@@ -37,9 +29,6 @@ rounded borders, text size and font*/
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  opacity: 0;
-  animation: slideIn 0s ease-in forwards; /*Animation currently not used*/
-  font-family: monospace, monospace;
   font-size: 18px;
   margin-right: 0.5%;
   padding: 1%;

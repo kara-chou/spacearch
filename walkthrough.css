@@ -1,4 +1,8 @@
-/* TOOLTIP STYLES */
+* {
+  font-family: monospace, monospace;
+}
+
+/* TOOLTIP STYLES (bottom of screen, like dialogue boxes) */
 .walkthrough-tooltip {
   position: fixed;
   left: 0;
@@ -10,18 +14,17 @@
   padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-  z-index: 2147483647; /* above everything */
-  font-family: monospace, monospace;
+  z-index: 4; /* above everything */
   font-size: 0.9rem;
   line-height: 1.4;
   color: #333;
   transition: all 0.3s ease;
   pointer-events: none;
-  opacity: 0;
+  opacity: 0; /* initially hidden */
   text-align: center;
 }
 
-/* carot */
+/* Caret (at bottom of tooltip, triangle) */
 .walkthrough-tooltip::after {
   content: "";
   position: absolute;
@@ -33,12 +36,14 @@
   border-color: white transparent transparent;
 }
 
+/* When we create a tooltip, add visible class so we can see it */
 .walkthrough-tooltip.visible {
   opacity: 1;
   transition: all 0.3s ease;
-  animation: subtlePulse 3s infinite ease-in-out;
+  animation: subtlePulse 3s infinite ease-in-out; /* Uses animation on tooltip for 3 seconds, infinitely*/
 }
 
+/* Very subtle up and down movement animation for tooltip */
 @keyframes subtlePulse {
   0% {
     transform: translateY(0);
@@ -59,40 +64,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  z-index: 1;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: monospace, monospace;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Active state */
+/* When we're in the walkthrough (active), show walkthrough styles */
 .walkthrough.active {
   display: flex;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Disable hover interactions during zoom step */
-.disable-hover,
-.disable-hover * {
-  pointer-events: none !important;
-}
-
-/* Ensure zoom guide remains interactive */
-.zoom-guide-container,
-.zoom-guide-container * {
-  pointer-events: auto !important;
-}
-
-.walkthrough.zoom-step .walkthrough-content {
-  pointer-events: auto;
-  z-index: 2147483647;
-}
-
-/* Content container */
-/* Tip Modal */
+/* Tip Dialogue Box (contains zoom out demo and "+", "-", "?" buttons demo) */
 .walkthrough-tip {
   background: white;
   border-radius: 12px;
@@ -105,15 +91,17 @@
   transition: all 0.3s ease;
   opacity: 0;
   pointer-events: auto;
-  z-index: 1002;
+  z-index: 1;
   overflow: hidden;
   margin: 0;
 }
 
+/* Show tip dialogue box when set visible */
 .walkthrough-tip.visible {
   opacity: 1;
 }
 
+/* Green Header for walkthrough tip dialogue box (Says "TIP") */
 .tip-header {
   background: #4caf50;
   color: white;
@@ -124,17 +112,15 @@
   text-transform: uppercase;
 }
 
+/* Inside Tip Dialogue Box, styles text */
 .tip-content {
   padding: 25px;
-}
-
-.tip-content p {
-  margin: 0 0 20px 0;
   font-size: 1rem;
   line-height: 1.4;
   color: #333;
 }
 
+/* Normal Content Dialogue Box (contains helpful information unrelated to site mechanics) */
 .walkthrough-content {
   background: white;
   border-radius: 12px;
@@ -142,21 +128,21 @@
   width: 500px;
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease-in-out;
   opacity: 0;
   pointer-events: auto;
-  z-index: 1001;
-  font-family: monospace, monospace;
+  z-index: 1;
   font-size: 1.1rem;
   line-height: 1.2;
   color: #333;
 }
 
+/* Show walkthrough content dialogue box when set visible */
 .walkthrough.active .walkthrough-content {
   opacity: 1;
 }
 
-/* PROGRESS BAR */
+/* PROGRESS BAR of walkthrough tutorial, position at center top of screen under "Exit Walkthrough" button */
 .walkthrough-progress {
   position: fixed;
   top: 60px; /* Positioned below the exit button with some margin */
@@ -167,7 +153,7 @@
   background: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
-  z-index: 2147483647;
+  z-index: 4;
   opacity: 0;
   transition: all 0.3s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -175,12 +161,13 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Show progress bar when set visible */
 .walkthrough-progress.visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 
-/* Filling */
+/* Green filling of progress bar */
 .walkthrough-progress-bar {
   height: 100%;
   width: 0%;
@@ -188,7 +175,7 @@
   transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* EXIT WALKTHROUGH BUTTON */
+/* "Exit Walkthrough" Button of walkthrough tutorial, positioned at center top of screen */
 .walkthrough-exit {
   position: fixed;
   top: 15px;
@@ -198,70 +185,50 @@
   background: rgba(0, 0, 0, 0.6);
   pointer-events: auto !important;
   color: #fff;
-  font-family: "Roboto Mono", monospace;
   font-size: 0.9rem;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  z-index: 2147483647;
+  z-index: 4;
   backdrop-filter: blur(8px);
   transition: all 0.2s ease;
 }
 
+/* Upon hovering on exit button, change background color */
 .walkthrough-exit:hover {
   background: rgba(0, 0, 0, 0.75);
   transform: translate(-50%, -1px);
 }
 
-/* INTERACTIVE ELEMENTS */
-/* Base box style - ensure other boxes are not affected during walkthrough */
-.box:not(.walkthrough-target) {
-  transition: all 0.3s ease;
-}
-
-/* Walkthrough target styling */
+/* Walkthrough target (highlighted boxes such as on hover step) styling */
 .walkthrough-target {
-  z-index: 2002;
-  transform: scale(1) translateZ(0);
-  backface-visibility: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
 }
 
-/* When walkthrough is active, reduce opacity of non-target boxes */
-.walkthrough.active:not(.zoom-step) .box:not(.walkthrough-target) {
-  opacity: 0.8;
-  transform: scale(0.98);
+/* Darkens background during steps in walkthrough with a target (hover, click) to emphasize target */
+.walkthrough-highlight {
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5); /* Darkens background (excluding target) to emphasize target */
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
 
-.walkthrough-target:hover {
-  transform: scale(1.02) translateZ(0);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Prevent explanation box from scaling on hover */
-.explanation.walkthrough-target:hover {
-  transform: scale(1) translateZ(0);
-  cursor: default;
-  box-shadow: none;
-}
-
-/* Fake Cursor */
+/* Fake Cursor (for hover and click animations, guide user to target) */
 .walkthrough-cursor {
   position: fixed;
   width: 30px;
   height: 30px;
   background-image: url("../images/cursor.png");
   background-size: contain;
-  pointer-events: none;
-  z-index: 10000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: none;
-  left: 0;
-  top: 0;
+  z-index: 4;
+  transition: all 0.4s ease-in-out;
   opacity: 0;
-  margin: 0;
+}
+
+/* During click step, apply pulsing animation to fake cursor to simulate clicking movement */
+.walkthrough-cursor.pulsing {
+  animation: cursorPulse 1.5s infinite; /* Repeats cursorPulse (scaling) animation over 1.5s infinitely */
 }
 
 /* Click animation */
@@ -277,23 +244,9 @@
   }
 }
 
-.walkthrough-cursor.pulsing {
-  animation: cursorPulse 1.5s infinite;
-}
+/* NEXT BUTTON (on content and tip modals/dialogue boxes) */
 
-.walkthrough-highlight {
-  position: fixed;
-  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
-  z-index: 1999;
-  pointer-events: none;
-  border-radius: 15px;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* NEXT BUTTON */
-
+/* Container for "Next" or "Got It!" button in dialogue boxes */
 .walkthrough-nav {
   display: flex;
   justify-content: flex-end;
@@ -302,24 +255,25 @@
   padding: 0 0.5rem;
 }
 
+/* "Next" or "Got It!" button styling */
 .walkthrough-nav button {
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-  font-family: monospace, monospace;
-  font-weight: 500;
   font-size: 0.9rem;
-  transition: all 0.2s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: #4caf50;
   color: white;
+  transition: all 0.2s ease;
 }
 
+/* Enlargens "Next" or "Got It!" button when hovered over */
 .walkthrough-nav button:hover {
-  background-color: #3d8b40;
+  transform: scale(1.04);
+  cursor: pointer;
 }
 
+/* Adds "→" to all "Next"/"Got It!" buttons*/
 .walkthrough-next::after {
   content: "→";
   margin-left: 0.5rem;
@@ -328,13 +282,15 @@
   transition: transform 0.2s ease;
 }
 
-/* Hide arrow on finish button */
+/* Hide "→" on finish button */
 .walkthrough-next.finish-button::after {
   display: none;
   content: "";
 }
 
-/* TIP MODAL: NAVIGATION BUTTONS DEMO */
+/* Styling for TIP Dialogue Box demonstrating "+", "-", and "?" buttons */
+
+/* Container for "+", "-", "?" in dialogue box */
 .walkthrough-button-demo {
   display: flex;
   align-items: flex-start;
@@ -355,23 +311,20 @@
   box-sizing: border-box;
 }
 
+/* "+" and "-" button styling in TIP dialogue box */
 .walkthrough-nav-button {
   width: 30px;
   height: 30px;
   background: #000000;
   border-radius: 8px;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25px;
-  font-family: "Roboto Mono", monospace;
   color: #b3b3b3;
   border: none;
-  margin: 0;
-  padding: 0;
-  flex-shrink: 0;
 }
 
+/* "?" button styling in TIP dialogue box */
 .walkthrough-help-button {
   width: 30px;
   height: 30px;
@@ -381,18 +334,16 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  font-family: "Roboto Mono", monospace;
   color: #000000;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  flex-shrink: 0;
 }
 
+/* Label underneath "+", "-", "?" buttons in TIP dialogue box explaining their use ("Zoom In", "Zoom Out", "Help") */
 .walkthrough-button-label {
   font-size: 12px;
   margin-top: 8px;
   color: #333;
-  font-family: "Roboto Mono", monospace;
   text-align: center;
   line-height: 1.3;
   width: 100%;

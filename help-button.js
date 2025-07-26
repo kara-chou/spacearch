@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!document.getElementById("helpButton")) {
     const helpButton = document.createElement("button");
     helpButton.id = "helpButton";
-    helpButton.className = "help-button";
+    helpButton.className = "help-button"; // Styles
     helpButton.textContent = "?";
     helpButton.onclick = showPopup;
-    document.body.appendChild(helpButton);
+    document.body.appendChild(helpButton); // Add to document
   }
 
   // Only create popup if it doesn't already exist
   if (!document.getElementById("popup")) {
     const popup = document.createElement("div");
     popup.id = "popup";
-    popup.className = "popup";
+    popup.className = "popup"; // Styles
     popup.innerHTML = `
         <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
@@ -24,10 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>This framework is a point of departure. The relationships mapped here are just as important as the arguments, reactions, and agreements that follow. We welcome thoughts and dialogue sent to hecia-info@mit.edu. </p>
             <button id="launchWalkthroughBtn" class="launch-walkthrough">Launch Walkthrough</button>
         </div>
-    `;
-    document.body.appendChild(popup);
+    `; // Content
+    document.body.appendChild(popup); // Add to document
+
+    // "Launch Walkthrough" Button
     const launchBtn = popup.querySelector("#launchWalkthroughBtn");
     if (launchBtn) {
+      // When clicking "Launch Walkthrough", calls launchWalkthrough function
       launchBtn.addEventListener("click", launchWalkthrough);
     }
   }
@@ -49,6 +52,7 @@ function closePopup() {
 function launchWalkthrough() {
   // Hide popup first
   closePopup();
+  // Remove sessionStorage item indicating that we don't need to show walkthrough
   sessionStorage.removeItem("walkthroughCompleted");
   // Reload and navigate to 1st layer to trigger walkthrough logic
   window.location.href = "index.html";

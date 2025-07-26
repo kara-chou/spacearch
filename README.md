@@ -15,8 +15,8 @@ To change the shape, color, etc. of the boxes, edit the corresponding css file. 
 To change the content displayed upon hover/click, edit the corresponding javascript file. The explanation for each box is stored inside boxContents and can be edited individually. <br>
 
 The interactive walkthrough is associated with 3 files: walkthrough.js, walkthrough.css, zoom-guide.css. <br>
-To change the steps of the walkthrough, edit the steps array in walkthrough.js. <br>
-The info button on the bottom right is associated with 2 files: help-button.js, help-button.css. <br>
+To add or remove steps in the walkthrough, edit the "steps" array in walkthrough.js. Specifically, to add a step, add a dictionary to the "steps" array in your desired location with instructions (e.g. content, hover, etc). Ensure you adjust the "initialStep" constant to initialize which step we begin on depending on our layer (index, layer2, layer3).<br>
+The help button on the bottom right is associated with 2 files: help-button.js, help-button.css. <br>
 The navigation buttons on the bottom right are associated with 2 files: navigation-buttons.js, navigation-buttons.css. <br>
 
 The graphs file stores the layer 3 graph in adjacency lists. The generatePath file generates all elements the current element is connected to.

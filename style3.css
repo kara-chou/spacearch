@@ -88,7 +88,7 @@ rounded borders, text size and font*/
   text-align: left;
   padding: 1%;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden; /* Hide overflow in box so we don't see scrollbar */
   box-sizing: border-box;
 }
 

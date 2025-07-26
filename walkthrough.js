@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check layer (to initialize walkthrough to particular step)
     const isSecondLayer = window.location.pathname.includes("layer2.html");
     const isThirdLayer = window.location.pathname.includes("layer3.html");
-    const initialStep = isSecondLayer ? 3 : isThirdLayer ? 4 : 0; // Step 0 on first layer, Step 3 on second layer, Step 4 on third layer
+    // initialStep should be adjusted if we add more steps
+    // (e.g. if we add a step in between steps 1 and 2, increase isSecondLayer to step 4 and isThirdLayer to step 5)
+    const initialStep = isSecondLayer ? 3 : isThirdLayer ? 4 : 0; // Set to step 0 on first layer, step 3 on second layer, and step 4 on third layer
     sessionStorage.setItem("currentWalkthroughStep", initialStep.toString());
     let currentStep = parseInt(
       sessionStorage.getItem("currentWalkthroughStep") || "0"
@@ -66,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Walkthrough zoom functionalities - only zoom in
+    // Walkthrough zoom functionalities - only allows zoom in
     function enableWalkthroughZoom() {
       if (window.zoomControls) {
         window.zoomControls.walkthroughZoom.enable();
@@ -74,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Disable zoom
+    // Disables zoom entirely
     function disablePageNavigationZoom() {
       if (window.zoomControls) {
         window.zoomControls.normalZoom.disable();
@@ -96,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // If clickable isn't true (on demonstrating buttons step), scale buttons (1.5x) for emphasis
         setTimeout(() => {
           navButtons.style.transition = "0.3s ease-in-out";
-          navButtons.style.zIndex = clickable ? "1000" : "2000"; // Above background
+          navButtons.style.zIndex = clickable ? "1" : "2"; // Above background
           navButtons.style.bottom = clickable ? "60px" : "90px";
           navButtons.style.right = clickable ? "20px" : "30px";
           navButtons.style.transform = clickable ? "scale(1)" : "scale(1.5)";
@@ -110,14 +112,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // If clickable isn't true (on demonstrating buttons step), scale buttons (1.5x) for emphasis
         setTimeout(() => {
           helpButton.style.transition = "0.3s ease-in-out";
-          helpButton.style.zIndex = clickable ? "1000" : "2000"; // Above background
+          helpButton.style.zIndex = clickable ? "1" : "2"; // Above background
           helpButton.style.right = clickable ? "20px" : "30px";
           helpButton.style.transform = clickable ? "scale(1)" : "scale(1.5)";
         }, 10); // 10ms delay for scaling so we can observe scaling
       }
     }
 
-    // Hide buttons (info ?, zoom in +, zoom out -) by default
+    // Hide buttons (help "?", zoom in "+", zoom out "-") by default
     setButtonsVisibility(false);
 
     // ************************************
@@ -160,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function () {
     exitWalkthroughBtn.id = "walkthroughExit";
     exitWalkthroughBtn.className = "walkthrough-exit";
     exitWalkthroughBtn.textContent = "Exit Walkthrough";
-    exitWalkthroughBtn.style.zIndex = "2147483647";
     exitWalkthroughBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       closeWalkthrough(true); // skipping = true (doesn't go to home page)
@@ -186,7 +187,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // *****************
     // WALKTHROUGH STEPS
     // *****************
-    // These steps are used to indicate which functionalities to use during UpdateWalkthrough().
+    // These steps are used to indicate which functionalities to use during UpdateWalkthrough(),
+    // and are run in order of entry.
+    // To add a step, add a dictionary to the "steps" array in your desired location with instructions
+    // (e.g. content, hover, etc). Ensure you adjust the "initialStep" constant above to initialize which
+    // step we begin on depending on our layer (index, layer2, layer3).
     const steps = [
       {
         // content: modal with informational text
@@ -410,7 +415,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (step.tooltip) {
         const tooltip = document.createElement("div");
         tooltip.className = "walkthrough-tooltip";
-        tooltip.style.zIndex = "2147483647";
         tooltip.innerHTML = step.tooltip;
         document.body.appendChild(tooltip);
         step.tooltipElement = tooltip;
@@ -639,7 +643,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (step.final) {
         setButtonsVisibility(true, true);
         walkthrough.style.background = "rgba(0, 0, 0, 0.4)";
-        walkthrough.style.zIndex = "2147483646";
       }
     }
 
