@@ -1,0 +1,81 @@
+* {
+  font-family: monospace, monospace;
+}
+
+/* Help button styles */
+.help-button {
+  position: fixed;
+  bottom: 20px; /* Position at bottom right */
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  border-radius: 50%; /* Makes button a circle */
+  border: none; /* Override button styles */
+  background-color: rgb(231, 231, 231);
+  color: black;
+  justify-content: center; /* Center "?" */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: all 0.2s ease-in-out; /* Smooth hover transition */
+}
+
+/* Change background color to white on hover */
+.help-button:hover {
+  background-color: white;
+}
+
+/* Popup (dialogue box) Styling */
+.popup {
+  display: none; /* Initially hidden */
+  position: fixed; /* Position in center of the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 5px 1px;
+  overflow: hidden;
+}
+
+/* Text in Popup Styling */
+.popup-content {
+  padding: 20px;
+  color: #000000;
+}
+
+/* Popup "X" (close) button */
+.close {
+  position: absolute; /* Absolutely positioned on the top right */
+  top: 10px;
+  right: 10px;
+  color: #888888cc;
+  cursor: pointer;
+}
+
+/* Change color of "X" to black upon hover */
+.close:hover {
+  color: #000;
+}
+
+/* "Launch Walkthrough" button (in popup) styles */
+.launch-walkthrough {
+  display: block;
+  margin-left: auto; /* Right aligned*/
+  margin-right: 0;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background: #4caf50;
+  color: #fff;
+  border: none; /* Override button styles */
+  border-radius: 6px;
+  transition: all 0.2s ease; /* Smooth hover transition */
+}
+
+/* Change background color of "Launch Walkthrough" button on hover */
+.launch-walkthrough:hover {
+  background: #3e8e41;
+}

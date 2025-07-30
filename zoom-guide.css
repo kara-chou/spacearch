@@ -1,0 +1,327 @@
+* {
+  font-family: monospace, monospace;
+}
+
+/***************************************************************/
+/* Zoom IN Guide Styles (for walkthrough step) – white version */
+/***************************************************************/
+
+/* Container for large animation during walkthrough (takes entire screen) */
+.zoom-guide-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center; /* Center items */
+  justify-content: center; /* Center items */
+  gap: 80px; /* Gap between mouse and trackpad animations */
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  opacity: 1;
+  transition: all 0.6s ease-in-out; /* Smooth transition when minimizing */
+}
+
+/* Content within zoom-guide-container (centered items, white color) */
+.zoom-guide {
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* Shrunken zoom guide in top left corner */
+.zoom-guide-container.minimized {
+  position: fixed; /* Fixed position in top left */
+  height: 180px;
+  width: 350px;
+  top: 15px;
+  left: 15px;
+  transform: translate(0, 0) scale(0.8);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1;
+  padding: 30px;
+  transition: all 0.8s ease-in-out;
+}
+
+/* Content within minimized zoom-guide-container (smaller items) */
+.zoom-guide-container.minimized .zoom-guide {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out; /* So animations shrink smoothly */
+}
+
+/* Within Zoom Guide, "Mouse" and "Trackpad" Labels */
+.zoom-guide-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Outline of Mouse */
+.mouse-guide {
+  width: 80px;
+  height: 130px;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  position: relative;
+  margin: 0 auto 15px;
+}
+
+/* Mouse scrollwheel (is animated, inside mouse-guide - small dashed line) */
+.mouse-wheel {
+  width: 4px;
+  height: 20px;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrollWheelDown 2s infinite; /* Wheel is animated by scrollWheelDown over 2 seconds, infinitely */
+}
+
+/* Animation used to position scrollwheel of mouse to demonstrate scrolling downward */
+@keyframes scrollWheelDown {
+  0% {
+    top: 35%; /* Begins in Upward position */
+  }
+  25% {
+    top: 60%; /* Quick Downward motion (demonstrate scroll down) */
+  }
+  65% {
+    top: 60%; /* Stays in downward position (to emphasize completed scroll) */
+  }
+  100% {
+    top: 35%; /* Resets to upward position to repeat */
+  }
+}
+
+/* Outline of Trackpad */
+.trackpad-guide {
+  width: 160px;
+  height: 130px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto 15px;
+  overflow: hidden;
+}
+
+/* Container to hold finger placement demonstrating zoom in swipe on trackpad */
+.trackpad-fingers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Basic styling for each "finger" (white circles) */
+.trackpad-finger {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%; /* Circular shape */
+  transform: translate(-50%, -50%);
+}
+
+/* Top left finger */
+.trackpad-finger-1 {
+  left: 30%;
+  top: 30%;
+  animation: pinchFinger1Out 2s infinite;
+}
+
+/* Bottom right finger */
+.trackpad-finger-2 {
+  left: 70%;
+  top: 70%;
+  animation: pinchFinger2Out 2s infinite;
+}
+
+/* Fingers move outwards, pause, then reset to center*/
+@keyframes pinchFinger1Out {
+  0% {
+    transform: translate(-50%, -50%) translate(20px, 20px); /* Finger begins near middle of trackpad */
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Quick outward motion (towards top left) */
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Stays in top left position (to emphasize completed scroll) */
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(20px, 20px); /* Resets to center position to repeat */
+  }
+}
+
+@keyframes pinchFinger2Out {
+  0% {
+    transform: translate(-50%, -50%) translate(-20px, -20px); /* Finger begins near middle of trackpad */
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Quick outward motion (towards bottom right) */
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Stays in bottom right position (to emphasize completed scroll) */
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(-20px, -20px); /* Resets to center position to repeat */
+  }
+}
+
+/*********************************************************/
+/* Zoom OUT Guide Styles (for tip modal) – black version */
+/*********************************************************/
+/* Identical to Zoom IN Guide Styles, but in black, reversed animations, and different use case */
+
+/* Container for small animation in tip modal */
+.zoom-guide-container-out {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px; /* Gap between mouse and trackpad animations */
+  margin-top: 20px;
+  pointer-events: none;
+  color: #000;
+}
+
+/* Content within zoom-guide-container (centered items, black color) */
+.zoom-guide-out {
+  text-align: center;
+  position: relative;
+}
+
+/* Within Zoom Guide, "Mouse" and "Trackpad" Labels */
+.zoom-guide-title-out {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Mouse Outline */
+.mouse-guide-out {
+  width: 60px;
+  height: 100px;
+  border: 4px solid #000;
+  border-radius: 40px;
+  position: relative;
+  margin: 0 auto 15px;
+}
+
+/* Mouse scrollwheel (is animated, inside mouse-guide - small dashed line) */
+.mouse-wheel-out {
+  width: 4px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrollWheelUp 2s infinite; /* Wheel is animated by scrollWheelUp over 2 seconds, infinitely */
+}
+
+/* Animation used to position scrollwheel of mouse to demonstrate scrolling upward */
+@keyframes scrollWheelUp {
+  0% {
+    top: 55%; /* Begins in Downward position */
+  }
+  25% {
+    top: 30%; /* Quick Upward motion (demonstrate scroll up) */
+  }
+  65% {
+    top: 30%; /* Stays in upward position (to emphasize completed scroll) */
+  }
+  100% {
+    top: 55%; /* Resets to downward position to repeat */
+  }
+}
+
+/* Trackpad outline */
+.trackpad-guide-out {
+  width: 130px;
+  height: 100px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto 15px;
+  overflow: hidden;
+}
+
+/* Container to hold finger placement demonstrating zoom in swipe on trackpad */
+.trackpad-fingers-out {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Basic styling for "fingers" (Black circles) */
+.trackpad-finger-out {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Top left finger */
+.trackpad-finger-1-out {
+  left: 50%;
+  top: 50%;
+  animation: pinchFinger1In 2s infinite;
+}
+
+/* Bottom right finger */
+.trackpad-finger-2-out {
+  left: 50%;
+  top: 50%;
+  animation: pinchFinger2In 2s infinite;
+}
+
+/* Fingers move towards center, pause, then reset */
+@keyframes pinchFinger1In {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Finger begins near top left of trackpad */
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(20px, 20px); /* Quick inward motion (towards center) */
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(20px, 20px); /* Stays in center position (to emphasize completed scroll) */
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Resets to top left position to repeat */
+  }
+}
+
+@keyframes pinchFinger2In {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Finger begins near bottom right of trackpad */
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-20px, -20px); /* Quick inward motion (towards center) */
+  }
+  65% {
+    transform: translate(-50%, -50%) translate(-20px, -20px); /* Stays in center position (to emphasize completed scroll) */
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0); /* Resets to bottom right position to repeat */
+  }
+}
